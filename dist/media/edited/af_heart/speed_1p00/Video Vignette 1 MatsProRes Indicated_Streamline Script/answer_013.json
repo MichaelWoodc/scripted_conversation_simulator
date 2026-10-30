@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 13,
+    "question": "Is there evidence that the employee has accurately completed the task in the past?",
+    "raw_answer": "The hard copies…the data sheets.",
+    "spoken_text": "\nThe hard copies... the data sheets.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "a67fa3773e881088094836b5f6cb83d6acff46ffaa4a2489fe20cc85e2a1b912",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.7,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_013.wav",
+  "created_utc": "2026-10-30T19:28:34.026597+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

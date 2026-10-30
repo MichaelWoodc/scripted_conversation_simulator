@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 26,
+    "question": "Is the task simple or does it involve relatively low response effort?",
+    "raw_answer": "Oh, yeah.",
+    "spoken_text": "Oh, yeah.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "8caedf13a74b5ccae3ef96362d1c8142f7f43d5483887759e2e91a3c76cd39a6",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.5,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_026.wav",
+  "created_utc": "2026-10-30T19:29:19.682043+00:00",
+  "text_source": "existing transcript"
+}

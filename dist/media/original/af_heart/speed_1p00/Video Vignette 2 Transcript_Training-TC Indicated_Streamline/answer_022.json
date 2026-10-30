@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 22,
+    "question": "Ok, does the employee ever receive feedback about their performance?",
+    "raw_answer": "Yes, immediately after we meet.",
+    "spoken_text": "Yes, immediately after we meet.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "050335b21a433243da5864124b8ec292191f27d6447ed45c6c47a929ad3aede5",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.55,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_022.wav",
+  "created_utc": "2026-10-30T19:29:18.263807+00:00",
+  "text_source": "existing transcript"
+}

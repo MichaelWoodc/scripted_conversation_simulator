@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 7,
+    "question": "For practice, were they practicing with a trainer, alone, or with other coworkers?",
+    "raw_answer": "Umm they were practicing with other coworkers and the client.",
+    "spoken_text": "Umm they were practicing with other coworkers and the client.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "5159deca163bcaeed011bc393ed9370ad639a7b8c902663725a4243423385bfb",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.875,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_007.wav",
+  "created_utc": "2026-10-30T19:28:50.837356+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

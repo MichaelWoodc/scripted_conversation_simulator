@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 22,
+    "question": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+    "raw_answer": "Mmm….nope.",
+    "spoken_text": "Mmm... nope.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "e247ae24c1a01ee6e160df653e3548948be1be1604720f6263687cceae96e9c5",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.6,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_022.wav",
+  "created_utc": "2026-10-30T19:29:06.960659+00:00",
+  "text_source": "existing transcript"
+}

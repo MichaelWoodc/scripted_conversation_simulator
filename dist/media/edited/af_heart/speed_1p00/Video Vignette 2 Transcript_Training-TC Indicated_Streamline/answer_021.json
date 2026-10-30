@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 21,
+    "question": "If yes, indicate the frequency of monitoring. Is this daily, weekly, monthly or other?",
+    "raw_answer": "Since I’ve been on board it has been an almost daily thing whenever I notice the performance deficiency. And I’ve also made other BCBAs aware of her performance.",
+    "spoken_text": "Since I've been on board it has been an almost daily thing whenever I notice the performance deficiency. And I've also made other BCBAs aware of her performance.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "e48f1fbb234d97ff72d08d00eb9dc8d802043a90846f04c022529ebac56fe841",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 10.075,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_021.wav",
+  "created_utc": "2026-10-30T19:28:46.889887+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

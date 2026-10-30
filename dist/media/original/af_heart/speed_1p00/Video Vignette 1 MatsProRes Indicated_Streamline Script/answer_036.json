@@ -1,0 +1,25 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 36,
+    "question": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+    "raw_answer": "Um….yeah (tentatively). Well, uh, the data on….um the data sheet tells you how they’re doing.",
+    "spoken_text": "Um... yeah. Well, uh, the data on... um the data sheet tells you how they're doing.",
+    "cues": [
+      "tentatively"
+    ],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "ecc2e6d08ce0a7a640d6b870e16a67148988d4444956ae9c80f4670f34a46e3a",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.175,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_036.wav",
+  "created_utc": "2026-10-30T19:29:11.146659+00:00",
+  "text_source": "existing transcript"
+}

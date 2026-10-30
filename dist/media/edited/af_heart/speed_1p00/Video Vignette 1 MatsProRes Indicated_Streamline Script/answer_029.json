@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 29,
+    "question": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below:\n(i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+    "raw_answer": "Usually the employee themselves, yeah.",
+    "spoken_text": "\nUsually, the employee themselves, yeah.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "e6d95e731b00f8eaf7d11aaeb83bf3d5d35c53a62ef7b5896cc8cb6f155113d6",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.975,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_029.wav",
+  "created_utc": "2026-10-30T19:28:38.695315+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

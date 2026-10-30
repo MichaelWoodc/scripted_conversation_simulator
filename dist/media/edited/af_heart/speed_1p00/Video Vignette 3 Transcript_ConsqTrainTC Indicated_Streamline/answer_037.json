@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 37,
+    "question": "How often?",
+    "raw_answer": "So, the day it’s completed, you’ll maybe get feedback that day.If it’s an issue that becomes apparent after data entry, you have to enter the data first. You should complete that within 72 hours.",
+    "spoken_text": "So, the day it's completed, you'll maybe get feedback that day. If it's an issue that becomes apparent after data entry, you have to enter the data first. You should complete that within 72 hours.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "d404b7f73cd1a3139eb4371f2dd7f86a71a0a88f269698ff119d270f9adbcd6e",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 12.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_037.wav",
+  "created_utc": "2026-10-30T19:28:59.108734+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

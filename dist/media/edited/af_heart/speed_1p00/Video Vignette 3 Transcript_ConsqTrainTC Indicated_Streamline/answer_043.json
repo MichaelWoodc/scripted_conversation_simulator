@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 43,
+    "question": "Ok, cool. That’s it for that, thank you.",
+    "raw_answer": "Ok.",
+    "spoken_text": "Ok.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "501ff9bc8f8f4193c77c86789cd40fb32de8813c5978c5c3e475d18ae64a4f32",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.425,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_043.wav",
+  "created_utc": "2026-10-30T19:29:01.793268+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

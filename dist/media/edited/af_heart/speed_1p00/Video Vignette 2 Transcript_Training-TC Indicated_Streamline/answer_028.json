@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 28,
+    "question": "Well that's all the questions I have.",
+    "raw_answer": "Alright, thank you.",
+    "spoken_text": "Alright, thank you.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "ffeee2731e35fd63e2a8d66c9b99697bf502243b1e548582cb46bd4bf635d7dc",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.725,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_028.wav",
+  "created_utc": "2026-10-30T19:28:48.986455+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

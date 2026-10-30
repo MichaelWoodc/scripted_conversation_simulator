@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 33,
+    "question": "Does the employee ever receive feedback about their performance?",
+    "raw_answer": "The actual discrete trial itself I would say no. Only occasional feedback if you didn't compete it correctly…there’s nothing positive about how you did it well.",
+    "spoken_text": "The actual discrete trial itself I would say no. Only occasional feedback if you didn't compete it correctly... there's nothing positive about how you did it well.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "c1314aac0e47b1cfe36debb3f770f9fe84d6f9d7e339837c9352752d5bb550e7",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 9.775,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_033.wav",
+  "created_utc": "2026-10-30T19:29:28.986102+00:00",
+  "text_source": "existing transcript"
+}

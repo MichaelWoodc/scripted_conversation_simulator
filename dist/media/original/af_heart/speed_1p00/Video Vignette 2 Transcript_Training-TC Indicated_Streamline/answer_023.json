@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 23,
+    "question": "Feedback focus: is it positive or corrective?",
+    "raw_answer": "Yeah, yeah. Umm so I give her a percentage as to the number of trials that she gets correct and what I like most about the trial and then she also gets umm specifically what about the trial she did get wrong.",
+    "spoken_text": "Yeah, yeah. Umm so I give her a percentage as to the number of trials that she gets correct and what I like most about the trial and then she also gets umm specifically what about the trial she did get wrong.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "00c19b30ba9c2aa8e686655786780ab930d9b9a6b82740ab23ff6626ee0c96ca",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 12.725,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_023.wav",
+  "created_utc": "2026-10-30T19:29:18.835399+00:00",
+  "text_source": "existing transcript"
+}

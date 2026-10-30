@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 25,
+    "question": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+    "raw_answer": "Yes, her sessions go a lot smoother.",
+    "spoken_text": "Yes, her sessions go a lot smoother.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "93123e43d9747250919d412bf1a59557f74b02eca440e198b177a685c649d301",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.75,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_025.wav",
+  "created_utc": "2026-10-30T19:29:19.501444+00:00",
+  "text_source": "existing transcript"
+}

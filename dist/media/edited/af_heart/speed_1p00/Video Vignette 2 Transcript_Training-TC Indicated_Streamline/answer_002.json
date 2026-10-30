@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 2,
+    "question": "If the person asks about Instructions, Demonstration, Modeling, Rehearsal, Practice, or Feedback during training:",
+    "raw_answer": "I said no.",
+    "spoken_text": "I said no.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "70a8134b8510639678aac90838a642e87b6b039ebaf176523f091779695aa223",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.6,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_002.wav",
+  "created_utc": "2026-10-30T19:28:41.198835+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

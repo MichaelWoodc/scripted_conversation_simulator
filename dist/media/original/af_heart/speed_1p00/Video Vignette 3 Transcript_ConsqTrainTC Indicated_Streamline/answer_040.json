@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 40,
+    "question": "Is the task simple or does it involve relatively low response effort?",
+    "raw_answer": "I mean it's simple but doing it right can be time consuming. Considering how many different clients you have and if you watch them different parts of the day you could have like 6, 7 different programs in a day, which can take time to read over and learn. I’ve had 10 different programs in one day, it’s a lot.",
+    "spoken_text": "I mean it's simple but doing it right can be time consuming. Considering how many different clients you have and if you watch them different parts of the day you could have like 6, 7 different programs in a day, which can take time to read over and learn. I've had 10 different programs in one day, it's a lot.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "80a2f71ed993f9b526f21daab5b6de13b44d1730611bac5201dcae3b9cfe7926",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 18.3,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_040.wav",
+  "created_utc": "2026-10-30T19:29:32.076377+00:00",
+  "text_source": "existing transcript"
+}

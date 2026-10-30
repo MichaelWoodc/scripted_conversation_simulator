@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 6,
+    "question": "And did the employee have opportunities for rehearsal/practice (The employee had opportunities to practice the task correctly during training.) during training?",
+    "raw_answer": "Yes.",
+    "spoken_text": "Yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "7e4c0c7448b3a46024798adc1175440897b372caf482b60b5ea6bf6dc6438567",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_006.wav",
+  "created_utc": "2026-10-30T19:29:21.680818+00:00",
+  "text_source": "existing transcript"
+}

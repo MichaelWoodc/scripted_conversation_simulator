@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 34,
+    "question": "If asked whether this means corrective feedback is given:",
+    "raw_answer": "Correct.",
+    "spoken_text": "Correct.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "d63fe7ac9e11c6436d45818d60900de456759402d0f38cf82851687e9bb1913b",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.4,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_034.wav",
+  "created_utc": "2026-10-30T19:29:29.082119+00:00",
+  "text_source": "existing transcript"
+}

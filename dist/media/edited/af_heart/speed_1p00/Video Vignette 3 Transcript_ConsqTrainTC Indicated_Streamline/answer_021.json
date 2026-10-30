@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 21,
+    "question": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+    "raw_answer": "I did mention before that training probably was before a lot of them were here.",
+    "spoken_text": "I did mention before that training probably was before a lot of them were here.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "82011354d539f8cdad6494437c36be0a4c75ea5c30c47291e3a37bb90fde1b5d",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.2,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_021.wav",
+  "created_utc": "2026-10-30T19:28:53.803348+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

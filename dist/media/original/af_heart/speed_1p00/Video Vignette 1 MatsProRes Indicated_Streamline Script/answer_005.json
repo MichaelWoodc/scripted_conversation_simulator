@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 5,
+    "question": "Instructions (the employee received step-by-step instructions on how to perform the task). Were they vocal instructions, written instructions, or both vocal and written instructions?",
+    "raw_answer": "Both.",
+    "spoken_text": "Both.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "17787335b22e3efc8cfb31e6d3d2fe1723f08567776da44e5aa2864c9fd9bd23",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.275,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_005.wav",
+  "created_utc": "2026-10-30T19:29:03.100299+00:00",
+  "text_source": "existing transcript"
+}

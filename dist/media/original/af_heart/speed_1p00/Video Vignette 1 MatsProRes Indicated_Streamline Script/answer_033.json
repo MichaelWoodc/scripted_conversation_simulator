@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 33,
+    "question": "How long after the task?",
+    "raw_answer": "At least a month then.",
+    "spoken_text": "At least a month then.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "37a18431008512565e38462eb8a5139d0ffe9e48010744a41f61e1ea85603a55",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.9,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_033.wav",
+  "created_utc": "2026-10-30T19:29:10.537356+00:00",
+  "text_source": "existing transcript"
+}

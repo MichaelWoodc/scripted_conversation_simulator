@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 26,
+    "question": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+    "raw_answer": "Well, it’s a fairly long document, so we need to figure out the programs that we’re running that pertains to the client. So….no.",
+    "spoken_text": "Well, it's a fairly long document, so we need to figure out the programs that we're running that pertains to the client. So... no.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "2d2bef373ee02f7df4278ed4f7718d173e269afc36fd8c50ed1d3cff62d7a2b5",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 8.1,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_026.wav",
+  "created_utc": "2026-10-30T19:29:26.984827+00:00",
+  "text_source": "existing transcript"
+}

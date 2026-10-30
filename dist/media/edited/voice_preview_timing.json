@@ -1,0 +1,16 @@
+{
+  "text": "Uhm... yeah, we do instructions. Umm... demonstrations. And, yeah, rehearsal, feedback. All of the above.",
+  "duration_seconds": 8.110208333333333,
+  "ums": [
+    {
+      "word": "Um",
+      "original_seconds": 0.375,
+      "stretched_seconds": 0.5625
+    },
+    {
+      "word": "Um",
+      "original_seconds": 0.5125,
+      "stretched_seconds": 0.7625
+    }
+  ]
+}

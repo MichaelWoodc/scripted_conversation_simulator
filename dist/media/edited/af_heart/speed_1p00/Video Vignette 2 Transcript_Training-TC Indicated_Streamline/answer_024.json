@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 24,
+    "question": "Feedback type: is that written, verbal, graphed, or other?",
+    "raw_answer": "It comes umm written and umm verbal. I have been thinking about doing graphed I actually think graphed would help her a lot.",
+    "spoken_text": "It comes umm written and umm verbal. I have been thinking about doing graphed I actually think graphed would help her a lot.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "b3555d761eff17c865fa7dbba480021c4a41c6e84d5611867122b838b38fe3da",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 7.5,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_024.wav",
+  "created_utc": "2026-10-30T19:28:48.174071+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

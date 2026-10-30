@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 30,
+    "question": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring: (Hourly, daily, weekly, monthly, or other)",
+    "raw_answer": "Yes, monthly.",
+    "spoken_text": "\nYes, monthly.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "2dd96c954e200b3c54e554a2c1c8dfe5d13a3c7d176dd58caadcf5872ef6d398",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.85,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_030.wav",
+  "created_utc": "2026-10-30T19:28:38.867882+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

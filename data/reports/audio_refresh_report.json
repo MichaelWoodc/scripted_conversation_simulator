@@ -1,0 +1,874 @@
+{
+  "status": "complete",
+  "started_utc": "2026-10-30T19:28:24.425319+00:00",
+  "planned": 215,
+  "kept_clean": [
+    "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_001.wav",
+    "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_003.wav",
+    "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_007.wav"
+  ],
+  "replaced": [
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_002.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_004.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_005.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_006.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_008.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_009.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_010.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_011.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_012.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_013.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_014.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_015.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_016.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_017.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_018.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_019.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_020.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_021.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_022.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_023.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_024.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_025.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_026.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_027.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_028.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_029.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_030.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_031.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_032.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_033.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_034.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_035.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_036.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_037.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_038.wav",
+      "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_001.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_002.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_003.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_004.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_005.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_006.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_007.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_008.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_009.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_010.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_011.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_012.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_013.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_014.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_015.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_016.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_017.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_018.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_019.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_020.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_021.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_022.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_023.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_024.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_025.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_026.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_027.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_028.wav",
+      "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_001.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_002.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_003.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_004.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_005.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_006.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_007.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_008.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_009.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_010.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_011.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_012.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_013.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_014.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_015.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_016.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_017.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_018.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_019.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_020.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_021.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_022.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_023.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_024.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_025.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_026.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_027.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_028.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_029.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_030.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_031.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_032.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_033.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_034.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_035.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_036.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_037.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_038.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_039.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_040.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_041.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_042.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output_emphasized_punctuation\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_043.wav",
+      "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_001.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_002.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_003.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_004.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_005.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_006.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_007.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_008.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_009.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_010.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_011.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_012.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_013.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_014.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_015.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_016.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_017.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_018.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_019.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_020.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_021.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_022.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_023.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_024.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_025.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_026.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_027.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_028.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_029.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_030.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_031.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_032.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_033.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_034.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_035.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_036.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_037.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_038.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_001.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_002.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_003.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_004.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_005.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_006.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_007.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_008.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_009.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_010.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_011.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_012.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_013.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_014.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_015.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_016.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_017.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_018.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_019.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_020.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_021.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_022.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_023.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_024.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_025.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_026.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_027.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_028.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_001.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_002.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_003.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_004.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_005.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_006.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_007.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_008.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_009.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_010.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_011.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_012.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_013.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_014.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_015.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_016.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_017.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_018.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_019.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_020.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_021.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_022.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_023.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_024.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_025.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_026.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_027.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_028.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_029.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_030.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_031.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_032.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_033.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_034.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_035.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_036.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_037.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_038.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_039.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_040.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_041.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_042.wav",
+      "text_source": "existing transcript"
+    },
+    {
+      "path": "audio_output\\af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_043.wav",
+      "text_source": "existing transcript"
+    }
+  ],
+  "backup_folder": ".cache\\audio_refresh_backups\\20261030T192824Z",
+  "finished_utc": "2026-10-30T19:29:33.093318+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 16,
+    "question": "Can the employee state the purpose of the task?",
+    "raw_answer": "Yes. You're talking about them or are you talking about the rest of us? If the rest of us, then I have to change some of my answers. I mean it still does apply though, kind of what I said. So yes the point of it yeah we all know that. Yes.",
+    "spoken_text": "Yes. You're talking about them or are you talking about the rest of us? If the rest of us, then I have to change some of my answers. I mean it still does apply though, kind of what I said. So yes the point of it yeah we all know that. Yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "a947de012858fb08536e7f60e313e9e90c14ce3ec6c78ad9cea11ddedf9b9d5e",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 14.15,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_016.wav",
+  "created_utc": "2026-10-30T19:29:05.925528+00:00",
+  "text_source": "existing transcript"
+}

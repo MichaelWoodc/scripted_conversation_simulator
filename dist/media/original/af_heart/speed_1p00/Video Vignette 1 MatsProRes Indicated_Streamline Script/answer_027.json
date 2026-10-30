@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 27,
+    "question": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+    "raw_answer": "No.",
+    "spoken_text": "No.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "9266f32c0052fb83783b5555dbdc6325a6c756358d5df4a8ca3cf917a666e9a7",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.3,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_027.wav",
+  "created_utc": "2026-10-30T19:29:09.153007+00:00",
+  "text_source": "existing transcript"
+}

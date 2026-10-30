@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 35,
+    "question": "Feedback type: is it written, verbal, graphed, or other?",
+    "raw_answer": "Verbal.",
+    "spoken_text": "\nVerbal.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "c40b0e8432d7715f8d1b1de7a9bd389a1d19ba8cdd528f297e484f2bc4e0648d",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.375,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_035.wav",
+  "created_utc": "2026-10-30T19:28:39.702770+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 5,
+    "question": "Is there evidence that the employee has accurately completed the task in the past?",
+    "raw_answer": "Some people do...and for them, well, that’s why we are discussing this…",
+    "spoken_text": "Some people do... and for them, well, that's why we are discussing this...",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "23d3b92b81eb6a3cc3cd0546b638e6ec2772e8e0c9ea8e88d2b4d0ae5792f056",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 4.3,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_005.wav",
+  "created_utc": "2026-10-30T19:28:41.957297+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

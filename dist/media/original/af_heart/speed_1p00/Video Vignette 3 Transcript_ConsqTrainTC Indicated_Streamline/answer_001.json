@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 1,
+    "question": "Has the employee received formal training on this task?",
+    "raw_answer": "Yes.",
+    "spoken_text": "Yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "7ca6fe7bb6dd8f4070445a6cee722d1e21d94960a1f470d33462f137aa0ceb49",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_001.wav",
+  "created_utc": "2026-10-30T19:29:20.280434+00:00",
+  "text_source": "existing transcript"
+}

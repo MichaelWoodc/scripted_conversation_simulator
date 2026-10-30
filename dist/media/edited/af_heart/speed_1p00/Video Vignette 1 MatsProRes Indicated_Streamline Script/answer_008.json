@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 8,
+    "question": "Feedback (the employee received feedback about performance during training). Was it vocal feedback or written feedback?",
+    "raw_answer": "…vocally, vocally, oh sorry.",
+    "spoken_text": "\nVocally, vocally. Oh, sorry.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "ab3018c63ece59a2d318b247015ac73728039ffbad363711bac2dab6cb71246e",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.775,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_008.wav",
+  "created_utc": "2026-10-30T19:28:32.783854+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

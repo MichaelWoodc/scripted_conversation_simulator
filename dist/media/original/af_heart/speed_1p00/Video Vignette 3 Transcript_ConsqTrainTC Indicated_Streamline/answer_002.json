@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 2,
+    "question": "If yes, when did the employee receive the training?",
+    "raw_answer": "The employee received the training, I want to say probably three months ago umm prior to starting.",
+    "spoken_text": "The employee received the training, I want to say probably three months ago umm prior to starting.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "2ecc7daf7140cfbe3f5f21f5021b14872d7c8cedf1beda46274b5155633b92ef",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 6.05,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_002.wav",
+  "created_utc": "2026-10-30T19:29:20.861108+00:00",
+  "text_source": "existing transcript"
+}

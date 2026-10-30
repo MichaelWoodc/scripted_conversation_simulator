@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 32,
+    "question": "How often?",
+    "raw_answer": "Uh...monthly maybe?",
+    "spoken_text": "Uh... monthly maybe?",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "a92083a69e739d874727c12d1e7d3aba617cc3207ab32f00fcb03b4ab3b2cfe6",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.925,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_032.wav",
+  "created_utc": "2026-10-30T19:29:10.314726+00:00",
+  "text_source": "existing transcript"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 24,
+    "question": "Are the materials required for task completion available during the times of the day when they are most needed?",
+    "raw_answer": "Um they should be but uh sometimes they are left when they shouldn’t be left and they are kind of forgotten about in that moment.",
+    "spoken_text": "\nUm... they should be. But, uh... sometimes they are left when they shouldn't be left, and they are kind of forgotten about in that moment.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "e5d65ba1420ef05613e558be1d157ae0bbdc202a3f85774a572ce50b4ee5e82c",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 7.725,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_024.wav",
+  "created_utc": "2026-10-30T19:28:37.359440+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

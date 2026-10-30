@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 17,
+    "question": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+    "raw_answer": "Yes.",
+    "spoken_text": "\nYes.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "78dbc58e4c03bc5e1a28ce2cd588026ae4c4cf8823f33b11759b72fc38835635",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_017.wav",
+  "created_utc": "2026-10-30T19:28:35.038941+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

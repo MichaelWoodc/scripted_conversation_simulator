@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 3,
+    "question": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+    "raw_answer": "So umm I think there was more of an instruction part of it umm we did do a modeling aspect once she started with a client but the initial part of it was just instruction.",
+    "spoken_text": "So umm I think there was more of an instruction part of it umm we did do a modeling aspect once she started with a client but the initial part of it was just instruction.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "079c3e241d307ae4194a7bf2de0125688d8c1268f3b8f431663439d39ba85b44",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 10.75,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_003.wav",
+  "created_utc": "2026-10-30T19:29:21.346225+00:00",
+  "text_source": "existing transcript"
+}

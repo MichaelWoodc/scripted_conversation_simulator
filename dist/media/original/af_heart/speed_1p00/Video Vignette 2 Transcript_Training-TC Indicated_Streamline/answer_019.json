@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 19,
+    "question": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:\n(i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+    "raw_answer": "It really should be one of the first things done during a session.",
+    "spoken_text": "It really should be one of the first things done during a session.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "f75a0c0b25c9d21e65d44c81de4803aa7c8a235d372a244b899562c4ac261d86",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.625,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_019.wav",
+  "created_utc": "2026-10-30T19:29:17.068891+00:00",
+  "text_source": "existing transcript"
+}

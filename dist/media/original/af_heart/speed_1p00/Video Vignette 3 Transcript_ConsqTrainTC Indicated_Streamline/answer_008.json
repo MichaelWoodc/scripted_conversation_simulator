@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 8,
+    "question": "Feedback (The employee received feedback about performance during training.). Did they receive feedback during training?",
+    "raw_answer": "Yes.",
+    "spoken_text": "Yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "d5e04a4c6ea1f401793356beb3c0156b9ffb0003e0c39afb82bfac92ce2dbdf4",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_008.wav",
+  "created_utc": "2026-10-30T19:29:22.122556+00:00",
+  "text_source": "existing transcript"
+}

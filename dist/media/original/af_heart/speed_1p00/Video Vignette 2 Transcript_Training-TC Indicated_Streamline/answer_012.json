@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 12,
+    "question": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+    "raw_answer": "I would say sometimes there are interruptions. There’s a lot of people coming in and out of the room, so no.",
+    "spoken_text": "I would say sometimes there are interruptions. There's a lot of people coming in and out of the room, so no.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "83438e4687bae59bfdd7d9074a44f271edc4aee87f12be04bf3684bcbef85d9c",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 6.425,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_012.wav",
+  "created_utc": "2026-10-30T19:29:15.527673+00:00",
+  "text_source": "existing transcript"
+}

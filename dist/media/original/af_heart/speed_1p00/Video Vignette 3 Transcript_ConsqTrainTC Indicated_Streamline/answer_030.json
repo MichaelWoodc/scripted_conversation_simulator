@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 30,
+    "question": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below: (i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+    "raw_answer": "Can you repeat the question?",
+    "spoken_text": "Can you repeat the question?",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "19d32cef412f8323ef1c49cb55682cfbee4cb43119548cbae2d5fa30c47c24d0",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.05,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_030.wav",
+  "created_utc": "2026-10-30T19:29:27.960718+00:00",
+  "text_source": "existing transcript"
+}

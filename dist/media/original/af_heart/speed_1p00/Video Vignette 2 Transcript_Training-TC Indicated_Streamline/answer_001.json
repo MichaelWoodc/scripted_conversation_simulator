@@ -1,0 +1,25 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 1,
+    "question": "Has the employee received formal training on the task?",
+    "raw_answer": "(Long pause) I would say no.",
+    "spoken_text": "I would say no.",
+    "cues": [
+      "Long pause"
+    ],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "d48aa1c436e83624383115f1a4e1c2963a3ba49b6afa325856cdd33f02b391b6",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.65,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_001.wav",
+  "created_utc": "2026-10-30T19:29:12.408269+00:00",
+  "text_source": "existing transcript"
+}

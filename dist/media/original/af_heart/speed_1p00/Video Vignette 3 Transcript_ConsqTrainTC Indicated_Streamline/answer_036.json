@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 36,
+    "question": "Got it. So if they do receive feedback, who gives them this feedback?",
+    "raw_answer": "The BCBA is usually on the floor and provides that.",
+    "spoken_text": "The BCBA is usually on the floor and provides that.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "6a18f267ff8e38e225cc5d9d953c23eb85385f5f2b02c387f3e55cde2698ec7b",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.95,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_036.wav",
+  "created_utc": "2026-10-30T19:29:29.709840+00:00",
+  "text_source": "existing transcript"
+}

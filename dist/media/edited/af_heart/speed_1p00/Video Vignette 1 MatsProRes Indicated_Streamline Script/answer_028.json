@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 28,
+    "question": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:\n(i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+    "raw_answer": "Other tasks like problem behavior management would probably be the main like the top priority.",
+    "spoken_text": "\nOther tasks, like problem behavior management, would probably be the main... like, the top priority.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "95ca2fe5348132bdc39a922e804a3061b18bc7808fb252187c33500eb8f59e33",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 6.6,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_028.wav",
+  "created_utc": "2026-10-30T19:28:38.531817+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

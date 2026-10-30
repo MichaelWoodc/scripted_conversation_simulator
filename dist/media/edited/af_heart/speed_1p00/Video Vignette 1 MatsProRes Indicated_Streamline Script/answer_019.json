@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 19,
+    "question": "How frequently is the employee reminded to complete the task? (Hourly, daily, weekly, monthly, or other).",
+    "raw_answer": "Weekly.",
+    "spoken_text": "\nWeekly.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "e5a5fc7c8ed03ca35986da296498db89a7577fcd796dd81fe9ae430e75f3906c",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.475,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_019.wav",
+  "created_utc": "2026-10-30T19:28:35.520132+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

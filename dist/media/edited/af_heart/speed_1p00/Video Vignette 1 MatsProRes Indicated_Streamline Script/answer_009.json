@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 9,
+    "question": "Fo vocal feedback, was that feedback positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+    "raw_answer": "Um I would say both.",
+    "spoken_text": "\nUh... i would sayy, both.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "2e9697d17f036a29573e5954a48eb7ceadf716b1e89982e7ee2e0149cc03d28b",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.125,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_009.wav",
+  "created_utc": "2026-10-30T19:28:32.966383+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

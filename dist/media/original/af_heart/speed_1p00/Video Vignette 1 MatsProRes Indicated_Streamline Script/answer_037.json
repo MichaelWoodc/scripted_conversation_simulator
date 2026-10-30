@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 37,
+    "question": "Is the task simple or does it involve relatively low response effort?",
+    "raw_answer": "Simple, yes.",
+    "spoken_text": "Simple, yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "90367d917c9f50a236837aab41f0fb24552098277a83a65e2b0c0a982fa3884b",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.65,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_037.wav",
+  "created_utc": "2026-10-30T19:29:11.343826+00:00",
+  "text_source": "existing transcript"
+}

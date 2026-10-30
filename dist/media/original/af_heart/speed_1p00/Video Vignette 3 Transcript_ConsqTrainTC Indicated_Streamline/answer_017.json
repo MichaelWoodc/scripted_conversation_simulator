@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 17,
+    "question": "Can the employee state the purpose of the task?",
+    "raw_answer": "To complete teaching trials with the client? Maybe…?",
+    "spoken_text": "To complete teaching trials with the client? Maybe...?",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "397269d2d861638bce727034575c1a877c9c1e19c00520db7e657d1b455a6bae",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.575,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_017.wav",
+  "created_utc": "2026-10-30T19:29:24.034479+00:00",
+  "text_source": "existing transcript"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 18,
+    "question": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+    "raw_answer": "Yeah, everything is available on a set schedule and always in the same place…the office.",
+    "spoken_text": "Yeah, everything is available on a set schedule and always in the same place... the office.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "81167099f76de7ac9e19cd9d2ad150245c0274326c26cc0447539635e86635f2",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.85,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_018.wav",
+  "created_utc": "2026-10-30T19:28:45.590568+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

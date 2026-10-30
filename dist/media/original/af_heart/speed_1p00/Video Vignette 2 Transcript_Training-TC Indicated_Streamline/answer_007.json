@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 7,
+    "question": "If the ask for clarification regarding quick completion, say:",
+    "raw_answer": "No, not consistently.",
+    "spoken_text": "No, not consistently.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "8cc635ea51379237bccaf121b2c9aee4a3205b34d604f911b2eb4e680a9af445",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.025,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_007.wav",
+  "created_utc": "2026-10-30T19:29:13.924304+00:00",
+  "text_source": "existing transcript"
+}

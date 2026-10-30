@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 20,
+    "question": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+    "raw_answer": "It is yeah.",
+    "spoken_text": "\nIt is, yeah.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "518a4e64814baf682eae23a474e54bd7908579592d93400ccce56380d6de1045",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.8,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_020.wav",
+  "created_utc": "2026-10-30T19:28:35.646423+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

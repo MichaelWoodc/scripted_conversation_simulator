@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 24,
+    "question": "Are the materials required for task completion available during the times of the day when they are most needed?",
+    "raw_answer": "No.",
+    "spoken_text": "No.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "07570395a87ad7bd76bfc02f51214bb36634948aed28a7f8aaa996b73797da33",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.3,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_024.wav",
+  "created_utc": "2026-10-30T19:28:55.132266+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 22,
+    "question": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+    "raw_answer": "Yes.",
+    "spoken_text": "Yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "4572783ba7fdb9afe9f037b0943c03bcfdd72323aedd6ee8c905e5aae822e9ac",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_022.wav",
+  "created_utc": "2026-10-30T19:29:25.067094+00:00",
+  "text_source": "existing transcript"
+}

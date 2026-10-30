@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 12,
+    "question": "Can the employee accurately describe the target task and when it should be performed?",
+    "raw_answer": "Yes. And they know it’s supposed to be during session.",
+    "spoken_text": "Yes. And they know it's supposed to be during session.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "565b0f6d4c1bf9c773f6d45a7b795ba6ef832897498f0151d5642f63efb9a2ee",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.225,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_012.wav",
+  "created_utc": "2026-10-30T19:29:22.942123+00:00",
+  "text_source": "existing transcript"
+}

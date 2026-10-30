@@ -1,0 +1,24 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "source_answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 1,
+    "question": "All right. So we're going to talk about the performance problem with discrete trials, so just answer the questions that I give you and you can reply yes or no and elaborate where you feel it's necessary.",
+    "raw_answer": "Ok.",
+    "spoken_text": "Ok.",
+    "cues": [],
+    "notes": []
+  },
+  "text": "Okay...",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "audio_processing": "none",
+  "preview_version": 2,
+  "rendered_text": "Okay...",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.475,
+  "settings_fingerprint": "fe8fd01bf0c1a3d8e2035ea535fb8b18d4d9c26b04e619e4f4d3148d3477c271",
+  "audio_sha256": "fbe7f934b73849720bb5fbf16d0b3665cb57596baadcce2f09ba3c86b98b5747",
+  "saved_utc": "2026-10-30T18:23:56.969077+00:00"
+}

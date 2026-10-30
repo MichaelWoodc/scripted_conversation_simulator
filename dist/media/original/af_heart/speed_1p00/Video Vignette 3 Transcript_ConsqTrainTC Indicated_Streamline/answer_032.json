@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 32,
+    "question": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+    "raw_answer": "When they're actually running trials? No.",
+    "spoken_text": "When they're actually running trials? No.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "48b40afc78707f14ae9233dbea88ed9be36568935f4fc7b043c9bdbbcbda296f",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.85,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_032.wav",
+  "created_utc": "2026-10-30T19:29:28.543527+00:00",
+  "text_source": "existing transcript"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 31,
+    "question": "Does the employee ever receive feedback about their performance?",
+    "raw_answer": "The case manager meets with them and gives group feedback.",
+    "spoken_text": "The case manager meets with them and gives group feedback.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "9ef2c4eaa5be8bad589d5bf1ab32cf2248d03e4736636a683bd62993151538c2",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.75,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_031.wav",
+  "created_utc": "2026-10-30T19:29:10.198620+00:00",
+  "text_source": "existing transcript"
+}

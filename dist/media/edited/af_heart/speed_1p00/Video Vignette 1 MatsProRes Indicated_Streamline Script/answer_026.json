@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 26,
+    "question": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+    "raw_answer": "Sometimes…uh, when, materials aren’t missing.",
+    "spoken_text": "\nSometimes... uh... when materials aren't missing.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "a75a190247369959bc9f1e6793c077f0331b5020e16508f55ba0f59c32af2f44",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.375,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_026.wav",
+  "created_utc": "2026-10-30T19:28:38.094889+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

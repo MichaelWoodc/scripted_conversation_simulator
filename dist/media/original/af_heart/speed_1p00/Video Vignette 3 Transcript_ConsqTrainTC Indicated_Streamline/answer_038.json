@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 38,
+    "question": "How long after the task?",
+    "raw_answer": "Yeah, I mean if they don’t spot it in session, it’s like a three, four day delay.",
+    "spoken_text": "Yeah, I mean if they don't spot it in session, it's like a three, four day delay.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "bf6966ad8cb59542b63dbe762d19611070feaa56595f18b33604630f0967d9cf",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 4.875,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_038.wav",
+  "created_utc": "2026-10-30T19:29:30.742827+00:00",
+  "text_source": "existing transcript"
+}

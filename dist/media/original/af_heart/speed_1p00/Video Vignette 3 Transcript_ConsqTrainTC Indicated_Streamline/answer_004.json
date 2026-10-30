@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 4,
+    "question": "Were the instructions (The employee received step-by-step instructions on how to perform the task.) provided as vocal, written instructions, or both?",
+    "raw_answer": "Both",
+    "spoken_text": "Both",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "c83e75c34c2d2e5f3ca14adf42b78da7e2700cde7923a6b4f00f443a04432fc1",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.2,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_004.wav",
+  "created_utc": "2026-10-30T19:29:21.429531+00:00",
+  "text_source": "existing transcript"
+}

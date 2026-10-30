@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 27,
+    "question": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+    "raw_answer": "Sometimes items are missing and hard to find.",
+    "spoken_text": "Sometimes items are missing and hard to find.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "c97fd151d7a7133a9bd7096af5127f3b0c2eb00450a620c96bfe0f374b9f387d",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.15,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_027.wav",
+  "created_utc": "2026-10-30T19:29:27.156329+00:00",
+  "text_source": "existing transcript"
+}

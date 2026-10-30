@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 21,
+    "question": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+    "raw_answer": "There should be… but no.",
+    "spoken_text": "\nThere should be... but, no.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "6df72d4831a687766a3b0cf415736a4c71b3c29b1671b1d6654d55bd3c37deee",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.2,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_021.wav",
+  "created_utc": "2026-10-30T19:28:35.775157+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

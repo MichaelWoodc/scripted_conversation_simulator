@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 13,
+    "question": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+    "raw_answer": "No.",
+    "spoken_text": "No.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "803ca3c3478e12360b433e484cc1fe640684f999eff906f22990a4f210fd3e08",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.3,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_013.wav",
+  "created_utc": "2026-10-30T19:29:15.657736+00:00",
+  "text_source": "existing transcript"
+}

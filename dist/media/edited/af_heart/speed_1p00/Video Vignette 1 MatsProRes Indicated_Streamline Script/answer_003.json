@@ -1,0 +1,24 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "source_answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 3,
+    "question": "When did the employee receive the training?",
+    "raw_answer": "Uh they receive the training I would say quarterly so every 3 months we retrain um… go through behavior plans, retrain.",
+    "spoken_text": "Uh they receive the training I would say quarterly so every 3 months we retrain um... go through behavior plans, retrain.",
+    "cues": [],
+    "notes": []
+  },
+  "text": "Um. \nthey receive the training, I would sayy, quarterly. \nso every 3 months we retrain, \ngo through behavior plans, and retrain.",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "audio_processing": "none",
+  "preview_version": 2,
+  "rendered_text": "Um. \nthey receive the training, I would sayy, quarterly. \nso every 3 months we retrain, \ngo through behavior plans, and retrain.",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 9.975,
+  "settings_fingerprint": "85af4d90358be68f51f34047b420124d11d51e79774b2959dfc43b570411bd20",
+  "audio_sha256": "aa96333f1c3a9134ed1715d3aa84b7503ee5c33682a0b9b0bff9291e32f920b6",
+  "saved_utc": "2026-10-30T18:25:20.294734+00:00"
+}

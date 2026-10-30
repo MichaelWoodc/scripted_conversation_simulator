@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 15,
+    "question": "Has the employee been informed that they are expected to perform the task?",
+    "raw_answer": "Yes.",
+    "spoken_text": "\nYes..\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "1e6c390db55caa5f97a8288e3c9ded12d6a083c04a5045941cd8dc22f33d39a1",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.375,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_015.wav",
+  "created_utc": "2026-10-30T19:28:34.270730+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

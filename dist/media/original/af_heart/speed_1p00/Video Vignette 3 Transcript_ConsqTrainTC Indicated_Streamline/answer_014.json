@@ -1,0 +1,25 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 14,
+    "question": "If they press on the previous answer:",
+    "raw_answer": "Maybe?",
+    "spoken_text": "Maybe?",
+    "cues": [
+      "annoyed"
+    ],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "911ed813c162f01e210bcde9a9c8ad5c74f20120297450905cc54a85ef62ad5f",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.35,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_014.wav",
+  "created_utc": "2026-10-30T19:29:23.356318+00:00",
+  "text_source": "existing transcript"
+}

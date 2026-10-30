@@ -1,0 +1,25 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 27,
+    "question": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? (i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?)\n\nIf NO, indicate these competing tasks.",
+    "raw_answer": "(long pause) No. Umm I think I’m understanding correctly like problem behavior would take precedence over DTT",
+    "spoken_text": "No. Umm I think I'm understanding correctly like problem behavior would take precedence over DTT",
+    "cues": [
+      "long pause"
+    ],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "de1c0ffd4b9036576ed9ea1fa03b7792ae4f447af0bc26141f3bc56fdfb719a0",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 6.8,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_027.wav",
+  "created_utc": "2026-10-30T19:28:48.829582+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

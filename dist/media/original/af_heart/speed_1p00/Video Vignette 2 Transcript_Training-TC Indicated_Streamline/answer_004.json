@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 4,
+    "question": "Can the employee accurately describe the target task and when it should be performed?",
+    "raw_answer": "No.",
+    "spoken_text": "No.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "46e4b65a184ec077bef2739004b92d12b371440c74809d360930245375d0dc18",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.3,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_004.wav",
+  "created_utc": "2026-10-30T19:29:12.774125+00:00",
+  "text_source": "existing transcript"
+}

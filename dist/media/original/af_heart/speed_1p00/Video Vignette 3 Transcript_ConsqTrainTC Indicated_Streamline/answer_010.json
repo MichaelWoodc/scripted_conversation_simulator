@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 10,
+    "question": "Ok and was the focus positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+    "raw_answer": "It was a combination of both.",
+    "spoken_text": "It was a combination of both.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "3f2eab3c83c936679c178a80e12038a9450933be0f15e3c60a80d738f54d7a99",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.225,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_010.wav",
+  "created_utc": "2026-10-30T19:29:22.545218+00:00",
+  "text_source": "existing transcript"
+}

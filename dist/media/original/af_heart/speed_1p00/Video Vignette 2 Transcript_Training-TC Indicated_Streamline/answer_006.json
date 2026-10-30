@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 6,
+    "question": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed? (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)",
+    "raw_answer": "I would say not always. From what I've heard some people take a lot longer than others to get setup which makes it take a lot longer to complete.",
+    "spoken_text": "I would say not always. From what I've heard some people take a lot longer than others to get setup which makes it take a lot longer to complete.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "7c83b0cf5927503d328915d4b7b0943c24b958ae58cbfbf6cf2548e034284055",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 8.525,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_006.wav",
+  "created_utc": "2026-10-30T19:29:13.745270+00:00",
+  "text_source": "existing transcript"
+}

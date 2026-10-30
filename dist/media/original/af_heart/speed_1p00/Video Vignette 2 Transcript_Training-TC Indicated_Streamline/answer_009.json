@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 9,
+    "question": "Can the employee state the purpose of the task?",
+    "raw_answer": "They’re not really doing it correctly, so I guess not.",
+    "spoken_text": "They're not really doing it correctly, so I guess not.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "b99a4871cca02efea73e2d45e41328caca07ca7da12697cf5d9b15824db7b172",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.4,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_009.wav",
+  "created_utc": "2026-10-30T19:29:14.486560+00:00",
+  "text_source": "existing transcript"
+}

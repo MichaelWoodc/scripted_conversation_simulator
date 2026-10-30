@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 9,
+    "question": "And the feedback: was that provided vocally or written?",
+    "raw_answer": "That was provided vocally.",
+    "spoken_text": "That was provided vocally.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "9aab84b876cc2a847fe33b736746b20e346374085b548a352ba5b1bc61136c88",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.15,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_009.wav",
+  "created_utc": "2026-10-30T19:29:22.297008+00:00",
+  "text_source": "existing transcript"
+}

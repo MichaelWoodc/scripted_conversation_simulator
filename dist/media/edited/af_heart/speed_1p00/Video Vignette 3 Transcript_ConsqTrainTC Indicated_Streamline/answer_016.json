@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 16,
+    "question": "Has the employee been informed that they are expected to perform the task?",
+    "raw_answer": "Not formally… there used to be training before a lot of them were here",
+    "spoken_text": "Not formally... there used to be training before a lot of them were here",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "6a6cb4439c4978041933aef93c9796b67291753faf761143bfcc81a7a5880b4e",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 4.325,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_016.wav",
+  "created_utc": "2026-10-30T19:28:52.648719+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

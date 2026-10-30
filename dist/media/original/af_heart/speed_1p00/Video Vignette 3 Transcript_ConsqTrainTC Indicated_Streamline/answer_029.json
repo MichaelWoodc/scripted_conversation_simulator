@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 29,
+    "question": "If NO, indicate below the tasks that must be completed first:",
+    "raw_answer": "The updating of materials and printing for client programs - before they can start their session.",
+    "spoken_text": "The updating of materials and printing for client programs - before they can start their session.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "a0f758b2d316e51aacbd009077742939887f53600c7f73722499b32e5e2feede",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.875,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_029.wav",
+  "created_utc": "2026-10-30T19:29:27.731745+00:00",
+  "text_source": "existing transcript"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 15,
+    "question": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed? (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)",
+    "raw_answer": "Usually when prompted, yes.",
+    "spoken_text": "Usually when prompted, yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "ad94db4901fd951f4e06f7c223ce7b51ffe0af69889c3f467d45ee6a64f4e7d9",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.25,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_015.wav",
+  "created_utc": "2026-10-30T19:28:52.431297+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

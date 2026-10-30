@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 34,
+    "question": "Feedback focus: is the feedback positive or corrective?",
+    "raw_answer": "Both.",
+    "spoken_text": "\nBoth.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "baeb58097892bb182927cf6b3baa5c9a7ea6ecce5c493f04139348bdc0bd35e3",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.275,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_034.wav",
+  "created_utc": "2026-10-30T19:28:39.605154+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

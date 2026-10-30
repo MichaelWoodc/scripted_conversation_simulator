@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 19,
+    "question": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+    "raw_answer": "Um...no.",
+    "spoken_text": "Um... no.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "5eab9b220d60c5d3a4deaf7c6f354d4918097c98d469e77ef6fc192c65d9e9c8",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.825,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_019.wav",
+  "created_utc": "2026-10-30T19:29:24.381605+00:00",
+  "text_source": "existing transcript"
+}

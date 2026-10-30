@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 13,
+    "question": "Is there evidence that the employee accurately completed the task in the past?",
+    "raw_answer": "Well, they keep track of the data on that.",
+    "spoken_text": "Well, they keep track of the data on that.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "5965922f5efa39495d7a2f9522565f25086d9599f1176134ac62159bc1cf4cb9",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.7,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_013.wav",
+  "created_utc": "2026-10-30T19:28:52.100911+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

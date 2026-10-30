@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 35,
+    "question": "And how is that feedback delivered? Is it written, verbal, graphed?",
+    "raw_answer": "Well if you didn't do it right, then you might receive verbal feedback that you didn’t complete it accurately.",
+    "spoken_text": "Well if you didn't do it right, then you might receive verbal feedback that you didn't complete it accurately.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "53a0c708d2c014d32d9adda30a9383760dec66dc5ca540260c24728c723bfcc7",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 6.125,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_035.wav",
+  "created_utc": "2026-10-30T19:28:58.347301+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

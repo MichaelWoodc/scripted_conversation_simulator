@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 3,
+    "question": "Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+    "raw_answer": "Um, No.",
+    "spoken_text": "Um, No.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "d45973de632d85abb8c0d38ec509687bd0110c878ef0635526d4240c9168f6ca",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.575,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_003.wav",
+  "created_utc": "2026-10-30T19:29:12.646300+00:00",
+  "text_source": "existing transcript"
+}

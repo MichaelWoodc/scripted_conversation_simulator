@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 11,
+    "question": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+    "raw_answer": "We sometimes used to get prompted to do it, but not in the past few months.",
+    "spoken_text": "We sometimes used to get prompted to do it, but not in the past few months.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "5294b0b411400cb06dc4646465881ee0bbb8cd61416c6a433fc0255edfb82f73",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 4.625,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_011.wav",
+  "created_utc": "2026-10-30T19:29:15.047335+00:00",
+  "text_source": "existing transcript"
+}

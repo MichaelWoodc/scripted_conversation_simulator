@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 15,
+    "question": "What materials are needed for the task and what is their availability?",
+    "raw_answer": "Session sheets, stimuli...and pens.",
+    "spoken_text": "Session sheets, stimuli... and pens.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "f7cf0f828a05aee85c9ba4f712dd1d6e1752c730405fd3bc66155ea9bfd95148",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 2.975,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_015.wav",
+  "created_utc": "2026-10-30T19:28:44.760935+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

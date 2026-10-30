@@ -1,0 +1,24 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "source_answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 2,
+    "question": "Has the employee received formal training on this task?",
+    "raw_answer": "Yes.",
+    "spoken_text": "Yes.",
+    "cues": [],
+    "notes": []
+  },
+  "text": "Yes...",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "audio_processing": "none",
+  "preview_version": 2,
+  "rendered_text": "Yes...",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.4,
+  "settings_fingerprint": "811d2177f11ac09255fcd92d71da40943ca257a8659236fee09d73ea40cbece7",
+  "audio_sha256": "c9c4f25532b4506a198ff9d040b01310a53397b3905a5df080f22d69999da00c",
+  "saved_utc": "2026-10-30T18:12:17.153041+00:00"
+}

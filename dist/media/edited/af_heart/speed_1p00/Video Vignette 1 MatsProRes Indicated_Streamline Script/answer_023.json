@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 23,
+    "question": "List the materials and indicate their availability.",
+    "raw_answer": "Yeah umm definitely like if we have any kind of cards like if we’re doing DTT matching umm or receptive identification, tacting cards, tablet as well umm sometimes its not charged or needs to be charged so.. that’s an issue",
+    "spoken_text": "\nYeah, umm... definitely, like, if we have any kind of cards. Like, if we're doing DTT matching, umm... or receptive identification, tacting cards. Tablet, as well. Umm... sometimes its not charged, or needs to be charged. So... that's an issue.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "1c20be7ab42f42e634dbc0f77d5d351059759e9d8df4df18e32fc2825f8f28c4",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 16.15,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_023.wav",
+  "created_utc": "2026-10-30T19:28:36.843542+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

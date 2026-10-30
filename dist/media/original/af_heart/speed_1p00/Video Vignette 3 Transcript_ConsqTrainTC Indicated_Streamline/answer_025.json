@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 25,
+    "question": "When are materials unavailable?",
+    "raw_answer": "They are missing randomly because they are disorganized.",
+    "spoken_text": "They are missing randomly because they are disorganized.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "8f08a7bd84d1532eed71b8ff050095454bfc879a6bf1811701592230b6c8f16a",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.625,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_025.wav",
+  "created_utc": "2026-10-30T19:29:26.572623+00:00",
+  "text_source": "existing transcript"
+}

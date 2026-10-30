@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 6,
+    "question": "Demonstration/modeling (the employee was shown how to perform the task). Do they receive video modeling, live modeling, or both live and video modeling?",
+    "raw_answer": "Live modeling",
+    "spoken_text": "\nLive modeling.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "4327b30b1b9746dd76a9e5f74f10f23269b91770fb1cd313252620206a5fd419",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 1.75,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_006.wav",
+  "created_utc": "2026-10-30T19:28:32.570753+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}

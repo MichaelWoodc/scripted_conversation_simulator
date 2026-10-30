@@ -1,0 +1,14 @@
+.conda-tts/
+.cache/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+backups/answer_notebooks_portable.zip
+bin/test-results/
+bin/.server*.log
+bin/.server.pid
+dist/media/**/generation*.log
+dist/media/**/generation.pid
+dist/media/**/generation_status.json
+dist/media/**/playback.json
+dist/media/**/drafts.json*

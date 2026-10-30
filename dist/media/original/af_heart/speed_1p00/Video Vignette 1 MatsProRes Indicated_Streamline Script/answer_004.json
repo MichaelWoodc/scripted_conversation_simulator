@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 4,
+    "question": "Which training methods did they receive?",
+    "raw_answer": "Uhm yeah we do instructions umm demonstrations and yeah rehearsal, feedback, all of the above.",
+    "spoken_text": "Uhm yeah we do instructions umm demonstrations and yeah rehearsal, feedback, all of the above.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "d6ef660b6374c484f513e8f7adc579ce7c49aa4399e41ece63b9b357aafdde1d",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 6.525,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_004.wav",
+  "created_utc": "2026-10-30T19:29:02.936300+00:00",
+  "text_source": "existing transcript"
+}

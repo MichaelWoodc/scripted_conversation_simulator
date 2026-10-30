@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 20,
+    "question": "Is the employee ever directly monitored by a supervisor when the target task is to be performed?",
+    "raw_answer": "Yes. If she is working with the client, yes.",
+    "spoken_text": "Yes. If she is working with the client, yes.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "4b2c1f3ae6bf6b3e5b21dd8dd78bd5e5467cf557c547bd86ecd7868aed8e2533",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.025,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_020.wav",
+  "created_utc": "2026-10-30T19:29:17.377537+00:00",
+  "text_source": "existing transcript"
+}

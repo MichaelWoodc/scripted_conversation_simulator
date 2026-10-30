@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+    "index": 17,
+    "question": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+    "raw_answer": "The data sheets are pretty clear and easy to read.",
+    "spoken_text": "The data sheets are pretty clear and easy to read.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "3a67e6f408cc6763db155d75054a5da4f247e7d056d8eb2189b2b98e1b6a906c",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.375,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline\\answer_017.wav",
+  "created_utc": "2026-10-30T19:28:45.150323+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 2 Transcript_Training-TC Indicated_Streamline.ipynb"
+}

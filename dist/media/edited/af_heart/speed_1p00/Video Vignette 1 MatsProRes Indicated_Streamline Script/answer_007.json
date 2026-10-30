@@ -1,0 +1,24 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "source_answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 7,
+    "question": "Rehearsal/practice (the employee had opportunities to practice the task correctly during training). Have they practiced with a trainer, practiced alone, or practiced with coworkers?",
+    "raw_answer": "Uhm they practice with me and with coworkers.",
+    "spoken_text": "Uhm they practice with me and with coworkers.",
+    "cues": [],
+    "notes": []
+  },
+  "text": "\nUm... \nthey practice with mee, annd with coworkers.\n",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "audio_processing": "none",
+  "preview_version": 2,
+  "rendered_text": "\nUm... \nthey practice with mee, annd with coworkers.\n",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 4.325,
+  "settings_fingerprint": "84f2d5002f3decf04356177a241f57073afec70b542f45b915ae4d697085c1f2",
+  "audio_sha256": "7029bcd40ef1787f04e01a87ecd37563c7b802b2d7f4c4ce53b67248f99ad90f",
+  "saved_utc": "2026-10-30T18:39:52.649221+00:00"
+}

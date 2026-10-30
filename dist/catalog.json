@@ -1,0 +1,4243 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-10-30T21:36:15.812731+00:00",
+  "sets": [
+    {
+      "id": "edited-af-heart-speed-1p00-vignette-1",
+      "edition": "edited",
+      "editionLabel": "Edited recordings",
+      "vignette": 1,
+      "title": "Materials & resources",
+      "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+      "voice": "af_heart",
+      "speed": "speed_1p00",
+      "page": "sets/edited-af-heart-speed-1p00-vignette-1.html",
+      "version": "4daf4f1547ac",
+      "steps": [
+        {
+          "id": "q-001",
+          "questionId": 0,
+          "prompt": "All right. So we're going to talk about the performance problem with discrete trials, so just answer the questions that I give you and you can reply yes or no and elaborate where you feel it's necessary.",
+          "sourceQuestion": "All right. So we're going to talk about the performance problem with discrete trials, so just answer the questions that I give you and you can reply yes or no and elaborate where you feel it's necessary.",
+          "context": [],
+          "answerIndices": [
+            1
+          ],
+          "clips": [
+            {
+              "id": "answer-001",
+              "index": 1,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_001.wav?v=1793384636963595900",
+              "duration": 1.475
+            }
+          ]
+        },
+        {
+          "id": "q-002",
+          "questionId": 1,
+          "prompt": "Has the employee received formal training on this task?",
+          "sourceQuestion": "Has the employee received formal training on this task?",
+          "context": [],
+          "answerIndices": [
+            2
+          ],
+          "clips": [
+            {
+              "id": "answer-002",
+              "index": 2,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_002.wav?v=1793388511481800000",
+              "duration": 1.4
+            }
+          ]
+        },
+        {
+          "id": "q-003",
+          "questionId": 2,
+          "prompt": "When did the employee receive the training?",
+          "sourceQuestion": "When did the employee receive the training?",
+          "context": [],
+          "answerIndices": [
+            3
+          ],
+          "clips": [
+            {
+              "id": "answer-003",
+              "index": 3,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_003.wav?v=1793384720293727300",
+              "duration": 9.975
+            }
+          ]
+        },
+        {
+          "id": "q-004",
+          "questionId": 3,
+          "prompt": "Which training methods did they receive?",
+          "sourceQuestion": "Which training methods did they receive?",
+          "context": [],
+          "answerIndices": [
+            4
+          ],
+          "clips": [
+            {
+              "id": "answer-004",
+              "index": 4,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_004.wav?v=1793388512238779300",
+              "duration": 8.625
+            }
+          ]
+        },
+        {
+          "id": "q-005",
+          "questionId": 4,
+          "prompt": "Instructions. Were they vocal instructions, written instructions, or both vocal and written instructions?",
+          "sourceQuestion": "Instructions (the employee received step-by-step instructions on how to perform the task). Were they vocal instructions, written instructions, or both vocal and written instructions?",
+          "context": [
+            "the employee received step-by-step instructions on how to perform the task"
+          ],
+          "answerIndices": [
+            5
+          ],
+          "clips": [
+            {
+              "id": "answer-005",
+              "index": 5,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_005.wav?v=1793388512413060900",
+              "duration": 1.275
+            }
+          ]
+        },
+        {
+          "id": "q-006",
+          "questionId": 5,
+          "prompt": "Demonstration/modeling. Do they receive video modeling, live modeling, or both live and video modeling?",
+          "sourceQuestion": "Demonstration/modeling (the employee was shown how to perform the task). Do they receive video modeling, live modeling, or both live and video modeling?",
+          "context": [
+            "the employee was shown how to perform the task"
+          ],
+          "answerIndices": [
+            6
+          ],
+          "clips": [
+            {
+              "id": "answer-006",
+              "index": 6,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_006.wav?v=1793388512569743800",
+              "duration": 1.75
+            }
+          ]
+        },
+        {
+          "id": "q-007",
+          "questionId": 6,
+          "prompt": "Rehearsal/practice. Have they practiced with a trainer, practiced alone, or practiced with coworkers?",
+          "sourceQuestion": "Rehearsal/practice (the employee had opportunities to practice the task correctly during training). Have they practiced with a trainer, practiced alone, or practiced with coworkers?",
+          "context": [
+            "the employee had opportunities to practice the task correctly during training"
+          ],
+          "answerIndices": [
+            7
+          ],
+          "clips": [
+            {
+              "id": "answer-007",
+              "index": 7,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_007.wav?v=1793385592648222500",
+              "duration": 4.325
+            }
+          ]
+        },
+        {
+          "id": "q-008",
+          "questionId": 7,
+          "prompt": "Feedback. Was it vocal feedback or written feedback?",
+          "sourceQuestion": "Feedback (the employee received feedback about performance during training). Was it vocal feedback or written feedback?",
+          "context": [
+            "the employee received feedback about performance during training"
+          ],
+          "answerIndices": [
+            8
+          ],
+          "clips": [
+            {
+              "id": "answer-008",
+              "index": 8,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_008.wav?v=1793388512783854100",
+              "duration": 2.775
+            }
+          ]
+        },
+        {
+          "id": "q-009",
+          "questionId": 8,
+          "prompt": "For vocal feedback, was that feedback positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "sourceQuestion": "Fo vocal feedback, was that feedback positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "context": [],
+          "answerIndices": [
+            9
+          ],
+          "clips": [
+            {
+              "id": "answer-009",
+              "index": 9,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_009.wav?v=1793388512966383200",
+              "duration": 2.125
+            }
+          ]
+        },
+        {
+          "id": "q-010",
+          "questionId": 9,
+          "prompt": "Ok. Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "sourceQuestion": "Ok. Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "context": [],
+          "answerIndices": [
+            10
+          ],
+          "clips": [
+            {
+              "id": "answer-010",
+              "index": 10,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_010.wav?v=1793388513172524300",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-011",
+          "questionId": 10,
+          "prompt": "Can the employee accurately describe the target task and when it should be performed?",
+          "sourceQuestion": "Can the employee accurately describe the target task and when it should be performed?",
+          "context": [],
+          "answerIndices": [
+            11,
+            12
+          ],
+          "clips": [
+            {
+              "id": "answer-011",
+              "index": 11,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_011.wav?v=1793388513599578600",
+              "duration": 5.7
+            },
+            {
+              "id": "answer-012",
+              "index": 12,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_012.wav?v=1793388513738882400",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-012",
+          "questionId": 11,
+          "prompt": "Is there evidence that the employee has accurately completed the task in the past?",
+          "sourceQuestion": "Is there evidence that the employee has accurately completed the task in the past?",
+          "context": [],
+          "answerIndices": [
+            13
+          ],
+          "clips": [
+            {
+              "id": "answer-013",
+              "index": 13,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_013.wav?v=1793388514025068700",
+              "duration": 2.7
+            }
+          ]
+        },
+        {
+          "id": "q-013",
+          "questionId": 12,
+          "prompt": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed?",
+          "sourceQuestion": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)?",
+          "context": [
+            "i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?"
+          ],
+          "answerIndices": [
+            14
+          ],
+          "clips": [
+            {
+              "id": "answer-014",
+              "index": 14,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_014.wav?v=1793388514161862800",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-014",
+          "questionId": 13,
+          "prompt": "Has the employee been informed that they are expected to perform the task?",
+          "sourceQuestion": "Has the employee been informed that they are expected to perform the task?",
+          "context": [],
+          "answerIndices": [
+            15
+          ],
+          "clips": [
+            {
+              "id": "answer-015",
+              "index": 15,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_015.wav?v=1793388514270730400",
+              "duration": 1.375
+            }
+          ]
+        },
+        {
+          "id": "q-015",
+          "questionId": 14,
+          "prompt": "Can the employee state the purpose of the task?",
+          "sourceQuestion": "Can the employee state the purpose of the task?",
+          "context": [],
+          "answerIndices": [
+            16
+          ],
+          "clips": [
+            {
+              "id": "answer-016",
+              "index": 16,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_016.wav?v=1793388514912072100",
+              "duration": 14.575
+            }
+          ]
+        },
+        {
+          "id": "q-016",
+          "questionId": 15,
+          "prompt": "Is a job aid for completing the task visibly located or easily accessible in the task area?.",
+          "sourceQuestion": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+          "context": [
+            "e.g., checklist, data sheet, step-by-step instructions, pictures, prompts",
+            "if appropriate",
+            "e.g., visibly posted, located with the instructional or data collection materials"
+          ],
+          "answerIndices": [
+            17
+          ],
+          "clips": [
+            {
+              "id": "answer-017",
+              "index": 17,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_017.wav?v=1793388515037541700",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-017",
+          "questionId": 16,
+          "prompt": "Is the employee ever verbally, textually, or electronically reminded to complete the task?",
+          "sourceQuestion": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+          "context": [
+            "e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts"
+          ],
+          "answerIndices": [
+            18
+          ],
+          "clips": [
+            {
+              "id": "answer-018",
+              "index": 18,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_018.wav?v=1793388515364995700",
+              "duration": 3.1
+            }
+          ]
+        },
+        {
+          "id": "q-018",
+          "questionId": 17,
+          "prompt": "How frequently is the employee reminded to complete the task?.",
+          "sourceQuestion": "How frequently is the employee reminded to complete the task? (Hourly, daily, weekly, monthly, or other).",
+          "context": [
+            "Hourly, daily, weekly, monthly, or other"
+          ],
+          "answerIndices": [
+            19
+          ],
+          "clips": [
+            {
+              "id": "answer-019",
+              "index": 19,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_019.wav?v=1793388515519115200",
+              "duration": 1.475
+            }
+          ]
+        },
+        {
+          "id": "q-019",
+          "questionId": 18,
+          "prompt": "Is the task being performed in an environment well-suited for task completion?",
+          "sourceQuestion": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+          "context": [
+            "i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?"
+          ],
+          "answerIndices": [
+            20
+          ],
+          "clips": [
+            {
+              "id": "answer-020",
+              "index": 20,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_020.wav?v=1793388515646423500",
+              "duration": 1.8
+            }
+          ]
+        },
+        {
+          "id": "q-020",
+          "questionId": 19,
+          "prompt": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "sourceQuestion": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "context": [],
+          "answerIndices": [
+            21
+          ],
+          "clips": [
+            {
+              "id": "answer-021",
+              "index": 21,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_021.wav?v=1793388515773652900",
+              "duration": 2.2
+            }
+          ]
+        },
+        {
+          "id": "q-021",
+          "questionId": 20,
+          "prompt": "If materials are required for task completion, are they readily available?",
+          "sourceQuestion": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+          "context": [
+            "e.g., teaching stimuli, preferred items",
+            "e.g., easy to find, nearby"
+          ],
+          "answerIndices": [
+            22
+          ],
+          "clips": [
+            {
+              "id": "answer-022",
+              "index": 22,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_022.wav?v=1793388515888144700",
+              "duration": 1.6
+            }
+          ]
+        },
+        {
+          "id": "q-022",
+          "questionId": 21,
+          "prompt": "List the materials and indicate their availability.",
+          "sourceQuestion": "List the materials and indicate their availability.",
+          "context": [],
+          "answerIndices": [
+            23
+          ],
+          "clips": [
+            {
+              "id": "answer-023",
+              "index": 23,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_023.wav?v=1793388516843542600",
+              "duration": 16.15
+            }
+          ]
+        },
+        {
+          "id": "q-023",
+          "questionId": 22,
+          "prompt": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "sourceQuestion": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "context": [],
+          "answerIndices": [
+            24
+          ],
+          "clips": [
+            {
+              "id": "answer-024",
+              "index": 24,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_024.wav?v=1793388517359440500",
+              "duration": 7.725
+            }
+          ]
+        },
+        {
+          "id": "q-024",
+          "questionId": 23,
+          "prompt": "What times are those materials unavailable?",
+          "sourceQuestion": "What times are those materials unavailable?",
+          "context": [],
+          "answerIndices": [
+            25
+          ],
+          "clips": [
+            {
+              "id": "answer-025",
+              "index": 25,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_025.wav?v=1793388517903843300",
+              "duration": 5.825
+            }
+          ]
+        },
+        {
+          "id": "q-025",
+          "questionId": 24,
+          "prompt": "Are the materials necessary to complete the task well designed for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+          "context": [
+            "i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete"
+          ],
+          "answerIndices": [
+            26
+          ],
+          "clips": [
+            {
+              "id": "answer-026",
+              "index": 26,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_026.wav?v=1793388518094889800",
+              "duration": 3.375
+            }
+          ]
+        },
+        {
+          "id": "q-026",
+          "questionId": 25,
+          "prompt": "Are the materials necessary to complete the task well organized for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+          "context": [
+            "i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?"
+          ],
+          "answerIndices": [
+            27
+          ],
+          "clips": [
+            {
+              "id": "answer-027",
+              "index": 27,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_027.wav?v=1793388518221858700",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-027",
+          "questionId": 26,
+          "prompt": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:.",
+          "sourceQuestion": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:\n(i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+          "context": [
+            "i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages"
+          ],
+          "answerIndices": [
+            28
+          ],
+          "clips": [
+            {
+              "id": "answer-028",
+              "index": 28,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_028.wav?v=1793388518531817900",
+              "duration": 6.6
+            }
+          ]
+        },
+        {
+          "id": "q-028",
+          "questionId": 27,
+          "prompt": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee below:",
+          "sourceQuestion": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below:\n(i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+          "context": [
+            "s",
+            "i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing"
+          ],
+          "answerIndices": [
+            29
+          ],
+          "clips": [
+            {
+              "id": "answer-029",
+              "index": 29,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_029.wav?v=1793388518695315600",
+              "duration": 2.975
+            }
+          ]
+        },
+        {
+          "id": "q-029",
+          "questionId": 28,
+          "prompt": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+          "sourceQuestion": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring: (Hourly, daily, weekly, monthly, or other)",
+          "context": [
+            "Hourly, daily, weekly, monthly, or other"
+          ],
+          "answerIndices": [
+            30
+          ],
+          "clips": [
+            {
+              "id": "answer-030",
+              "index": 30,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_030.wav?v=1793388518866577600",
+              "duration": 1.85
+            }
+          ]
+        },
+        {
+          "id": "q-030",
+          "questionId": 29,
+          "prompt": "Does the employee ever receive feedback about their performance?",
+          "sourceQuestion": "Does the employee ever receive feedback about their performance?",
+          "context": [],
+          "answerIndices": [
+            31
+          ],
+          "clips": [
+            {
+              "id": "answer-031",
+              "index": 31,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_031.wav?v=1793388519138535900",
+              "duration": 3.75
+            }
+          ]
+        },
+        {
+          "id": "q-031",
+          "questionId": 30,
+          "prompt": "How often?",
+          "sourceQuestion": "How often?",
+          "context": [],
+          "answerIndices": [
+            32
+          ],
+          "clips": [
+            {
+              "id": "answer-032",
+              "index": 32,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_032.wav?v=1793388519268514800",
+              "duration": 1.925
+            }
+          ]
+        },
+        {
+          "id": "q-032",
+          "questionId": 31,
+          "prompt": "How long after the task?",
+          "sourceQuestion": "How long after the task?",
+          "context": [],
+          "answerIndices": [
+            33
+          ],
+          "clips": [
+            {
+              "id": "answer-033",
+              "index": 33,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_033.wav?v=1793388519444882900",
+              "duration": 1.875
+            }
+          ]
+        },
+        {
+          "id": "q-033",
+          "questionId": 32,
+          "prompt": "Feedback focus: is the feedback positive or corrective?",
+          "sourceQuestion": "Feedback focus: is the feedback positive or corrective?",
+          "context": [],
+          "answerIndices": [
+            34
+          ],
+          "clips": [
+            {
+              "id": "answer-034",
+              "index": 34,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_034.wav?v=1793388519605154700",
+              "duration": 1.275
+            }
+          ]
+        },
+        {
+          "id": "q-034",
+          "questionId": 33,
+          "prompt": "Feedback type: is it written, verbal, graphed, or other?",
+          "sourceQuestion": "Feedback type: is it written, verbal, graphed, or other?",
+          "context": [],
+          "answerIndices": [
+            35
+          ],
+          "clips": [
+            {
+              "id": "answer-035",
+              "index": 35,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_035.wav?v=1793388519702770000",
+              "duration": 1.375
+            }
+          ]
+        },
+        {
+          "id": "q-035",
+          "questionId": 34,
+          "prompt": "Does the employee ever see the effects of accurate task completion? If YES, how?",
+          "sourceQuestion": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+          "context": [
+            "i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)"
+          ],
+          "answerIndices": [
+            36
+          ],
+          "clips": [
+            {
+              "id": "answer-036",
+              "index": 36,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_036.wav?v=1793388519979047900",
+              "duration": 5.525
+            }
+          ]
+        },
+        {
+          "id": "q-036",
+          "questionId": 35,
+          "prompt": "Is the task simple or does it involve relatively low response effort?",
+          "sourceQuestion": "Is the task simple or does it involve relatively low response effort?",
+          "context": [],
+          "answerIndices": [
+            37
+          ],
+          "clips": [
+            {
+              "id": "answer-037",
+              "index": 37,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_037.wav?v=1793388520183085000",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-037",
+          "questionId": 36,
+          "prompt": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?. If NO, indicate those competing tasks.",
+          "sourceQuestion": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?\n(i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?). If NO, indicate those competing tasks.",
+          "context": [
+            "i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?"
+          ],
+          "answerIndices": [
+            38
+          ],
+          "clips": [
+            {
+              "id": "answer-038",
+              "index": 38,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_038.wav?v=1793388520904983800",
+              "duration": 16.575
+            }
+          ]
+        }
+      ],
+      "answerCount": 38,
+      "duration": 153.6
+    },
+    {
+      "id": "edited-af-heart-speed-1p00-vignette-2",
+      "edition": "edited",
+      "editionLabel": "Edited recordings",
+      "vignette": 2,
+      "title": "Training & support",
+      "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+      "voice": "af_heart",
+      "speed": "speed_1p00",
+      "page": "sets/edited-af-heart-speed-1p00-vignette-2.html",
+      "version": "2551ed307b53",
+      "steps": [
+        {
+          "id": "q-001",
+          "questionId": 0,
+          "prompt": "Has the employee received formal training on the task?",
+          "sourceQuestion": "Has the employee received formal training on the task?",
+          "context": [],
+          "answerIndices": [
+            1
+          ],
+          "clips": [
+            {
+              "id": "answer-001",
+              "index": 1,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_001.wav?v=1793388521101818500",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-002",
+          "questionId": 1,
+          "prompt": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+          "sourceQuestion": "If the person asks about Instructions, Demonstration, Modeling, Rehearsal, Practice, or Feedback during training:",
+          "context": [],
+          "answerIndices": [
+            2
+          ],
+          "clips": [
+            {
+              "id": "answer-002",
+              "index": 2,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_002.wav?v=1793388521198835400",
+              "duration": 1.6
+            }
+          ]
+        },
+        {
+          "id": "q-003",
+          "questionId": 2,
+          "prompt": "Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "sourceQuestion": "Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "context": [],
+          "answerIndices": [
+            3
+          ],
+          "clips": [
+            {
+              "id": "answer-003",
+              "index": 3,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_003.wav?v=1793388521344987000",
+              "duration": 1.575
+            }
+          ]
+        },
+        {
+          "id": "q-004",
+          "questionId": 3,
+          "prompt": "Can the employee accurately describe the target task and when it should be performed?",
+          "sourceQuestion": "Can the employee accurately describe the target task and when it should be performed?",
+          "context": [],
+          "answerIndices": [
+            4
+          ],
+          "clips": [
+            {
+              "id": "answer-004",
+              "index": 4,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_004.wav?v=1793388521528719700",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-005",
+          "questionId": 4,
+          "prompt": "Is there evidence that the employee has accurately completed the task in the past?",
+          "sourceQuestion": "Is there evidence that the employee has accurately completed the task in the past?",
+          "context": [],
+          "answerIndices": [
+            5
+          ],
+          "clips": [
+            {
+              "id": "answer-005",
+              "index": 5,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_005.wav?v=1793388521957297500",
+              "duration": 4.3
+            }
+          ]
+        },
+        {
+          "id": "q-006",
+          "questionId": 5,
+          "prompt": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed?",
+          "sourceQuestion": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed? (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)",
+          "context": [
+            "i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?"
+          ],
+          "answerIndices": [
+            6
+          ],
+          "clips": [
+            {
+              "id": "answer-006",
+              "index": 6,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_006.wav?v=1793388522506336000",
+              "duration": 8.525
+            }
+          ]
+        },
+        {
+          "id": "q-007",
+          "questionId": 6,
+          "prompt": "Can the employee complete the task quickly and consistently?",
+          "sourceQuestion": "If the ask for clarification regarding quick completion, say:",
+          "context": [],
+          "answerIndices": [
+            7
+          ],
+          "clips": [
+            {
+              "id": "answer-007",
+              "index": 7,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_007.wav?v=1793388522697580200",
+              "duration": 2.025
+            }
+          ]
+        },
+        {
+          "id": "q-008",
+          "questionId": 7,
+          "prompt": "Has the employee been informed that they are expected to perform the task?",
+          "sourceQuestion": "Has the employee been informed that they are expected to perform the task?",
+          "context": [],
+          "answerIndices": [
+            8
+          ],
+          "clips": [
+            {
+              "id": "answer-008",
+              "index": 8,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_008.wav?v=1793388523084937700",
+              "duration": 3.675
+            }
+          ]
+        },
+        {
+          "id": "q-009",
+          "questionId": 8,
+          "prompt": "Can the employee state the purpose of the task?",
+          "sourceQuestion": "Can the employee state the purpose of the task?",
+          "context": [],
+          "answerIndices": [
+            9
+          ],
+          "clips": [
+            {
+              "id": "answer-009",
+              "index": 9,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_009.wav?v=1793388523287713000",
+              "duration": 3.4
+            }
+          ]
+        },
+        {
+          "id": "q-010",
+          "questionId": 9,
+          "prompt": "Is a job aid for completing the task visibly located or easily accessible in the task area?.",
+          "sourceQuestion": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+          "context": [
+            "e.g., checklist, data sheet, step-by-step instructions, pictures, prompts",
+            "if appropriate",
+            "e.g., visibly posted, located with the instructional or data collection materials"
+          ],
+          "answerIndices": [
+            10
+          ],
+          "clips": [
+            {
+              "id": "answer-010",
+              "index": 10,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_010.wav?v=1793388523393396500",
+              "duration": 1.55
+            }
+          ]
+        },
+        {
+          "id": "q-011",
+          "questionId": 10,
+          "prompt": "Is the employee ever verbally, textually, or electronically reminded to complete the task?",
+          "sourceQuestion": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+          "context": [
+            "e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts"
+          ],
+          "answerIndices": [
+            11
+          ],
+          "clips": [
+            {
+              "id": "answer-011",
+              "index": 11,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_011.wav?v=1793388523851074300",
+              "duration": 4.625
+            }
+          ]
+        },
+        {
+          "id": "q-012",
+          "questionId": 11,
+          "prompt": "Is the task being performed in an environment well-suited for task completion?",
+          "sourceQuestion": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+          "context": [
+            "i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?"
+          ],
+          "answerIndices": [
+            12
+          ],
+          "clips": [
+            {
+              "id": "answer-012",
+              "index": 12,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_012.wav?v=1793388524337653700",
+              "duration": 6.425
+            }
+          ]
+        },
+        {
+          "id": "q-013",
+          "questionId": 12,
+          "prompt": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "sourceQuestion": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "context": [],
+          "answerIndices": [
+            13
+          ],
+          "clips": [
+            {
+              "id": "answer-013",
+              "index": 13,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_013.wav?v=1793388524466297200",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-014",
+          "questionId": 13,
+          "prompt": "If materials are required for task completion, are they readily available?",
+          "sourceQuestion": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+          "context": [
+            "e.g., teaching stimuli, preferred items",
+            "e.g., easy to find, nearby"
+          ],
+          "answerIndices": [
+            14
+          ],
+          "clips": [
+            {
+              "id": "answer-014",
+              "index": 14,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_014.wav?v=1793388524601915800",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-015",
+          "questionId": 14,
+          "prompt": "What materials are needed for the task and what is their availability?",
+          "sourceQuestion": "What materials are needed for the task and what is their availability?",
+          "context": [],
+          "answerIndices": [
+            15
+          ],
+          "clips": [
+            {
+              "id": "answer-015",
+              "index": 15,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_015.wav?v=1793388524760935300",
+              "duration": 2.975
+            }
+          ]
+        },
+        {
+          "id": "q-016",
+          "questionId": 15,
+          "prompt": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "sourceQuestion": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "context": [],
+          "answerIndices": [
+            16
+          ],
+          "clips": [
+            {
+              "id": "answer-016",
+              "index": 16,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_016.wav?v=1793388524961697700",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-017",
+          "questionId": 16,
+          "prompt": "Are the materials necessary to complete the task well designed for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+          "context": [
+            "i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete"
+          ],
+          "answerIndices": [
+            17
+          ],
+          "clips": [
+            {
+              "id": "answer-017",
+              "index": 17,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_017.wav?v=1793388525148991000",
+              "duration": 3.375
+            }
+          ]
+        },
+        {
+          "id": "q-018",
+          "questionId": 17,
+          "prompt": "Are the materials necessary to complete the task well organized for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+          "context": [
+            "i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?"
+          ],
+          "answerIndices": [
+            18
+          ],
+          "clips": [
+            {
+              "id": "answer-018",
+              "index": 18,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_018.wav?v=1793388525590568200",
+              "duration": 5.85
+            }
+          ]
+        },
+        {
+          "id": "q-019",
+          "questionId": 18,
+          "prompt": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:.",
+          "sourceQuestion": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:\n(i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+          "context": [
+            "i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages"
+          ],
+          "answerIndices": [
+            19
+          ],
+          "clips": [
+            {
+              "id": "answer-019",
+              "index": 19,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_019.wav?v=1793388525892921800",
+              "duration": 3.625
+            }
+          ]
+        },
+        {
+          "id": "q-020",
+          "questionId": 19,
+          "prompt": "Is the employee ever directly monitored by a supervisor when the target task is to be performed?",
+          "sourceQuestion": "Is the employee ever directly monitored by a supervisor when the target task is to be performed?",
+          "context": [],
+          "answerIndices": [
+            20
+          ],
+          "clips": [
+            {
+              "id": "answer-020",
+              "index": 20,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_020.wav?v=1793388526207418500",
+              "duration": 3.025
+            }
+          ]
+        },
+        {
+          "id": "q-021",
+          "questionId": 20,
+          "prompt": "If yes, indicate the frequency of monitoring. Is this daily, weekly, monthly or other?",
+          "sourceQuestion": "If yes, indicate the frequency of monitoring. Is this daily, weekly, monthly or other?",
+          "context": [],
+          "answerIndices": [
+            21
+          ],
+          "clips": [
+            {
+              "id": "answer-021",
+              "index": 21,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_021.wav?v=1793388526889887600",
+              "duration": 10.075
+            }
+          ]
+        },
+        {
+          "id": "q-022",
+          "questionId": 21,
+          "prompt": "Ok, does the employee ever receive feedback about their performance?",
+          "sourceQuestion": "Ok, does the employee ever receive feedback about their performance?",
+          "context": [],
+          "answerIndices": [
+            22
+          ],
+          "clips": [
+            {
+              "id": "answer-022",
+              "index": 22,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_022.wav?v=1793388527090760700",
+              "duration": 2.55
+            }
+          ]
+        },
+        {
+          "id": "q-023",
+          "questionId": 22,
+          "prompt": "Feedback focus: is it positive or corrective?",
+          "sourceQuestion": "Feedback focus: is it positive or corrective?",
+          "context": [],
+          "answerIndices": [
+            23
+          ],
+          "clips": [
+            {
+              "id": "answer-023",
+              "index": 23,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_023.wav?v=1793388527660744600",
+              "duration": 12.725
+            }
+          ]
+        },
+        {
+          "id": "q-024",
+          "questionId": 23,
+          "prompt": "Feedback type: is that written, verbal, graphed, or other?",
+          "sourceQuestion": "Feedback type: is that written, verbal, graphed, or other?",
+          "context": [],
+          "answerIndices": [
+            24
+          ],
+          "clips": [
+            {
+              "id": "answer-024",
+              "index": 24,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_024.wav?v=1793388528174071300",
+              "duration": 7.5
+            }
+          ]
+        },
+        {
+          "id": "q-025",
+          "questionId": 24,
+          "prompt": "Does the employee ever see the effects of accurate task completion? If YES, how?",
+          "sourceQuestion": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+          "context": [
+            "i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)"
+          ],
+          "answerIndices": [
+            25
+          ],
+          "clips": [
+            {
+              "id": "answer-025",
+              "index": 25,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_025.wav?v=1793388528327961800",
+              "duration": 2.75
+            }
+          ]
+        },
+        {
+          "id": "q-026",
+          "questionId": 25,
+          "prompt": "Is the task simple or does it involve relatively low response effort?",
+          "sourceQuestion": "Is the task simple or does it involve relatively low response effort?",
+          "context": [],
+          "answerIndices": [
+            26
+          ],
+          "clips": [
+            {
+              "id": "answer-026",
+              "index": 26,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_026.wav?v=1793388528511696600",
+              "duration": 1.5
+            }
+          ]
+        },
+        {
+          "id": "q-027",
+          "questionId": 26,
+          "prompt": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? If NO, indicate these competing tasks.",
+          "sourceQuestion": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? (i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?)\n\nIf NO, indicate these competing tasks.",
+          "context": [
+            "i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?"
+          ],
+          "answerIndices": [
+            27
+          ],
+          "clips": [
+            {
+              "id": "answer-027",
+              "index": 27,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_027.wav?v=1793388528829582500",
+              "duration": 6.8
+            }
+          ]
+        },
+        {
+          "id": "q-028",
+          "questionId": 27,
+          "prompt": "Well that's all the questions I have.",
+          "sourceQuestion": "Well that's all the questions I have.",
+          "context": [],
+          "answerIndices": [
+            28
+          ],
+          "clips": [
+            {
+              "id": "answer-028",
+              "index": 28,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_028.wav?v=1793388528986455300",
+              "duration": 1.725
+            }
+          ]
+        }
+      ],
+      "answerCount": 28,
+      "duration": 109.4
+    },
+    {
+      "id": "edited-af-heart-speed-1p00-vignette-3",
+      "edition": "edited",
+      "editionLabel": "Edited recordings",
+      "vignette": 3,
+      "title": "Feedback & performance",
+      "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+      "voice": "af_heart",
+      "speed": "speed_1p00",
+      "page": "sets/edited-af-heart-speed-1p00-vignette-3.html",
+      "version": "bc6cba45a636",
+      "steps": [
+        {
+          "id": "q-001",
+          "questionId": 0,
+          "prompt": "Has the employee received formal training on this task?",
+          "sourceQuestion": "Has the employee received formal training on this task?",
+          "context": [],
+          "answerIndices": [
+            1
+          ],
+          "clips": [
+            {
+              "id": "answer-001",
+              "index": 1,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_001.wav?v=1793388529114846500",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-002",
+          "questionId": 1,
+          "prompt": "If yes, when did the employee receive the training?",
+          "sourceQuestion": "If yes, when did the employee receive the training?",
+          "context": [],
+          "answerIndices": [
+            2
+          ],
+          "clips": [
+            {
+              "id": "answer-002",
+              "index": 2,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_002.wav?v=1793388529698069000",
+              "duration": 6.05
+            }
+          ]
+        },
+        {
+          "id": "q-003",
+          "questionId": 2,
+          "prompt": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+          "sourceQuestion": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+          "context": [],
+          "answerIndices": [
+            3
+          ],
+          "clips": [
+            {
+              "id": "answer-003",
+              "index": 3,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_003.wav?v=1793388530179018600",
+              "duration": 10.75
+            }
+          ]
+        },
+        {
+          "id": "q-004",
+          "questionId": 3,
+          "prompt": "Were the instructions provided as vocal, written instructions, or both?",
+          "sourceQuestion": "Were the instructions (The employee received step-by-step instructions on how to perform the task.) provided as vocal, written instructions, or both?",
+          "context": [
+            "The employee received step-by-step instructions on how to perform the task."
+          ],
+          "answerIndices": [
+            4
+          ],
+          "clips": [
+            {
+              "id": "answer-004",
+              "index": 4,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_004.wav?v=1793388530268694300",
+              "duration": 1.2
+            }
+          ]
+        },
+        {
+          "id": "q-005",
+          "questionId": 4,
+          "prompt": "For demonstration/modeling was it live modeling or video modeling?",
+          "sourceQuestion": "For demonstration/modeling (The employee was shown how to perform the task) was it live modeling or video modeling?",
+          "context": [
+            "The employee was shown how to perform the task"
+          ],
+          "answerIndices": [
+            5
+          ],
+          "clips": [
+            {
+              "id": "answer-005",
+              "index": 5,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_005.wav?v=1793388530388826900",
+              "duration": 1.95
+            }
+          ]
+        },
+        {
+          "id": "q-006",
+          "questionId": 5,
+          "prompt": "And did the employee have opportunities for rehearsal/practice during training?",
+          "sourceQuestion": "And did the employee have opportunities for rehearsal/practice (The employee had opportunities to practice the task correctly during training.) during training?",
+          "context": [
+            "The employee had opportunities to practice the task correctly during training."
+          ],
+          "answerIndices": [
+            6
+          ],
+          "clips": [
+            {
+              "id": "answer-006",
+              "index": 6,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_006.wav?v=1793388530517274700",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-007",
+          "questionId": 6,
+          "prompt": "For practice, were they practicing with a trainer, alone, or with other coworkers?",
+          "sourceQuestion": "For practice, were they practicing with a trainer, alone, or with other coworkers?",
+          "context": [],
+          "answerIndices": [
+            7
+          ],
+          "clips": [
+            {
+              "id": "answer-007",
+              "index": 7,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_007.wav?v=1793388530836275500",
+              "duration": 3.875
+            }
+          ]
+        },
+        {
+          "id": "q-008",
+          "questionId": 7,
+          "prompt": "Feedback. Did they receive feedback during training?",
+          "sourceQuestion": "Feedback (The employee received feedback about performance during training.). Did they receive feedback during training?",
+          "context": [
+            "The employee received feedback about performance during training."
+          ],
+          "answerIndices": [
+            8
+          ],
+          "clips": [
+            {
+              "id": "answer-008",
+              "index": 8,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_008.wav?v=1793388530971529800",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-009",
+          "questionId": 8,
+          "prompt": "And the feedback: was that provided vocally or written?",
+          "sourceQuestion": "And the feedback: was that provided vocally or written?",
+          "context": [],
+          "answerIndices": [
+            9
+          ],
+          "clips": [
+            {
+              "id": "answer-009",
+              "index": 9,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_009.wav?v=1793388531144845200",
+              "duration": 2.15
+            }
+          ]
+        },
+        {
+          "id": "q-010",
+          "questionId": 9,
+          "prompt": "Ok and was the focus positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "sourceQuestion": "Ok and was the focus positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "context": [],
+          "answerIndices": [
+            10
+          ],
+          "clips": [
+            {
+              "id": "answer-010",
+              "index": 10,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_010.wav?v=1793388531397268100",
+              "duration": 2.225
+            }
+          ]
+        },
+        {
+          "id": "q-011",
+          "questionId": 10,
+          "prompt": "Is there evidence that the employee currently responsible for training staff can accurately perform the task being trained?",
+          "sourceQuestion": "Is there evidence that the employee currently responsible for training staff can accurately perform the task being trained?",
+          "context": [],
+          "answerIndices": [
+            11
+          ],
+          "clips": [
+            {
+              "id": "answer-011",
+              "index": 11,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_011.wav?v=1793388531548828500",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-012",
+          "questionId": 11,
+          "prompt": "Can the employee accurately describe the target task and when it should be performed?",
+          "sourceQuestion": "Can the employee accurately describe the target task and when it should be performed?",
+          "context": [],
+          "answerIndices": [
+            12
+          ],
+          "clips": [
+            {
+              "id": "answer-012",
+              "index": 12,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_012.wav?v=1793388531816810900",
+              "duration": 3.225
+            }
+          ]
+        },
+        {
+          "id": "q-013",
+          "questionId": 12,
+          "prompt": "Is there evidence that the employee accurately completed the task in the past?",
+          "sourceQuestion": "Is there evidence that the employee accurately completed the task in the past?",
+          "context": [],
+          "answerIndices": [
+            13
+          ],
+          "clips": [
+            {
+              "id": "answer-013",
+              "index": 13,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_013.wav?v=1793388532100911500",
+              "duration": 2.7
+            }
+          ]
+        },
+        {
+          "id": "q-014",
+          "questionId": 13,
+          "prompt": "Are you sure the employee has accurately completed the task in the past?",
+          "sourceQuestion": "If they press on the previous answer:",
+          "context": [],
+          "answerIndices": [
+            14
+          ],
+          "clips": [
+            {
+              "id": "answer-014",
+              "index": 14,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_014.wav?v=1793388532229401100",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-015",
+          "questionId": 14,
+          "prompt": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed?",
+          "sourceQuestion": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed? (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)",
+          "context": [
+            "i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?"
+          ],
+          "answerIndices": [
+            15
+          ],
+          "clips": [
+            {
+              "id": "answer-015",
+              "index": 15,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_015.wav?v=1793388532431297100",
+              "duration": 2.25
+            }
+          ]
+        },
+        {
+          "id": "q-016",
+          "questionId": 15,
+          "prompt": "Has the employee been informed that they are expected to perform the task?",
+          "sourceQuestion": "Has the employee been informed that they are expected to perform the task?",
+          "context": [],
+          "answerIndices": [
+            16
+          ],
+          "clips": [
+            {
+              "id": "answer-016",
+              "index": 16,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_016.wav?v=1793388532648719900",
+              "duration": 4.325
+            }
+          ]
+        },
+        {
+          "id": "q-017",
+          "questionId": 16,
+          "prompt": "Can the employee state the purpose of the task?",
+          "sourceQuestion": "Can the employee state the purpose of the task?",
+          "context": [],
+          "answerIndices": [
+            17
+          ],
+          "clips": [
+            {
+              "id": "answer-017",
+              "index": 17,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_017.wav?v=1793388532911388300",
+              "duration": 3.575
+            }
+          ]
+        },
+        {
+          "id": "q-018",
+          "questionId": 17,
+          "prompt": "Is a job aid for completing the task visibly located or easily accessible in the task area?.",
+          "sourceQuestion": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+          "context": [
+            "e.g., checklist, data sheet, step-by-step instructions, pictures, prompts",
+            "if appropriate",
+            "e.g., visibly posted, located with the instructional or data collection materials"
+          ],
+          "answerIndices": [
+            18
+          ],
+          "clips": [
+            {
+              "id": "answer-018",
+              "index": 18,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_018.wav?v=1793388533051320000",
+              "duration": 2.4
+            }
+          ]
+        },
+        {
+          "id": "q-019",
+          "questionId": 18,
+          "prompt": "Is the employee ever verbally, textually, or electronically reminded to complete the task?",
+          "sourceQuestion": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+          "context": [
+            "e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts"
+          ],
+          "answerIndices": [
+            19
+          ],
+          "clips": [
+            {
+              "id": "answer-019",
+              "index": 19,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_019.wav?v=1793388533262732400",
+              "duration": 1.825
+            }
+          ]
+        },
+        {
+          "id": "q-020",
+          "questionId": 19,
+          "prompt": "Is the task being performed in an environment well-suited for task completion?",
+          "sourceQuestion": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+          "context": [
+            "i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?"
+          ],
+          "answerIndices": [
+            20
+          ],
+          "clips": [
+            {
+              "id": "answer-020",
+              "index": 20,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_020.wav?v=1793388533549719900",
+              "duration": 5.95
+            }
+          ]
+        },
+        {
+          "id": "q-021",
+          "questionId": 20,
+          "prompt": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "sourceQuestion": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "context": [],
+          "answerIndices": [
+            21
+          ],
+          "clips": [
+            {
+              "id": "answer-021",
+              "index": 21,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_021.wav?v=1793388533803348700",
+              "duration": 5.2
+            }
+          ]
+        },
+        {
+          "id": "q-022",
+          "questionId": 21,
+          "prompt": "If materials are required for task completion, are they readily available?",
+          "sourceQuestion": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+          "context": [
+            "e.g., teaching stimuli, preferred items",
+            "e.g., easy to find, nearby"
+          ],
+          "answerIndices": [
+            22
+          ],
+          "clips": [
+            {
+              "id": "answer-022",
+              "index": 22,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_022.wav?v=1793388533930372000",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-023",
+          "questionId": 22,
+          "prompt": "List some materials that are needed and indicate their availability?",
+          "sourceQuestion": "List some materials that are needed and indicate their availability?",
+          "context": [],
+          "answerIndices": [
+            23
+          ],
+          "clips": [
+            {
+              "id": "answer-023",
+              "index": 23,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_023.wav?v=1793388535002337000",
+              "duration": 16.475
+            }
+          ]
+        },
+        {
+          "id": "q-024",
+          "questionId": 23,
+          "prompt": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "sourceQuestion": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "context": [],
+          "answerIndices": [
+            24
+          ],
+          "clips": [
+            {
+              "id": "answer-024",
+              "index": 24,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_024.wav?v=1793388535132266800",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-025",
+          "questionId": 24,
+          "prompt": "When are materials unavailable?",
+          "sourceQuestion": "When are materials unavailable?",
+          "context": [],
+          "answerIndices": [
+            25
+          ],
+          "clips": [
+            {
+              "id": "answer-025",
+              "index": 25,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_025.wav?v=1793388535426623700",
+              "duration": 3.625
+            }
+          ]
+        },
+        {
+          "id": "q-026",
+          "questionId": 25,
+          "prompt": "Are the materials necessary to complete the task well designed for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+          "context": [
+            "i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete"
+          ],
+          "answerIndices": [
+            26
+          ],
+          "clips": [
+            {
+              "id": "answer-026",
+              "index": 26,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_026.wav?v=1793388535835164700",
+              "duration": 8.1
+            }
+          ]
+        },
+        {
+          "id": "q-027",
+          "questionId": 26,
+          "prompt": "Are the materials necessary to complete the task well organized for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+          "context": [
+            "i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?"
+          ],
+          "answerIndices": [
+            27
+          ],
+          "clips": [
+            {
+              "id": "answer-027",
+              "index": 27,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_027.wav?v=1793388536005394200",
+              "duration": 3.15
+            }
+          ]
+        },
+        {
+          "id": "q-028",
+          "questionId": 27,
+          "prompt": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:.",
+          "sourceQuestion": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first: (i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+          "context": [
+            "i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages"
+          ],
+          "answerIndices": [
+            28
+          ],
+          "clips": [
+            {
+              "id": "answer-028",
+              "index": 28,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_028.wav?v=1793388536134743600",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-029",
+          "questionId": 28,
+          "prompt": "If NO, indicate below the tasks that must be completed first:",
+          "sourceQuestion": "If NO, indicate below the tasks that must be completed first:",
+          "context": [],
+          "answerIndices": [
+            29
+          ],
+          "clips": [
+            {
+              "id": "answer-029",
+              "index": 29,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_029.wav?v=1793388536577862500",
+              "duration": 5.875
+            }
+          ]
+        },
+        {
+          "id": "q-030",
+          "questionId": 29,
+          "prompt": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee below:",
+          "sourceQuestion": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below: (i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+          "context": [
+            "s",
+            "i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing"
+          ],
+          "answerIndices": [
+            30
+          ],
+          "clips": [
+            {
+              "id": "answer-030",
+              "index": 30,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_030.wav?v=1793388536814554100",
+              "duration": 2.05
+            }
+          ]
+        },
+        {
+          "id": "q-031",
+          "questionId": 30,
+          "prompt": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee below:",
+          "sourceQuestion": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below: (i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+          "context": [
+            "s",
+            "i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing"
+          ],
+          "answerIndices": [
+            31
+          ],
+          "clips": [
+            {
+              "id": "answer-031",
+              "index": 31,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_031.wav?v=1793388537097562600",
+              "duration": 2.7
+            }
+          ]
+        },
+        {
+          "id": "q-032",
+          "questionId": 31,
+          "prompt": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+          "sourceQuestion": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+          "context": [],
+          "answerIndices": [
+            32
+          ],
+          "clips": [
+            {
+              "id": "answer-032",
+              "index": 32,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_032.wav?v=1793388537398687600",
+              "duration": 2.85
+            }
+          ]
+        },
+        {
+          "id": "q-033",
+          "questionId": 32,
+          "prompt": "Does the employee ever receive feedback about their performance?",
+          "sourceQuestion": "Does the employee ever receive feedback about their performance?",
+          "context": [],
+          "answerIndices": [
+            33
+          ],
+          "clips": [
+            {
+              "id": "answer-033",
+              "index": 33,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_033.wav?v=1793388537840547200",
+              "duration": 9.775
+            }
+          ]
+        },
+        {
+          "id": "q-034",
+          "questionId": 33,
+          "prompt": "Does this mean corrective feedback is given?",
+          "sourceQuestion": "If asked whether this means corrective feedback is given:",
+          "context": [],
+          "answerIndices": [
+            34
+          ],
+          "clips": [
+            {
+              "id": "answer-034",
+              "index": 34,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_034.wav?v=1793388537932990200",
+              "duration": 1.4
+            }
+          ]
+        },
+        {
+          "id": "q-035",
+          "questionId": 34,
+          "prompt": "And how is that feedback delivered? Is it written, verbal, graphed?",
+          "sourceQuestion": "And how is that feedback delivered? Is it written, verbal, graphed?",
+          "context": [],
+          "answerIndices": [
+            35
+          ],
+          "clips": [
+            {
+              "id": "answer-035",
+              "index": 35,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_035.wav?v=1793388538347301200",
+              "duration": 6.125
+            }
+          ]
+        },
+        {
+          "id": "q-036",
+          "questionId": 35,
+          "prompt": "Got it. So if they do receive feedback, who gives them this feedback?",
+          "sourceQuestion": "Got it. So if they do receive feedback, who gives them this feedback?",
+          "context": [],
+          "answerIndices": [
+            36
+          ],
+          "clips": [
+            {
+              "id": "answer-036",
+              "index": 36,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_036.wav?v=1793388538556976000",
+              "duration": 3.95
+            }
+          ]
+        },
+        {
+          "id": "q-037",
+          "questionId": 36,
+          "prompt": "How often?",
+          "sourceQuestion": "How often?",
+          "context": [],
+          "answerIndices": [
+            37
+          ],
+          "clips": [
+            {
+              "id": "answer-037",
+              "index": 37,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_037.wav?v=1793388539108734900",
+              "duration": 12.35
+            }
+          ]
+        },
+        {
+          "id": "q-038",
+          "questionId": 37,
+          "prompt": "How long after the task?",
+          "sourceQuestion": "How long after the task?",
+          "context": [],
+          "answerIndices": [
+            38
+          ],
+          "clips": [
+            {
+              "id": "answer-038",
+              "index": 38,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_038.wav?v=1793388539580665500",
+              "duration": 4.875
+            }
+          ]
+        },
+        {
+          "id": "q-039",
+          "questionId": 38,
+          "prompt": "Does the employee ever see the effects of accurate task completion? If YES, how?",
+          "sourceQuestion": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+          "context": [
+            "i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)"
+          ],
+          "answerIndices": [
+            39
+          ],
+          "clips": [
+            {
+              "id": "answer-039",
+              "index": 39,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_039.wav?v=1793388539711441000",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-040",
+          "questionId": 39,
+          "prompt": "Is the task simple or does it involve relatively low response effort?",
+          "sourceQuestion": "Is the task simple or does it involve relatively low response effort?",
+          "context": [],
+          "answerIndices": [
+            40
+          ],
+          "clips": [
+            {
+              "id": "answer-040",
+              "index": 40,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_040.wav?v=1793388540905242800",
+              "duration": 18.3
+            }
+          ]
+        },
+        {
+          "id": "q-041",
+          "questionId": 40,
+          "prompt": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?",
+          "sourceQuestion": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? (i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?)",
+          "context": [
+            "i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?"
+          ],
+          "answerIndices": [
+            41
+          ],
+          "clips": [
+            {
+              "id": "answer-041",
+              "index": 41,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_041.wav?v=1793388541181807400",
+              "duration": 2.45
+            }
+          ]
+        },
+        {
+          "id": "q-042",
+          "questionId": 41,
+          "prompt": "So could you identify some of those competing tasks?",
+          "sourceQuestion": "So could you identify some of those competing tasks?\n\nOR \n\nWhat are those tasks?",
+          "context": [],
+          "answerIndices": [
+            42
+          ],
+          "clips": [
+            {
+              "id": "answer-042",
+              "index": 42,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_042.wav?v=1793388541610173000",
+              "duration": 7.0
+            }
+          ]
+        },
+        {
+          "id": "q-043",
+          "questionId": 42,
+          "prompt": "Ok, cool. That’s it for that, thank you.",
+          "sourceQuestion": "Ok, cool. That’s it for that, thank you.",
+          "context": [],
+          "answerIndices": [
+            43
+          ],
+          "clips": [
+            {
+              "id": "answer-043",
+              "index": 43,
+              "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_043.wav?v=1793388541793268100",
+              "duration": 1.425
+            }
+          ]
+        }
+      ],
+      "answerCount": 43,
+      "duration": 184.1
+    },
+    {
+      "id": "original-af-heart-speed-1p00-vignette-1",
+      "edition": "original",
+      "editionLabel": "Original recordings",
+      "vignette": 1,
+      "title": "Materials & resources",
+      "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+      "voice": "af_heart",
+      "speed": "speed_1p00",
+      "page": "sets/original-af-heart-speed-1p00-vignette-1.html",
+      "version": "4daf4f1547ac",
+      "steps": [
+        {
+          "id": "q-001",
+          "questionId": 0,
+          "prompt": "All right. So we're going to talk about the performance problem with discrete trials, so just answer the questions that I give you and you can reply yes or no and elaborate where you feel it's necessary.",
+          "sourceQuestion": "All right. So we're going to talk about the performance problem with discrete trials, so just answer the questions that I give you and you can reply yes or no and elaborate where you feel it's necessary.",
+          "context": [],
+          "answerIndices": [
+            1
+          ],
+          "clips": [
+            {
+              "id": "answer-001",
+              "index": 1,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_001.wav?v=1793388541963873500",
+              "duration": 1.425
+            }
+          ]
+        },
+        {
+          "id": "q-002",
+          "questionId": 1,
+          "prompt": "Has the employee received formal training on this task?",
+          "sourceQuestion": "Has the employee received formal training on this task?",
+          "context": [],
+          "answerIndices": [
+            2
+          ],
+          "clips": [
+            {
+              "id": "answer-002",
+              "index": 2,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_002.wav?v=1793388542090885000",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-003",
+          "questionId": 2,
+          "prompt": "When did the employee receive the training?",
+          "sourceQuestion": "When did the employee receive the training?",
+          "context": [],
+          "answerIndices": [
+            3
+          ],
+          "clips": [
+            {
+              "id": "answer-003",
+              "index": 3,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_003.wav?v=1793388542505344700",
+              "duration": 8.275
+            }
+          ]
+        },
+        {
+          "id": "q-004",
+          "questionId": 3,
+          "prompt": "Which training methods did they receive?",
+          "sourceQuestion": "Which training methods did they receive?",
+          "context": [],
+          "answerIndices": [
+            4
+          ],
+          "clips": [
+            {
+              "id": "answer-004",
+              "index": 4,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_004.wav?v=1793388542935295300",
+              "duration": 6.525
+            }
+          ]
+        },
+        {
+          "id": "q-005",
+          "questionId": 4,
+          "prompt": "Instructions. Were they vocal instructions, written instructions, or both vocal and written instructions?",
+          "sourceQuestion": "Instructions (the employee received step-by-step instructions on how to perform the task). Were they vocal instructions, written instructions, or both vocal and written instructions?",
+          "context": [
+            "the employee received step-by-step instructions on how to perform the task"
+          ],
+          "answerIndices": [
+            5
+          ],
+          "clips": [
+            {
+              "id": "answer-005",
+              "index": 5,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_005.wav?v=1793388543100299300",
+              "duration": 1.275
+            }
+          ]
+        },
+        {
+          "id": "q-006",
+          "questionId": 5,
+          "prompt": "Demonstration/modeling. Do they receive video modeling, live modeling, or both live and video modeling?",
+          "sourceQuestion": "Demonstration/modeling (the employee was shown how to perform the task). Do they receive video modeling, live modeling, or both live and video modeling?",
+          "context": [
+            "the employee was shown how to perform the task"
+          ],
+          "answerIndices": [
+            6
+          ],
+          "clips": [
+            {
+              "id": "answer-006",
+              "index": 6,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_006.wav?v=1793388543257842400",
+              "duration": 1.725
+            }
+          ]
+        },
+        {
+          "id": "q-007",
+          "questionId": 6,
+          "prompt": "Rehearsal/practice. Have they practiced with a trainer, practiced alone, or practiced with coworkers?",
+          "sourceQuestion": "Rehearsal/practice (the employee had opportunities to practice the task correctly during training). Have they practiced with a trainer, practiced alone, or practiced with coworkers?",
+          "context": [
+            "the employee had opportunities to practice the task correctly during training"
+          ],
+          "answerIndices": [
+            7
+          ],
+          "clips": [
+            {
+              "id": "answer-007",
+              "index": 7,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_007.wav?v=1793388543427359500",
+              "duration": 3.125
+            }
+          ]
+        },
+        {
+          "id": "q-008",
+          "questionId": 7,
+          "prompt": "Feedback. Was it vocal feedback or written feedback?",
+          "sourceQuestion": "Feedback (the employee received feedback about performance during training). Was it vocal feedback or written feedback?",
+          "context": [
+            "the employee received feedback about performance during training"
+          ],
+          "answerIndices": [
+            8
+          ],
+          "clips": [
+            {
+              "id": "answer-008",
+              "index": 8,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_008.wav?v=1793388543644058600",
+              "duration": 2.425
+            }
+          ]
+        },
+        {
+          "id": "q-009",
+          "questionId": 8,
+          "prompt": "For vocal feedback, was that feedback positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "sourceQuestion": "Fo vocal feedback, was that feedback positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "context": [],
+          "answerIndices": [
+            9
+          ],
+          "clips": [
+            {
+              "id": "answer-009",
+              "index": 9,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_009.wav?v=1793388543753866700",
+              "duration": 1.8
+            }
+          ]
+        },
+        {
+          "id": "q-010",
+          "questionId": 9,
+          "prompt": "Ok. Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "sourceQuestion": "Ok. Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "context": [],
+          "answerIndices": [
+            10
+          ],
+          "clips": [
+            {
+              "id": "answer-010",
+              "index": 10,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_010.wav?v=1793388543949562400",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-011",
+          "questionId": 10,
+          "prompt": "Can the employee accurately describe the target task and when it should be performed?",
+          "sourceQuestion": "Can the employee accurately describe the target task and when it should be performed?",
+          "context": [],
+          "answerIndices": [
+            11,
+            12
+          ],
+          "clips": [
+            {
+              "id": "answer-011",
+              "index": 11,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_011.wav?v=1793388544374988200",
+              "duration": 5.625
+            },
+            {
+              "id": "answer-012",
+              "index": 12,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_012.wav?v=1793388544501030100",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-012",
+          "questionId": 11,
+          "prompt": "Is there evidence that the employee has accurately completed the task in the past?",
+          "sourceQuestion": "Is there evidence that the employee has accurately completed the task in the past?",
+          "context": [],
+          "answerIndices": [
+            13
+          ],
+          "clips": [
+            {
+              "id": "answer-013",
+              "index": 13,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_013.wav?v=1793388544784796000",
+              "duration": 2.7
+            }
+          ]
+        },
+        {
+          "id": "q-013",
+          "questionId": 12,
+          "prompt": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed?",
+          "sourceQuestion": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)?",
+          "context": [
+            "i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?"
+          ],
+          "answerIndices": [
+            14
+          ],
+          "clips": [
+            {
+              "id": "answer-014",
+              "index": 14,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_014.wav?v=1793388544912760800",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-014",
+          "questionId": 13,
+          "prompt": "Has the employee been informed that they are expected to perform the task?",
+          "sourceQuestion": "Has the employee been informed that they are expected to perform the task?",
+          "context": [],
+          "answerIndices": [
+            15
+          ],
+          "clips": [
+            {
+              "id": "answer-015",
+              "index": 15,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_015.wav?v=1793388545047025900",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-015",
+          "questionId": 14,
+          "prompt": "Can the employee state the purpose of the task?",
+          "sourceQuestion": "Can the employee state the purpose of the task?",
+          "context": [],
+          "answerIndices": [
+            16
+          ],
+          "clips": [
+            {
+              "id": "answer-016",
+              "index": 16,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_016.wav?v=1793388545925528500",
+              "duration": 14.15
+            }
+          ]
+        },
+        {
+          "id": "q-016",
+          "questionId": 15,
+          "prompt": "Is a job aid for completing the task visibly located or easily accessible in the task area?.",
+          "sourceQuestion": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+          "context": [
+            "e.g., checklist, data sheet, step-by-step instructions, pictures, prompts",
+            "if appropriate",
+            "e.g., visibly posted, located with the instructional or data collection materials"
+          ],
+          "answerIndices": [
+            17
+          ],
+          "clips": [
+            {
+              "id": "answer-017",
+              "index": 17,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_017.wav?v=1793388546052990400",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-017",
+          "questionId": 16,
+          "prompt": "Is the employee ever verbally, textually, or electronically reminded to complete the task?",
+          "sourceQuestion": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+          "context": [
+            "e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts"
+          ],
+          "answerIndices": [
+            18
+          ],
+          "clips": [
+            {
+              "id": "answer-018",
+              "index": 18,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_018.wav?v=1793388546368269300",
+              "duration": 3.1
+            }
+          ]
+        },
+        {
+          "id": "q-018",
+          "questionId": 17,
+          "prompt": "How frequently is the employee reminded to complete the task?.",
+          "sourceQuestion": "How frequently is the employee reminded to complete the task? (Hourly, daily, weekly, monthly, or other).",
+          "context": [
+            "Hourly, daily, weekly, monthly, or other"
+          ],
+          "answerIndices": [
+            19
+          ],
+          "clips": [
+            {
+              "id": "answer-019",
+              "index": 19,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_019.wav?v=1793388546590963400",
+              "duration": 1.475
+            }
+          ]
+        },
+        {
+          "id": "q-019",
+          "questionId": 18,
+          "prompt": "Is the task being performed in an environment well-suited for task completion?",
+          "sourceQuestion": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+          "context": [
+            "i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?"
+          ],
+          "answerIndices": [
+            20
+          ],
+          "clips": [
+            {
+              "id": "answer-020",
+              "index": 20,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_020.wav?v=1793388546692927900",
+              "duration": 1.525
+            }
+          ]
+        },
+        {
+          "id": "q-020",
+          "questionId": 19,
+          "prompt": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "sourceQuestion": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "context": [],
+          "answerIndices": [
+            21
+          ],
+          "clips": [
+            {
+              "id": "answer-021",
+              "index": 21,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_021.wav?v=1793388546861022500",
+              "duration": 2.125
+            }
+          ]
+        },
+        {
+          "id": "q-021",
+          "questionId": 20,
+          "prompt": "If materials are required for task completion, are they readily available?",
+          "sourceQuestion": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+          "context": [
+            "e.g., teaching stimuli, preferred items",
+            "e.g., easy to find, nearby"
+          ],
+          "answerIndices": [
+            22
+          ],
+          "clips": [
+            {
+              "id": "answer-022",
+              "index": 22,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_022.wav?v=1793388546960659000",
+              "duration": 1.6
+            }
+          ]
+        },
+        {
+          "id": "q-022",
+          "questionId": 21,
+          "prompt": "List the materials and indicate their availability.",
+          "sourceQuestion": "List the materials and indicate their availability.",
+          "context": [],
+          "answerIndices": [
+            23
+          ],
+          "clips": [
+            {
+              "id": "answer-023",
+              "index": 23,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_023.wav?v=1793388547909580600",
+              "duration": 15.325
+            }
+          ]
+        },
+        {
+          "id": "q-023",
+          "questionId": 22,
+          "prompt": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "sourceQuestion": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "context": [],
+          "answerIndices": [
+            24
+          ],
+          "clips": [
+            {
+              "id": "answer-024",
+              "index": 24,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_024.wav?v=1793388548255380500",
+              "duration": 7.125
+            }
+          ]
+        },
+        {
+          "id": "q-024",
+          "questionId": 23,
+          "prompt": "What times are those materials unavailable?",
+          "sourceQuestion": "What times are those materials unavailable?",
+          "context": [],
+          "answerIndices": [
+            25
+          ],
+          "clips": [
+            {
+              "id": "answer-025",
+              "index": 25,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_025.wav?v=1793388548681354700",
+              "duration": 5.7
+            }
+          ]
+        },
+        {
+          "id": "q-025",
+          "questionId": 24,
+          "prompt": "Are the materials necessary to complete the task well designed for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+          "context": [
+            "i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete"
+          ],
+          "answerIndices": [
+            26
+          ],
+          "clips": [
+            {
+              "id": "answer-026",
+              "index": 26,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_026.wav?v=1793388549023963200",
+              "duration": 3.275
+            }
+          ]
+        },
+        {
+          "id": "q-026",
+          "questionId": 25,
+          "prompt": "Are the materials necessary to complete the task well organized for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+          "context": [
+            "i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?"
+          ],
+          "answerIndices": [
+            27
+          ],
+          "clips": [
+            {
+              "id": "answer-027",
+              "index": 27,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_027.wav?v=1793388549153007900",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-027",
+          "questionId": 26,
+          "prompt": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:.",
+          "sourceQuestion": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:\n(i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+          "context": [
+            "i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages"
+          ],
+          "answerIndices": [
+            28
+          ],
+          "clips": [
+            {
+              "id": "answer-028",
+              "index": 28,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_028.wav?v=1793388549456210500",
+              "duration": 6.2
+            }
+          ]
+        },
+        {
+          "id": "q-028",
+          "questionId": 27,
+          "prompt": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee below:",
+          "sourceQuestion": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below:\n(i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+          "context": [
+            "s",
+            "i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing"
+          ],
+          "answerIndices": [
+            29
+          ],
+          "clips": [
+            {
+              "id": "answer-029",
+              "index": 29,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_029.wav?v=1793388549756417200",
+              "duration": 2.85
+            }
+          ]
+        },
+        {
+          "id": "q-029",
+          "questionId": 28,
+          "prompt": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+          "sourceQuestion": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring: (Hourly, daily, weekly, monthly, or other)",
+          "context": [
+            "Hourly, daily, weekly, monthly, or other"
+          ],
+          "answerIndices": [
+            30
+          ],
+          "clips": [
+            {
+              "id": "answer-030",
+              "index": 30,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_030.wav?v=1793388549924807800",
+              "duration": 1.85
+            }
+          ]
+        },
+        {
+          "id": "q-030",
+          "questionId": 29,
+          "prompt": "Does the employee ever receive feedback about their performance?",
+          "sourceQuestion": "Does the employee ever receive feedback about their performance?",
+          "context": [],
+          "answerIndices": [
+            31
+          ],
+          "clips": [
+            {
+              "id": "answer-031",
+              "index": 31,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_031.wav?v=1793388550198620400",
+              "duration": 3.75
+            }
+          ]
+        },
+        {
+          "id": "q-031",
+          "questionId": 30,
+          "prompt": "How often?",
+          "sourceQuestion": "How often?",
+          "context": [],
+          "answerIndices": [
+            32
+          ],
+          "clips": [
+            {
+              "id": "answer-032",
+              "index": 32,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_032.wav?v=1793388550314726100",
+              "duration": 1.925
+            }
+          ]
+        },
+        {
+          "id": "q-032",
+          "questionId": 31,
+          "prompt": "How long after the task?",
+          "sourceQuestion": "How long after the task?",
+          "context": [],
+          "answerIndices": [
+            33
+          ],
+          "clips": [
+            {
+              "id": "answer-033",
+              "index": 33,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_033.wav?v=1793388550536229700",
+              "duration": 1.9
+            }
+          ]
+        },
+        {
+          "id": "q-033",
+          "questionId": 32,
+          "prompt": "Feedback focus: is the feedback positive or corrective?",
+          "sourceQuestion": "Feedback focus: is the feedback positive or corrective?",
+          "context": [],
+          "answerIndices": [
+            34
+          ],
+          "clips": [
+            {
+              "id": "answer-034",
+              "index": 34,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_034.wav?v=1793388550700597500",
+              "duration": 1.275
+            }
+          ]
+        },
+        {
+          "id": "q-034",
+          "questionId": 33,
+          "prompt": "Feedback type: is it written, verbal, graphed, or other?",
+          "sourceQuestion": "Feedback type: is it written, verbal, graphed, or other?",
+          "context": [],
+          "answerIndices": [
+            35
+          ],
+          "clips": [
+            {
+              "id": "answer-035",
+              "index": 35,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_035.wav?v=1793388550794113300",
+              "duration": 1.375
+            }
+          ]
+        },
+        {
+          "id": "q-035",
+          "questionId": 34,
+          "prompt": "Does the employee ever see the effects of accurate task completion? If YES, how?",
+          "sourceQuestion": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+          "context": [
+            "i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)"
+          ],
+          "answerIndices": [
+            36
+          ],
+          "clips": [
+            {
+              "id": "answer-036",
+              "index": 36,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_036.wav?v=1793388551146659600",
+              "duration": 5.175
+            }
+          ]
+        },
+        {
+          "id": "q-036",
+          "questionId": 35,
+          "prompt": "Is the task simple or does it involve relatively low response effort?",
+          "sourceQuestion": "Is the task simple or does it involve relatively low response effort?",
+          "context": [],
+          "answerIndices": [
+            37
+          ],
+          "clips": [
+            {
+              "id": "answer-037",
+              "index": 37,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_037.wav?v=1793388551343826200",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-037",
+          "questionId": 36,
+          "prompt": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?. If NO, indicate those competing tasks.",
+          "sourceQuestion": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?\n(i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?). If NO, indicate those competing tasks.",
+          "context": [
+            "i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?"
+          ],
+          "answerIndices": [
+            38
+          ],
+          "clips": [
+            {
+              "id": "answer-038",
+              "index": 38,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_038.wav?v=1793388552213540100",
+              "duration": 15.7
+            }
+          ]
+        }
+      ],
+      "answerCount": 38,
+      "duration": 143.6
+    },
+    {
+      "id": "original-af-heart-speed-1p00-vignette-2",
+      "edition": "original",
+      "editionLabel": "Original recordings",
+      "vignette": 2,
+      "title": "Training & support",
+      "source": "Video Vignette 2 Transcript_Training-TC Indicated_Streamline.docx",
+      "voice": "af_heart",
+      "speed": "speed_1p00",
+      "page": "sets/original-af-heart-speed-1p00-vignette-2.html",
+      "version": "2551ed307b53",
+      "steps": [
+        {
+          "id": "q-001",
+          "questionId": 0,
+          "prompt": "Has the employee received formal training on the task?",
+          "sourceQuestion": "Has the employee received formal training on the task?",
+          "context": [],
+          "answerIndices": [
+            1
+          ],
+          "clips": [
+            {
+              "id": "answer-001",
+              "index": 1,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_001.wav?v=1793388552408269000",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-002",
+          "questionId": 1,
+          "prompt": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+          "sourceQuestion": "If the person asks about Instructions, Demonstration, Modeling, Rehearsal, Practice, or Feedback during training:",
+          "context": [],
+          "answerIndices": [
+            2
+          ],
+          "clips": [
+            {
+              "id": "answer-002",
+              "index": 2,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_002.wav?v=1793388552506105800",
+              "duration": 1.6
+            }
+          ]
+        },
+        {
+          "id": "q-003",
+          "questionId": 2,
+          "prompt": "Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "sourceQuestion": "Is there evidence that the trainer currently responsible for training staff can accurately perform the task being trained?",
+          "context": [],
+          "answerIndices": [
+            3
+          ],
+          "clips": [
+            {
+              "id": "answer-003",
+              "index": 3,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_003.wav?v=1793388552646300900",
+              "duration": 1.575
+            }
+          ]
+        },
+        {
+          "id": "q-004",
+          "questionId": 3,
+          "prompt": "Can the employee accurately describe the target task and when it should be performed?",
+          "sourceQuestion": "Can the employee accurately describe the target task and when it should be performed?",
+          "context": [],
+          "answerIndices": [
+            4
+          ],
+          "clips": [
+            {
+              "id": "answer-004",
+              "index": 4,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_004.wav?v=1793388552774125000",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-005",
+          "questionId": 4,
+          "prompt": "Is there evidence that the employee has accurately completed the task in the past?",
+          "sourceQuestion": "Is there evidence that the employee has accurately completed the task in the past?",
+          "context": [],
+          "answerIndices": [
+            5
+          ],
+          "clips": [
+            {
+              "id": "answer-005",
+              "index": 5,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_005.wav?v=1793388553196719400",
+              "duration": 4.3
+            }
+          ]
+        },
+        {
+          "id": "q-006",
+          "questionId": 5,
+          "prompt": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed?",
+          "sourceQuestion": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed? (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)",
+          "context": [
+            "i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?"
+          ],
+          "answerIndices": [
+            6
+          ],
+          "clips": [
+            {
+              "id": "answer-006",
+              "index": 6,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_006.wav?v=1793388553745270300",
+              "duration": 8.525
+            }
+          ]
+        },
+        {
+          "id": "q-007",
+          "questionId": 6,
+          "prompt": "Can the employee complete the task quickly and consistently?",
+          "sourceQuestion": "If the ask for clarification regarding quick completion, say:",
+          "context": [],
+          "answerIndices": [
+            7
+          ],
+          "clips": [
+            {
+              "id": "answer-007",
+              "index": 7,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_007.wav?v=1793388553924304700",
+              "duration": 2.025
+            }
+          ]
+        },
+        {
+          "id": "q-008",
+          "questionId": 7,
+          "prompt": "Has the employee been informed that they are expected to perform the task?",
+          "sourceQuestion": "Has the employee been informed that they are expected to perform the task?",
+          "context": [],
+          "answerIndices": [
+            8
+          ],
+          "clips": [
+            {
+              "id": "answer-008",
+              "index": 8,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_008.wav?v=1793388554304573400",
+              "duration": 3.675
+            }
+          ]
+        },
+        {
+          "id": "q-009",
+          "questionId": 8,
+          "prompt": "Can the employee state the purpose of the task?",
+          "sourceQuestion": "Can the employee state the purpose of the task?",
+          "context": [],
+          "answerIndices": [
+            9
+          ],
+          "clips": [
+            {
+              "id": "answer-009",
+              "index": 9,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_009.wav?v=1793388554486560300",
+              "duration": 3.4
+            }
+          ]
+        },
+        {
+          "id": "q-010",
+          "questionId": 9,
+          "prompt": "Is a job aid for completing the task visibly located or easily accessible in the task area?.",
+          "sourceQuestion": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+          "context": [
+            "e.g., checklist, data sheet, step-by-step instructions, pictures, prompts",
+            "if appropriate",
+            "e.g., visibly posted, located with the instructional or data collection materials"
+          ],
+          "answerIndices": [
+            10
+          ],
+          "clips": [
+            {
+              "id": "answer-010",
+              "index": 10,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_010.wav?v=1793388554586532600",
+              "duration": 1.55
+            }
+          ]
+        },
+        {
+          "id": "q-011",
+          "questionId": 10,
+          "prompt": "Is the employee ever verbally, textually, or electronically reminded to complete the task?",
+          "sourceQuestion": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+          "context": [
+            "e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts"
+          ],
+          "answerIndices": [
+            11
+          ],
+          "clips": [
+            {
+              "id": "answer-011",
+              "index": 11,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_011.wav?v=1793388555047335900",
+              "duration": 4.625
+            }
+          ]
+        },
+        {
+          "id": "q-012",
+          "questionId": 11,
+          "prompt": "Is the task being performed in an environment well-suited for task completion?",
+          "sourceQuestion": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+          "context": [
+            "i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?"
+          ],
+          "answerIndices": [
+            12
+          ],
+          "clips": [
+            {
+              "id": "answer-012",
+              "index": 12,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_012.wav?v=1793388555527673800",
+              "duration": 6.425
+            }
+          ]
+        },
+        {
+          "id": "q-013",
+          "questionId": 12,
+          "prompt": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "sourceQuestion": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "context": [],
+          "answerIndices": [
+            13
+          ],
+          "clips": [
+            {
+              "id": "answer-013",
+              "index": 13,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_013.wav?v=1793388555656731300",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-014",
+          "questionId": 13,
+          "prompt": "If materials are required for task completion, are they readily available?",
+          "sourceQuestion": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+          "context": [
+            "e.g., teaching stimuli, preferred items",
+            "e.g., easy to find, nearby"
+          ],
+          "answerIndices": [
+            14
+          ],
+          "clips": [
+            {
+              "id": "answer-014",
+              "index": 14,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_014.wav?v=1793388555786318500",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-015",
+          "questionId": 14,
+          "prompt": "What materials are needed for the task and what is their availability?",
+          "sourceQuestion": "What materials are needed for the task and what is their availability?",
+          "context": [],
+          "answerIndices": [
+            15
+          ],
+          "clips": [
+            {
+              "id": "answer-015",
+              "index": 15,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_015.wav?v=1793388555946530600",
+              "duration": 2.975
+            }
+          ]
+        },
+        {
+          "id": "q-016",
+          "questionId": 15,
+          "prompt": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "sourceQuestion": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "context": [],
+          "answerIndices": [
+            16
+          ],
+          "clips": [
+            {
+              "id": "answer-016",
+              "index": 16,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_016.wav?v=1793388556143746300",
+              "duration": 1.65
+            }
+          ]
+        },
+        {
+          "id": "q-017",
+          "questionId": 16,
+          "prompt": "Are the materials necessary to complete the task well designed for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+          "context": [
+            "i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete"
+          ],
+          "answerIndices": [
+            17
+          ],
+          "clips": [
+            {
+              "id": "answer-017",
+              "index": 17,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_017.wav?v=1793388556329153200",
+              "duration": 3.375
+            }
+          ]
+        },
+        {
+          "id": "q-018",
+          "questionId": 17,
+          "prompt": "Are the materials necessary to complete the task well organized for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+          "context": [
+            "i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?"
+          ],
+          "answerIndices": [
+            18
+          ],
+          "clips": [
+            {
+              "id": "answer-018",
+              "index": 18,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_018.wav?v=1793388556764978800",
+              "duration": 5.85
+            }
+          ]
+        },
+        {
+          "id": "q-019",
+          "questionId": 18,
+          "prompt": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:.",
+          "sourceQuestion": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:\n(i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+          "context": [
+            "i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages"
+          ],
+          "answerIndices": [
+            19
+          ],
+          "clips": [
+            {
+              "id": "answer-019",
+              "index": 19,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_019.wav?v=1793388557067896600",
+              "duration": 3.625
+            }
+          ]
+        },
+        {
+          "id": "q-020",
+          "questionId": 19,
+          "prompt": "Is the employee ever directly monitored by a supervisor when the target task is to be performed?",
+          "sourceQuestion": "Is the employee ever directly monitored by a supervisor when the target task is to be performed?",
+          "context": [],
+          "answerIndices": [
+            20
+          ],
+          "clips": [
+            {
+              "id": "answer-020",
+              "index": 20,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_020.wav?v=1793388557377537300",
+              "duration": 3.025
+            }
+          ]
+        },
+        {
+          "id": "q-021",
+          "questionId": 20,
+          "prompt": "If yes, indicate the frequency of monitoring. Is this daily, weekly, monthly or other?",
+          "sourceQuestion": "If yes, indicate the frequency of monitoring. Is this daily, weekly, monthly or other?",
+          "context": [],
+          "answerIndices": [
+            21
+          ],
+          "clips": [
+            {
+              "id": "answer-021",
+              "index": 21,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_021.wav?v=1793388558064534900",
+              "duration": 10.075
+            }
+          ]
+        },
+        {
+          "id": "q-022",
+          "questionId": 21,
+          "prompt": "Ok, does the employee ever receive feedback about their performance?",
+          "sourceQuestion": "Ok, does the employee ever receive feedback about their performance?",
+          "context": [],
+          "answerIndices": [
+            22
+          ],
+          "clips": [
+            {
+              "id": "answer-022",
+              "index": 22,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_022.wav?v=1793388558262806100",
+              "duration": 2.55
+            }
+          ]
+        },
+        {
+          "id": "q-023",
+          "questionId": 22,
+          "prompt": "Feedback focus: is it positive or corrective?",
+          "sourceQuestion": "Feedback focus: is it positive or corrective?",
+          "context": [],
+          "answerIndices": [
+            23
+          ],
+          "clips": [
+            {
+              "id": "answer-023",
+              "index": 23,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_023.wav?v=1793388558835399600",
+              "duration": 12.725
+            }
+          ]
+        },
+        {
+          "id": "q-024",
+          "questionId": 23,
+          "prompt": "Feedback type: is that written, verbal, graphed, or other?",
+          "sourceQuestion": "Feedback type: is that written, verbal, graphed, or other?",
+          "context": [],
+          "answerIndices": [
+            24
+          ],
+          "clips": [
+            {
+              "id": "answer-024",
+              "index": 24,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_024.wav?v=1793388559348509300",
+              "duration": 7.5
+            }
+          ]
+        },
+        {
+          "id": "q-025",
+          "questionId": 24,
+          "prompt": "Does the employee ever see the effects of accurate task completion? If YES, how?",
+          "sourceQuestion": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+          "context": [
+            "i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)"
+          ],
+          "answerIndices": [
+            25
+          ],
+          "clips": [
+            {
+              "id": "answer-025",
+              "index": 25,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_025.wav?v=1793388559501444400",
+              "duration": 2.75
+            }
+          ]
+        },
+        {
+          "id": "q-026",
+          "questionId": 25,
+          "prompt": "Is the task simple or does it involve relatively low response effort?",
+          "sourceQuestion": "Is the task simple or does it involve relatively low response effort?",
+          "context": [],
+          "answerIndices": [
+            26
+          ],
+          "clips": [
+            {
+              "id": "answer-026",
+              "index": 26,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_026.wav?v=1793388559680971500",
+              "duration": 1.5
+            }
+          ]
+        },
+        {
+          "id": "q-027",
+          "questionId": 26,
+          "prompt": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? If NO, indicate these competing tasks.",
+          "sourceQuestion": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? (i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?)\n\nIf NO, indicate these competing tasks.",
+          "context": [
+            "i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?"
+          ],
+          "answerIndices": [
+            27
+          ],
+          "clips": [
+            {
+              "id": "answer-027",
+              "index": 27,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_027.wav?v=1793388560002582700",
+              "duration": 6.8
+            }
+          ]
+        },
+        {
+          "id": "q-028",
+          "questionId": 27,
+          "prompt": "Well that's all the questions I have.",
+          "sourceQuestion": "Well that's all the questions I have.",
+          "context": [],
+          "answerIndices": [
+            28
+          ],
+          "clips": [
+            {
+              "id": "answer-028",
+              "index": 28,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_028.wav?v=1793388560153464600",
+              "duration": 1.725
+            }
+          ]
+        }
+      ],
+      "answerCount": 28,
+      "duration": 109.4
+    },
+    {
+      "id": "original-af-heart-speed-1p00-vignette-3",
+      "edition": "original",
+      "editionLabel": "Original recordings",
+      "vignette": 3,
+      "title": "Feedback & performance",
+      "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+      "voice": "af_heart",
+      "speed": "speed_1p00",
+      "page": "sets/original-af-heart-speed-1p00-vignette-3.html",
+      "version": "bc6cba45a636",
+      "steps": [
+        {
+          "id": "q-001",
+          "questionId": 0,
+          "prompt": "Has the employee received formal training on this task?",
+          "sourceQuestion": "Has the employee received formal training on this task?",
+          "context": [],
+          "answerIndices": [
+            1
+          ],
+          "clips": [
+            {
+              "id": "answer-001",
+              "index": 1,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_001.wav?v=1793388560280434400",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-002",
+          "questionId": 1,
+          "prompt": "If yes, when did the employee receive the training?",
+          "sourceQuestion": "If yes, when did the employee receive the training?",
+          "context": [],
+          "answerIndices": [
+            2
+          ],
+          "clips": [
+            {
+              "id": "answer-002",
+              "index": 2,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_002.wav?v=1793388560861108400",
+              "duration": 6.05
+            }
+          ]
+        },
+        {
+          "id": "q-003",
+          "questionId": 2,
+          "prompt": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+          "sourceQuestion": "Did the training include instructions, demonstration, modeling, rehearsal, practice, or feedback?",
+          "context": [],
+          "answerIndices": [
+            3
+          ],
+          "clips": [
+            {
+              "id": "answer-003",
+              "index": 3,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_003.wav?v=1793388561344718500",
+              "duration": 10.75
+            }
+          ]
+        },
+        {
+          "id": "q-004",
+          "questionId": 3,
+          "prompt": "Were the instructions provided as vocal, written instructions, or both?",
+          "sourceQuestion": "Were the instructions (The employee received step-by-step instructions on how to perform the task.) provided as vocal, written instructions, or both?",
+          "context": [
+            "The employee received step-by-step instructions on how to perform the task."
+          ],
+          "answerIndices": [
+            4
+          ],
+          "clips": [
+            {
+              "id": "answer-004",
+              "index": 4,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_004.wav?v=1793388561429531400",
+              "duration": 1.2
+            }
+          ]
+        },
+        {
+          "id": "q-005",
+          "questionId": 4,
+          "prompt": "For demonstration/modeling was it live modeling or video modeling?",
+          "sourceQuestion": "For demonstration/modeling (The employee was shown how to perform the task) was it live modeling or video modeling?",
+          "context": [
+            "The employee was shown how to perform the task"
+          ],
+          "answerIndices": [
+            5
+          ],
+          "clips": [
+            {
+              "id": "answer-005",
+              "index": 5,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_005.wav?v=1793388561549188900",
+              "duration": 1.95
+            }
+          ]
+        },
+        {
+          "id": "q-006",
+          "questionId": 5,
+          "prompt": "And did the employee have opportunities for rehearsal/practice during training?",
+          "sourceQuestion": "And did the employee have opportunities for rehearsal/practice (The employee had opportunities to practice the task correctly during training.) during training?",
+          "context": [
+            "The employee had opportunities to practice the task correctly during training."
+          ],
+          "answerIndices": [
+            6
+          ],
+          "clips": [
+            {
+              "id": "answer-006",
+              "index": 6,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_006.wav?v=1793388561680818800",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-007",
+          "questionId": 6,
+          "prompt": "For practice, were they practicing with a trainer, alone, or with other coworkers?",
+          "sourceQuestion": "For practice, were they practicing with a trainer, alone, or with other coworkers?",
+          "context": [],
+          "answerIndices": [
+            7
+          ],
+          "clips": [
+            {
+              "id": "answer-007",
+              "index": 7,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_007.wav?v=1793388561992036900",
+              "duration": 3.875
+            }
+          ]
+        },
+        {
+          "id": "q-008",
+          "questionId": 7,
+          "prompt": "Feedback. Did they receive feedback during training?",
+          "sourceQuestion": "Feedback (The employee received feedback about performance during training.). Did they receive feedback during training?",
+          "context": [
+            "The employee received feedback about performance during training."
+          ],
+          "answerIndices": [
+            8
+          ],
+          "clips": [
+            {
+              "id": "answer-008",
+              "index": 8,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_008.wav?v=1793388562121554900",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-009",
+          "questionId": 8,
+          "prompt": "And the feedback: was that provided vocally or written?",
+          "sourceQuestion": "And the feedback: was that provided vocally or written?",
+          "context": [],
+          "answerIndices": [
+            9
+          ],
+          "clips": [
+            {
+              "id": "answer-009",
+              "index": 9,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_009.wav?v=1793388562297008500",
+              "duration": 2.15
+            }
+          ]
+        },
+        {
+          "id": "q-010",
+          "questionId": 9,
+          "prompt": "Ok and was the focus positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "sourceQuestion": "Ok and was the focus positive feedback for steps performed correctly or corrective feedback for steps performed incorrectly?",
+          "context": [],
+          "answerIndices": [
+            10
+          ],
+          "clips": [
+            {
+              "id": "answer-010",
+              "index": 10,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_010.wav?v=1793388562545218500",
+              "duration": 2.225
+            }
+          ]
+        },
+        {
+          "id": "q-011",
+          "questionId": 10,
+          "prompt": "Is there evidence that the employee currently responsible for training staff can accurately perform the task being trained?",
+          "sourceQuestion": "Is there evidence that the employee currently responsible for training staff can accurately perform the task being trained?",
+          "context": [],
+          "answerIndices": [
+            11
+          ],
+          "clips": [
+            {
+              "id": "answer-011",
+              "index": 11,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_011.wav?v=1793388562672253700",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-012",
+          "questionId": 11,
+          "prompt": "Can the employee accurately describe the target task and when it should be performed?",
+          "sourceQuestion": "Can the employee accurately describe the target task and when it should be performed?",
+          "context": [],
+          "answerIndices": [
+            12
+          ],
+          "clips": [
+            {
+              "id": "answer-012",
+              "index": 12,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_012.wav?v=1793388562942123000",
+              "duration": 3.225
+            }
+          ]
+        },
+        {
+          "id": "q-013",
+          "questionId": 12,
+          "prompt": "Is there evidence that the employee accurately completed the task in the past?",
+          "sourceQuestion": "Is there evidence that the employee accurately completed the task in the past?",
+          "context": [],
+          "answerIndices": [
+            13
+          ],
+          "clips": [
+            {
+              "id": "answer-013",
+              "index": 13,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_013.wav?v=1793388563227242900",
+              "duration": 2.7
+            }
+          ]
+        },
+        {
+          "id": "q-014",
+          "questionId": 13,
+          "prompt": "Are you sure the employee has accurately completed the task in the past?",
+          "sourceQuestion": "If they press on the previous answer:",
+          "context": [],
+          "answerIndices": [
+            14
+          ],
+          "clips": [
+            {
+              "id": "answer-014",
+              "index": 14,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_014.wav?v=1793388563356318900",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-015",
+          "questionId": 14,
+          "prompt": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed?",
+          "sourceQuestion": "If the task needs to be completed quickly, can the employee perform it at the appropriate speed? (i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?)",
+          "context": [
+            "i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?"
+          ],
+          "answerIndices": [
+            15
+          ],
+          "clips": [
+            {
+              "id": "answer-015",
+              "index": 15,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_015.wav?v=1793388563553092000",
+              "duration": 2.25
+            }
+          ]
+        },
+        {
+          "id": "q-016",
+          "questionId": 15,
+          "prompt": "Has the employee been informed that they are expected to perform the task?",
+          "sourceQuestion": "Has the employee been informed that they are expected to perform the task?",
+          "context": [],
+          "answerIndices": [
+            16
+          ],
+          "clips": [
+            {
+              "id": "answer-016",
+              "index": 16,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_016.wav?v=1793388563773407200",
+              "duration": 4.325
+            }
+          ]
+        },
+        {
+          "id": "q-017",
+          "questionId": 16,
+          "prompt": "Can the employee state the purpose of the task?",
+          "sourceQuestion": "Can the employee state the purpose of the task?",
+          "context": [],
+          "answerIndices": [
+            17
+          ],
+          "clips": [
+            {
+              "id": "answer-017",
+              "index": 17,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_017.wav?v=1793388564034479600",
+              "duration": 3.575
+            }
+          ]
+        },
+        {
+          "id": "q-018",
+          "questionId": 17,
+          "prompt": "Is a job aid for completing the task visibly located or easily accessible in the task area?.",
+          "sourceQuestion": "Is a job aid (e.g., checklist, data sheet, step-by-step instructions, pictures, prompts) for completing the task visibly located (if appropriate) or easily accessible in the task area? (e.g., visibly posted, located with the instructional or data collection materials).",
+          "context": [
+            "e.g., checklist, data sheet, step-by-step instructions, pictures, prompts",
+            "if appropriate",
+            "e.g., visibly posted, located with the instructional or data collection materials"
+          ],
+          "answerIndices": [
+            18
+          ],
+          "clips": [
+            {
+              "id": "answer-018",
+              "index": 18,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_018.wav?v=1793388564172563900",
+              "duration": 2.4
+            }
+          ]
+        },
+        {
+          "id": "q-019",
+          "questionId": 18,
+          "prompt": "Is the employee ever verbally, textually, or electronically reminded to complete the task?",
+          "sourceQuestion": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+          "context": [
+            "e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts"
+          ],
+          "answerIndices": [
+            19
+          ],
+          "clips": [
+            {
+              "id": "answer-019",
+              "index": 19,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_019.wav?v=1793388564381605500",
+              "duration": 1.825
+            }
+          ]
+        },
+        {
+          "id": "q-020",
+          "questionId": 19,
+          "prompt": "Is the task being performed in an environment well-suited for task completion?",
+          "sourceQuestion": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+          "context": [
+            "i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?"
+          ],
+          "answerIndices": [
+            20
+          ],
+          "clips": [
+            {
+              "id": "answer-020",
+              "index": 20,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_020.wav?v=1793388564670998700",
+              "duration": 5.95
+            }
+          ]
+        },
+        {
+          "id": "q-021",
+          "questionId": 20,
+          "prompt": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "sourceQuestion": "Are there sufficient numbers of trained staff available in the organization to complete the task?",
+          "context": [],
+          "answerIndices": [
+            21
+          ],
+          "clips": [
+            {
+              "id": "answer-021",
+              "index": 21,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_021.wav?v=1793388564923890200",
+              "duration": 5.2
+            }
+          ]
+        },
+        {
+          "id": "q-022",
+          "questionId": 21,
+          "prompt": "If materials are required for task completion, are they readily available?",
+          "sourceQuestion": "If materials (e.g., teaching stimuli, preferred items) are required for task completion, are they readily available (e.g., easy to find, nearby)?",
+          "context": [
+            "e.g., teaching stimuli, preferred items",
+            "e.g., easy to find, nearby"
+          ],
+          "answerIndices": [
+            22
+          ],
+          "clips": [
+            {
+              "id": "answer-022",
+              "index": 22,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_022.wav?v=1793388565067094500",
+              "duration": 1.35
+            }
+          ]
+        },
+        {
+          "id": "q-023",
+          "questionId": 22,
+          "prompt": "List some materials that are needed and indicate their availability?",
+          "sourceQuestion": "List some materials that are needed and indicate their availability?",
+          "context": [],
+          "answerIndices": [
+            23
+          ],
+          "clips": [
+            {
+              "id": "answer-023",
+              "index": 23,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_023.wav?v=1793388566148373200",
+              "duration": 16.475
+            }
+          ]
+        },
+        {
+          "id": "q-024",
+          "questionId": 23,
+          "prompt": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "sourceQuestion": "Are the materials required for task completion available during the times of the day when they are most needed?",
+          "context": [],
+          "answerIndices": [
+            24
+          ],
+          "clips": [
+            {
+              "id": "answer-024",
+              "index": 24,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_024.wav?v=1793388566276860200",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-025",
+          "questionId": 24,
+          "prompt": "When are materials unavailable?",
+          "sourceQuestion": "When are materials unavailable?",
+          "context": [],
+          "answerIndices": [
+            25
+          ],
+          "clips": [
+            {
+              "id": "answer-025",
+              "index": 25,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_025.wav?v=1793388566572623000",
+              "duration": 3.625
+            }
+          ]
+        },
+        {
+          "id": "q-026",
+          "questionId": 25,
+          "prompt": "Are the materials necessary to complete the task well designed for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well designed for their intended purpose?\n(i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete)",
+          "context": [
+            "i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete"
+          ],
+          "answerIndices": [
+            26
+          ],
+          "clips": [
+            {
+              "id": "answer-026",
+              "index": 26,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_026.wav?v=1793388566984827900",
+              "duration": 8.1
+            }
+          ]
+        },
+        {
+          "id": "q-027",
+          "questionId": 26,
+          "prompt": "Are the materials necessary to complete the task well organized for their intended purpose?",
+          "sourceQuestion": "Are the materials necessary to complete the task well organized for their intended purpose?\n(i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?)",
+          "context": [
+            "i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?"
+          ],
+          "answerIndices": [
+            27
+          ],
+          "clips": [
+            {
+              "id": "answer-027",
+              "index": 27,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_027.wav?v=1793388567155329300",
+              "duration": 3.15
+            }
+          ]
+        },
+        {
+          "id": "q-028",
+          "questionId": 27,
+          "prompt": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first:.",
+          "sourceQuestion": "Can the task be completed without first completing other tasks? If NO, indicate below the tasks that must be completed first: (i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages).",
+          "context": [
+            "i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages"
+          ],
+          "answerIndices": [
+            28
+          ],
+          "clips": [
+            {
+              "id": "answer-028",
+              "index": 28,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_028.wav?v=1793388567285541900",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-029",
+          "questionId": 28,
+          "prompt": "If NO, indicate below the tasks that must be completed first:",
+          "sourceQuestion": "If NO, indicate below the tasks that must be completed first:",
+          "context": [],
+          "answerIndices": [
+            29
+          ],
+          "clips": [
+            {
+              "id": "answer-029",
+              "index": 29,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_029.wav?v=1793388567731745300",
+              "duration": 5.875
+            }
+          ]
+        },
+        {
+          "id": "q-030",
+          "questionId": 29,
+          "prompt": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee below:",
+          "sourceQuestion": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below: (i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+          "context": [
+            "s",
+            "i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing"
+          ],
+          "answerIndices": [
+            30
+          ],
+          "clips": [
+            {
+              "id": "answer-030",
+              "index": 30,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_030.wav?v=1793388567959716600",
+              "duration": 2.05
+            }
+          ]
+        },
+        {
+          "id": "q-031",
+          "questionId": 30,
+          "prompt": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee below:",
+          "sourceQuestion": "If you answered NO for Question 6, are other employees responsible for completing any of the earlier tasks in the process? If so, indicate the employee(s) below: (i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing)",
+          "context": [
+            "s",
+            "i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing"
+          ],
+          "answerIndices": [
+            31
+          ],
+          "clips": [
+            {
+              "id": "answer-031",
+              "index": 31,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_031.wav?v=1793388568244945100",
+              "duration": 2.7
+            }
+          ]
+        },
+        {
+          "id": "q-032",
+          "questionId": 31,
+          "prompt": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+          "sourceQuestion": "Is the employee ever directly monitored by a supervisor when the target task is to be performed? If YES, indicate the frequency of monitoring:",
+          "context": [],
+          "answerIndices": [
+            32
+          ],
+          "clips": [
+            {
+              "id": "answer-032",
+              "index": 32,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_032.wav?v=1793388568543527700",
+              "duration": 2.85
+            }
+          ]
+        },
+        {
+          "id": "q-033",
+          "questionId": 32,
+          "prompt": "Does the employee ever receive feedback about their performance?",
+          "sourceQuestion": "Does the employee ever receive feedback about their performance?",
+          "context": [],
+          "answerIndices": [
+            33
+          ],
+          "clips": [
+            {
+              "id": "answer-033",
+              "index": 33,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_033.wav?v=1793388568984597700",
+              "duration": 9.775
+            }
+          ]
+        },
+        {
+          "id": "q-034",
+          "questionId": 33,
+          "prompt": "Does this mean corrective feedback is given?",
+          "sourceQuestion": "If asked whether this means corrective feedback is given:",
+          "context": [],
+          "answerIndices": [
+            34
+          ],
+          "clips": [
+            {
+              "id": "answer-034",
+              "index": 34,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_034.wav?v=1793388569081119100",
+              "duration": 1.4
+            }
+          ]
+        },
+        {
+          "id": "q-035",
+          "questionId": 34,
+          "prompt": "And how is that feedback delivered? Is it written, verbal, graphed?",
+          "sourceQuestion": "And how is that feedback delivered? Is it written, verbal, graphed?",
+          "context": [],
+          "answerIndices": [
+            35
+          ],
+          "clips": [
+            {
+              "id": "answer-035",
+              "index": 35,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_035.wav?v=1793388569496513200",
+              "duration": 6.125
+            }
+          ]
+        },
+        {
+          "id": "q-036",
+          "questionId": 35,
+          "prompt": "Got it. So if they do receive feedback, who gives them this feedback?",
+          "sourceQuestion": "Got it. So if they do receive feedback, who gives them this feedback?",
+          "context": [],
+          "answerIndices": [
+            36
+          ],
+          "clips": [
+            {
+              "id": "answer-036",
+              "index": 36,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_036.wav?v=1793388569708840600",
+              "duration": 3.95
+            }
+          ]
+        },
+        {
+          "id": "q-037",
+          "questionId": 36,
+          "prompt": "How often?",
+          "sourceQuestion": "How often?",
+          "context": [],
+          "answerIndices": [
+            37
+          ],
+          "clips": [
+            {
+              "id": "answer-037",
+              "index": 37,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_037.wav?v=1793388570275560200",
+              "duration": 12.35
+            }
+          ]
+        },
+        {
+          "id": "q-038",
+          "questionId": 37,
+          "prompt": "How long after the task?",
+          "sourceQuestion": "How long after the task?",
+          "context": [],
+          "answerIndices": [
+            38
+          ],
+          "clips": [
+            {
+              "id": "answer-038",
+              "index": 38,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_038.wav?v=1793388570741822500",
+              "duration": 4.875
+            }
+          ]
+        },
+        {
+          "id": "q-039",
+          "questionId": 38,
+          "prompt": "Does the employee ever see the effects of accurate task completion? If YES, how?",
+          "sourceQuestion": "Does the employee ever see the effects of accurate task completion? If YES, how?\n(i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior))",
+          "context": [
+            "i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)"
+          ],
+          "answerIndices": [
+            39
+          ],
+          "clips": [
+            {
+              "id": "answer-039",
+              "index": 39,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_039.wav?v=1793388570871733400",
+              "duration": 1.3
+            }
+          ]
+        },
+        {
+          "id": "q-040",
+          "questionId": 39,
+          "prompt": "Is the task simple or does it involve relatively low response effort?",
+          "sourceQuestion": "Is the task simple or does it involve relatively low response effort?",
+          "context": [],
+          "answerIndices": [
+            40
+          ],
+          "clips": [
+            {
+              "id": "answer-040",
+              "index": 40,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_040.wav?v=1793388572074781000",
+              "duration": 18.3
+            }
+          ]
+        },
+        {
+          "id": "q-041",
+          "questionId": 40,
+          "prompt": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?",
+          "sourceQuestion": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks? (i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?)",
+          "context": [
+            "i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?"
+          ],
+          "answerIndices": [
+            41
+          ],
+          "clips": [
+            {
+              "id": "answer-041",
+              "index": 41,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_041.wav?v=1793388572339506700",
+              "duration": 2.45
+            }
+          ]
+        },
+        {
+          "id": "q-042",
+          "questionId": 41,
+          "prompt": "So could you identify some of those competing tasks?",
+          "sourceQuestion": "So could you identify some of those competing tasks?\n\nOR \n\nWhat are those tasks?",
+          "context": [],
+          "answerIndices": [
+            42
+          ],
+          "clips": [
+            {
+              "id": "answer-042",
+              "index": 42,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_042.wav?v=1793388572675051700",
+              "duration": 7.0
+            }
+          ]
+        },
+        {
+          "id": "q-043",
+          "questionId": 42,
+          "prompt": "Ok, cool. That’s it for that, thank you.",
+          "sourceQuestion": "Ok, cool. That’s it for that, thank you.",
+          "context": [],
+          "answerIndices": [
+            43
+          ],
+          "clips": [
+            {
+              "id": "answer-043",
+              "index": 43,
+              "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_043.wav?v=1793388572850803800",
+              "duration": 1.425
+            }
+          ]
+        }
+      ],
+      "answerCount": 43,
+      "duration": 184.1
+    }
+  ],
+  "incompleteFolders": [
+    {
+      "folder": "dist\\media\\reviewed\\Video Vignette 1 MatsProRes Indicated_Streamline Script",
+      "missing": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    }
+  ]
+}

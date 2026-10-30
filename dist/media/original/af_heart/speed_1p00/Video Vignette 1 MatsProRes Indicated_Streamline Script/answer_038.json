@@ -1,0 +1,26 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 38,
+    "question": "From your perspective as the supervisor, does the task generally take precedence over other potentially competing tasks?\n(i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?). If NO, indicate those competing tasks.",
+    "raw_answer": "(long pause) um no. no. (firmly) um because at times they have to attend to the child’s problem behavior over data collection but at some point, she does have to collect data and there have been days where they will go a full session without collecting data and are reminded of it.",
+    "spoken_text": "um no. no. um because at times they have to attend to the child's problem behavior over data collection but at some point, she does have to collect data and there have been days where they will go a full session without collecting data and are reminded of it.",
+    "cues": [
+      "long pause",
+      "firmly"
+    ],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "3c83544bbf3e55ce2181c64b5fe80c146f2ef599ff502e38b4de774eca9a4f70",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 15.7,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_038.wav",
+  "created_utc": "2026-10-30T19:29:12.213540+00:00",
+  "text_source": "existing transcript"
+}

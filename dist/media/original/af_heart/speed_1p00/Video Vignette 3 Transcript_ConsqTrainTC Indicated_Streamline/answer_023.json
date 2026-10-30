@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 23,
+    "question": "List some materials that are needed and indicate their availability?",
+    "raw_answer": "Pen, data sheet, stimuli. Should be in the binders...should be...um..that's um...you said what's their availability...they're in the binders...uh data sheets are in the binders, stimuli are in the binders, there's the other binder and then we also have…….so……no.",
+    "spoken_text": "Pen, data sheet, stimuli. Should be in the binders... should be... um... that's um... you said what's their availability... they're in the binders... uh data sheets are in the binders, stimuli are in the binders, there's the other binder and then we also have... so... no.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "c4d48e31ce564077ffffe91436526c00e6ccf57c109eb599d05394b7dc9470eb",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 16.475,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_023.wav",
+  "created_utc": "2026-10-30T19:29:26.148373+00:00",
+  "text_source": "existing transcript"
+}

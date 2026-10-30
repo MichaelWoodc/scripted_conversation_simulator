@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 25,
+    "question": "What times are those materials unavailable?",
+    "raw_answer": "Most materials are not available at the end of day or when transitioning between sessions.",
+    "spoken_text": "Most materials are not available at the end of day or when transitioning between sessions.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "b9b1a89f6070100f5a04958de8e18ca32d3a26ef9dd6d4e9f8ba3d38800f7a5f",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.7,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_025.wav",
+  "created_utc": "2026-10-30T19:29:08.682356+00:00",
+  "text_source": "existing transcript"
+}

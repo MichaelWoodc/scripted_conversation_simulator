@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 11,
+    "question": "Can the employee accurately describe the target task and when it should be performed?",
+    "raw_answer": "Um…they do it during session with a client. So yes, they can accurately describe it.",
+    "spoken_text": "Um... they do it during session with a client. So yes, they can accurately describe it.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "9ce3820e7597272ea7d371ec36a5ff979275e0097e8fe7bc6ffa53a2020d0ecd",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.625,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_011.wav",
+  "created_utc": "2026-10-30T19:29:04.374988+00:00",
+  "text_source": "existing transcript"
+}

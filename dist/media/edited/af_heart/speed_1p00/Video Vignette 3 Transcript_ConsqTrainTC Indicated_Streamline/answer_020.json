@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.docx",
+    "index": 20,
+    "question": "Is the task being performed in an environment well-suited for task completion?\n(i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?)",
+    "raw_answer": "There’s a lot of people working in that room, so it can be pretty loud at times.\n Not sure that helps.",
+    "spoken_text": "There's a lot of people working in that room, so it can be pretty loud at times. Not sure that helps.",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "3d3e1293e8f6c836db84cc3b3fcfe4af75a2d37197ea62f50b38b3f08963254e",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 5.95,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline\\answer_020.wav",
+  "created_utc": "2026-10-30T19:28:53.549719+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 3 Transcript_ConsqTrainTC Indicated_Streamline.ipynb"
+}

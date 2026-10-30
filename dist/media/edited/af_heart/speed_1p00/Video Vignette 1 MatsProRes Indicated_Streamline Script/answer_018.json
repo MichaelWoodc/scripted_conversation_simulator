@@ -1,0 +1,23 @@
+{
+  "model": "hexgrad/Kokoro-82M",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "render_version": 2,
+  "answer": {
+    "source": "Video Vignette 1 MatsProRes Indicated_Streamline Script.docx",
+    "index": 18,
+    "question": "Is the employee ever verbally, textually, or electronically reminded to complete the task? (e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts)",
+    "raw_answer": "Yes, electronically. E-mails are sent.",
+    "spoken_text": "\nYes, electronically. E-mails are sent.\n",
+    "cues": [],
+    "notes": []
+  },
+  "audio_processing": "none",
+  "fingerprint": "7a684b7a38c5e6ae27a15155f9aca0fb62db3e7e4af69ed2b72864b87b1619a6",
+  "sample_rate": 24000,
+  "subtype": "PCM_24",
+  "duration_seconds": 3.1,
+  "audio_file": "af_heart\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script\\answer_018.wav",
+  "created_utc": "2026-10-30T19:28:35.364995+00:00",
+  "text_source": "answer_notebooks\\Video Vignette 1 MatsProRes Indicated_Streamline Script.ipynb"
+}
