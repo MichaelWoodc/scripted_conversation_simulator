@@ -1,5 +1,15 @@
 # Scripted conversation simulator
 
+Website: **[Open Conversation Lab](https://michaelwoodc.github.io/scripted_conversation_simulator/)**.
+Once GitHub Pages is enabled and these files are pushed, that address automatically
+redirects to [the website in `dist/`](https://michaelwoodc.github.io/scripted_conversation_simulator/dist/).
+
+No custom deployment workflow is needed. In the repository's **Settings → Pages**,
+choose **Deploy from a branch**, select the branch containing these files, select
+**`/(root)`**, and save. Commit the root `index.html`, `.nojekyll`, and the complete
+`dist/` folder, including its audio files. The root `.nojekyll` serves the files
+directly, preserving the recording paths.
+
 Run `bin/start_practice.ps1` and open **http://localhost:8765** in Chrome or Edge.
 Choose a recording edition and vignette. Read each question aloud; recognized words
 turn green, and the matching recorded answer plays after a short pause.
@@ -7,6 +17,8 @@ turn green, and the matching recorded answer plays after a short pause.
 The project is organized as follows:
 
 ```text
+index.html                   Redirect from the GitHub Pages root to dist/
+.nojekyll                    Serve the committed files without a Jekyll build
 bin/                         Python code, PowerShell launchers, requirements, tests
   site/                      Editable HTML, JavaScript, CSS, and page templates
   project_paths.py           Shared project and audio paths
@@ -31,8 +43,9 @@ dist/                        Complete website ready to serve or publish
 backups/                     Archives, exports, and snapshots from before the refactor
 ```
 
-All `.py` files are under `bin/`. All website runtime files, including recordings,
-are under `dist/`. Edit frontend source in `bin/site/`, then rebuild; changes made
+All `.py` files are under `bin/`. The website application and recordings are under
+`dist/`; the root `index.html` redirects visitors there. Edit frontend source in
+`bin/site/`, then rebuild; changes made
 directly to generated HTML/CSS/JavaScript in `dist/` are overwritten by the build.
 
 ## Edit and save recordings
@@ -91,7 +104,9 @@ python .\bin\build_site.py --static
 python -m http.server 8765 --directory dist
 ```
 
-Publish the **contents of `dist/`**, including `media/`. Every build uses the same
+For GitHub Pages, publish the repository branch from **`/(root)`** as described
+above. The root page redirects to `dist/`. For another static host, you can publish
+the **contents of `dist/`**, including `media/`, directly. Every build uses the same
 recordings that the notebooks save; no separate audio export or copy is required.
 Rebuild after adding new complete recording sets. Use localhost or HTTPS for
 microphone access. See [the website notes](bin/site/README.md) for browser behavior.

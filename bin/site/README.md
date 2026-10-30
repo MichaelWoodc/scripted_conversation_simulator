@@ -36,10 +36,16 @@ dist/                        Entire website, ready for static hosting
 ```
 
 Restart the launcher after changing frontend source, or run
-`python bin/build_site.py --static`. Publish the **contents of `dist/`**, including
-`media/`, for GitHub Pages or another static host. All asset and audio URLs are
-relative, so repository subpaths work. No API server, model, or API key is required
-for the published website. Use HTTPS or localhost for microphone access.
+`python bin/build_site.py --static`. For GitHub Pages, select **Deploy from a
+branch → your branch → `/(root)`**. Commit the root `index.html`, `.nojekyll`, and
+the complete `dist/` folder, including `media/`. No custom workflow is required.
+[The public URL](https://michaelwoodc.github.io/scripted_conversation_simulator/)
+automatically redirects to
+[`dist/`](https://michaelwoodc.github.io/scripted_conversation_simulator/dist/).
+For another static host, you can publish the **contents of `dist/`** directly.
+All asset and audio URLs are relative, so repository subpaths work. No API server,
+model, or API key is required for the published website. Use HTTPS or localhost
+for microphone access.
 
 The notebooks save directly into `dist/media/edited/<voice>/speed_1p00/<Word filename>/`.
 Batch generation uses the same layout under `original/` or `edited/`. The website

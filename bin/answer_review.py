@@ -96,7 +96,7 @@ class ReviewStore:
 """
         self.drafts = self.read_drafts()
         self.write_json(self.portable_path, self.drafts)
-        names = ['data/answer_edits.json', 'README.md', '.gitignore']
+        names = ['data/answer_edits.json', 'README.md', '.gitignore', 'index.html', '.nojekyll']
         files = [self.project_root / name for name in names]
         extensions = {'.py', '.ps1', '.txt', '.json', '.html', '.css', '.js', '.mjs', '.md'}
         files.extend(p for p in (self.project_root / 'bin').rglob('*')
