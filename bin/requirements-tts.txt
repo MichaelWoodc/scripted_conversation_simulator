@@ -1,9 +1,9 @@
 # Install the CUDA build separately with setup_tts.ps1 before these packages.
-torch==2.7.1
+torch==2.13.0
 kokoro==0.9.4
 misaki[en]==0.9.4
 numpy==1.26.4
-transformers==4.51.3
+transformers==5.10.1
 spacy>=3.8.7,<3.9
 soundfile>=0.13.1,<0.15
 espeakng-loader==0.2.4

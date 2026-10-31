@@ -1,4 +1,4 @@
-﻿addict==2.4.0
+addict==2.4.0
 annotated-doc==0.0.5
 annotated-types==0.8.0
 anyio==4.15.1
@@ -138,11 +138,11 @@ terminado==0.18.1
 thinc==8.3.14
 tinycss2==1.5.1
 tokenizers==0.21.4
-torch==2.7.1+cu126
+torch==2.13.0
 tornado==6.6
 tqdm==4.70.1
 traitlets==5.16.1
-transformers==4.51.3
+transformers==5.10.1
 typer==0.27.3
 typing-inspection==0.4.4
 typing_extensions==4.16.0
