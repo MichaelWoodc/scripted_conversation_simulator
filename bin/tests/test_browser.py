@@ -214,7 +214,7 @@ class BrowserTests(unittest.TestCase):
         self.assertIn('Voice timing',self.page.locator('#modeStatus').inner_text())
         self.page.locator('#debugToggle').click()
         self.assertIn('does not provide',self.page.locator('#recognitionReason').inner_text())
-        self.assertEqual(self.page.locator('#fallbackSilenceSetting').input_value(),'3000')
+        self.assertEqual(self.page.locator('#fallbackSilenceSetting').input_value(),'2500')
         self.start()
         self.page.wait_for_timeout(350)
         self.assertEqual(self.page.locator('#voiceProgressBar').get_attribute('aria-valuenow'),'0')
@@ -223,7 +223,7 @@ class BrowserTests(unittest.TestCase):
         self.page.evaluate('window.__level=0')
         self.page.wait_for_timeout(1800)
         self.assertEqual(self.page.evaluate('window.__played.length'),0,'A pause before 75% must not play an answer')
-        self.page.select_option('#fallbackSilenceSetting','1500')
+        self.page.evaluate("document.getElementById('fallbackSilenceSetting').value='1500';document.getElementById('fallbackSilenceSetting').dispatchEvent(new Event('input'))")
         self.page.evaluate('window.__level=0.08')
         self.page.wait_for_function("Number(document.getElementById('voiceProgressBar').getAttribute('aria-valuenow'))>=85")
         self.page.wait_for_timeout(1700)
@@ -339,7 +339,7 @@ class BrowserTests(unittest.TestCase):
         self.page.evaluate("document.getElementById('volumeSetting').value='0.015';document.getElementById('volumeSetting').dispatchEvent(new Event('input'))")
         self.assertEqual(self.page.locator('#transcriptionVolume').input_value(),'0.015')
         self.page.evaluate('window.__level=0.08')
-        self.page.wait_for_function("document.getElementById('timingTestProgress').value===2000",timeout=4000)
+        self.page.wait_for_function("document.getElementById('timingTestProgress').value===1000",timeout=4000)
         self.assertIn('passed',self.page.locator('#timingTestLabel').inner_text())
         self.page.evaluate("window.__audioContext.state='suspended';window.__audioContext.onstatechange()")
         self.assertEqual(self.page.locator('#transcriptionOption').get_attribute('data-availability'),'recommended')
@@ -353,12 +353,51 @@ class BrowserTests(unittest.TestCase):
         self.page.goto(self.base_url+'setup.html?set='+self.fixture['id'])
         self.page.wait_for_function("document.getElementById('deviceSetup').dataset.ready==='true'")
         self.page.locator('#consentReject').click()
+        self.page.locator('.setup-settings').evaluate('(el)=>el.open=true')
+        self.page.evaluate("const slider=document.getElementById('fallbackSilenceSetting');slider.value='3400';slider.dispatchEvent(new Event('input'))")
+        self.assertEqual(self.page.locator('#setupSilenceValue').inner_text(),'3.4 seconds')
+        self.page.locator('.setup-settings').evaluate('(el)=>el.open=false')
         for width,height in [(390,844),(360,740),(1365,768)]:
             self.page.set_viewport_size({'width':width,'height':height})
             self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
             self.assertTrue(self.page.evaluate('document.documentElement.scrollHeight<=innerHeight'),f'{width}x{height} should fit one screen')
         self.page.set_viewport_size({'width':390,'height':844})
         self.page.screenshot(path=str(Path(__file__).resolve().parents[1]/'test-results'/'compact-setup.png'),full_page=True)
+
+    def test_answer_settings_switch_recordings_and_keep_heart_default(self):
+        alternate=deepcopy(self.fixture);alternate['id']='bella-test';alternate['voice']='af_bella'
+        for step in alternate['steps']:
+            for clip in step['clips']:clip['url']+='&speaker=bella'
+        self.page.route('**/catalog.json',lambda route:route.fulfill(content_type='application/json',body=json.dumps({'sets':[self.fixture,alternate]})))
+        self.page.route('**/sets/*.html*',lambda route:route.fulfill(content_type='text/html',body=render_session(self.fixture,[self.fixture,alternate])))
+        self.page.goto(self.url+'?mode=manual')
+        self.page.wait_for_function("document.getElementById('statusPill').dataset.state==='idle'")
+        self.assertEqual(self.page.locator('#answerVoiceSelect').input_value(),'af_heart')
+        self.page.locator('#consentReject').click()
+        self.page.locator('#settingsToggle').click()
+        self.page.select_option('#answerVoiceSelect','af_bella')
+        self.assertEqual(self.page.locator('#voiceLabel').inner_text(),'bella')
+        self.start();self.page.locator('#finishButton').click()
+        self.page.wait_for_function('window.__played.length===2')
+        self.assertTrue(all('speaker=bella' in url for url in self.page.evaluate('window.__played')))
+
+    def test_speaking_time_controls_are_at_question_bottom_and_live(self):
+        self.page.add_init_script('delete window.SpeechRecognition;delete window.webkitSpeechRecognition;')
+        self.open_session()
+        self.assertTrue(self.page.locator('#speakingSettings').is_visible())
+        self.assertFalse(self.page.locator('#speakingPercentSetting').is_visible())
+        self.page.locator('#speakingSettings summary').click()
+        self.assertTrue(self.page.locator('#speakingPercentSetting').is_visible())
+        self.assertEqual(self.page.locator('#volumeSetting').input_value(),'0.007')
+        self.assertEqual(self.page.locator('#fallbackSilenceSetting').get_attribute('min'),'500')
+        self.assertEqual(self.page.locator('#speakingPercentSetting').input_value(),'45')
+        self.assertEqual(self.page.locator('#fallbackSilenceSetting').input_value(),'2500')
+        self.assertTrue(self.page.evaluate("document.querySelector('.question-card').lastElementChild.id==='speakingSettings'"))
+        for control,value in [('speakingPercentSetting','65'),('fallbackSilenceSetting','500'),('volumeSetting','0.02')]:
+            self.page.evaluate("([id,value])=>{const el=document.getElementById(id);el.value=value;el.dispatchEvent(new Event('input'));}",[control,value])
+        self.assertEqual(self.page.locator('#speakingPercentValue').inner_text(),'65%')
+        self.assertEqual(self.page.locator('#silenceValue').inner_text(),'0.5 seconds')
+        self.assertEqual(self.page.locator('#volumeValue').inner_text(),'0.020')
 
 
 if __name__=='__main__':unittest.main()

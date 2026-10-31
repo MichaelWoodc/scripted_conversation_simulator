@@ -9,8 +9,8 @@ export function readDeviceSettings(){
     const raw=document.cookie.split('; ').find(row=>row.startsWith(DEVICE_KEY+'='))?.split('=')[1];
     const settings=JSON.parse(decodeURIComponent(raw));
     if(!['transcription','volume','manual'].includes(settings.mode))return null;
-    return {mode:settings.mode,pause:[1500,2000,3000,4000,5000].includes(settings.pause)?settings.pause:3000,
-      volume:settings.volume>=0.004&&settings.volume<=0.04?settings.volume:0.008,
+    return {mode:settings.mode,pause:settings.pause>=500&&settings.pause<=5000?settings.pause:2500,
+      volume:settings.volume>=0.004&&settings.volume<=0.04?settings.volume:0.007,
       skip:settings.skip!==false,
       micOK:settings.micOK??settings.mode!=='manual',speechOK:settings.speechOK??settings.mode==='transcription'};
   }catch{return null;}

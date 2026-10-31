@@ -18,11 +18,11 @@ async function boot() {initPrivacy();try {
     const saved=readDeviceSettings();
     let settings=null;
     if(MODES.includes(params.get('mode'))){
-      settings={mode:params.get('mode'),pause:[1500,2000,3000,4000,5000].includes(Number(params.get('pause')))?Number(params.get('pause')):3000,
-        volume:(Number(params.get('volume'))>=0.004&&Number(params.get('volume'))<=0.04)?Number(params.get('volume')):0.008,reason:params.get('reason')||'selected'};
+      settings={mode:params.get('mode'),pause:(Number(params.get('pause'))>=500&&Number(params.get('pause'))<=5000)?Number(params.get('pause')):2500,
+        volume:(Number(params.get('volume'))>=0.004&&Number(params.get('volume'))<=0.04)?Number(params.get('volume')):0.007,reason:params.get('reason')||'selected'};
     }else if(await savedModeCanSkip(saved))settings={...saved,reason:'remembered'};
     if(!settings){location.replace(new URL(`setup.html?set=${encodeURIComponent(document.body.dataset.setId)}`,ROOT).href);return;}
-    new Practice(set,settings);
+    new Practice(set,settings,catalog);
   }
 } catch(error) {
   const target=$('catalogStatus')||$('errorMessage');
@@ -55,11 +55,11 @@ function showLibrary(data) {
 }
 
 class Practice {
-  constructor(set,settings) {
+  constructor(set,settings,catalog) {
     if(!set)throw new Error('This audio set is unavailable. Return to the library.');
     this.set=set;this.progress=new SessionProgress(set);this.state='idle';this.audio=$('answerAudio');
     this.transcript='';this.lastLexical='';this.lastTextTime=0;this.lastVoiceTime=0;this.speechHeard=false;
-    this.threshold=0.58;this.pauseMs=800;this.fallbackPauseMs=3000;this.logs=[];this.playEpoch=0;this.closed=false;
+    this.threshold=0.58;this.pauseMs=800;this.fallbackPauseMs=2500;this.requiredPercent=45;this.logs=[];this.playEpoch=0;this.closed=false;
     this.checked=true;this.mode=settings.mode;this.voicedMs=0;this.capabilities=deviceCapabilities();
     this.reason=settings.reason==='working'?'Speech transcription passed the device check.':settings.reason==='remembered'?'Using the mode saved in your settings cookie. Microphone access is checked when you start.':settings.reason==='selected'?'You chose this mode on the setup screen.':recognitionReason(settings.reason);
     this.fallbackPauseMs=settings.pause;
@@ -83,9 +83,10 @@ class Practice {
     $('debugToggle').addEventListener('click',()=>{
       const open=$('debugPanel').hidden;hide('debugPanel',!open);$('debugToggle').setAttribute('aria-expanded',String(open));
     });
+    $('speakingPercentSetting').addEventListener('input',()=>{this.requiredPercent=Number($('speakingPercentSetting').value);this.updateVoiceProgress();});
     $('silenceSetting').addEventListener('change',()=>this.pauseMs=Number($('silenceSetting').value));
-    $('fallbackSilenceSetting').addEventListener('change',()=>{this.fallbackPauseMs=Number($('fallbackSilenceSetting').value);this.updateVoiceProgress();});
-    $('volumeSetting').addEventListener('change',()=>this.monitor.minimum=Number($('volumeSetting').value));
+    $('fallbackSilenceSetting').addEventListener('input',()=>{this.fallbackPauseMs=Number($('fallbackSilenceSetting').value);this.updateVoiceProgress();});
+    $('volumeSetting').addEventListener('input',()=>{this.monitor.minimum=Number($('volumeSetting').value);this.updateVoiceProgress();});
     $('matchSetting').addEventListener('change',()=>{this.threshold=Number($('matchSetting').value);this.updateMatch();});
     $('restartButton').addEventListener('click',()=>{
       if(!confirm('Start a new attempt? This clears progress for this conversation on this browser.'))return;
@@ -94,9 +95,23 @@ class Practice {
     this.timer=setInterval(()=>this.tick(),80);
     window.addEventListener('pagehide',()=>this.close());
     document.addEventListener('visibilitychange',()=>{if(document.hidden){if(this.state==='listening')this.pause();if(this.state==='previewing')this.stopPreview();}});
+    this.answerVariants=catalog.sets.filter(item=>item.edition===set.edition&&item.source===set.source&&item.version===set.version);
+    $('settingsToggle').addEventListener('click',()=>{const open=$('settingsPanel').hidden;hide('settingsPanel',!open);$('settingsToggle').setAttribute('aria-expanded',String(open));});
+    $('answerVoiceSelect').addEventListener('change',()=>this.chooseAnswerVoice($('answerVoiceSelect').value));
+    this.chooseAnswerVoice(preferenceStorage.getItem('conversation-lab:answerVoice')||'af_heart');
     this.renderQuestion();this.setState(this.progress.complete?'complete':'idle');
     this.selectMode(this.mode,this.reason);
     if(new URLSearchParams(location.search).has('debug'))$('debugToggle').click();
+  }
+
+  chooseAnswerVoice(voice){
+    const variant=this.answerVariants.find(item=>item.voice===voice)||this.set;
+    this.set=variant;this.progress.set=variant;
+    $('answerVoiceSelect').value=variant.voice;
+    preferenceStorage.setItem('conversation-lab:answerVoice',variant.voice);
+    $('voiceLabel').textContent=variant.voice.replace(/^[a-z]{2}_/,'');
+    $('answerVoiceStatus').textContent=`Answer voice: ${variant.voice.replace(/^[a-z]{2}_/,'')}. Pending voices appear after generation and a page refresh.`;
+    this.preloadNext();
   }
 
   log(message){this.logs.unshift(`${new Date().toLocaleTimeString()}  ${message}`);this.logs=this.logs.slice(0,16);$('eventLog').textContent=this.logs.join('\n');}
@@ -106,7 +121,7 @@ class Practice {
     this.mode=mode;this.reason=reason;
     const names={transcription:'Speech transcription · word highlighting',volume:'Voice timing · speaking progress bar',manual:'Manual · tap when finished'};
     $('modeStatus').textContent=names[mode];
-    hide('voiceProgress',mode!=='volume');
+    hide('voiceProgress',mode!=='volume');hide('speakingSettings',mode!=='volume');
     if(mode!=='transcription')for(const word of $('questionText').querySelectorAll('.heard'))word.classList.remove('heard');
     this.showDiagnostics();this.updateVoiceProgress();
   }
@@ -124,12 +139,18 @@ class Practice {
   }
 
   updateVoiceProgress(){
+    $('volumeValue').textContent=this.monitor.minimum.toFixed(3);$('silenceValue').textContent=`${this.fallbackPauseMs/1000} seconds`;$('speakingPercentValue').textContent=`${this.requiredPercent}%`;
+    document.querySelector('.voice-target').style.left=`${this.requiredPercent}%`;
     const seconds=this.progress.current?.questionAudio?.duration;
+    if(seconds)$('questionTiming').textContent=`TTS: ${seconds.toFixed(1)}s | ${this.requiredPercent}% target: ${(seconds*this.requiredPercent/100).toFixed(1)}s`;
+    $('fallbackSilenceSetting').setAttribute('aria-valuetext',`${this.fallbackPauseMs/1000} seconds`);
+    $('speakingPercentSetting').setAttribute('aria-valuetext',`${this.requiredPercent}%`);
+    if(this.mode==='volume'&&this.state==='listening')$('hint').textContent=`Reach ${this.requiredPercent}% speaking time, then pause for ${this.fallbackPauseMs/1000} seconds.`;
     const percent=seconds?Math.min(100,this.voicedMs/(seconds*1000)*100):0;
     $('voiceProgressFill').style.width=`${percent}%`;
     $('voiceProgressBar').setAttribute('aria-valuenow',String(Math.round(percent)));
     $('voiceProgressLabel').textContent=`${Math.round(percent)}%`;
-    $('voiceProgressHint').textContent=seconds?`Speak above the volume threshold to fill the bar. Reach 75%, then pause for ${this.fallbackPauseMs/1000} seconds. ${ (this.voicedMs/1000).toFixed(1)} / ${seconds.toFixed(1)} seconds spoken.`:'Question TTS timing is unavailable. Use “I’m finished” after reading.';
+    $('voiceProgressHint').textContent=seconds?`Speak above the volume threshold to fill the bar. Reach ${this.requiredPercent}%, then pause for ${this.fallbackPauseMs/1000} seconds. ${ (this.voicedMs/1000).toFixed(1)} / ${seconds.toFixed(1)} seconds spoken.`:'Question TTS timing is unavailable. Use “I’m finished” after reading.';
   }
 
   previewQuestion(){
@@ -149,6 +170,7 @@ class Practice {
   stopPreview(){this.questionAudio.pause();this.questionAudio.onended=null;this.questionAudio.onerror=null;if(this.state==='previewing')this.setState(this.previewPrevious||'idle');}
 
   setState(state) {
+    $('answerVoiceSelect').disabled=['playing','preparing','blocked'].includes(state);
     this.state=state;$('debugPhase').textContent=state;
     const names={idle:'Ready',checking:'Checking device',previewing:'Question preview',preparing:'Preparing',listening:'Listening',paused:'Paused',playing:'Answer playing',blocked:'Ready to play',complete:'Complete'};
     $('statusText').textContent=names[state]||state;$('statusPill').dataset.state=state;
@@ -159,7 +181,7 @@ class Practice {
     hide('pauseButton',state!=='listening');hide('finishButton',state!=='listening');hide('resumeAudioButton',state!=='blocked');
     hide('answerPlayback',!['playing','blocked'].includes(state));
     if(state==='playing'){$('hint').textContent='Listen to the answer. The next question follows automatically.';$('cardLabel').textContent='LISTEN TO THE RESPONSE';}
-    else if(state==='listening'){$('hint').textContent=this.mode==='volume'?`Read aloud until the bar reaches 75%, then pause for ${this.fallbackPauseMs/1000} seconds.`:this.mode==='manual'?'Read the question, then tap “I’m finished”.':'Finish your question, then leave a short pause.';$('cardLabel').textContent='READ ALOUD';}
+    else if(state==='listening'){$('hint').textContent=this.mode==='volume'?`Read aloud until the bar reaches ${this.requiredPercent}%, then pause for ${this.fallbackPauseMs/1000} seconds.`:this.mode==='manual'?'Read the question, then tap “I’m finished”.':'Finish your question, then leave a short pause.';$('cardLabel').textContent='READ ALOUD';}
     else if(state==='paused')$('hint').textContent="Take your time. Continue when you're ready.";
     if(state==='complete')this.showComplete();
   }
@@ -179,7 +201,7 @@ class Practice {
     hide('contextDetails',!step.context.length);$('contextDetails').open=false;
     $('transcript').textContent='No speech yet.';$('matchScore').textContent='0%';$('tailScore').textContent=':';
     const timing=step.questionAudio?.duration;
-    $('questionTiming').textContent=timing?`TTS: ${timing.toFixed(1)}s · 75% target: ${(timing*.75).toFixed(1)}s`:'TTS timing unavailable';
+    $('questionTiming').textContent=timing?`TTS: ${timing.toFixed(1)}s · ${this.requiredPercent}% target: ${(timing*this.requiredPercent/100).toFixed(1)}s`:'TTS timing unavailable';
     $('hearQuestionButton').hidden=!step.questionAudio;
     this.updateVoiceProgress();
     this.preloadNext();
@@ -265,13 +287,13 @@ class Practice {
     if(this.mode==='volume'){
       this.updateVoiceProgress();
       const duration=this.progress.current?.questionAudio?.duration;
-      if(duration&&this.monitor.available&&this.speechHeard&&this.voicedMs>=duration*750&&quiet>=this.fallbackPauseMs)this.finish(false);
+      if(duration&&this.monitor.available&&this.speechHeard&&this.voicedMs>=duration*1000*this.requiredPercent/100&&quiet>=this.fallbackPauseMs)this.finish(false);
     }else if(this.mode==='transcription'&&this.match?.ready&&this.speechHeard&&quiet>=this.pauseMs&&
        (this.transcriptFinal||now-this.lastTextTime>=180)&&(!this.nativeSpeaking||this.monitor.available))this.finish(false);
   }
 
   finish(manual) {
-    const timedReady=this.mode==='volume'&&this.progress.current?.questionAudio?.duration&&this.voicedMs>=this.progress.current.questionAudio.duration*750;
+    const timedReady=this.mode==='volume'&&this.progress.current?.questionAudio?.duration&&this.voicedMs>=this.progress.current.questionAudio.duration*1000*this.requiredPercent/100;
     if(this.state!=='listening'||(!manual&&!(this.mode==='transcription'?this.match?.ready:timedReady)))return;
     if(!this.progress.markAsked())return;
     this.setState('preparing');this.speech.stop();this.showLevel(0);

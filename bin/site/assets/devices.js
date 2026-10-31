@@ -35,9 +35,9 @@ export class DeviceSetup {
     this.monitor=new MicrophoneMonitor(level=>{
       $('transcriptionLevel').value=level;$('timingLevel').value=level;
     },(now,elapsed)=>{
-      this.testMs=Math.min(2000,this.testMs+elapsed);
+      this.testMs=Math.min(1000,this.testMs+elapsed);
       $('timingTestProgress').value=this.testMs;
-      $('timingTestLabel').textContent=`${(this.testMs/1000).toFixed(1)} / 2 seconds${this.testMs>=2000?' — passed':''}`;
+      $('timingTestLabel').textContent=`${(this.testMs/1000).toFixed(1)} / 1 second${this.testMs>=1000?' — passed':''}`;
     },message=>{if(!this.closed)$('deviceStatus').textContent='Microphone paused. Tap Test to resume. Your previous test results are remembered.';});
     for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton'])$(id).addEventListener('click',()=>this.check());
     $('continueToSession').addEventListener('click',()=>this.continue());
@@ -46,7 +46,7 @@ export class DeviceSetup {
       const value=$(id).value;$('transcriptionVolume').value=value;$('volumeSetting').value=value;
       this.monitor.minimum=Number(value);this.persist();
     });
-    $('fallbackSilenceSetting').addEventListener('change',()=>this.persist());
+    $('fallbackSilenceSetting').addEventListener('input',()=>{this.showPause();this.persist();});
     for(const mode of MODES)$(mode+'Choice').addEventListener('change',()=>this.persist());
     $('setupDebugToggle').addEventListener('click',()=>{
       const open=$('setupDebug').hidden;$('setupDebug').hidden=!open;$('setupDebugToggle').setAttribute('aria-expanded',String(open));
@@ -54,9 +54,15 @@ export class DeviceSetup {
     window.addEventListener('storagechoice',()=>{if(!readDeviceSettings())$('rememberDeviceSettings').checked=false;});
     window.addEventListener('pagehide',()=>{this.closed=true;clearTimeout(this.testTimeout);this.probe?.stop();this.monitor.close();});
     if(this.saved){$('fallbackSilenceSetting').value=this.saved.pause;$('volumeSetting').value=this.saved.volume;$('transcriptionVolume').value=this.saved.volume;$('rememberDeviceSettings').checked=this.saved.skip;}
-    this.updateOptions();
+    this.showPause();this.updateOptions();
     $('deviceSetup').dataset.ready='true';
     this.skipSaved();
+  }
+
+  showPause(){
+    const seconds=Number($('fallbackSilenceSetting').value)/1000;
+    $('setupSilenceValue').textContent=`${seconds.toFixed(1)} seconds`;
+    $('fallbackSilenceSetting').setAttribute('aria-valuetext',`${seconds.toFixed(1)} seconds`);
   }
 
   async skipSaved(){
@@ -83,14 +89,14 @@ export class DeviceSetup {
         onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);this.updateOptions();this.persist();resolve({ok:false,code});}
       });
       this.probe=probe;probe.start();
-      clearTimeout(this.testTimeout);this.testTimeout=setTimeout(()=>probe.stop(),20000);
+      clearTimeout(this.testTimeout);this.testTimeout=setTimeout(()=>probe.stop(),10000);
     });
   }
 
   async check(){
     if(this.checking)return;
     this.checking=true;this.caps=deviceCapabilities();
-    this.probe?.stop();this.testWords.clear();this.testMs=0;$('timingTestProgress').value=0;$('timingTestLabel').textContent='0.0 / 2 seconds';
+    this.probe?.stop();this.testWords.clear();this.testMs=0;$('timingTestProgress').value=0;$('timingTestLabel').textContent='0.0 / 1 second';
     for(const span of document.querySelectorAll('[data-test-word]'))span.classList.remove('heard');
     for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton','continueToSession'])$(id).disabled=true;
     $('deviceStatus').textContent='Checking your microphone and transcription. Allow access when your browser asks.';

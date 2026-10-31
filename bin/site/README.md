@@ -10,7 +10,7 @@ threshold so you skip setup next time. **Change mode** reopens setup, and a know
 missing microphone permission brings setup back automatically.
 
 The compact setup includes a spoken “Testing 1…2…3…” check: transcription
-highlights each detected word, while voice timing fills a two-second speech bar.
+highlights each detected word, while voice timing fills a one-second speech bar.
 Both cards have a volume-threshold slider and live input level. With storage
 consent (or the explicit remember checkbox), verified capability results survive
 reloads in the settings cookie. Temporary audio suspension does not erase a
@@ -25,8 +25,8 @@ hardware is requested.
 Automatic mode uses word highlighting when transcription works. If its API is
 absent, its service fails, or it detects sustained speech without returning words,
 practice switches to **Voice timing**. Only time above the microphone volume
-threshold fills the bar. Once it reaches 75% of the question recording's duration,
-a three-second pause plays the answer. Debug lets visitors adjust that pause
+threshold fills the bar. Once it reaches 50% of the question recording's duration,
+a 2.5-second pause plays the answer. Debug lets visitors adjust that pause
 (1.5–5 seconds) and microphone sensitivity. Voice timing estimates reading time;
 it does not check which words were spoken. A manual mode remains available if the
 microphone cannot be used. Visitors can also select voice timing or manual mode
@@ -114,3 +114,18 @@ or transcripts. Permissions, service behavior, network latency, and accent affec
 matching. This is word alignment rather than semantic grading.
 
 The adapter in `bin/site/assets/speech.js` isolates recognition for future changes.
+
+## All answer speakers
+
+`notebooks/generate_all_answer_voices.ipynb` creates every speaker in the Kokoro
+voice pack. Heart remains the default answer voice and existing Heart recordings
+are preserved. Question previews are generated separately with Bella. Packages
+and model downloads are isolated under `.cache/`. The job can be restarted to
+resume partial work, and it rebuilds the site after each completed voice.
+
+Session **Settings** offers the answer-speaker selector. Only complete, compatible
+recording sets can be selected; pending speakers unlock after generation and a
+page refresh. The library keeps one card per conversation rather than duplicating
+cards for each speaker. Speaking-time controls sit at the bottom of the question:
+volume threshold, required percentage (default 50%), and a 1?5 second silence
+slider (default 2.5 seconds). Sliders show their numeric values immediately.

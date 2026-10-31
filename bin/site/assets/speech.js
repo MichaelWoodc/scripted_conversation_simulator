@@ -78,7 +78,7 @@ async function deadline(promise,ms,message){
 }
 
 export class MicrophoneMonitor {
-  constructor(onLevel,onVoice,onInterrupted){this.onLevel=onLevel;this.onVoice=onVoice;this.onInterrupted=onInterrupted;this.available=false;this.noise=0.003;this.minimum=0.008;this.epoch=0;}
+  constructor(onLevel,onVoice,onInterrupted){this.onLevel=onLevel;this.onVoice=onVoice;this.onInterrupted=onInterrupted;this.available=false;this.noise=0.003;this.minimum=0.007;this.epoch=0;}
   start(){
     if(this.starting)return this.starting;
     this.starting=this.open().finally(()=>{this.starting=null;});

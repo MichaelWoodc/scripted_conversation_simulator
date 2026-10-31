@@ -23,15 +23,15 @@
       <div class="mode-option" id="transcriptionOption" data-availability="unavailable">
         <div><label><input type="radio" name="practiceMode" id="transcriptionChoice" value="transcription" disabled> <strong>1. Transcription</strong></label><span class="mode-badge" id="transcriptionBadge">Unavailable</span>
           <p class="test-phrase" aria-label="Transcription test"><span data-test-word="testing">Testing</span> <span data-test-word="one">1</span>&hellip;<span data-test-word="two">2</span>&hellip;<span data-test-word="three">3</span>&hellip;</p>
-          <label class="test-volume">Volume threshold <input id="transcriptionVolume" type="range" min="0.004" max="0.04" step="0.001" value="0.008" aria-label="Transcription microphone volume threshold"></label>
+          <label class="test-volume">Volume threshold <input id="transcriptionVolume" type="range" min="0.004" max="0.04" step="0.001" value="0.007" aria-label="Transcription microphone volume threshold"></label>
           <meter id="transcriptionLevel" min="0" max="1" value="0" aria-label="Transcription microphone level"></meter><p id="transcriptionDetail">Microphone and transcription permission needed.</p></div>
         <button class="secondary-button retry-mode" id="retryTranscriptionButton">Test / retry</button>
       </div>
       <div class="mode-option" id="volumeOption" data-availability="unavailable">
         <div><label><input type="radio" name="practiceMode" id="volumeChoice" value="volume" disabled> <strong>2. Timing based</strong></label><span class="mode-badge" id="volumeBadge">Unavailable</span>
-          <p>Say &ldquo;Testing 1&hellip;2&hellip;3&hellip;&rdquo; for 2 seconds.</p>
-          <progress id="timingTestProgress" max="2000" value="0" aria-label="Two second speaking test"></progress><span id="timingTestLabel">0.0 / 2 seconds</span>
-          <label class="test-volume">Volume threshold <input id="volumeSetting" type="range" min="0.004" max="0.04" step="0.001" value="0.008" aria-label="Timing microphone volume threshold"></label>
+          <p>Say &ldquo;Testing 1&hellip;2&hellip;3&hellip;&rdquo; for 1 second.</p>
+          <progress id="timingTestProgress" max="1000" value="0" aria-label="One second speaking test"></progress><span id="timingTestLabel">0.0 / 1 second</span>
+          <label class="test-volume">Volume threshold <input id="volumeSetting" type="range" min="0.004" max="0.04" step="0.001" value="0.007" aria-label="Timing microphone volume threshold"></label>
           <meter id="timingLevel" min="0" max="1" value="0" aria-label="Timing microphone level"></meter><p id="volumeDetail">Microphone permission needed.</p></div>
         <button class="secondary-button retry-mode" id="retryTimingButton">Test / retry</button>
       </div>
@@ -40,7 +40,7 @@
       </div>
     </fieldset>
     <details class="setup-settings"><summary>Timing settings</summary>
-      <label>Pause before answer <select id="fallbackSilenceSetting"><option value="1500">1.5 seconds</option><option value="2000">2 seconds</option><option value="3000" selected>3 seconds</option><option value="4000">4 seconds</option><option value="5000">5 seconds</option></select></label>
+      <label>Pause before answer <output id="setupSilenceValue" for="fallbackSilenceSetting">2.5 seconds</output><input id="fallbackSilenceSetting" type="range" min="500" max="5000" step="100" value="2500"></label>
     </details>
     <label class="remember-device"><input type="checkbox" id="rememberDeviceSettings"> Remember settings &amp; skip setup next time.</label>
     <p class="browser-note">Transcription may use your browser's online service. Timing stays on your device.</p>

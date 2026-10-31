@@ -150,7 +150,13 @@ def render_template(template, values):
 
 
 def render_library(catalog):
-    sets = catalog['sets']
+    # Speaker variants live in session Settings; keep the library one card per conversation.
+    groups = {}
+    for item in catalog['sets']:
+        key = (item['edition'], item['vignette'], item['speed'])
+        if key not in groups or item['voice'] == 'af_heart':
+            groups[key] = item
+    sets = list(groups.values())
     editions = dict((item['edition'], item['editionLabel']) for item in sets)
     values = {
         'EDITIONS': [{'EDITION': key, 'EDITION_LABEL': label} for key, label in editions.items()],
@@ -166,7 +172,7 @@ def render_library(catalog):
     return render_template((SITE / 'index.html').read_text(encoding='utf-8'), values)
 
 
-def render_session(item):
+def render_session(item, variants=None):
     questions = []
     for index, step in enumerate(item['steps']):
         prompt = step['prompt']
@@ -187,6 +193,13 @@ def render_session(item):
         'EDITION_LABEL': item['editionLabel'], 'QUESTIONS': questions,
         'CONTEXT_HIDDEN': '' if item['steps'][0]['context'] else 'hidden',
     }
+    registry = json.loads((ROOT / 'data' / 'kokoro_voices.json').read_text(encoding='utf-8'))
+    ready = {variant['voice'] for variant in (variants or [item])
+             if variant['edition'] == item['edition'] and variant['source'] == item['source']
+             and variant['version'] == item['version']}
+    values['ANSWER_VOICES'] = [{'VOICE_ID': voice['id'],
+                              'VOICE_NAME': voice['name'] + ('' if voice['id'] in ready else ' - generating / not ready'),
+                              'DISABLED': '' if voice['id'] in ready else 'disabled'} for voice in registry]
     return render_template((SITE / 'session.html').read_text(encoding='utf-8-sig'), values)
 
 
@@ -205,7 +218,7 @@ def build(static_audio=False, *, project=PROJECT):
     (dist/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
     (dist/'sets').mkdir(exist_ok=True)
     for item in catalog['sets']:
-        (dist/item['page']).write_text(render_session(item),encoding='utf-8')
+        (dist/item['page']).write_text(render_session(item, catalog['sets']),encoding='utf-8')
     (dist/'.nojekyll').write_text('',encoding='utf-8')
     return catalog,media
 
