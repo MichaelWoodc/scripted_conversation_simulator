@@ -9,6 +9,7 @@ import wave
 
 from build_site import build, make_catalog, question_audio_path
 from project_paths import ROOT, DIST
+from response_workbooks import load_responses, workbook_path
 
 
 class TypedModelSession:
@@ -48,7 +49,14 @@ def download(url, output):
     partial.replace(output)
 
 
-def run(voices=None, question_voice='af_bella'):
+def run(voices=None, question_voice='af_bella', update_heart=False):
+    catalog, _ = make_catalog()
+    bases = [item for item in catalog['sets'] if item['voice'] == 'af_heart']
+    if not bases:
+        raise RuntimeError('No complete Heart answer sets found.')
+    response_inputs = {item['id']: load_responses(item) for item in bases}
+    for item in bases:
+        print(f'Reading responses: {workbook_path(item)}', flush=True)
     import soundfile as sf
     from kokoro_onnx import Kokoro
     cache = ROOT / '.cache' / 'kokoro-onnx'
@@ -63,10 +71,6 @@ def run(voices=None, question_voice='af_bella'):
     missing = set(selected + [question_voice]) - set(available)
     if missing:
         raise ValueError(f'Unknown model voices: {sorted(missing)}')
-    catalog, _ = make_catalog()
-    bases = [item for item in catalog['sets'] if item['voice'] == 'af_heart']
-    if not bases:
-        raise RuntimeError('No complete Heart answer sets found.')
     errors = []
 
     def synthesize(text, voice, output):
@@ -91,7 +95,7 @@ def run(voices=None, question_voice='af_bella'):
     build()
 
     for voice in selected:
-        if voice == 'af_heart':
+        if voice == 'af_heart' and not update_heart:
             print('Keeping all existing Heart recordings unchanged.', flush=True)
             continue
         for item in bases:
@@ -102,10 +106,7 @@ def run(voices=None, question_voice='af_bella'):
                         parts = list(source.relative_to(DIST).parts)
                         parts[2] = voice
                         output = DIST.joinpath(*parts)
-                        text_path = source.with_suffix('.txt')
-                        if not text_path.exists():
-                            raise FileNotFoundError(f'Answer transcript missing: {text_path}')
-                        text = text_path.read_text(encoding='utf-8')
+                        text = response_inputs[item['id']][clip['index']]
                         target_text = output.with_suffix('.txt')
                         if valid(output) and target_text.exists() and target_text.read_text(encoding='utf-8') == text:
                             continue

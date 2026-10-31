@@ -129,3 +129,8 @@ page refresh. The library keeps one card per conversation rather than duplicatin
 cards for each speaker. Speaking-time controls sit at the bottom of the question:
 volume threshold, required percentage (default 50%), and a 1?5 second silence
 slider (default 2.5 seconds). Sliders show their numeric values immediately.
+
+Bulk response text comes from the six Excel workbooks in `data/responses/`.
+Edit the `response` column and use Alt+Enter for newlines. Text is read directly
+without adding pauses or silence. Save before rerunning the notebook. Set
+`UPDATE_HEART = True` there if the edits should replace Heart's recordings too.
