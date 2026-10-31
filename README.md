@@ -14,6 +14,14 @@ Run `bin/start_practice.ps1` and open **http://localhost:8765** in Chrome or Edg
 Choose a recording edition and vignette. Read each question aloud; recognized words
 turn green, and the matching recorded answer plays after a short pause.
 
+Before starting, **Check microphone & device** chooses transcription, voice timing,
+or manual practice. Voice timing advances a progress bar while you speak; after
+75% of the question's measured TTS duration and a three-second pause, the answer
+plays. Debug explains unavailable transcription and lets you adjust the pause and
+volume threshold. Use the HTTPS website on phones. The cookie banner lets visitors
+choose whether progress is remembered. See [the website guide](bin/site/README.md)
+for device checks, question-audio generation, and storage preferences.
+
 The project is organized as follows:
 
 ```text

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-30T21:36:15.812731+00:00",
+  "generatedAt": "2026-10-31T22:23:56.410904+00:00",
   "sets": [
     {
       "id": "edited-af-heart-speed-1p00-vignette-1",
@@ -30,7 +30,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_001.wav?v=1793384636963595900",
               "duration": 1.475
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6fd4c0244384f5d4924e.wav",
+            "duration": 12.342
+          }
         },
         {
           "id": "q-002",
@@ -48,7 +52,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_002.wav?v=1793388511481800000",
               "duration": 1.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7f25722f1933767fadb9.wav",
+            "duration": 3.864
+          }
         },
         {
           "id": "q-003",
@@ -66,7 +74,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_003.wav?v=1793384720293727300",
               "duration": 9.975
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fcc413ec2ce3f64d5740.wav",
+            "duration": 2.849
+          }
         },
         {
           "id": "q-004",
@@ -84,7 +96,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_004.wav?v=1793388512238779300",
               "duration": 8.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/f5c6858f7687d6f97cf8.wav",
+            "duration": 2.829
+          }
         },
         {
           "id": "q-005",
@@ -104,7 +120,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_005.wav?v=1793388512413060900",
               "duration": 1.275
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/d756098c67090751fbd7.wav",
+            "duration": 7.398
+          }
         },
         {
           "id": "q-006",
@@ -124,7 +144,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_006.wav?v=1793388512569743800",
               "duration": 1.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/f0df41d8d072ebd16773.wav",
+            "duration": 7.933
+          }
         },
         {
           "id": "q-007",
@@ -144,7 +168,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_007.wav?v=1793385592648222500",
               "duration": 4.325
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fd753013655bfd417c21.wav",
+            "duration": 8.238
+          }
         },
         {
           "id": "q-008",
@@ -164,7 +192,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_008.wav?v=1793388512783854100",
               "duration": 2.775
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/be20b1c9481594481010.wav",
+            "duration": 4.489
+          }
         },
         {
           "id": "q-009",
@@ -182,7 +214,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_009.wav?v=1793388512966383200",
               "duration": 2.125
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1b8dd0ca495c3712ff9b.wav",
+            "duration": 8.768
+          }
         },
         {
           "id": "q-010",
@@ -200,7 +236,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_010.wav?v=1793388513172524300",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1c8bab713fb5022cbb3b.wav",
+            "duration": 8.098
+          }
         },
         {
           "id": "q-011",
@@ -225,7 +265,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_012.wav?v=1793388513738882400",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c50e047020afe94eb51d.wav",
+            "duration": 5.088
+          }
         },
         {
           "id": "q-012",
@@ -243,7 +287,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_013.wav?v=1793388514025068700",
               "duration": 2.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/239f4516671a705a66ac.wav",
+            "duration": 4.953
+          }
         },
         {
           "id": "q-013",
@@ -263,7 +311,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_014.wav?v=1793388514161862800",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8528509525f641bf594c.wav",
+            "duration": 6.258
+          }
         },
         {
           "id": "q-014",
@@ -281,7 +333,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_015.wav?v=1793388514270730400",
               "duration": 1.375
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6deee49a92d233ccbdbc.wav",
+            "duration": 4.618
+          }
         },
         {
           "id": "q-015",
@@ -299,7 +355,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_016.wav?v=1793388514912072100",
               "duration": 14.575
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/074b55b2405ebe5838f0.wav",
+            "duration": 3.329
+          }
         },
         {
           "id": "q-016",
@@ -321,7 +381,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_017.wav?v=1793388515037541700",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e283c6aeb9ef7adbe581.wav",
+            "duration": 5.893
+          }
         },
         {
           "id": "q-017",
@@ -341,7 +405,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_018.wav?v=1793388515364995700",
               "duration": 3.1
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a9f69b4f1724dbd30de.wav",
+            "duration": 6.113
+          }
         },
         {
           "id": "q-018",
@@ -361,7 +429,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_019.wav?v=1793388515519115200",
               "duration": 1.475
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/49a61038a97b70c2aec8.wav",
+            "duration": 4.239
+          }
         },
         {
           "id": "q-019",
@@ -381,7 +453,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_020.wav?v=1793388515646423500",
               "duration": 1.8
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a11ca359903b36e43dd3.wav",
+            "duration": 4.918
+          }
         },
         {
           "id": "q-020",
@@ -399,7 +475,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_021.wav?v=1793388515773652900",
               "duration": 2.2
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a2093be71c564758b68.wav",
+            "duration": 5.683
+          }
         },
         {
           "id": "q-021",
@@ -420,7 +500,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_022.wav?v=1793388515888144700",
               "duration": 1.6
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fb4d239d7affdb429af2.wav",
+            "duration": 5.138
+          }
         },
         {
           "id": "q-022",
@@ -438,7 +522,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_023.wav?v=1793388516843542600",
               "duration": 16.15
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7d23639f24512a984b62.wav",
+            "duration": 3.339
+          }
         },
         {
           "id": "q-023",
@@ -456,7 +544,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_024.wav?v=1793388517359440500",
               "duration": 7.725
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ebd2676470daa69214ff.wav",
+            "duration": 6.168
+          }
         },
         {
           "id": "q-024",
@@ -474,7 +566,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_025.wav?v=1793388517903843300",
               "duration": 5.825
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/53e4dd92a6bdd1be0977.wav",
+            "duration": 3.069
+          }
         },
         {
           "id": "q-025",
@@ -494,7 +590,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_026.wav?v=1793388518094889800",
               "duration": 3.375
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2997f54e7d56e144483a.wav",
+            "duration": 5.413
+          }
         },
         {
           "id": "q-026",
@@ -514,7 +614,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_027.wav?v=1793388518221858700",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3b478d58ceda79d0d447.wav",
+            "duration": 5.538
+          }
         },
         {
           "id": "q-027",
@@ -534,7 +638,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_028.wav?v=1793388518531817900",
               "duration": 6.6
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6bc806bea048b9f172b1.wav",
+            "duration": 8.998
+          }
         },
         {
           "id": "q-028",
@@ -555,7 +663,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_029.wav?v=1793388518695315600",
               "duration": 2.975
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3f2daeb70c5301cb9718.wav",
+            "duration": 11.297
+          }
         },
         {
           "id": "q-029",
@@ -575,7 +687,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_030.wav?v=1793388518866577600",
               "duration": 1.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a7f673864be0f732c1a0.wav",
+            "duration": 9.838
+          }
         },
         {
           "id": "q-030",
@@ -593,7 +709,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_031.wav?v=1793388519138535900",
               "duration": 3.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dfb7b9b25441a2a95bf6.wav",
+            "duration": 4.169
+          }
         },
         {
           "id": "q-031",
@@ -611,7 +731,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_032.wav?v=1793388519268514800",
               "duration": 1.925
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ddc79ba14ceebeb19de6.wav",
+            "duration": 1.504
+          }
         },
         {
           "id": "q-032",
@@ -629,7 +753,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_033.wav?v=1793388519444882900",
               "duration": 1.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/34f881e9d4b0b6644194.wav",
+            "duration": 2.229
+          }
         },
         {
           "id": "q-033",
@@ -647,7 +775,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_034.wav?v=1793388519605154700",
               "duration": 1.275
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c85a782bc6975e4731bc.wav",
+            "duration": 4.299
+          }
         },
         {
           "id": "q-034",
@@ -665,7 +797,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_035.wav?v=1793388519702770000",
               "duration": 1.375
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7bf56be0bff68a7ec623.wav",
+            "duration": 5.309
+          }
         },
         {
           "id": "q-035",
@@ -685,7 +821,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_036.wav?v=1793388519979047900",
               "duration": 5.525
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/732fa08a211a54b7d0d4.wav",
+            "duration": 6.598
+          }
         },
         {
           "id": "q-036",
@@ -703,7 +843,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_037.wav?v=1793388520183085000",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5373295d4584bcbe681a.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-037",
@@ -723,11 +867,15 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_038.wav?v=1793388520904983800",
               "duration": 16.575
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/9bc92ebd5bd4df888882.wav",
+            "duration": 11.242
+          }
         }
       ],
       "answerCount": 38,
-      "duration": 153.6
+      "duration": 153.7
     },
     {
       "id": "edited-af-heart-speed-1p00-vignette-2",
@@ -757,7 +905,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_001.wav?v=1793388521101818500",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/08dbb1582bd92842a616.wav",
+            "duration": 3.754
+          }
         },
         {
           "id": "q-002",
@@ -775,7 +927,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_002.wav?v=1793388521198835400",
               "duration": 1.6
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dea6b2a60d1e6c1394bc.wav",
+            "duration": 8.048
+          }
         },
         {
           "id": "q-003",
@@ -793,7 +949,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_003.wav?v=1793388521344987000",
               "duration": 1.575
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/392c86bfef689d124f56.wav",
+            "duration": 6.858
+          }
         },
         {
           "id": "q-004",
@@ -811,7 +971,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_004.wav?v=1793388521528719700",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c50e047020afe94eb51d.wav",
+            "duration": 5.088
+          }
         },
         {
           "id": "q-005",
@@ -829,7 +993,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_005.wav?v=1793388521957297500",
               "duration": 4.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/239f4516671a705a66ac.wav",
+            "duration": 4.953
+          }
         },
         {
           "id": "q-006",
@@ -849,7 +1017,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_006.wav?v=1793388522506336000",
               "duration": 8.525
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8528509525f641bf594c.wav",
+            "duration": 6.258
+          }
         },
         {
           "id": "q-007",
@@ -867,7 +1039,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_007.wav?v=1793388522697580200",
               "duration": 2.025
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/aa96ebdc9a4e73d83e3c.wav",
+            "duration": 4.109
+          }
         },
         {
           "id": "q-008",
@@ -885,7 +1061,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_008.wav?v=1793388523084937700",
               "duration": 3.675
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6deee49a92d233ccbdbc.wav",
+            "duration": 4.618
+          }
         },
         {
           "id": "q-009",
@@ -903,7 +1083,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_009.wav?v=1793388523287713000",
               "duration": 3.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/074b55b2405ebe5838f0.wav",
+            "duration": 3.329
+          }
         },
         {
           "id": "q-010",
@@ -925,7 +1109,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_010.wav?v=1793388523393396500",
               "duration": 1.55
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e283c6aeb9ef7adbe581.wav",
+            "duration": 5.893
+          }
         },
         {
           "id": "q-011",
@@ -945,7 +1133,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_011.wav?v=1793388523851074300",
               "duration": 4.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a9f69b4f1724dbd30de.wav",
+            "duration": 6.113
+          }
         },
         {
           "id": "q-012",
@@ -965,7 +1157,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_012.wav?v=1793388524337653700",
               "duration": 6.425
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a11ca359903b36e43dd3.wav",
+            "duration": 4.918
+          }
         },
         {
           "id": "q-013",
@@ -983,7 +1179,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_013.wav?v=1793388524466297200",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a2093be71c564758b68.wav",
+            "duration": 5.683
+          }
         },
         {
           "id": "q-014",
@@ -1004,7 +1204,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_014.wav?v=1793388524601915800",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fb4d239d7affdb429af2.wav",
+            "duration": 5.138
+          }
         },
         {
           "id": "q-015",
@@ -1022,7 +1226,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_015.wav?v=1793388524760935300",
               "duration": 2.975
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/79fe90f0a07b37e6db63.wav",
+            "duration": 4.033
+          }
         },
         {
           "id": "q-016",
@@ -1040,7 +1248,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_016.wav?v=1793388524961697700",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ebd2676470daa69214ff.wav",
+            "duration": 6.168
+          }
         },
         {
           "id": "q-017",
@@ -1060,7 +1272,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_017.wav?v=1793388525148991000",
               "duration": 3.375
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2997f54e7d56e144483a.wav",
+            "duration": 5.413
+          }
         },
         {
           "id": "q-018",
@@ -1080,7 +1296,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_018.wav?v=1793388525590568200",
               "duration": 5.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3b478d58ceda79d0d447.wav",
+            "duration": 5.538
+          }
         },
         {
           "id": "q-019",
@@ -1100,7 +1320,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_019.wav?v=1793388525892921800",
               "duration": 3.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6bc806bea048b9f172b1.wav",
+            "duration": 8.998
+          }
         },
         {
           "id": "q-020",
@@ -1118,7 +1342,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_020.wav?v=1793388526207418500",
               "duration": 3.025
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/0d95f3ac1795861841c8.wav",
+            "duration": 6.068
+          }
         },
         {
           "id": "q-021",
@@ -1136,7 +1364,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_021.wav?v=1793388526889887600",
               "duration": 10.075
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6d9e6d1d8b6b8a88948f.wav",
+            "duration": 7.233
+          }
         },
         {
           "id": "q-022",
@@ -1154,7 +1386,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_022.wav?v=1793388527090760700",
               "duration": 2.55
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ab7da0ff9c4e632da013.wav",
+            "duration": 5.004
+          }
         },
         {
           "id": "q-023",
@@ -1172,7 +1408,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_023.wav?v=1793388527660744600",
               "duration": 12.725
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/cdf6d9972fef30bbad4e.wav",
+            "duration": 3.799
+          }
         },
         {
           "id": "q-024",
@@ -1190,7 +1430,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_024.wav?v=1793388528174071300",
               "duration": 7.5
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/faa8e770459ae30304f0.wav",
+            "duration": 5.369
+          }
         },
         {
           "id": "q-025",
@@ -1210,7 +1454,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_025.wav?v=1793388528327961800",
               "duration": 2.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/732fa08a211a54b7d0d4.wav",
+            "duration": 6.598
+          }
         },
         {
           "id": "q-026",
@@ -1228,7 +1476,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_026.wav?v=1793388528511696600",
               "duration": 1.5
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5373295d4584bcbe681a.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-027",
@@ -1248,7 +1500,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_027.wav?v=1793388528829582500",
               "duration": 6.8
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/52ca279aae10c73eec92.wav",
+            "duration": 11.202
+          }
         },
         {
           "id": "q-028",
@@ -1266,7 +1522,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_028.wav?v=1793388528986455300",
               "duration": 1.725
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c149decaa6a8341c8673.wav",
+            "duration": 2.719
+          }
         }
       ],
       "answerCount": 28,
@@ -1300,7 +1560,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_001.wav?v=1793388529114846500",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7f25722f1933767fadb9.wav",
+            "duration": 3.864
+          }
         },
         {
           "id": "q-002",
@@ -1318,7 +1582,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_002.wav?v=1793388529698069000",
               "duration": 6.05
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e48ed621eddaa4452271.wav",
+            "duration": 3.839
+          }
         },
         {
           "id": "q-003",
@@ -1336,7 +1604,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_003.wav?v=1793388530179018600",
               "duration": 10.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dea6b2a60d1e6c1394bc.wav",
+            "duration": 8.048
+          }
         },
         {
           "id": "q-004",
@@ -1356,7 +1628,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_004.wav?v=1793388530268694300",
               "duration": 1.2
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1762f1c44a024979a0a2.wav",
+            "duration": 5.308
+          }
         },
         {
           "id": "q-005",
@@ -1376,7 +1652,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_005.wav?v=1793388530388826900",
               "duration": 1.95
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/cb94246b91ff210605af.wav",
+            "duration": 4.854
+          }
         },
         {
           "id": "q-006",
@@ -1396,7 +1676,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_006.wav?v=1793388530517274700",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/445c8c53bbbed3bfb8ef.wav",
+            "duration": 5.228
+          }
         },
         {
           "id": "q-007",
@@ -1414,7 +1698,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_007.wav?v=1793388530836275500",
               "duration": 3.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2bc323f3554c2bc1a126.wav",
+            "duration": 6.299
+          }
         },
         {
           "id": "q-008",
@@ -1434,7 +1722,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_008.wav?v=1793388530971529800",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/51364bcaf3b06ad9a767.wav",
+            "duration": 4.384
+          }
         },
         {
           "id": "q-009",
@@ -1452,7 +1744,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_009.wav?v=1793388531144845200",
               "duration": 2.15
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1c15011faa99d094512d.wav",
+            "duration": 3.854
+          }
         },
         {
           "id": "q-010",
@@ -1470,7 +1766,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_010.wav?v=1793388531397268100",
               "duration": 2.225
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6c1fea9f08dfd34a2cbd.wav",
+            "duration": 7.598
+          }
         },
         {
           "id": "q-011",
@@ -1488,7 +1788,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_011.wav?v=1793388531548828500",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8b9dcb77d058c8433d64.wav",
+            "duration": 7.088
+          }
         },
         {
           "id": "q-012",
@@ -1506,7 +1810,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_012.wav?v=1793388531816810900",
               "duration": 3.225
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c50e047020afe94eb51d.wav",
+            "duration": 5.088
+          }
         },
         {
           "id": "q-013",
@@ -1524,7 +1832,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_013.wav?v=1793388532100911500",
               "duration": 2.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/33cb807056fbb98a579e.wav",
+            "duration": 4.818
+          }
         },
         {
           "id": "q-014",
@@ -1542,7 +1854,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_014.wav?v=1793388532229401100",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5ab7b3c3f0f3232749af.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-015",
@@ -1562,7 +1878,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_015.wav?v=1793388532431297100",
               "duration": 2.25
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8528509525f641bf594c.wav",
+            "duration": 6.258
+          }
         },
         {
           "id": "q-016",
@@ -1580,7 +1900,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_016.wav?v=1793388532648719900",
               "duration": 4.325
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6deee49a92d233ccbdbc.wav",
+            "duration": 4.618
+          }
         },
         {
           "id": "q-017",
@@ -1598,7 +1922,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_017.wav?v=1793388532911388300",
               "duration": 3.575
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/074b55b2405ebe5838f0.wav",
+            "duration": 3.329
+          }
         },
         {
           "id": "q-018",
@@ -1620,7 +1948,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_018.wav?v=1793388533051320000",
               "duration": 2.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e283c6aeb9ef7adbe581.wav",
+            "duration": 5.893
+          }
         },
         {
           "id": "q-019",
@@ -1640,7 +1972,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_019.wav?v=1793388533262732400",
               "duration": 1.825
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a9f69b4f1724dbd30de.wav",
+            "duration": 6.113
+          }
         },
         {
           "id": "q-020",
@@ -1660,7 +1996,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_020.wav?v=1793388533549719900",
               "duration": 5.95
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a11ca359903b36e43dd3.wav",
+            "duration": 4.918
+          }
         },
         {
           "id": "q-021",
@@ -1678,7 +2018,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_021.wav?v=1793388533803348700",
               "duration": 5.2
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a2093be71c564758b68.wav",
+            "duration": 5.683
+          }
         },
         {
           "id": "q-022",
@@ -1699,7 +2043,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_022.wav?v=1793388533930372000",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fb4d239d7affdb429af2.wav",
+            "duration": 5.138
+          }
         },
         {
           "id": "q-023",
@@ -1717,7 +2065,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_023.wav?v=1793388535002337000",
               "duration": 16.475
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6ba9c2c5eeb6f8853c49.wav",
+            "duration": 4.003
+          }
         },
         {
           "id": "q-024",
@@ -1735,7 +2087,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_024.wav?v=1793388535132266800",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ebd2676470daa69214ff.wav",
+            "duration": 6.168
+          }
         },
         {
           "id": "q-025",
@@ -1753,7 +2109,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_025.wav?v=1793388535426623700",
               "duration": 3.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6cf138cc5e8c09c3fb4f.wav",
+            "duration": 2.434
+          }
         },
         {
           "id": "q-026",
@@ -1773,7 +2133,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_026.wav?v=1793388535835164700",
               "duration": 8.1
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2997f54e7d56e144483a.wav",
+            "duration": 5.413
+          }
         },
         {
           "id": "q-027",
@@ -1793,7 +2157,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_027.wav?v=1793388536005394200",
               "duration": 3.15
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3b478d58ceda79d0d447.wav",
+            "duration": 5.538
+          }
         },
         {
           "id": "q-028",
@@ -1813,7 +2181,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_028.wav?v=1793388536134743600",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6bc806bea048b9f172b1.wav",
+            "duration": 8.998
+          }
         },
         {
           "id": "q-029",
@@ -1831,7 +2203,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_029.wav?v=1793388536577862500",
               "duration": 5.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/871293481147d55ae746.wav",
+            "duration": 4.674
+          }
         },
         {
           "id": "q-030",
@@ -1852,7 +2228,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_030.wav?v=1793388536814554100",
               "duration": 2.05
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3f2daeb70c5301cb9718.wav",
+            "duration": 11.297
+          }
         },
         {
           "id": "q-031",
@@ -1873,7 +2253,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_031.wav?v=1793388537097562600",
               "duration": 2.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3f2daeb70c5301cb9718.wav",
+            "duration": 11.297
+          }
         },
         {
           "id": "q-032",
@@ -1891,7 +2275,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_032.wav?v=1793388537398687600",
               "duration": 2.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a7f673864be0f732c1a0.wav",
+            "duration": 9.838
+          }
         },
         {
           "id": "q-033",
@@ -1909,7 +2297,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_033.wav?v=1793388537840547200",
               "duration": 9.775
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dfb7b9b25441a2a95bf6.wav",
+            "duration": 4.169
+          }
         },
         {
           "id": "q-034",
@@ -1927,7 +2319,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_034.wav?v=1793388537932990200",
               "duration": 1.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/66b5adc9978dfdca3d23.wav",
+            "duration": 3.089
+          }
         },
         {
           "id": "q-035",
@@ -1945,7 +2341,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_035.wav?v=1793388538347301200",
               "duration": 6.125
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/0fa5f394ece9b279b32b.wav",
+            "duration": 5.744
+          }
         },
         {
           "id": "q-036",
@@ -1963,7 +2363,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_036.wav?v=1793388538556976000",
               "duration": 3.95
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c05b39bec80199e1a8cc.wav",
+            "duration": 5.584
+          }
         },
         {
           "id": "q-037",
@@ -1981,7 +2385,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_037.wav?v=1793388539108734900",
               "duration": 12.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ddc79ba14ceebeb19de6.wav",
+            "duration": 1.504
+          }
         },
         {
           "id": "q-038",
@@ -1999,7 +2407,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_038.wav?v=1793388539580665500",
               "duration": 4.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/34f881e9d4b0b6644194.wav",
+            "duration": 2.229
+          }
         },
         {
           "id": "q-039",
@@ -2019,7 +2431,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_039.wav?v=1793388539711441000",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/732fa08a211a54b7d0d4.wav",
+            "duration": 6.598
+          }
         },
         {
           "id": "q-040",
@@ -2037,7 +2453,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_040.wav?v=1793388540905242800",
               "duration": 18.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5373295d4584bcbe681a.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-041",
@@ -2057,7 +2477,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_041.wav?v=1793388541181807400",
               "duration": 2.45
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/de197035cb0f2e489fb9.wav",
+            "duration": 7.658
+          }
         },
         {
           "id": "q-042",
@@ -2075,7 +2499,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_042.wav?v=1793388541610173000",
               "duration": 7.0
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/f285d797f9129d72b124.wav",
+            "duration": 3.849
+          }
         },
         {
           "id": "q-043",
@@ -2093,7 +2521,11 @@
               "url": "media/edited/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_043.wav?v=1793388541793268100",
               "duration": 1.425
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6d7eb00847070b5618ae.wav",
+            "duration": 4.734
+          }
         }
       ],
       "answerCount": 43,
@@ -2127,7 +2559,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_001.wav?v=1793388541963873500",
               "duration": 1.425
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6fd4c0244384f5d4924e.wav",
+            "duration": 12.342
+          }
         },
         {
           "id": "q-002",
@@ -2145,7 +2581,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_002.wav?v=1793388542090885000",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7f25722f1933767fadb9.wav",
+            "duration": 3.864
+          }
         },
         {
           "id": "q-003",
@@ -2163,7 +2603,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_003.wav?v=1793388542505344700",
               "duration": 8.275
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fcc413ec2ce3f64d5740.wav",
+            "duration": 2.849
+          }
         },
         {
           "id": "q-004",
@@ -2181,7 +2625,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_004.wav?v=1793388542935295300",
               "duration": 6.525
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/f5c6858f7687d6f97cf8.wav",
+            "duration": 2.829
+          }
         },
         {
           "id": "q-005",
@@ -2201,7 +2649,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_005.wav?v=1793388543100299300",
               "duration": 1.275
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/d756098c67090751fbd7.wav",
+            "duration": 7.398
+          }
         },
         {
           "id": "q-006",
@@ -2221,7 +2673,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_006.wav?v=1793388543257842400",
               "duration": 1.725
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/f0df41d8d072ebd16773.wav",
+            "duration": 7.933
+          }
         },
         {
           "id": "q-007",
@@ -2241,7 +2697,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_007.wav?v=1793388543427359500",
               "duration": 3.125
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fd753013655bfd417c21.wav",
+            "duration": 8.238
+          }
         },
         {
           "id": "q-008",
@@ -2261,7 +2721,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_008.wav?v=1793388543644058600",
               "duration": 2.425
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/be20b1c9481594481010.wav",
+            "duration": 4.489
+          }
         },
         {
           "id": "q-009",
@@ -2279,7 +2743,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_009.wav?v=1793388543753866700",
               "duration": 1.8
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1b8dd0ca495c3712ff9b.wav",
+            "duration": 8.768
+          }
         },
         {
           "id": "q-010",
@@ -2297,7 +2765,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_010.wav?v=1793388543949562400",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1c8bab713fb5022cbb3b.wav",
+            "duration": 8.098
+          }
         },
         {
           "id": "q-011",
@@ -2322,7 +2794,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_012.wav?v=1793388544501030100",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c50e047020afe94eb51d.wav",
+            "duration": 5.088
+          }
         },
         {
           "id": "q-012",
@@ -2340,7 +2816,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_013.wav?v=1793388544784796000",
               "duration": 2.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/239f4516671a705a66ac.wav",
+            "duration": 4.953
+          }
         },
         {
           "id": "q-013",
@@ -2360,7 +2840,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_014.wav?v=1793388544912760800",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8528509525f641bf594c.wav",
+            "duration": 6.258
+          }
         },
         {
           "id": "q-014",
@@ -2378,7 +2862,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_015.wav?v=1793388545047025900",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6deee49a92d233ccbdbc.wav",
+            "duration": 4.618
+          }
         },
         {
           "id": "q-015",
@@ -2396,7 +2884,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_016.wav?v=1793388545925528500",
               "duration": 14.15
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/074b55b2405ebe5838f0.wav",
+            "duration": 3.329
+          }
         },
         {
           "id": "q-016",
@@ -2418,7 +2910,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_017.wav?v=1793388546052990400",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e283c6aeb9ef7adbe581.wav",
+            "duration": 5.893
+          }
         },
         {
           "id": "q-017",
@@ -2438,7 +2934,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_018.wav?v=1793388546368269300",
               "duration": 3.1
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a9f69b4f1724dbd30de.wav",
+            "duration": 6.113
+          }
         },
         {
           "id": "q-018",
@@ -2458,7 +2958,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_019.wav?v=1793388546590963400",
               "duration": 1.475
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/49a61038a97b70c2aec8.wav",
+            "duration": 4.239
+          }
         },
         {
           "id": "q-019",
@@ -2478,7 +2982,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_020.wav?v=1793388546692927900",
               "duration": 1.525
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a11ca359903b36e43dd3.wav",
+            "duration": 4.918
+          }
         },
         {
           "id": "q-020",
@@ -2496,7 +3004,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_021.wav?v=1793388546861022500",
               "duration": 2.125
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a2093be71c564758b68.wav",
+            "duration": 5.683
+          }
         },
         {
           "id": "q-021",
@@ -2517,7 +3029,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_022.wav?v=1793388546960659000",
               "duration": 1.6
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fb4d239d7affdb429af2.wav",
+            "duration": 5.138
+          }
         },
         {
           "id": "q-022",
@@ -2535,7 +3051,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_023.wav?v=1793388547909580600",
               "duration": 15.325
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7d23639f24512a984b62.wav",
+            "duration": 3.339
+          }
         },
         {
           "id": "q-023",
@@ -2553,7 +3073,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_024.wav?v=1793388548255380500",
               "duration": 7.125
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ebd2676470daa69214ff.wav",
+            "duration": 6.168
+          }
         },
         {
           "id": "q-024",
@@ -2571,7 +3095,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_025.wav?v=1793388548681354700",
               "duration": 5.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/53e4dd92a6bdd1be0977.wav",
+            "duration": 3.069
+          }
         },
         {
           "id": "q-025",
@@ -2591,7 +3119,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_026.wav?v=1793388549023963200",
               "duration": 3.275
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2997f54e7d56e144483a.wav",
+            "duration": 5.413
+          }
         },
         {
           "id": "q-026",
@@ -2611,7 +3143,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_027.wav?v=1793388549153007900",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3b478d58ceda79d0d447.wav",
+            "duration": 5.538
+          }
         },
         {
           "id": "q-027",
@@ -2631,7 +3167,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_028.wav?v=1793388549456210500",
               "duration": 6.2
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6bc806bea048b9f172b1.wav",
+            "duration": 8.998
+          }
         },
         {
           "id": "q-028",
@@ -2652,7 +3192,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_029.wav?v=1793388549756417200",
               "duration": 2.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3f2daeb70c5301cb9718.wav",
+            "duration": 11.297
+          }
         },
         {
           "id": "q-029",
@@ -2672,7 +3216,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_030.wav?v=1793388549924807800",
               "duration": 1.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a7f673864be0f732c1a0.wav",
+            "duration": 9.838
+          }
         },
         {
           "id": "q-030",
@@ -2690,7 +3238,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_031.wav?v=1793388550198620400",
               "duration": 3.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dfb7b9b25441a2a95bf6.wav",
+            "duration": 4.169
+          }
         },
         {
           "id": "q-031",
@@ -2708,7 +3260,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_032.wav?v=1793388550314726100",
               "duration": 1.925
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ddc79ba14ceebeb19de6.wav",
+            "duration": 1.504
+          }
         },
         {
           "id": "q-032",
@@ -2726,7 +3282,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_033.wav?v=1793388550536229700",
               "duration": 1.9
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/34f881e9d4b0b6644194.wav",
+            "duration": 2.229
+          }
         },
         {
           "id": "q-033",
@@ -2744,7 +3304,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_034.wav?v=1793388550700597500",
               "duration": 1.275
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c85a782bc6975e4731bc.wav",
+            "duration": 4.299
+          }
         },
         {
           "id": "q-034",
@@ -2762,7 +3326,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_035.wav?v=1793388550794113300",
               "duration": 1.375
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7bf56be0bff68a7ec623.wav",
+            "duration": 5.309
+          }
         },
         {
           "id": "q-035",
@@ -2782,7 +3350,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_036.wav?v=1793388551146659600",
               "duration": 5.175
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/732fa08a211a54b7d0d4.wav",
+            "duration": 6.598
+          }
         },
         {
           "id": "q-036",
@@ -2800,7 +3372,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_037.wav?v=1793388551343826200",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5373295d4584bcbe681a.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-037",
@@ -2820,7 +3396,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%201%20MatsProRes%20Indicated_Streamline%20Script/answer_038.wav?v=1793388552213540100",
               "duration": 15.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/9bc92ebd5bd4df888882.wav",
+            "duration": 11.242
+          }
         }
       ],
       "answerCount": 38,
@@ -2854,7 +3434,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_001.wav?v=1793388552408269000",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/08dbb1582bd92842a616.wav",
+            "duration": 3.754
+          }
         },
         {
           "id": "q-002",
@@ -2872,7 +3456,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_002.wav?v=1793388552506105800",
               "duration": 1.6
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dea6b2a60d1e6c1394bc.wav",
+            "duration": 8.048
+          }
         },
         {
           "id": "q-003",
@@ -2890,7 +3478,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_003.wav?v=1793388552646300900",
               "duration": 1.575
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/392c86bfef689d124f56.wav",
+            "duration": 6.858
+          }
         },
         {
           "id": "q-004",
@@ -2908,7 +3500,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_004.wav?v=1793388552774125000",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c50e047020afe94eb51d.wav",
+            "duration": 5.088
+          }
         },
         {
           "id": "q-005",
@@ -2926,7 +3522,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_005.wav?v=1793388553196719400",
               "duration": 4.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/239f4516671a705a66ac.wav",
+            "duration": 4.953
+          }
         },
         {
           "id": "q-006",
@@ -2946,7 +3546,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_006.wav?v=1793388553745270300",
               "duration": 8.525
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8528509525f641bf594c.wav",
+            "duration": 6.258
+          }
         },
         {
           "id": "q-007",
@@ -2964,7 +3568,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_007.wav?v=1793388553924304700",
               "duration": 2.025
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/aa96ebdc9a4e73d83e3c.wav",
+            "duration": 4.109
+          }
         },
         {
           "id": "q-008",
@@ -2982,7 +3590,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_008.wav?v=1793388554304573400",
               "duration": 3.675
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6deee49a92d233ccbdbc.wav",
+            "duration": 4.618
+          }
         },
         {
           "id": "q-009",
@@ -3000,7 +3612,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_009.wav?v=1793388554486560300",
               "duration": 3.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/074b55b2405ebe5838f0.wav",
+            "duration": 3.329
+          }
         },
         {
           "id": "q-010",
@@ -3022,7 +3638,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_010.wav?v=1793388554586532600",
               "duration": 1.55
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e283c6aeb9ef7adbe581.wav",
+            "duration": 5.893
+          }
         },
         {
           "id": "q-011",
@@ -3042,7 +3662,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_011.wav?v=1793388555047335900",
               "duration": 4.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a9f69b4f1724dbd30de.wav",
+            "duration": 6.113
+          }
         },
         {
           "id": "q-012",
@@ -3062,7 +3686,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_012.wav?v=1793388555527673800",
               "duration": 6.425
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a11ca359903b36e43dd3.wav",
+            "duration": 4.918
+          }
         },
         {
           "id": "q-013",
@@ -3080,7 +3708,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_013.wav?v=1793388555656731300",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a2093be71c564758b68.wav",
+            "duration": 5.683
+          }
         },
         {
           "id": "q-014",
@@ -3101,7 +3733,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_014.wav?v=1793388555786318500",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fb4d239d7affdb429af2.wav",
+            "duration": 5.138
+          }
         },
         {
           "id": "q-015",
@@ -3119,7 +3755,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_015.wav?v=1793388555946530600",
               "duration": 2.975
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/79fe90f0a07b37e6db63.wav",
+            "duration": 4.033
+          }
         },
         {
           "id": "q-016",
@@ -3137,7 +3777,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_016.wav?v=1793388556143746300",
               "duration": 1.65
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ebd2676470daa69214ff.wav",
+            "duration": 6.168
+          }
         },
         {
           "id": "q-017",
@@ -3157,7 +3801,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_017.wav?v=1793388556329153200",
               "duration": 3.375
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2997f54e7d56e144483a.wav",
+            "duration": 5.413
+          }
         },
         {
           "id": "q-018",
@@ -3177,7 +3825,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_018.wav?v=1793388556764978800",
               "duration": 5.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3b478d58ceda79d0d447.wav",
+            "duration": 5.538
+          }
         },
         {
           "id": "q-019",
@@ -3197,7 +3849,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_019.wav?v=1793388557067896600",
               "duration": 3.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6bc806bea048b9f172b1.wav",
+            "duration": 8.998
+          }
         },
         {
           "id": "q-020",
@@ -3215,7 +3871,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_020.wav?v=1793388557377537300",
               "duration": 3.025
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/0d95f3ac1795861841c8.wav",
+            "duration": 6.068
+          }
         },
         {
           "id": "q-021",
@@ -3233,7 +3893,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_021.wav?v=1793388558064534900",
               "duration": 10.075
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6d9e6d1d8b6b8a88948f.wav",
+            "duration": 7.233
+          }
         },
         {
           "id": "q-022",
@@ -3251,7 +3915,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_022.wav?v=1793388558262806100",
               "duration": 2.55
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ab7da0ff9c4e632da013.wav",
+            "duration": 5.004
+          }
         },
         {
           "id": "q-023",
@@ -3269,7 +3937,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_023.wav?v=1793388558835399600",
               "duration": 12.725
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/cdf6d9972fef30bbad4e.wav",
+            "duration": 3.799
+          }
         },
         {
           "id": "q-024",
@@ -3287,7 +3959,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_024.wav?v=1793388559348509300",
               "duration": 7.5
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/faa8e770459ae30304f0.wav",
+            "duration": 5.369
+          }
         },
         {
           "id": "q-025",
@@ -3307,7 +3983,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_025.wav?v=1793388559501444400",
               "duration": 2.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/732fa08a211a54b7d0d4.wav",
+            "duration": 6.598
+          }
         },
         {
           "id": "q-026",
@@ -3325,7 +4005,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_026.wav?v=1793388559680971500",
               "duration": 1.5
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5373295d4584bcbe681a.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-027",
@@ -3345,7 +4029,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_027.wav?v=1793388560002582700",
               "duration": 6.8
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/52ca279aae10c73eec92.wav",
+            "duration": 11.202
+          }
         },
         {
           "id": "q-028",
@@ -3363,7 +4051,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%202%20Transcript_Training-TC%20Indicated_Streamline/answer_028.wav?v=1793388560153464600",
               "duration": 1.725
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c149decaa6a8341c8673.wav",
+            "duration": 2.719
+          }
         }
       ],
       "answerCount": 28,
@@ -3397,7 +4089,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_001.wav?v=1793388560280434400",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/7f25722f1933767fadb9.wav",
+            "duration": 3.864
+          }
         },
         {
           "id": "q-002",
@@ -3415,7 +4111,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_002.wav?v=1793388560861108400",
               "duration": 6.05
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e48ed621eddaa4452271.wav",
+            "duration": 3.839
+          }
         },
         {
           "id": "q-003",
@@ -3433,7 +4133,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_003.wav?v=1793388561344718500",
               "duration": 10.75
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dea6b2a60d1e6c1394bc.wav",
+            "duration": 8.048
+          }
         },
         {
           "id": "q-004",
@@ -3453,7 +4157,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_004.wav?v=1793388561429531400",
               "duration": 1.2
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1762f1c44a024979a0a2.wav",
+            "duration": 5.308
+          }
         },
         {
           "id": "q-005",
@@ -3473,7 +4181,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_005.wav?v=1793388561549188900",
               "duration": 1.95
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/cb94246b91ff210605af.wav",
+            "duration": 4.854
+          }
         },
         {
           "id": "q-006",
@@ -3493,7 +4205,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_006.wav?v=1793388561680818800",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/445c8c53bbbed3bfb8ef.wav",
+            "duration": 5.228
+          }
         },
         {
           "id": "q-007",
@@ -3511,7 +4227,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_007.wav?v=1793388561992036900",
               "duration": 3.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2bc323f3554c2bc1a126.wav",
+            "duration": 6.299
+          }
         },
         {
           "id": "q-008",
@@ -3531,7 +4251,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_008.wav?v=1793388562121554900",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/51364bcaf3b06ad9a767.wav",
+            "duration": 4.384
+          }
         },
         {
           "id": "q-009",
@@ -3549,7 +4273,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_009.wav?v=1793388562297008500",
               "duration": 2.15
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/1c15011faa99d094512d.wav",
+            "duration": 3.854
+          }
         },
         {
           "id": "q-010",
@@ -3567,7 +4295,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_010.wav?v=1793388562545218500",
               "duration": 2.225
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6c1fea9f08dfd34a2cbd.wav",
+            "duration": 7.598
+          }
         },
         {
           "id": "q-011",
@@ -3585,7 +4317,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_011.wav?v=1793388562672253700",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8b9dcb77d058c8433d64.wav",
+            "duration": 7.088
+          }
         },
         {
           "id": "q-012",
@@ -3603,7 +4339,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_012.wav?v=1793388562942123000",
               "duration": 3.225
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c50e047020afe94eb51d.wav",
+            "duration": 5.088
+          }
         },
         {
           "id": "q-013",
@@ -3621,7 +4361,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_013.wav?v=1793388563227242900",
               "duration": 2.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/33cb807056fbb98a579e.wav",
+            "duration": 4.818
+          }
         },
         {
           "id": "q-014",
@@ -3639,7 +4383,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_014.wav?v=1793388563356318900",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5ab7b3c3f0f3232749af.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-015",
@@ -3659,7 +4407,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_015.wav?v=1793388563553092000",
               "duration": 2.25
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/8528509525f641bf594c.wav",
+            "duration": 6.258
+          }
         },
         {
           "id": "q-016",
@@ -3677,7 +4429,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_016.wav?v=1793388563773407200",
               "duration": 4.325
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6deee49a92d233ccbdbc.wav",
+            "duration": 4.618
+          }
         },
         {
           "id": "q-017",
@@ -3695,7 +4451,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_017.wav?v=1793388564034479600",
               "duration": 3.575
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/074b55b2405ebe5838f0.wav",
+            "duration": 3.329
+          }
         },
         {
           "id": "q-018",
@@ -3717,7 +4477,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_018.wav?v=1793388564172563900",
               "duration": 2.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/e283c6aeb9ef7adbe581.wav",
+            "duration": 5.893
+          }
         },
         {
           "id": "q-019",
@@ -3737,7 +4501,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_019.wav?v=1793388564381605500",
               "duration": 1.825
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a9f69b4f1724dbd30de.wav",
+            "duration": 6.113
+          }
         },
         {
           "id": "q-020",
@@ -3757,7 +4525,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_020.wav?v=1793388564670998700",
               "duration": 5.95
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a11ca359903b36e43dd3.wav",
+            "duration": 4.918
+          }
         },
         {
           "id": "q-021",
@@ -3775,7 +4547,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_021.wav?v=1793388564923890200",
               "duration": 5.2
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/4a2093be71c564758b68.wav",
+            "duration": 5.683
+          }
         },
         {
           "id": "q-022",
@@ -3796,7 +4572,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_022.wav?v=1793388565067094500",
               "duration": 1.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/fb4d239d7affdb429af2.wav",
+            "duration": 5.138
+          }
         },
         {
           "id": "q-023",
@@ -3814,7 +4594,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_023.wav?v=1793388566148373200",
               "duration": 16.475
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6ba9c2c5eeb6f8853c49.wav",
+            "duration": 4.003
+          }
         },
         {
           "id": "q-024",
@@ -3832,7 +4616,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_024.wav?v=1793388566276860200",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ebd2676470daa69214ff.wav",
+            "duration": 6.168
+          }
         },
         {
           "id": "q-025",
@@ -3850,7 +4638,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_025.wav?v=1793388566572623000",
               "duration": 3.625
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6cf138cc5e8c09c3fb4f.wav",
+            "duration": 2.434
+          }
         },
         {
           "id": "q-026",
@@ -3870,7 +4662,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_026.wav?v=1793388566984827900",
               "duration": 8.1
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/2997f54e7d56e144483a.wav",
+            "duration": 5.413
+          }
         },
         {
           "id": "q-027",
@@ -3890,7 +4686,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_027.wav?v=1793388567155329300",
               "duration": 3.15
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3b478d58ceda79d0d447.wav",
+            "duration": 5.538
+          }
         },
         {
           "id": "q-028",
@@ -3910,7 +4710,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_028.wav?v=1793388567285541900",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6bc806bea048b9f172b1.wav",
+            "duration": 8.998
+          }
         },
         {
           "id": "q-029",
@@ -3928,7 +4732,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_029.wav?v=1793388567731745300",
               "duration": 5.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/871293481147d55ae746.wav",
+            "duration": 4.674
+          }
         },
         {
           "id": "q-030",
@@ -3949,7 +4757,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_030.wav?v=1793388567959716600",
               "duration": 2.05
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3f2daeb70c5301cb9718.wav",
+            "duration": 11.297
+          }
         },
         {
           "id": "q-031",
@@ -3970,7 +4782,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_031.wav?v=1793388568244945100",
               "duration": 2.7
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/3f2daeb70c5301cb9718.wav",
+            "duration": 11.297
+          }
         },
         {
           "id": "q-032",
@@ -3988,7 +4804,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_032.wav?v=1793388568543527700",
               "duration": 2.85
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/a7f673864be0f732c1a0.wav",
+            "duration": 9.838
+          }
         },
         {
           "id": "q-033",
@@ -4006,7 +4826,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_033.wav?v=1793388568984597700",
               "duration": 9.775
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/dfb7b9b25441a2a95bf6.wav",
+            "duration": 4.169
+          }
         },
         {
           "id": "q-034",
@@ -4024,7 +4848,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_034.wav?v=1793388569081119100",
               "duration": 1.4
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/66b5adc9978dfdca3d23.wav",
+            "duration": 3.089
+          }
         },
         {
           "id": "q-035",
@@ -4042,7 +4870,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_035.wav?v=1793388569496513200",
               "duration": 6.125
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/0fa5f394ece9b279b32b.wav",
+            "duration": 5.744
+          }
         },
         {
           "id": "q-036",
@@ -4060,7 +4892,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_036.wav?v=1793388569708840600",
               "duration": 3.95
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/c05b39bec80199e1a8cc.wav",
+            "duration": 5.584
+          }
         },
         {
           "id": "q-037",
@@ -4078,7 +4914,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_037.wav?v=1793388570275560200",
               "duration": 12.35
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/ddc79ba14ceebeb19de6.wav",
+            "duration": 1.504
+          }
         },
         {
           "id": "q-038",
@@ -4096,7 +4936,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_038.wav?v=1793388570741822500",
               "duration": 4.875
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/34f881e9d4b0b6644194.wav",
+            "duration": 2.229
+          }
         },
         {
           "id": "q-039",
@@ -4116,7 +4960,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_039.wav?v=1793388570871733400",
               "duration": 1.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/732fa08a211a54b7d0d4.wav",
+            "duration": 6.598
+          }
         },
         {
           "id": "q-040",
@@ -4134,7 +4982,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_040.wav?v=1793388572074781000",
               "duration": 18.3
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/5373295d4584bcbe681a.wav",
+            "duration": 4.559
+          }
         },
         {
           "id": "q-041",
@@ -4154,7 +5006,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_041.wav?v=1793388572339506700",
               "duration": 2.45
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/de197035cb0f2e489fb9.wav",
+            "duration": 7.658
+          }
         },
         {
           "id": "q-042",
@@ -4172,7 +5028,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_042.wav?v=1793388572675051700",
               "duration": 7.0
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/f285d797f9129d72b124.wav",
+            "duration": 3.849
+          }
         },
         {
           "id": "q-043",
@@ -4190,7 +5050,11 @@
               "url": "media/original/af_heart/speed_1p00/Video%20Vignette%203%20Transcript_ConsqTrainTC%20Indicated_Streamline/answer_043.wav?v=1793388572850803800",
               "duration": 1.425
             }
-          ]
+          ],
+          "questionAudio": {
+            "url": "media/questions/6d7eb00847070b5618ae.wav",
+            "duration": 4.734
+          }
         }
       ],
       "answerCount": 43,

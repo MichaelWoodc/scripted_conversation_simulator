@@ -16,7 +16,7 @@ MEDIA = DIST / 'media'
 
 def audio_root(edition='edited', project_root=ROOT):
     if edition not in ('original', 'edited', 'reviewed'):
-        raise ValueError(f'Unknown audio edition: {edition}')
+        raise ValueError(f'Unknown Audio Files To Use:: {edition}')
     return Path(project_root) / 'dist' / 'media' / edition
 
 

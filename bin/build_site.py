@@ -23,6 +23,11 @@ PROFILES = {'edited':'Edited recordings', 'original':'Original recordings',
 TITLES = {1:'Materials & resources', 2:'Training & support', 3:'Feedback & performance'}
 
 
+def question_audio_path(prompt):
+    fingerprint = hashlib.sha256(prompt.encode('utf-8')).hexdigest()[:20]
+    return f'media/questions/{fingerprint}.wav'
+
+
 def slug(text):
     return re.sub(r'[^a-z0-9]+','-',text.lower()).strip('-')
 
@@ -107,7 +112,22 @@ def make_catalog(project=PROJECT):
                 clips[index]={'id':f'answer-{index:03d}','index':index,'url':quote(public)+f'?v={wav.stat().st_mtime_ns}',
                               'duration':round(duration,3)}
             if failed: continue
-            items=[{**s,'clips':[clips[i] for i in s['answerIndices']]} for s in steps]
+            items=[]
+            for step in steps:
+                question_audio = None
+                public = question_audio_path(step['prompt'])
+                wav = project / 'dist' / public
+                if wav.exists():
+                    try:
+                        with wave.open(str(wav), 'rb') as audio:
+                            duration = audio.getnframes() / audio.getframerate()
+                        if duration > 0:
+                            media[public] = wav
+                            question_audio = {'url': public, 'duration': round(duration, 3)}
+                    except (wave.Error, EOFError, OSError):
+                        pass  # Optional question audio must not hide a complete answer set.
+                items.append({**step, 'clips':[clips[i] for i in step['answerIndices']],
+                              'questionAudio': question_audio})
             version=hashlib.sha256(json.dumps([(s['prompt'],s['answerIndices']) for s in steps]).encode()).hexdigest()[:12]
             sets.append({'id':identifier,'edition':edition,'editionLabel':label,'vignette':number,
                          'title':TITLES.get(number,f'Vignette {number}'),'source':source,'voice':voice,
@@ -116,6 +136,58 @@ def make_catalog(project=PROJECT):
     sets.sort(key=lambda s: (0 if s['edition']=='edited' else 1,s['edition'],s['vignette'],s['id']))
     return {'schema':1,'generatedAt':datetime.now(timezone.utc).isoformat(),'sets':sets,
             'incompleteFolders':incomplete}, media
+
+
+def render_template(template, values):
+    """Fill values and repeat blocks while keeping all markup in HTML files."""
+    def replace(match):
+        if match[1]:
+            return ''.join(render_template(match[2], {**values, **row})
+                           for row in values[match[1]])
+        return escape(str(values[match[3]]))
+
+    return re.sub(r'{{#(\w+)}}(.*?){{/\1}}|{{(\w+)}}', replace, template, flags=re.S)
+
+
+def render_library(catalog):
+    sets = catalog['sets']
+    editions = dict((item['edition'], item['editionLabel']) for item in sets)
+    values = {
+        'EDITIONS': [{'EDITION': key, 'EDITION_LABEL': label} for key, label in editions.items()],
+        'CARDS': [{
+            'PAGE': f"setup.html?set={quote(item['id'])}", 'SET_ID': item['id'], 'EDITION': item['edition'],
+            'CHAPTER': f"{item['vignette']:02d}", 'VIGNETTE': item['vignette'],
+            'TITLE': item['title'], 'QUESTION_COUNT': len(item['steps']),
+            'VOICE': item['voice'].replace('af_', ''), 'EDITION_LABEL': item['editionLabel'],
+            'MINUTES': max(1, int(item['duration'] / 60 + .5)),
+        } for item in sets],
+        'SET_COUNT': len(sets), 'EMPTY_HIDDEN': 'hidden' if sets else '',
+    }
+    return render_template((SITE / 'index.html').read_text(encoding='utf-8'), values)
+
+
+def render_session(item):
+    questions = []
+    for index, step in enumerate(item['steps']):
+        prompt = step['prompt']
+        # Match engine.js tokenize(): Unicode letters/numbers and apostrophes.
+        tokens = list(re.finditer(r"[^\W_]+(?:'[^\W\d_]+)*", prompt))
+        words, cursor = [], 0
+        for word_index, token in enumerate(tokens):
+            words.append({'WORD_INDEX': word_index, 'WORD': token[0],
+                          'BEFORE': prompt[cursor:token.start()],
+                          'AFTER': prompt[token.end():] if word_index == len(tokens) - 1 else ''})
+            cursor = token.end()
+        questions.append({'QUESTION_ID': step['id'], 'QUESTION_HIDDEN': 'hidden' if index else '',
+                          'WORDS': words, 'CONTEXT': '\n\n'.join(step['context'])})
+    values = {
+        'SET_ID': item['id'], 'TITLE': item['title'], 'VIGNETTE': item['vignette'],
+        'QUESTION_COUNT': len(item['steps']), 'ANSWER_COUNT': item['answerCount'],
+        'VOICE_LABEL': 'Heart female' if item['voice'] == 'af_heart' else item['voice'],
+        'EDITION_LABEL': item['editionLabel'], 'QUESTIONS': questions,
+        'CONTEXT_HIDDEN': '' if item['steps'][0]['context'] else 'hidden',
+    }
+    return render_template((SITE / 'session.html').read_text(encoding='utf-8-sig'), values)
 
 
 def build(static_audio=False, *, project=PROJECT):
@@ -127,13 +199,13 @@ def build(static_audio=False, *, project=PROJECT):
     project=Path(project)
     dist=project/'dist';dist.mkdir(parents=True,exist_ok=True)
     shutil.copytree(SITE/'assets',dist/'assets',dirs_exist_ok=True)
-    shutil.copy2(SITE/'index.html',dist/'index.html')
+    shutil.copy2(SITE/'setup.html',dist/'setup.html')
     catalog,media=make_catalog(project)
+    (dist/'index.html').write_text(render_library(catalog),encoding='utf-8')
     (dist/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
-    template=(SITE/'session.html').read_text(encoding='utf-8')
     (dist/'sets').mkdir(exist_ok=True)
     for item in catalog['sets']:
-        (dist/item['page']).write_text(template.replace('{{SET_ID}}',escape(item['id'])).replace('{{TITLE}}',escape(item['title'])),encoding='utf-8')
+        (dist/item['page']).write_text(render_session(item),encoding='utf-8')
     (dist/'.nojekyll').write_text('',encoding='utf-8')
     return catalog,media
 

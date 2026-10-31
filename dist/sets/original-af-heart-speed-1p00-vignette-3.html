@@ -1,17 +1,328 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Feedback &amp; performance Conversation Lab</title><link rel="stylesheet" href="../assets/styles.css"></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback &amp; performance Conversation Lab</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
 <body data-page="session" data-set-id="original-af-heart-speed-1p00-vignette-3">
-<header class="site-header"><a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a><div class="header-actions"><a href="../index.html">All conversations</a><button class="text-button" id="debugToggle" aria-expanded="false" aria-controls="debugPanel">Debug</button></div></header>
-<main class="practice-layout"><section class="practice-main"><a class="back-link" href="../index.html">← Practice sessions</a><div class="session-title"><p class="eyebrow" id="sessionEyebrow">GUIDED CONVERSATION</p><h1 id="sessionTitle">Loading conversation…</h1></div>
-<div class="progress-heading"><span id="stepLabel">Question —</span><span id="progressLabel">0 completed</span></div><div class="progress-track"><div id="progressFill"></div></div>
-<article class="question-card"><div class="card-top"><span class="eyebrow" id="cardLabel">READ ALOUD</span><span class="status-pill" id="statusPill"><i></i><span id="statusText">Ready</span></span></div>
-<div id="questionText" class="question-text">Your next question will appear here.</div>
-<details id="contextDetails" hidden><summary>Optional context from the script</summary><div id="questionContext"></div></details>
-<div class="listen-strip"><div class="level-meter" id="levelMeter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p id="hint">Start when you're ready. Allow your microphone to begin.</p></div>
-<div class="answer-playback" id="answerPlayback" hidden><span class="speaker-symbol" aria-hidden="true">◖))</span><div><strong id="answerStatus">Playing the recorded answer</strong><div class="audio-track"><div id="audioProgress"></div></div></div><span id="audioTime"></span></div>
-<div class="main-actions"><button class="primary-button" id="startButton">Start conversation <span>→</span></button><button class="secondary-button" id="pauseButton" hidden>Pause</button><button class="text-button" id="finishButton" hidden>I'm finished play answer</button><button class="primary-button" id="resumeAudioButton" hidden>Play this answer</button></div>
-<p class="error-note" id="errorMessage" role="alert" hidden></p></article>
-<section class="completion-card" id="completion" hidden><span class="completion-mark">✓</span><h2>Conversation complete.</h2><p id="completionSummary"></p><a class="primary-button" href="../index.html">Choose another conversation →</a><button class="text-button" id="restartButton">Start a new attempt</button></section>
-<section class="debug-panel" id="debugPanel" hidden><div class="debug-heading"><h2>Live recognition</h2><span id="debugPhase">idle</span></div><label>What the browser heard<pre id="transcript">No speech yet.</pre></label><div class="debug-metrics"><span>Word match <strong id="matchScore">0%</strong></span><span>Ending detected <strong id="tailScore">—</strong></span><span>Quiet time <strong id="quietTime">0 ms</strong></span></div><div class="debug-settings"><label>Pause before answer <select id="silenceSetting"><option value="600">0.6 seconds</option><option value="800" selected>0.8 seconds</option><option value="1100">1.1 seconds</option><option value="1500">1.5 seconds</option></select></label><label>Wording tolerance<select id="matchSetting"><option value="0.58" selected>Relaxed</option><option value="0.7">Balanced</option></select></label></div><p id="debugAudio"></p><pre id="eventLog" class="event-log"></pre></section>
-</section><aside class="practice-sidebar"><div class="side-card"><p class="eyebrow">THIS SESSION</p><dl><div><dt>Questions</dt><dd id="totalQuestions">—</dd></div><div><dt>Voice</dt><dd id="voiceLabel">Heart</dd></div><div><dt>Recordings</dt><dd id="editionLabel">—</dd></div></dl></div></aside></main>
-<audio id="answerAudio" preload="auto"></audio><script type="module" src="../assets/app.js"></script></body></html>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a>
+    <div class="header-actions">
+      <a href="../index.html">All conversations</a>
+      <a id="changeDeviceLink" href="../setup.html?set=original-af-heart-speed-1p00-vignette-3&amp;change=1">Change mode</a>
+      <button class="text-button" id="debugToggle" aria-expanded="false" aria-controls="debugPanel">Debug</button>
+    </div>
+  </header>
+  <main class="practice-layout">
+    <section class="practice-main">
+      <a class="back-link" href="../index.html">← Practice sessions</a>
+      <div class="session-title">
+        <p class="eyebrow" id="sessionEyebrow">VIGNETTE 3 GUIDED CONVERSATION</p>
+        <h1 id="sessionTitle">Feedback &amp; performance</h1>
+      </div>
+      <p class="session-mode" id="modeStatus" role="status"></p>
+      <div class="progress-heading">
+        <span id="stepLabel">Question 1 of 43</span>
+        <span id="progressLabel">0 completed</span>
+      </div>
+      <div class="progress-track"><div id="progressFill"></div></div>
+      <article class="question-card">
+        <div class="card-top">
+          <span class="eyebrow" id="cardLabel">READ ALOUD</span>
+          <span class="status-pill" id="statusPill"><i></i><span id="statusText">Ready</span></span>
+        </div>
+        <div id="questionText">
+
+          <div class="question-text" data-question-id="q-001" ><span data-word="0">Has</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">received</span> <span data-word="4">formal</span> <span data-word="5">training</span> <span data-word="6">on</span> <span data-word="7">this</span> <span data-word="8">task</span>?</div>
+
+          <div class="question-text" data-question-id="q-002" hidden><span data-word="0">If</span> <span data-word="1">yes</span>, <span data-word="2">when</span> <span data-word="3">did</span> <span data-word="4">the</span> <span data-word="5">employee</span> <span data-word="6">receive</span> <span data-word="7">the</span> <span data-word="8">training</span>?</div>
+
+          <div class="question-text" data-question-id="q-003" hidden><span data-word="0">Did</span> <span data-word="1">the</span> <span data-word="2">training</span> <span data-word="3">include</span> <span data-word="4">instructions</span>, <span data-word="5">demonstration</span>, <span data-word="6">modeling</span>, <span data-word="7">rehearsal</span>, <span data-word="8">practice</span>, <span data-word="9">or</span> <span data-word="10">feedback</span>?</div>
+
+          <div class="question-text" data-question-id="q-004" hidden><span data-word="0">Were</span> <span data-word="1">the</span> <span data-word="2">instructions</span> <span data-word="3">provided</span> <span data-word="4">as</span> <span data-word="5">vocal</span>, <span data-word="6">written</span> <span data-word="7">instructions</span>, <span data-word="8">or</span> <span data-word="9">both</span>?</div>
+
+          <div class="question-text" data-question-id="q-005" hidden><span data-word="0">For</span> <span data-word="1">demonstration</span>/<span data-word="2">modeling</span> <span data-word="3">was</span> <span data-word="4">it</span> <span data-word="5">live</span> <span data-word="6">modeling</span> <span data-word="7">or</span> <span data-word="8">video</span> <span data-word="9">modeling</span>?</div>
+
+          <div class="question-text" data-question-id="q-006" hidden><span data-word="0">And</span> <span data-word="1">did</span> <span data-word="2">the</span> <span data-word="3">employee</span> <span data-word="4">have</span> <span data-word="5">opportunities</span> <span data-word="6">for</span> <span data-word="7">rehearsal</span>/<span data-word="8">practice</span> <span data-word="9">during</span> <span data-word="10">training</span>?</div>
+
+          <div class="question-text" data-question-id="q-007" hidden><span data-word="0">For</span> <span data-word="1">practice</span>, <span data-word="2">were</span> <span data-word="3">they</span> <span data-word="4">practicing</span> <span data-word="5">with</span> <span data-word="6">a</span> <span data-word="7">trainer</span>, <span data-word="8">alone</span>, <span data-word="9">or</span> <span data-word="10">with</span> <span data-word="11">other</span> <span data-word="12">coworkers</span>?</div>
+
+          <div class="question-text" data-question-id="q-008" hidden><span data-word="0">Feedback</span>. <span data-word="1">Did</span> <span data-word="2">they</span> <span data-word="3">receive</span> <span data-word="4">feedback</span> <span data-word="5">during</span> <span data-word="6">training</span>?</div>
+
+          <div class="question-text" data-question-id="q-009" hidden><span data-word="0">And</span> <span data-word="1">the</span> <span data-word="2">feedback</span>: <span data-word="3">was</span> <span data-word="4">that</span> <span data-word="5">provided</span> <span data-word="6">vocally</span> <span data-word="7">or</span> <span data-word="8">written</span>?</div>
+
+          <div class="question-text" data-question-id="q-010" hidden><span data-word="0">Ok</span> <span data-word="1">and</span> <span data-word="2">was</span> <span data-word="3">the</span> <span data-word="4">focus</span> <span data-word="5">positive</span> <span data-word="6">feedback</span> <span data-word="7">for</span> <span data-word="8">steps</span> <span data-word="9">performed</span> <span data-word="10">correctly</span> <span data-word="11">or</span> <span data-word="12">corrective</span> <span data-word="13">feedback</span> <span data-word="14">for</span> <span data-word="15">steps</span> <span data-word="16">performed</span> <span data-word="17">incorrectly</span>?</div>
+
+          <div class="question-text" data-question-id="q-011" hidden><span data-word="0">Is</span> <span data-word="1">there</span> <span data-word="2">evidence</span> <span data-word="3">that</span> <span data-word="4">the</span> <span data-word="5">employee</span> <span data-word="6">currently</span> <span data-word="7">responsible</span> <span data-word="8">for</span> <span data-word="9">training</span> <span data-word="10">staff</span> <span data-word="11">can</span> <span data-word="12">accurately</span> <span data-word="13">perform</span> <span data-word="14">the</span> <span data-word="15">task</span> <span data-word="16">being</span> <span data-word="17">trained</span>?</div>
+
+          <div class="question-text" data-question-id="q-012" hidden><span data-word="0">Can</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">accurately</span> <span data-word="4">describe</span> <span data-word="5">the</span> <span data-word="6">target</span> <span data-word="7">task</span> <span data-word="8">and</span> <span data-word="9">when</span> <span data-word="10">it</span> <span data-word="11">should</span> <span data-word="12">be</span> <span data-word="13">performed</span>?</div>
+
+          <div class="question-text" data-question-id="q-013" hidden><span data-word="0">Is</span> <span data-word="1">there</span> <span data-word="2">evidence</span> <span data-word="3">that</span> <span data-word="4">the</span> <span data-word="5">employee</span> <span data-word="6">accurately</span> <span data-word="7">completed</span> <span data-word="8">the</span> <span data-word="9">task</span> <span data-word="10">in</span> <span data-word="11">the</span> <span data-word="12">past</span>?</div>
+
+          <div class="question-text" data-question-id="q-014" hidden><span data-word="0">Are</span> <span data-word="1">you</span> <span data-word="2">sure</span> <span data-word="3">the</span> <span data-word="4">employee</span> <span data-word="5">has</span> <span data-word="6">accurately</span> <span data-word="7">completed</span> <span data-word="8">the</span> <span data-word="9">task</span> <span data-word="10">in</span> <span data-word="11">the</span> <span data-word="12">past</span>?</div>
+
+          <div class="question-text" data-question-id="q-015" hidden><span data-word="0">If</span> <span data-word="1">the</span> <span data-word="2">task</span> <span data-word="3">needs</span> <span data-word="4">to</span> <span data-word="5">be</span> <span data-word="6">completed</span> <span data-word="7">quickly</span>, <span data-word="8">can</span> <span data-word="9">the</span> <span data-word="10">employee</span> <span data-word="11">perform</span> <span data-word="12">it</span> <span data-word="13">at</span> <span data-word="14">the</span> <span data-word="15">appropriate</span> <span data-word="16">speed</span>?</div>
+
+          <div class="question-text" data-question-id="q-016" hidden><span data-word="0">Has</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">been</span> <span data-word="4">informed</span> <span data-word="5">that</span> <span data-word="6">they</span> <span data-word="7">are</span> <span data-word="8">expected</span> <span data-word="9">to</span> <span data-word="10">perform</span> <span data-word="11">the</span> <span data-word="12">task</span>?</div>
+
+          <div class="question-text" data-question-id="q-017" hidden><span data-word="0">Can</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">state</span> <span data-word="4">the</span> <span data-word="5">purpose</span> <span data-word="6">of</span> <span data-word="7">the</span> <span data-word="8">task</span>?</div>
+
+          <div class="question-text" data-question-id="q-018" hidden><span data-word="0">Is</span> <span data-word="1">a</span> <span data-word="2">job</span> <span data-word="3">aid</span> <span data-word="4">for</span> <span data-word="5">completing</span> <span data-word="6">the</span> <span data-word="7">task</span> <span data-word="8">visibly</span> <span data-word="9">located</span> <span data-word="10">or</span> <span data-word="11">easily</span> <span data-word="12">accessible</span> <span data-word="13">in</span> <span data-word="14">the</span> <span data-word="15">task</span> <span data-word="16">area</span>?.</div>
+
+          <div class="question-text" data-question-id="q-019" hidden><span data-word="0">Is</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">ever</span> <span data-word="4">verbally</span>, <span data-word="5">textually</span>, <span data-word="6">or</span> <span data-word="7">electronically</span> <span data-word="8">reminded</span> <span data-word="9">to</span> <span data-word="10">complete</span> <span data-word="11">the</span> <span data-word="12">task</span>?</div>
+
+          <div class="question-text" data-question-id="q-020" hidden><span data-word="0">Is</span> <span data-word="1">the</span> <span data-word="2">task</span> <span data-word="3">being</span> <span data-word="4">performed</span> <span data-word="5">in</span> <span data-word="6">an</span> <span data-word="7">environment</span> <span data-word="8">well</span>-<span data-word="9">suited</span> <span data-word="10">for</span> <span data-word="11">task</span> <span data-word="12">completion</span>?</div>
+
+          <div class="question-text" data-question-id="q-021" hidden><span data-word="0">Are</span> <span data-word="1">there</span> <span data-word="2">sufficient</span> <span data-word="3">numbers</span> <span data-word="4">of</span> <span data-word="5">trained</span> <span data-word="6">staff</span> <span data-word="7">available</span> <span data-word="8">in</span> <span data-word="9">the</span> <span data-word="10">organization</span> <span data-word="11">to</span> <span data-word="12">complete</span> <span data-word="13">the</span> <span data-word="14">task</span>?</div>
+
+          <div class="question-text" data-question-id="q-022" hidden><span data-word="0">If</span> <span data-word="1">materials</span> <span data-word="2">are</span> <span data-word="3">required</span> <span data-word="4">for</span> <span data-word="5">task</span> <span data-word="6">completion</span>, <span data-word="7">are</span> <span data-word="8">they</span> <span data-word="9">readily</span> <span data-word="10">available</span>?</div>
+
+          <div class="question-text" data-question-id="q-023" hidden><span data-word="0">List</span> <span data-word="1">some</span> <span data-word="2">materials</span> <span data-word="3">that</span> <span data-word="4">are</span> <span data-word="5">needed</span> <span data-word="6">and</span> <span data-word="7">indicate</span> <span data-word="8">their</span> <span data-word="9">availability</span>?</div>
+
+          <div class="question-text" data-question-id="q-024" hidden><span data-word="0">Are</span> <span data-word="1">the</span> <span data-word="2">materials</span> <span data-word="3">required</span> <span data-word="4">for</span> <span data-word="5">task</span> <span data-word="6">completion</span> <span data-word="7">available</span> <span data-word="8">during</span> <span data-word="9">the</span> <span data-word="10">times</span> <span data-word="11">of</span> <span data-word="12">the</span> <span data-word="13">day</span> <span data-word="14">when</span> <span data-word="15">they</span> <span data-word="16">are</span> <span data-word="17">most</span> <span data-word="18">needed</span>?</div>
+
+          <div class="question-text" data-question-id="q-025" hidden><span data-word="0">When</span> <span data-word="1">are</span> <span data-word="2">materials</span> <span data-word="3">unavailable</span>?</div>
+
+          <div class="question-text" data-question-id="q-026" hidden><span data-word="0">Are</span> <span data-word="1">the</span> <span data-word="2">materials</span> <span data-word="3">necessary</span> <span data-word="4">to</span> <span data-word="5">complete</span> <span data-word="6">the</span> <span data-word="7">task</span> <span data-word="8">well</span> <span data-word="9">designed</span> <span data-word="10">for</span> <span data-word="11">their</span> <span data-word="12">intended</span> <span data-word="13">purpose</span>?</div>
+
+          <div class="question-text" data-question-id="q-027" hidden><span data-word="0">Are</span> <span data-word="1">the</span> <span data-word="2">materials</span> <span data-word="3">necessary</span> <span data-word="4">to</span> <span data-word="5">complete</span> <span data-word="6">the</span> <span data-word="7">task</span> <span data-word="8">well</span> <span data-word="9">organized</span> <span data-word="10">for</span> <span data-word="11">their</span> <span data-word="12">intended</span> <span data-word="13">purpose</span>?</div>
+
+          <div class="question-text" data-question-id="q-028" hidden><span data-word="0">Can</span> <span data-word="1">the</span> <span data-word="2">task</span> <span data-word="3">be</span> <span data-word="4">completed</span> <span data-word="5">without</span> <span data-word="6">first</span> <span data-word="7">completing</span> <span data-word="8">other</span> <span data-word="9">tasks</span>? <span data-word="10">If</span> <span data-word="11">NO</span>, <span data-word="12">indicate</span> <span data-word="13">below</span> <span data-word="14">the</span> <span data-word="15">tasks</span> <span data-word="16">that</span> <span data-word="17">must</span> <span data-word="18">be</span> <span data-word="19">completed</span> <span data-word="20">first</span>:.</div>
+
+          <div class="question-text" data-question-id="q-029" hidden><span data-word="0">If</span> <span data-word="1">NO</span>, <span data-word="2">indicate</span> <span data-word="3">below</span> <span data-word="4">the</span> <span data-word="5">tasks</span> <span data-word="6">that</span> <span data-word="7">must</span> <span data-word="8">be</span> <span data-word="9">completed</span> <span data-word="10">first</span>:</div>
+
+          <div class="question-text" data-question-id="q-030" hidden><span data-word="0">If</span> <span data-word="1">you</span> <span data-word="2">answered</span> <span data-word="3">NO</span> <span data-word="4">for</span> <span data-word="5">Question</span> <span data-word="6">6</span>, <span data-word="7">are</span> <span data-word="8">other</span> <span data-word="9">employees</span> <span data-word="10">responsible</span> <span data-word="11">for</span> <span data-word="12">completing</span> <span data-word="13">any</span> <span data-word="14">of</span> <span data-word="15">the</span> <span data-word="16">earlier</span> <span data-word="17">tasks</span> <span data-word="18">in</span> <span data-word="19">the</span> <span data-word="20">process</span>? <span data-word="21">If</span> <span data-word="22">so</span>, <span data-word="23">indicate</span> <span data-word="24">the</span> <span data-word="25">employee</span> <span data-word="26">below</span>:</div>
+
+          <div class="question-text" data-question-id="q-031" hidden><span data-word="0">If</span> <span data-word="1">you</span> <span data-word="2">answered</span> <span data-word="3">NO</span> <span data-word="4">for</span> <span data-word="5">Question</span> <span data-word="6">6</span>, <span data-word="7">are</span> <span data-word="8">other</span> <span data-word="9">employees</span> <span data-word="10">responsible</span> <span data-word="11">for</span> <span data-word="12">completing</span> <span data-word="13">any</span> <span data-word="14">of</span> <span data-word="15">the</span> <span data-word="16">earlier</span> <span data-word="17">tasks</span> <span data-word="18">in</span> <span data-word="19">the</span> <span data-word="20">process</span>? <span data-word="21">If</span> <span data-word="22">so</span>, <span data-word="23">indicate</span> <span data-word="24">the</span> <span data-word="25">employee</span> <span data-word="26">below</span>:</div>
+
+          <div class="question-text" data-question-id="q-032" hidden><span data-word="0">Is</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">ever</span> <span data-word="4">directly</span> <span data-word="5">monitored</span> <span data-word="6">by</span> <span data-word="7">a</span> <span data-word="8">supervisor</span> <span data-word="9">when</span> <span data-word="10">the</span> <span data-word="11">target</span> <span data-word="12">task</span> <span data-word="13">is</span> <span data-word="14">to</span> <span data-word="15">be</span> <span data-word="16">performed</span>? <span data-word="17">If</span> <span data-word="18">YES</span>, <span data-word="19">indicate</span> <span data-word="20">the</span> <span data-word="21">frequency</span> <span data-word="22">of</span> <span data-word="23">monitoring</span>:</div>
+
+          <div class="question-text" data-question-id="q-033" hidden><span data-word="0">Does</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">ever</span> <span data-word="4">receive</span> <span data-word="5">feedback</span> <span data-word="6">about</span> <span data-word="7">their</span> <span data-word="8">performance</span>?</div>
+
+          <div class="question-text" data-question-id="q-034" hidden><span data-word="0">Does</span> <span data-word="1">this</span> <span data-word="2">mean</span> <span data-word="3">corrective</span> <span data-word="4">feedback</span> <span data-word="5">is</span> <span data-word="6">given</span>?</div>
+
+          <div class="question-text" data-question-id="q-035" hidden><span data-word="0">And</span> <span data-word="1">how</span> <span data-word="2">is</span> <span data-word="3">that</span> <span data-word="4">feedback</span> <span data-word="5">delivered</span>? <span data-word="6">Is</span> <span data-word="7">it</span> <span data-word="8">written</span>, <span data-word="9">verbal</span>, <span data-word="10">graphed</span>?</div>
+
+          <div class="question-text" data-question-id="q-036" hidden><span data-word="0">Got</span> <span data-word="1">it</span>. <span data-word="2">So</span> <span data-word="3">if</span> <span data-word="4">they</span> <span data-word="5">do</span> <span data-word="6">receive</span> <span data-word="7">feedback</span>, <span data-word="8">who</span> <span data-word="9">gives</span> <span data-word="10">them</span> <span data-word="11">this</span> <span data-word="12">feedback</span>?</div>
+
+          <div class="question-text" data-question-id="q-037" hidden><span data-word="0">How</span> <span data-word="1">often</span>?</div>
+
+          <div class="question-text" data-question-id="q-038" hidden><span data-word="0">How</span> <span data-word="1">long</span> <span data-word="2">after</span> <span data-word="3">the</span> <span data-word="4">task</span>?</div>
+
+          <div class="question-text" data-question-id="q-039" hidden><span data-word="0">Does</span> <span data-word="1">the</span> <span data-word="2">employee</span> <span data-word="3">ever</span> <span data-word="4">see</span> <span data-word="5">the</span> <span data-word="6">effects</span> <span data-word="7">of</span> <span data-word="8">accurate</span> <span data-word="9">task</span> <span data-word="10">completion</span>? <span data-word="11">If</span> <span data-word="12">YES</span>, <span data-word="13">how</span>?</div>
+
+          <div class="question-text" data-question-id="q-040" hidden><span data-word="0">Is</span> <span data-word="1">the</span> <span data-word="2">task</span> <span data-word="3">simple</span> <span data-word="4">or</span> <span data-word="5">does</span> <span data-word="6">it</span> <span data-word="7">involve</span> <span data-word="8">relatively</span> <span data-word="9">low</span> <span data-word="10">response</span> <span data-word="11">effort</span>?</div>
+
+          <div class="question-text" data-question-id="q-041" hidden><span data-word="0">From</span> <span data-word="1">your</span> <span data-word="2">perspective</span> <span data-word="3">as</span> <span data-word="4">the</span> <span data-word="5">supervisor</span>, <span data-word="6">does</span> <span data-word="7">the</span> <span data-word="8">task</span> <span data-word="9">generally</span> <span data-word="10">take</span> <span data-word="11">precedence</span> <span data-word="12">over</span> <span data-word="13">other</span> <span data-word="14">potentially</span> <span data-word="15">competing</span> <span data-word="16">tasks</span>?</div>
+
+          <div class="question-text" data-question-id="q-042" hidden><span data-word="0">So</span> <span data-word="1">could</span> <span data-word="2">you</span> <span data-word="3">identify</span> <span data-word="4">some</span> <span data-word="5">of</span> <span data-word="6">those</span> <span data-word="7">competing</span> <span data-word="8">tasks</span>?</div>
+
+          <div class="question-text" data-question-id="q-043" hidden><span data-word="0">Ok</span>, <span data-word="1">cool</span>. <span data-word="2">That</span>’<span data-word="3">s</span> <span data-word="4">it</span> <span data-word="5">for</span> <span data-word="6">that</span>, <span data-word="7">thank</span> <span data-word="8">you</span>.</div>
+
+        </div>
+        <details id="contextDetails" hidden>
+          <summary>Optional context from the script</summary>
+          <div id="questionContext">
+
+            <div data-question-id="q-001" ></div>
+
+            <div data-question-id="q-002" hidden></div>
+
+            <div data-question-id="q-003" hidden></div>
+
+            <div data-question-id="q-004" hidden>The employee received step-by-step instructions on how to perform the task.</div>
+
+            <div data-question-id="q-005" hidden>The employee was shown how to perform the task</div>
+
+            <div data-question-id="q-006" hidden>The employee had opportunities to practice the task correctly during training.</div>
+
+            <div data-question-id="q-007" hidden></div>
+
+            <div data-question-id="q-008" hidden>The employee received feedback about performance during training.</div>
+
+            <div data-question-id="q-009" hidden></div>
+
+            <div data-question-id="q-010" hidden></div>
+
+            <div data-question-id="q-011" hidden></div>
+
+            <div data-question-id="q-012" hidden></div>
+
+            <div data-question-id="q-013" hidden></div>
+
+            <div data-question-id="q-014" hidden></div>
+
+            <div data-question-id="q-015" hidden>i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?</div>
+
+            <div data-question-id="q-016" hidden></div>
+
+            <div data-question-id="q-017" hidden></div>
+
+            <div data-question-id="q-018" hidden>e.g., checklist, data sheet, step-by-step instructions, pictures, prompts
+
+if appropriate
+
+e.g., visibly posted, located with the instructional or data collection materials</div>
+
+            <div data-question-id="q-019" hidden>e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts</div>
+
+            <div data-question-id="q-020" hidden>i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?</div>
+
+            <div data-question-id="q-021" hidden></div>
+
+            <div data-question-id="q-022" hidden>e.g., teaching stimuli, preferred items
+
+e.g., easy to find, nearby</div>
+
+            <div data-question-id="q-023" hidden></div>
+
+            <div data-question-id="q-024" hidden></div>
+
+            <div data-question-id="q-025" hidden></div>
+
+            <div data-question-id="q-026" hidden>i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete</div>
+
+            <div data-question-id="q-027" hidden>i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?</div>
+
+            <div data-question-id="q-028" hidden>i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages</div>
+
+            <div data-question-id="q-029" hidden></div>
+
+            <div data-question-id="q-030" hidden>s
+
+i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing</div>
+
+            <div data-question-id="q-031" hidden>s
+
+i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing</div>
+
+            <div data-question-id="q-032" hidden></div>
+
+            <div data-question-id="q-033" hidden></div>
+
+            <div data-question-id="q-034" hidden></div>
+
+            <div data-question-id="q-035" hidden></div>
+
+            <div data-question-id="q-036" hidden></div>
+
+            <div data-question-id="q-037" hidden></div>
+
+            <div data-question-id="q-038" hidden></div>
+
+            <div data-question-id="q-039" hidden>i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)</div>
+
+            <div data-question-id="q-040" hidden></div>
+
+            <div data-question-id="q-041" hidden>i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?</div>
+
+            <div data-question-id="q-042" hidden></div>
+
+            <div data-question-id="q-043" hidden></div>
+
+          </div>
+        </details>
+        <div class="question-preview">
+          <button class="text-button" id="hearQuestionButton">Hear this question</button>
+          <span id="questionTiming"></span>
+        </div>
+        <section class="voice-progress" id="voiceProgress" hidden aria-label="Speaking progress">
+          <div class="voice-progress-heading"><strong>Speaking time</strong><span id="voiceProgressLabel">0%</span></div>
+          <div class="voice-progress-track" id="voiceProgressBar" role="progressbar" aria-label="Speaking time compared with question TTS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div id="voiceProgressFill"></div><span class="voice-target" aria-hidden="true"></span>
+          </div>
+          <p id="voiceProgressHint">Speak above the volume threshold to fill the bar. Reach 75%, then pause for 3 seconds.</p>
+        </section>
+        <div class="listen-strip">
+          <div class="level-meter" id="levelMeter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p id="hint">Start when you're ready. Allow your microphone to begin.</p>
+        </div>
+        <div class="answer-playback" id="answerPlayback" hidden>
+          <span class="speaker-symbol" aria-hidden="true">◖))</span>
+          <div>
+            <strong id="answerStatus">Playing the recorded answer</strong>
+            <div class="audio-track"><div id="audioProgress"></div></div>
+          </div>
+          <span id="audioTime"></span>
+        </div>
+        <div class="main-actions">
+          <button class="primary-button" id="startButton" disabled><span id="startButtonLabel">Start conversation</span><span aria-hidden="true">→</span></button>
+          <button class="secondary-button" id="pauseButton" hidden>Pause</button>
+          <button class="text-button" id="finishButton" hidden>I'm finished!</button>
+          <button class="primary-button" id="resumeAudioButton" hidden>Play this answer</button>
+        </div>
+        <p class="error-note" id="errorMessage" role="alert" hidden></p>
+      </article>
+      <section class="completion-card" id="completion" hidden>
+        <span class="completion-mark">✓</span>
+        <h2>Conversation complete.</h2>
+        <p id="completionSummary">You completed 43 questions and 43 answer recordings, in order.</p>
+        <a class="primary-button" href="../index.html">Choose another conversation →</a>
+        <button class="text-button" id="restartButton">Start a new attempt</button>
+      </section>
+      <section class="debug-panel" id="debugPanel" hidden>
+        <div class="debug-heading"><h2>Live recognition</h2><span id="debugPhase">idle</span></div>
+        <h3>Device and mode</h3>
+        <p id="recognitionReason">Device check has not run.</p>
+        <pre id="deviceReport">Waiting for device check.</pre>
+        <label>What the browser heard<pre id="transcript">No speech yet.</pre></label>
+        <div class="debug-metrics">
+          <span>Word match <strong id="matchScore">0%</strong></span>
+          <span>Ending detected <strong id="tailScore">:</strong></span>
+          <span>Quiet time <strong id="quietTime">0 ms</strong></span>
+        </div>
+        <div class="debug-settings">
+          <label>Voice timing: pause before answer
+            <select id="fallbackSilenceSetting">
+              <option value="1500">1.5 seconds</option>
+              <option value="2000">2 seconds</option>
+              <option value="3000" selected>3 seconds</option>
+              <option value="4000">4 seconds</option>
+              <option value="5000">5 seconds</option>
+            </select>
+          </label>
+          <label>Minimum voice volume
+            <input id="volumeSetting" type="range" min="0.004" max="0.04" step="0.001" value="0.008">
+          </label>
+          <label>Pause before answer
+            <select id="silenceSetting">
+              <option value="600">0.6 seconds</option>
+              <option value="800" selected>0.8 seconds</option>
+              <option value="1100">1.1 seconds</option>
+              <option value="1500">1.5 seconds</option>
+            </select>
+          </label>
+          <label>Wording tolerance
+            <select id="matchSetting">
+              <option value="0.58" selected>Relaxed</option>
+              <option value="0.7">Balanced</option>
+            </select>
+          </label>
+        </div>
+        <p id="debugAudio"></p>
+        <pre id="eventLog" class="event-log"></pre>
+      </section>
+    </section>
+    <aside class="practice-sidebar">
+      <div class="side-card">
+        <p class="eyebrow">THIS SESSION</p>
+        <dl>
+          <div><dt>Questions</dt><dd id="totalQuestions">43</dd></div>
+          <div><dt>Voice</dt><dd id="voiceLabel">Heart female</dd></div>
+          <div><dt>Recordings</dt><dd id="editionLabel">Original recordings</dd></div>
+        </dl>
+      </div>
+    </aside>
+  </main>
+  <footer class="site-footer"><button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><span id="consentStatus"></span></footer>
+  <section class="consent-banner" id="consentBanner" aria-label="Cookie and storage preferences" hidden>
+    <div><h2>Remember your practice?</h2><p>With your permission, we save progress and preferences on this device. Choose Session only to keep progress in memory for this page visit. One essential cookie remembers your choice. We use no analytics or advertising cookies.</p></div>
+    <div class="consent-actions"><button class="secondary-button" id="consentReject">Session only</button><button class="secondary-button" id="consentAccept">Remember my progress</button></div>
+  </section>
+  <audio id="answerAudio" preload="auto" playsinline></audio>
+  <audio id="questionAudio" preload="none" playsinline></audio>
+  <script type="module" src="../assets/app.js"></script>
+</body>
+</html>

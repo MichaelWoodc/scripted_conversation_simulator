@@ -1,12 +1,65 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conversation Lab</title><link rel="stylesheet" href="assets/styles.css"></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation Lab</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
 <body data-page="library">
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a><span class="header-label">Guided Practice Sessions</span></header>
-<main class="library"><div class="hero-copy"><p>Practice the conversation, from the first question to the last.</p><p>Read aloud. Words turn green as they're heard. When you finish, the answer plays.</p></div></section>
-<section class="library-heading"><div><p class="eyebrow">SESSION OPTIONS</p><h2>Choose a conversation</h2></div><label class="edition-label">Audio edition<select id="edition"></select></label></section>
-<div id="sessionCards" class="session-grid" aria-live="polite"><p>Loading your audio sets…</p></div>
-<section class="how-it-works"><span class="small-number">01</span><p><strong>Read the question.</strong><br>Use your own natural pace.</p><span class="small-number">02</span><p><strong>Pause when you're finished.</strong><br>Close wording is enough.</p><span class="small-number">03</span><p><strong>Listen, then continue.</strong><br>Every answer plays once, in order.</p></section>
-
-</main><footer class="site-footer"><span></span><span id="catalogStatus"></span></footer>
-<script type="module" src="assets/app.js"></script></body></html>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a>
+    <span class="header-label">Guided Practice Sessions</span>
+  </header>
+  <main class="library">
+    <div class="hero-copy">
+      <p>Practice sessions use the best available hardware on your device.  Older devices may result in a poor experience.</p>
+      <p>Read your portion of the script out loud. Words turn green as they're heard. When you finish, the answer plays.</p>
+    </div>
+    <section class="library-heading">
+      <div>
+        <p class="eyebrow">SESSION OPTIONS</p>
+        <h2>Choose a conversation</h2>
+      </div>
+      <label class="edition-label">Audio Files To Use:
+        <select id="edition" disabled>
+{{#EDITIONS}}
+          <option value="{{EDITION}}">{{EDITION_LABEL}}</option>
+{{/EDITIONS}}
+        </select>
+      </label>
+    </section>
+    <div id="sessionCards" class="session-grid" aria-live="polite">
+{{#CARDS}}
+      <a class="session-card" href="{{PAGE}}" data-set-id="{{SET_ID}}" data-edition="{{EDITION}}">
+        <div class="session-card-top">
+          <span class="chapter-number">{{CHAPTER}}</span>
+          <span class="card-tag">Vignette {{VIGNETTE}}</span>
+        </div>
+        <h3>{{TITLE}}</h3>
+        <p class="card-description">{{QUESTION_COUNT}} questions {{VOICE}} voice<br>{{MINUTES}} min · {{EDITION_LABEL}}</p>
+        <div class="card-bottom">
+          <span data-progress>Begin conversation</span>
+          <span class="round-arrow">↗</span>
+        </div>
+      </a>
+{{/CARDS}}
+      <p id="emptyLibrary" {{EMPTY_HIDDEN}}>No complete audio sets are ready yet.</p>
+    </div>
+    <section class="how-it-works">
+      <span class="small-number">01</span>
+      <p><strong>Read the question.</strong><br>Use your own natural pace.</p>
+      <span class="small-number">02</span>
+      <p><strong>Pause when you're finished.</strong><br>Close wording is enough.</p>
+      <span class="small-number">03</span>
+      <p><strong>Listen, then continue.</strong><br>Every answer plays once, in order.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><span id="catalogStatus">{{SET_COUNT}} complete audio sets</span><span id="consentStatus"></span></footer>
+  <section class="consent-banner" id="consentBanner" aria-label="Cookie and storage preferences" hidden>
+    <div><h2>Remember your practice?</h2><p>With your permission, we save progress and preferences on this device. Choose Session only to keep progress in memory for this page visit. One essential cookie remembers your choice. We use no analytics or advertising cookies.</p></div>
+    <div class="consent-actions"><button class="secondary-button" id="consentReject">Session only</button><button class="secondary-button" id="consentAccept">Remember my progress</button></div>
+  </section>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

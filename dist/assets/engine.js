@@ -1,4 +1,5 @@
 // Pure matching and progress logic; no microphone or DOM dependencies.
+import {preferenceStorage} from './privacy.js';
 const STOP = new Set('a an the is are was were be been being do does did has have had to of for in on at and or that this it they them their you your can could would should may might with from as if so i we'.split(' '));
 const ALIASES = {employees:'employee',workers:'employee',worker:'employee',staff:'employee',training:'train',trained:'train',trains:'train',received:'receive',receives:'receive',receiving:'receive',completed:'complete',completes:'complete',completing:'complete',completion:'complete',performed:'perform',performing:'perform',performs:'perform',reminded:'remind',reminders:'remind',reminder:'remind',materials:'material',tasks:'task',sessions:'session',instructions:'instruction',demonstrations:'demonstration',modeling:'model',modelling:'model',rehearsal:'practice',practiced:'practice',practising:'practice',practicing:'practice',frequency:'often',frequently:'often',daily:'day',quickly:'quick',accurately:'accurate',correctly:'correct',behaviour:'behavior',behaviors:'behavior',supervisors:'supervisor',afterwards:'after',electronic:'electronically',verbally:'vocal',verbal:'vocal',vocally:'vocal'};
 
@@ -56,7 +57,7 @@ export function matchQuestion(question, transcript, threshold=0.58) {
 }
 
 export class SessionProgress {
-  constructor(set,storage=globalThis.localStorage) {
+  constructor(set,storage=preferenceStorage) {
     this.set=set;this.storage=storage;this.key=`conversation-lab:v1:${set.id}:${set.version}`;
     let stored={};try{stored=JSON.parse(storage.getItem(this.key)||'{}');}catch{}
     this.index=Number.isInteger(stored.index)?Math.max(0,Math.min(set.steps.length,stored.index)):0;
