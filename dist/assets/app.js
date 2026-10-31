@@ -1,5 +1,5 @@
 import {matchQuestion,SessionProgress,tokenize} from './engine.js';
-import {BrowserSpeech,MicrophoneMonitor,deviceCapabilities,recognitionReason} from './speech.js';
+import {BrowserSpeech,MicrophoneMonitor,deviceCapabilities,recognitionReason,exclusiveSpeechCapture} from './speech.js';
 import {initPrivacy,preferenceStorage,readDeviceSettings} from './privacy.js';
 import {DeviceSetup,MODES,savedModeCanSkip} from './devices.js';
 
@@ -231,8 +231,11 @@ class Practice {
     if(!['idle','paused'].includes(this.state)||!this.checked)return;
     const continuing=this.state==='paused';this.setState('preparing');$('startButton').disabled=true;this.error('');
     // Keep audio, microphone resume, and recognition within the user's tap.
-    const audioReady=this.primeAudio();
-    const microphoneReady=this.mode==='manual'?Promise.resolve():this.monitor.start();
+    const nativePhone=this.mode==='transcription'&&exclusiveSpeechCapture();
+    // Native phone recognition owns the microphone. Do not open getUserMedia or
+    // play/pause a silent media element while that recognition session starts.
+    const audioReady=nativePhone?Promise.resolve(true):this.primeAudio();
+    const microphoneReady=this.mode==='manual'||nativePhone?Promise.resolve():this.monitor.start();
     if(this.mode==='transcription')this.speech.start(this.transcript);
     const [,microphone]=await Promise.allSettled([audioReady,microphoneReady]);
     if(microphone.status==='rejected'){
@@ -250,6 +253,7 @@ class Practice {
     if(this.progress.complete){this.setState('complete');return;}
     if(!continuing){this.transcript='';this.lastLexical='';this.speechHeard=false;this.match=null;this.voicedMs=0;}
     this.lastVoiceTime=performance.now();this.lastTextTime=this.lastVoiceTime;this.nativeSpeaking=false;
+    this.listeningSince=performance.now();
     this.setState('listening');
     if(this.mode==='transcription'&&!recognitionStarted)this.speech.start(this.transcript);
     this.log(`Listening: question ${this.progress.index+1} (${this.mode})`);
@@ -257,6 +261,16 @@ class Practice {
 
   onRecognitionError(code) {
     this.speech.stop();
+    if(exclusiveSpeechCapture()&&!this.monitor.available&&!this.closed){
+      const reason=recognitionReason(code);
+      this.selectMode('manual',reason+' Starting microphone timing fallback.');
+      this.monitor.start().then(()=>{
+        if(this.closed)return;
+        this.selectMode('volume',reason);
+        if(this.state==='listening')this.setState('listening');
+      }).catch(error=>{if(!this.closed){this.selectMode('manual',reason+' '+error.message);this.error(error.message);}});
+      this.log(`Recognition: ${code}`);return;
+    }
     this.selectMode(this.monitor.available?'volume':'manual',recognitionReason(code));
     if(this.state==='listening')this.setState('listening');
     this.log(`Recognition: ${code}`);
@@ -284,6 +298,7 @@ class Practice {
     const now=performance.now(),quiet=now-this.lastVoiceTime;
     $('quietTime').textContent=`${Math.max(0,Math.round(quiet))} ms`;
     if(this.mode==='transcription'&&this.monitor.available&&this.voicedMs>=5000&&!this.transcript.trim())this.onRecognitionError('no-results');
+    if(this.mode==='transcription'&&exclusiveSpeechCapture()&&!this.transcript.trim()&&now-this.listeningSince>=20000)this.onRecognitionError('no-results');
     if(this.mode==='volume'){
       this.updateVoiceProgress();
       const duration=this.progress.current?.questionAudio?.duration;

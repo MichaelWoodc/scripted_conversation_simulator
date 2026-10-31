@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-31T22:56:59.318129+00:00",
+  "generatedAt": "2026-10-31T23:17:45.035699+00:00",
   "sets": [
     {
       "id": "edited-af-alloy-speed-1p00-vignette-1",
@@ -30352,6 +30352,27 @@
     }
   ],
   "incompleteFolders": [
+    {
+      "folder": "dist\\media\\edited\\af_nicole\\speed_1p00\\Video Vignette 1 MatsProRes Indicated_Streamline Script",
+      "missing": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
     {
       "folder": "dist\\media\\reviewed\\Video Vignette 1 MatsProRes Indicated_Streamline Script",
       "missing": [

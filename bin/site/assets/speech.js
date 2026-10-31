@@ -1,11 +1,15 @@
+export function exclusiveSpeechCapture(){
+  return !!navigator.userAgentData?.mobile||/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||(/Macintosh/i.test(navigator.userAgent)&&navigator.maxTouchPoints>1);
+}
+
 export class BrowserSpeech {
   constructor({onText,onError,onSpeech,onReady}) {
     this.onText=onText;this.onError=onError;this.onSpeech=onSpeech;this.onReady=onReady;
-    this.active=false;this.epoch=0;this.prefix='';this.segment='';
+    this.active=false;this.epoch=0;this.prefix='';this.segment='';this.mobile=exclusiveSpeechCapture();this.emptyEnds=[];
   }
   get supported(){return !!(globalThis.SpeechRecognition||globalThis.webkitSpeechRecognition);}
   start(prefix='') {
-    this.stop();this.active=true;this.prefix=prefix;this.segment='';
+    this.stop();this.active=true;this.prefix=prefix;this.segment='';this.emptyEnds=[];
     if(!this.supported){this.onError('unsupported');return;}
     this.open(this.epoch);
   }
@@ -15,12 +19,14 @@ export class BrowserSpeech {
     let recognition;
     try{recognition=new Constructor();}catch(error){this.fail(error.name||error.message);return;}
     this.recognition=recognition;
-    recognition.lang='en-US';recognition.continuous=true;recognition.interimResults=true;recognition.maxAlternatives=1;
-    recognition.onstart=()=>{if(this.active&&epoch===this.epoch){clearTimeout(this.startTimeout);this.onReady?.();}};
-    this.startTimeout=setTimeout(()=>{if(this.active&&epoch===this.epoch)this.fail('start-timeout');},5000);
+    recognition.lang='en-US';recognition.continuous=!this.mobile;recognition.interimResults=true;recognition.maxAlternatives=1;
+    const current=()=>this.active&&epoch===this.epoch&&this.recognition===recognition;
+    recognition.onstart=()=>{if(current()){clearTimeout(this.startTimeout);this.onReady?.();}};
+    this.startTimeout=setTimeout(()=>{if(current())this.fail('start-timeout');},this.mobile?15000:5000);
     recognition.onresult=event=>{
-      if(!this.active || epoch!==this.epoch)return;
+      if(!current())return;
       clearTimeout(this.startTimeout);
+      this.emptyEnds=[];
       let final='',interim='';
       for(let i=0;i<event.results.length;i++) {
         const value=event.results[i][0]?.transcript||'';
@@ -29,16 +35,22 @@ export class BrowserSpeech {
       this.segment=(final+interim).trim();
       this.onText({text:[this.prefix,this.segment].filter(Boolean).join(' '),isFinal:!interim.trim(),interim:interim.trim()});
     };
-    recognition.onspeechstart=()=>{if(this.active&&epoch===this.epoch)this.onSpeech?.(true);};
-    recognition.onspeechend=()=>{if(this.active&&epoch===this.epoch)this.onSpeech?.(false);};
+    recognition.onspeechstart=()=>{if(current())this.onSpeech?.(true);};
+    recognition.onspeechend=()=>{if(current())this.onSpeech?.(false);};
     recognition.onerror=event=>{
-      if(!this.active || epoch!==this.epoch || ['aborted','no-speech'].includes(event.error))return;
+      if(!current() || ['aborted','no-speech'].includes(event.error))return;
       this.fail(event.error);
     };
     recognition.onend=()=>{
-      if(!this.active || epoch!==this.epoch)return;
+      if(!current())return;
+      clearTimeout(this.startTimeout);this.onSpeech?.(false);
+      if(!this.segment){
+        const now=performance.now();this.emptyEnds=this.emptyEnds.filter(time=>now-time<10000);this.emptyEnds.push(now);
+        if(this.emptyEnds.length>=4){this.fail('repeated-end');return;}
+      }
       this.prefix=[this.prefix,this.segment].filter(Boolean).join(' ');this.segment='';
-      this.restart=setTimeout(()=>this.open(epoch),160);
+      this.recognition=null;
+      this.restart=setTimeout(()=>this.open(epoch),this.mobile?350:160);
     };
     try{recognition.start();}catch(error){this.fail(error.name||error.message);}
   }
@@ -62,10 +74,11 @@ export function recognitionReason(code){
     'microphone-unavailable':'The microphone is unavailable or permission was denied. Manual practice is available.',
     'not-allowed':'Speech transcription permission was denied by the browser or device settings.',
     'service-not-allowed':'The browser has disabled its speech transcription service.',
+    'repeated-end':'Chrome repeatedly stopped transcription without returning words. Try opening this page directly in Chrome, rather than an in-app browser, and check Android microphone and speech-service permissions.',
     network:'The speech transcription service could not connect to its server.',
     'audio-capture':'The transcription service could not capture microphone audio.',
     'language-not-supported':'The transcription service does not support English on this device.',
-    'start-timeout':'The transcription service did not start within five seconds.',
+    'start-timeout':exclusiveSpeechCapture()?'The transcription service did not start within fifteen seconds. Check Chrome microphone permission and Android speech-service availability.':'The transcription service did not start within five seconds.',
     'no-results':'The microphone detected speech, but the transcription service returned no words.',
     NotAllowedError:'The browser blocked speech transcription.',
     SecurityError:'The browser security settings blocked speech transcription.'})[code]||`Speech transcription failed (${code}).`;

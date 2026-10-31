@@ -134,6 +134,8 @@ def make_catalog(project=PROJECT):
                          'speed':speed,'page':f'sets/{identifier}.html','version':version,'steps':items,
                          'answerCount':len(group),'duration':round(sum(c['duration'] for c in clips.values()),1)})
     sets.sort(key=lambda s: (0 if s['edition']=='edited' else 1,s['edition'],s['vignette'],s['id']))
+    for sample in (project / 'dist' / 'media' / 'voice-samples').glob('*.wav'):
+        media[sample.relative_to(project / 'dist').as_posix()] = sample
     return {'schema':1,'generatedAt':datetime.now(timezone.utc).isoformat(),'sets':sets,
             'incompleteFolders':incomplete}, media
 
@@ -203,6 +205,27 @@ def render_session(item, variants=None):
     return render_template((SITE / 'session.html').read_text(encoding='utf-8-sig'), values)
 
 
+def render_voice_samples(project=PROJECT):
+    registry = json.loads((ROOT / 'data' / 'kokoro_voices.json').read_text(encoding='utf-8'))
+    settings = json.loads((ROOT / 'data' / 'voice_sample_settings.json').read_text())
+    languages = {'a':'American English', 'b':'British English', 'j':'Japanese', 'z':'Mandarin Chinese',
+                 'e':'Spanish', 'f':'French', 'h':'Hindi', 'i':'Italian', 'p':'Brazilian Portuguese'}
+    samples = []
+    for voice in registry:
+        identifier = voice['id']
+        relative = f'media/voice-samples/{identifier}.wav'
+        ready = (Path(project) / 'dist' / relative).is_file()
+        language = languages.get(identifier[0], 'Other')
+        samples.append({'NAME': identifier.split('_', 1)[1].title(), 'VOICE_ID': identifier,
+                        'LANGUAGE': language, 'GENDER': 'Female' if identifier[1] == 'f' else 'Male',
+                        'SEARCH': f'{voice["name"]} {language}'.lower(),
+                        'URL': relative if ready else '', 'AUDIO_HIDDEN': '' if ready else 'hidden',
+                        'PENDING_HIDDEN': 'hidden' if ready else ''})
+    return render_template((SITE / 'voice-samples.html').read_text(encoding='utf-8'),
+                           {'PHRASE': settings['phrase'], 'SAMPLES': samples, 'VOICE_COUNT': len(samples),
+                            'READY_COUNT': sum(not row['AUDIO_HIDDEN'] for row in samples)})
+
+
 def build(static_audio=False, *, project=PROJECT):
     """Build a self-contained site; recordings already live in dist/media.
 
@@ -215,6 +238,7 @@ def build(static_audio=False, *, project=PROJECT):
     shutil.copy2(SITE/'setup.html',dist/'setup.html')
     catalog,media=make_catalog(project)
     (dist/'index.html').write_text(render_library(catalog),encoding='utf-8')
+    (dist/'voice-samples.html').write_text(render_voice_samples(project),encoding='utf-8')
     (dist/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
     (dist/'sets').mkdir(exist_ok=True)
     for item in catalog['sets']:

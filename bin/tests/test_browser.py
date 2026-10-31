@@ -19,11 +19,11 @@ class TestHandler(Handler):
         pass
 
 MOCKS=r'''
-window.__played=[];window.__questionPlayed=[];window.__level=0;window.__holdAudio=false;window.__blockNextAudio=false;
+window.__played=[];window.__questionPlayed=[];window.__level=0;window.__holdAudio=false;window.__blockNextAudio=false;window.__captureCount=0;window.__captureActive=false;
 class TestRecognition {
   static instances=[];
   constructor(){TestRecognition.instances.push(this);}
-  start(){this.running=true;setTimeout(()=>{if(!this.running)return;if(window.__recognitionError)this.onerror?.({error:window.__recognitionError});else if(!window.__recognitionSilent){this.onstart?.();if(document.body.dataset.page==='setup'&&!window.__noTestWords)TestRecognition.emit('Testing one two three');}},0);}
+  start(){this.running=true;setTimeout(()=>{if(!this.running)return;if(window.__rejectConcurrentCapture&&window.__captureActive)this.onerror?.({error:'audio-capture'});else if(window.__recognitionError)this.onerror?.({error:window.__recognitionError});else if(!window.__recognitionSilent){this.onstart?.();if(document.body.dataset.page==='setup'&&!window.__noTestWords)TestRecognition.emit('Testing one two three');}},0);}
   abort(){this.running=false;this.onend?.();}
   static emit(text,final=false){
     const item=Object.assign([{transcript:text,confidence:0.9}],{isFinal:final});
@@ -32,8 +32,10 @@ class TestRecognition {
 }
 window.SpeechRecognition=TestRecognition;window.__recognition=TestRecognition;
 Object.defineProperty(navigator,'mediaDevices',{configurable:true,value:{getUserMedia:async()=>{
+  window.__captureCount++;
   if(window.__denyMicrophone)throw new DOMException('Microphone access denied','NotAllowedError');
-  const track={label:'Test microphone',stop(){window.__micStopped=true;},getSettings:()=>({sampleRate:48000})};
+  window.__captureActive=true;
+  const track={label:'Test microphone',stop(){window.__micStopped=true;window.__captureActive=false;},getSettings:()=>({sampleRate:48000})};
   return {getTracks:()=>[track],getAudioTracks:()=>[track]};
 }}});
 window.AudioContext=class{
@@ -175,7 +177,7 @@ class BrowserTests(unittest.TestCase):
         self.addCleanup(context.close)
         page=context.new_page()
         page.goto(self.base_url)
-        self.assertEqual(page.locator('.session-card:visible').count(),len(self.catalog['sets']))
+        self.assertEqual(page.locator('.session-card:visible').count(),sum(item['voice']=='af_heart' for item in self.catalog['sets']))
         self.assertEqual(page.locator('#edition option').count(),2)
         for item in self.catalog['sets']:
             page.goto(self.base_url+item['page'])
@@ -195,7 +197,7 @@ class BrowserTests(unittest.TestCase):
         self.page.evaluate("window.__firstCard=document.querySelector('.session-card')")
         for edition in ('edited','original'):
             self.page.select_option('#edition',edition)
-            expected=[item for item in self.catalog['sets'] if item['edition']==edition]
+            expected=[item for item in self.catalog['sets'] if item['edition']==edition and item['voice']=='af_heart']
             cards=self.page.locator('.session-card:visible')
             self.assertEqual(cards.count(),len(expected))
             self.assertEqual(cards.evaluate_all('(cards)=>cards.map(card=>card.dataset.setId)'),[item['id'] for item in expected])
@@ -206,7 +208,7 @@ class BrowserTests(unittest.TestCase):
         self.page.route('**/catalog.json',lambda route:route.fulfill(status=503,body='Unavailable'))
         self.page.goto(self.base_url)
         self.page.wait_for_function("document.getElementById('catalogStatus').textContent.includes('503')")
-        self.assertEqual(self.page.locator('.session-card:visible').count(),len(self.catalog['sets']))
+        self.assertEqual(self.page.locator('.session-card:visible').count(),sum(item['voice']=='af_heart' for item in self.catalog['sets']))
 
     def test_voice_timing_counts_only_voice_and_waits_for_adjustable_pause(self):
         self.page.add_init_script('delete window.SpeechRecognition; delete window.webkitSpeechRecognition;')
@@ -398,6 +400,63 @@ class BrowserTests(unittest.TestCase):
         self.assertEqual(self.page.locator('#speakingPercentValue').inner_text(),'65%')
         self.assertEqual(self.page.locator('#silenceValue').inner_text(),'0.5 seconds')
         self.assertEqual(self.page.locator('#volumeValue').inner_text(),'0.020')
+
+    def test_all_voice_samples_are_playable_and_filterable_on_mobile(self):
+        import wave
+        from project_paths import DIST
+        registry=json.loads((DIST.parent/'data/kokoro_voices.json').read_text())
+        for voice in registry:
+            path=DIST/'media/voice-samples'/f'{voice["id"]}.wav'
+            with wave.open(str(path),'rb') as audio:
+                self.assertGreater(audio.getnframes()/audio.getframerate(),0)
+            metadata=json.loads(path.with_suffix('.json').read_text())
+            self.assertEqual(metadata['phrase'],'The quick brown fox jumps over the lazy dog.')
+        self.page.set_viewport_size({'width':390,'height':844})
+        self.page.goto(self.base_url+'voice-samples.html')
+        self.assertEqual(self.page.locator('.voice-sample-card audio').count(),len(registry))
+        self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
+        self.page.locator('#voiceSearch').fill('British English')
+        self.assertEqual(self.page.locator('.voice-sample-card:visible').count(),8)
+        self.page.locator('#voiceSearch').fill('af_bella')
+        self.assertEqual(self.page.locator('.voice-sample-card:visible').count(),1)
+        response=self.page.request.get(self.base_url+'media/voice-samples/af_bella.wav')
+        self.assertEqual(response.status,200)
+        self.assertTrue(response.body().startswith(b'RIFF'))
+
+    def test_voice_sample_playback_pauses_other_samples(self):
+        context=self.browser.new_context()
+        self.addCleanup(context.close)
+        page=context.new_page()
+        page.goto(self.base_url+'voice-samples.html')
+        page.locator('h1').click()
+        page.locator('audio').nth(0).evaluate('(audio)=>audio.play()')
+        page.wait_for_function("!document.querySelectorAll('audio')[0].paused")
+        page.locator('audio').nth(1).evaluate('(audio)=>audio.play()')
+        page.wait_for_function("document.querySelectorAll('audio')[0].paused&&!document.querySelectorAll('audio')[1].paused")
+
+    def test_android_transcription_uses_one_microphone_and_restarts_short_sessions(self):
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__rejectConcurrentCapture=true;")
+        self.open_session()
+        self.assertIn('Speech transcription',self.page.locator('#modeStatus').inner_text())
+        self.start()
+        self.assertEqual(self.page.evaluate('window.__captureCount'),0,'Transcription must not open a competing getUserMedia stream')
+        self.assertFalse(self.page.evaluate('window.__recognition.instances.at(-1).continuous'))
+        self.emit('Has the employee received',True)
+        self.page.evaluate('window.__oldPhoneRecognition=window.__recognition.instances.at(-1);window.__oldPhoneRecognition.onend()')
+        self.page.wait_for_function('window.__recognition.instances.at(-1)!==window.__oldPhoneRecognition')
+        self.emit('formal training on this task',True)
+        self.assertEqual(self.page.locator('#questionText .heard').count(),9)
+        self.page.evaluate("window.__oldPhoneRecognition.onresult({results:[Object.assign([{transcript:'stale result'}],{isFinal:true})]})")
+        self.assertNotIn('stale',self.page.locator('#transcript').text_content())
+        self.page.wait_for_function('window.__played.length===2',timeout=4000)
+
+    def test_android_transcription_error_opens_timing_microphone_after_stopping_recognition(self):
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__rejectConcurrentCapture=true;")
+        self.open_session();self.start()
+        self.page.evaluate("window.__recognition.instances.at(-1).onerror({error:'network'})")
+        self.page.wait_for_function("document.getElementById('modeStatus').textContent.includes('Voice timing')")
+        self.assertEqual(self.page.evaluate('window.__captureCount'),1)
+        self.assertFalse(self.page.evaluate('window.__recognition.instances.at(-1).running'))
 
 
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice samples · Conversation Lab</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="voice-samples">
+  <header class="site-header">
+    <a class="brand" href="index.html">Conversation Lab</a>
+    <a href="index.html">Practice sessions</a>
+  </header>
+  <main class="voice-samples-layout">
+    <p class="eyebrow">FIND YOUR SPEAKER</p>
+    <h1>Compare every voice</h1>
+    <blockquote>{{PHRASE}}</blockquote>
+    <p>Hear the same English sentence at the same speed from every Kokoro speaker. Heart is the default answer voice; Bella reads question previews.</p>
+    <p class="sample-note">Language labels describe each voice's original training language. All samples read the English sentence above, so some voices have an accent.</p>
+    <label class="sample-search" for="voiceSearch">Find a voice <input id="voiceSearch" type="search" placeholder="Name, voice ID, or language" autocomplete="off"></label>
+    <p id="sampleCount" role="status">{{READY_COUNT}} of {{VOICE_COUNT}} samples ready</p>
+    <div class="voice-samples-grid" id="voiceSamples">
+{{#SAMPLES}}
+      <article class="voice-sample-card" data-search="{{SEARCH}}">
+        <h2>{{NAME}}</h2>
+        <p class="sample-language">{{LANGUAGE}} · {{GENDER}}</p>
+        <p class="sample-voice-id">{{VOICE_ID}}</p>
+        <audio controls preload="none" playsinline src="{{URL}}" aria-label="Listen to {{NAME}}" {{AUDIO_HIDDEN}}></audio>
+        <p {{PENDING_HIDDEN}}>Sample not generated yet.</p>
+      </article>
+{{/SAMPLES}}
+    </div>
+    <p id="noVoices" hidden>No voices match your search.</p>
+    <p class="sample-note">Choose an available answer speaker from Settings inside a practice session. Full response recordings are generated separately from these short samples.</p>
+  </main>
+  <script type="module" src="assets/voice-samples.js"></script>
+</body>
+</html>

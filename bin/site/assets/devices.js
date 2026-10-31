@@ -1,4 +1,4 @@
-import {BrowserSpeech,MicrophoneMonitor,deviceCapabilities,recognitionReason} from './speech.js';
+import {BrowserSpeech,MicrophoneMonitor,deviceCapabilities,recognitionReason,exclusiveSpeechCapture} from './speech.js';
 import {readDeviceSettings,saveDeviceSettings,deviceStorageAllowed} from './privacy.js';
 
 const ROOT=new URL('../',import.meta.url);
@@ -39,7 +39,7 @@ export class DeviceSetup {
       $('timingTestProgress').value=this.testMs;
       $('timingTestLabel').textContent=`${(this.testMs/1000).toFixed(1)} / 1 second${this.testMs>=1000?' — passed':''}`;
     },message=>{if(!this.closed)$('deviceStatus').textContent='Microphone paused. Tap Test to resume. Your previous test results are remembered.';});
-    for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton'])$(id).addEventListener('click',()=>this.check());
+    for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton'])$(id).addEventListener('click',()=>this.check(id==='retryTimingButton'));
     $('continueToSession').addEventListener('click',()=>this.continue());
     $('rememberDeviceSettings').addEventListener('change',()=>this.persist());
     for(const id of ['transcriptionVolume','volumeSetting'])$(id).addEventListener('input',()=>{
@@ -81,7 +81,7 @@ export class DeviceSetup {
           for(const span of document.querySelectorAll('[data-test-word]'))span.classList.toggle('heard',this.testWords.has(span.dataset.testWord));
           if(['testing','one','two','three'].every(word=>this.testWords.has(word))){
             probe.stop();clearTimeout(this.testTimeout);
-            this.speechOK=true;this.reasonCode='working';this.speechReason='Testing 1…2…3 detected.';
+            this.speechOK=true;this.micOK=true;this.reasonCode='working';this.speechReason='Testing 1…2…3 detected.';
             this.updateOptions();this.persist();resolve({ok:true});
           }
         },
@@ -89,17 +89,21 @@ export class DeviceSetup {
         onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);this.updateOptions();this.persist();resolve({ok:false,code});}
       });
       this.probe=probe;probe.start();
-      clearTimeout(this.testTimeout);this.testTimeout=setTimeout(()=>probe.stop(),10000);
+      clearTimeout(this.testTimeout);this.testTimeout=setTimeout(()=>{if(probe.active)probe.fail('no-results');},20000);
     });
   }
 
-  async check(){
+  async check(timingOnly=false){
     if(this.checking)return;
     this.checking=true;this.caps=deviceCapabilities();
     this.probe?.stop();this.testWords.clear();this.testMs=0;$('timingTestProgress').value=0;$('timingTestLabel').textContent='0.0 / 1 second';
     for(const span of document.querySelectorAll('[data-test-word]'))span.classList.remove('heard');
     for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton','continueToSession'])$(id).disabled=true;
     $('deviceStatus').textContent='Checking your microphone and transcription. Allow access when your browser asks.';
+    if(exclusiveSpeechCapture()){
+      await this.checkMobile(timingOnly);
+      return;
+    }
     // Permission-sensitive APIs are all invoked by the visitor's tap.
     this.monitor.minimum=Number($('volumeSetting').value);
     const microphone=this.monitor.start();
@@ -113,10 +117,43 @@ export class DeviceSetup {
     this.reasonCode=this.speechOK?'working':speechResult.value?.code||'microphone-unavailable';
     this.microphoneReason=this.micOK?'Microphone connected.':micResult.reason?.message||'Microphone permission is needed.';
     this.speechReason=this.speechOK?'Transcription verified.':this.micOK&&speechResult.value?.code==='test-needed'?'Say “Testing 1…2…3…” to verify transcription.':this.micOK?recognitionReason(this.reasonCode):'Microphone access is unavailable or needs permission.';
-    $('deviceStatus').textContent=this.micOK?'Say “Testing 1…2…3…” — watch the words and two-second bar.':this.microphoneReason+' Retry or continue manually.';
+    $('deviceStatus').textContent=this.micOK?'Say “Testing 1…2…3…” — watch the words and one-second bar.':this.microphoneReason+' Retry or continue manually.';
     this.updateOptions();
     this.persist();
     for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton','continueToSession'])$(id).disabled=false;
+  }
+
+  async checkMobile(timingOnly){
+    try{
+      if(!this.caps.secure){this.speechOK=false;throw new Error('Microphone access requires HTTPS. Open the published HTTPS site on your phone.');}
+      if(timingOnly||!this.caps.transcription){
+        this.probe?.stop();
+        this.monitor.minimum=Number($('volumeSetting').value);
+        await this.monitor.start();
+        this.micOK=this.monitor.available;
+        if(!this.caps.transcription){this.speechOK=false;this.speechReason=recognitionReason('unsupported');}
+        $('deviceStatus').textContent='Timing microphone ready. Say “Testing 1…2…3…” to fill the one-second bar.';
+      }else{
+        // Release the Web Audio stream before native Chrome/Safari transcription.
+        // stop() releases tracks synchronously; native start still runs on this tap.
+        this.monitor.close();
+        $('transcriptionLevel').hidden=true;
+        const result=await this.probeTranscription();
+        if(result.code&&result.code!=='test-needed'){
+          this.speechOK=false;this.reasonCode=result.code;this.speechReason=recognitionReason(result.code);
+          await this.monitor.start();this.micOK=this.monitor.available;
+          $('deviceStatus').textContent='Transcription failed. Timing mode is available; Debug shows the reason.';
+        }else $('deviceStatus').textContent='Say “Testing 1…2…3…”. Transcription uses the microphone exclusively; use the Timing test for volume.';
+      }
+    }catch(error){
+      this.microphoneReason=error.message;this.micOK=false;
+      $('deviceStatus').textContent=error.message+' Retry or continue manually.';
+    }finally{
+      if(!this.closed){
+        this.checking=false;this.updateOptions();this.persist();
+        for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton','continueToSession'])$(id).disabled=false;
+      }
+    }
   }
 
   updateOptions(){
@@ -138,6 +175,8 @@ export class DeviceSetup {
       `Microphone API: ${this.caps.microphone?'available':'unavailable'}`,
       `Volume monitoring API: ${this.caps.volume?'available':'unavailable'}`,
       `Transcription API: ${this.caps.transcription?'available':'unavailable'}`,
+      `Phone capture: ${exclusiveSpeechCapture()?'exclusive microphone, short recognition sessions':'desktop capture'}`,
+      `Browser: ${navigator.userAgent}`,
       `Microphone test: ${this.micOK?'passed':'permission needed or unavailable'}`,
       `Transcription test: ${this.speechOK?'passed':this.speechReason||'not checked'}`,
       `Active microphone: ${this.monitor.stream?.getAudioTracks?.()[0]?.label||'not reported'}`
