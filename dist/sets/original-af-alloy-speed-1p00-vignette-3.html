@@ -7,18 +7,8 @@
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body data-page="session" data-set-id="original-af-alloy-speed-1p00-vignette-3">
-  <header class="site-header">
-    <a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a>
-    <div class="header-actions">
-      <a href="../index.html">All conversations</a>
-      <a id="changeDeviceLink" href="../setup.html?set=original-af-alloy-speed-1p00-vignette-3&amp;change=1">Change mode</a>
-      <button class="text-button" id="settingsToggle" aria-expanded="false" aria-controls="settingsPanel">Settings</button>
-      <button class="text-button" id="debugToggle" aria-expanded="false" aria-controls="debugPanel">Debug</button>
-    </div>
-  </header>
   <main class="practice-layout">
     <section class="practice-main">
-      <a class="back-link" href="../index.html">← Practice sessions</a>
       <div class="session-title">
         <p class="eyebrow" id="sessionEyebrow">VIGNETTE 3 GUIDED CONVERSATION</p>
         <h1 id="sessionTitle">Feedback &amp; performance</h1>
@@ -429,7 +419,16 @@ i.e., the employee cannot complete this task without another employee completing
       </div>
     </aside>
   </main>
-  <footer class="site-footer"><button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><span id="consentStatus"></span></footer>
+  <footer class="site-footer session-footer">
+    <a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a>
+    <nav class="session-footer-links" aria-label="Conversation links">
+      <a href="../index.html">All conversations</a>
+      <a id="changeDeviceLink" href="../setup.html?set=original-af-alloy-speed-1p00-vignette-3&amp;change=1">Change mode</a>
+      <button class="text-button" id="settingsToggle" aria-expanded="false" aria-controls="settingsPanel">Settings</button>
+      <button class="text-button" id="debugToggle" aria-expanded="false" aria-controls="debugPanel">Debug</button>
+    </nav>
+    <button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><span id="consentStatus"></span>
+  </footer>
   <section class="consent-banner" id="consentBanner" aria-label="Cookie and storage preferences" hidden>
     <div><h2>Remember your practice?</h2><p>With your permission, we save progress and preferences on this device. Choose Session only to keep progress in memory for this page visit. One essential cookie remembers your choice. We use no analytics or advertising cookies.</p></div>
     <div class="consent-actions"><button class="secondary-button" id="consentReject">Session only</button><button class="secondary-button" id="consentAccept">Remember my progress</button></div>

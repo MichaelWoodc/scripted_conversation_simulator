@@ -5,11 +5,11 @@ export function exclusiveSpeechCapture(){
 export class BrowserSpeech {
   constructor({onText,onError,onSpeech,onReady}) {
     this.onText=onText;this.onError=onError;this.onSpeech=onSpeech;this.onReady=onReady;
-    this.active=false;this.epoch=0;this.prefix='';this.segment='';this.mobile=exclusiveSpeechCapture();this.emptyEnds=[];
+    this.active=false;this.epoch=0;this.prefix='';this.segment='';this.mobile=exclusiveSpeechCapture();
   }
   get supported(){return !!(globalThis.SpeechRecognition||globalThis.webkitSpeechRecognition);}
   start(prefix='') {
-    this.stop();this.active=true;this.prefix=prefix;this.segment='';this.emptyEnds=[];
+    this.stop();this.active=true;this.prefix=prefix;this.segment='';
     if(!this.supported){this.onError('unsupported');return;}
     this.open(this.epoch);
   }
@@ -26,7 +26,6 @@ export class BrowserSpeech {
     recognition.onresult=event=>{
       if(!current())return;
       clearTimeout(this.startTimeout);
-      this.emptyEnds=[];
       let final='',interim='';
       for(let i=0;i<event.results.length;i++) {
         const value=event.results[i][0]?.transcript||'';
@@ -44,10 +43,6 @@ export class BrowserSpeech {
     recognition.onend=()=>{
       if(!current())return;
       clearTimeout(this.startTimeout);this.onSpeech?.(false);
-      if(!this.segment){
-        const now=performance.now();this.emptyEnds=this.emptyEnds.filter(time=>now-time<10000);this.emptyEnds.push(now);
-        if(this.emptyEnds.length>=4){this.fail('repeated-end');return;}
-      }
       this.prefix=[this.prefix,this.segment].filter(Boolean).join(' ');this.segment='';
       this.recognition=null;
       this.restart=setTimeout(()=>this.open(epoch),this.mobile?350:160);
@@ -74,7 +69,6 @@ export function recognitionReason(code){
     'microphone-unavailable':'The microphone is unavailable or permission was denied. Manual practice is available.',
     'not-allowed':'Speech transcription permission was denied by the browser or device settings.',
     'service-not-allowed':'The browser has disabled its speech transcription service.',
-    'repeated-end':'Chrome repeatedly stopped transcription without returning words. Try opening this page directly in Chrome, rather than an in-app browser, and check Android microphone and speech-service permissions.',
     network:'The speech transcription service could not connect to its server.',
     'audio-capture':'The transcription service could not capture microphone audio.',
     'language-not-supported':'The transcription service does not support English on this device.',

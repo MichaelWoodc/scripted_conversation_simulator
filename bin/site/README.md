@@ -43,13 +43,14 @@ On a phone, use the published **HTTPS** address. Opening an HTTP LAN address for
 your desktop does not provide a secure microphone context. If the browser blocks
 automatic audio, **Play this answer** lets the visitor resume with a tap.
 
+and late results from an older recognizer are ignored.
 Phone transcription uses short recognition sessions and gives the native speech
 service exclusive microphone access. It does not open a competing Web Audio
 volume stream or play/pause a silent audio clip at transcription startup. The
-Timing test checks volume separately. If transcription fails, its capture stops
-before the volume-based fallback opens the microphone. Debug includes the browser
-and actual speech-service error. Repeated empty recognition sessions are bounded,
-and late results from an older recognizer are ignored.
+Timing test checks volume separately. Transcription keeps retrying through empty
+recognition sessions until speech is detected or the visitor pauses. Debug includes
+the browser and actual speech-service error. Late results from an older recognizer
+are ignored.
 
 ## Question audio and consent
 

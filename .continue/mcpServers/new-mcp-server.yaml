@@ -1,0 +1,14 @@
+
+name: Local Filesystem MCP
+version: 0.0.1
+schema: v1
+
+mcpServers:
+  - name: Local Filesystem
+    command: npx.cmd
+    args:
+      - -y
+      - "@modelcontextprotocol/server-filesystem"
+      - "C:\\Users\\Admin\\Projects"
+      - "C:\\Users\\Admin\\scripted_conversation_simulator"
+    env: {}

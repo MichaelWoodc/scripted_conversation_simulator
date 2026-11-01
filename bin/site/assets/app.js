@@ -66,7 +66,7 @@ class Practice {
     this.deviceNotes=[];this.questionAudio=$('questionAudio');
     this.speech=new BrowserSpeech({onText:r=>this.onText(r),onError:e=>this.onRecognitionError(e),
       onReady:()=>{this.log('Speech transcription started');},
-      onSpeech:active=>{if(this.state==='listening'&&!this.monitor.available){this.nativeSpeaking=active;if(active){this.lastVoiceTime=performance.now();this.speechHeard=true;}}}});
+      onSpeech:active=>{if(this.state==='listening'&&!this.monitor.available){this.nativeSpeaking=active;if(active){this.lastVoiceTime=performance.now();this.speechHeard=true;this.updateSpeechIndicator();}}}});
     this.monitor=new MicrophoneMonitor(level=>this.showLevel(level),(now,elapsed)=>{
       if(this.state==='listening'){this.lastVoiceTime=now;this.speechHeard=true;this.voicedMs+=elapsed;}
     },message=>{if(this.state==='listening'){this.pause();this.error(message);}});
@@ -126,6 +126,11 @@ class Practice {
     this.showDiagnostics();this.updateVoiceProgress();
   }
 
+  updateSpeechIndicator(){
+    const waiting=this.state==='listening'&&this.mode==='transcription'&&!this.speechHeard;
+    $('statusPill').dataset.speechDetected=waiting?'pending':this.state==='listening'&&this.mode==='transcription'?'detected':'idle';
+  }
+
   showDiagnostics(){
     $('recognitionReason').textContent=this.reason;
     $('deviceReport').textContent=[
@@ -173,7 +178,7 @@ class Practice {
     $('answerVoiceSelect').disabled=['playing','preparing','blocked'].includes(state);
     this.state=state;$('debugPhase').textContent=state;
     const names={idle:'Ready',checking:'Checking device',previewing:'Question preview',preparing:'Preparing',listening:'Listening',paused:'Paused',playing:'Answer playing',blocked:'Ready to play',complete:'Complete'};
-    $('statusText').textContent=names[state]||state;$('statusPill').dataset.state=state;
+    $('statusText').textContent=names[state]||state;$('statusPill').dataset.state=state;this.updateSpeechIndicator();
     hide('startButton',!['idle','paused'].includes(state));$('startButton').disabled=!this.checked;
     $('hearQuestionButton').disabled=!['idle','paused','listening','previewing'].includes(state);
     $('hearQuestionButton').textContent=state==='previewing'?'Stop question preview':'Hear this question';
@@ -281,7 +286,7 @@ class Practice {
     this.transcript=result.text;this.transcriptFinal=result.isFinal;
     const lexical=tokenize(result.text).map(t=>t.word).join(' ');
     if(lexical!==this.lastLexical){this.lastLexical=lexical;this.lastTextTime=performance.now();}
-    if(lexical){this.speechHeard=true;if(!this.monitor.available)this.lastVoiceTime=this.lastTextTime;}
+    if(lexical){this.speechHeard=true;if(!this.monitor.available)this.lastVoiceTime=this.lastTextTime;this.updateSpeechIndicator();}
     $('transcript').textContent=result.text||'No speech yet.';$('transcript').dataset.interim=String(!result.isFinal);
     this.updateMatch();
   }
@@ -297,8 +302,6 @@ class Practice {
     if(this.state!=='listening')return;
     const now=performance.now(),quiet=now-this.lastVoiceTime;
     $('quietTime').textContent=`${Math.max(0,Math.round(quiet))} ms`;
-    if(this.mode==='transcription'&&this.monitor.available&&this.voicedMs>=5000&&!this.transcript.trim())this.onRecognitionError('no-results');
-    if(this.mode==='transcription'&&exclusiveSpeechCapture()&&!this.transcript.trim()&&now-this.listeningSince>=20000)this.onRecognitionError('no-results');
     if(this.mode==='volume'){
       this.updateVoiceProgress();
       const duration=this.progress.current?.questionAudio?.duration;

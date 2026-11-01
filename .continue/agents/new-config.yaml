@@ -1,0 +1,47 @@
+
+# Local-only Continue configuration
+# NVIDIA T1000 8GB
+# https://docs.continue.dev/reference
+
+name: Local Ollama
+version: 1.0.0
+schema: v1
+
+models:
+  # Primary coding assistant
+  - name: Qwen2.5 Coder 7B
+    provider: ollama
+    model: qwen2.5-coder:7b
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 4096
+      maxTokens: 2048
+      temperature: 0.2
+
+  # Fast code autocomplete
+  - name: Qwen2.5 Coder 1.5B
+    provider: ollama
+    model: qwen2.5-coder:1.5b
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - autocomplete
+    defaultCompletionOptions:
+      contextLength: 2048
+      maxTokens: 256
+      temperature: 0.1
+    autocompleteOptions:
+      debounceDelay: 300
+      maxPromptTokens: 1024
+      modelTimeout: 3000
+
+  # Local codebase embeddings
+  - name: Nomic Embed Text
+    provider: ollama
+    model: nomic-embed-text
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - embed

@@ -52,7 +52,7 @@ export class DeviceSetup {
       const open=$('setupDebug').hidden;$('setupDebug').hidden=!open;$('setupDebugToggle').setAttribute('aria-expanded',String(open));
     });
     window.addEventListener('storagechoice',()=>{if(!readDeviceSettings())$('rememberDeviceSettings').checked=false;});
-    window.addEventListener('pagehide',()=>{this.closed=true;clearTimeout(this.testTimeout);this.probe?.stop();this.monitor.close();});
+    window.addEventListener('pagehide',()=>{this.closed=true;this.probe?.stop();this.monitor.close();});
     if(this.saved){$('fallbackSilenceSetting').value=this.saved.pause;$('volumeSetting').value=this.saved.volume;$('transcriptionVolume').value=this.saved.volume;$('rememberDeviceSettings').checked=this.saved.skip;}
     this.showPause();this.updateOptions();
     $('deviceSetup').dataset.ready='true';
@@ -80,7 +80,7 @@ export class DeviceSetup {
           for(const word of words)this.testWords.add(aliases[word]||word);
           for(const span of document.querySelectorAll('[data-test-word]'))span.classList.toggle('heard',this.testWords.has(span.dataset.testWord));
           if(['testing','one','two','three'].every(word=>this.testWords.has(word))){
-            probe.stop();clearTimeout(this.testTimeout);
+            probe.stop();
             this.speechOK=true;this.micOK=true;this.reasonCode='working';this.speechReason='Testing 1…2…3 detected.';
             this.updateOptions();this.persist();resolve({ok:true});
           }
@@ -89,7 +89,6 @@ export class DeviceSetup {
         onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);this.updateOptions();this.persist();resolve({ok:false,code});}
       });
       this.probe=probe;probe.start();
-      clearTimeout(this.testTimeout);this.testTimeout=setTimeout(()=>{if(probe.active)probe.fail('no-results');},20000);
     });
   }
 
