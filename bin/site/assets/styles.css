@@ -15,10 +15,18 @@ body[data-page=session] .session-mode{margin-bottom:8px}
 body[data-page=session] .question-card{padding:24px}
 body[data-page=session] .card-top{margin-bottom:12px}
 body[data-page=session] .listen-strip{margin-top:14px}
-body[data-page=session] .session-footer{max-width:1320px;margin:24px auto 0;padding:16px 24px;border-top:1px solid var(--line);display:flex;align-items:center;gap:18px}
+body[data-page=session] .session-footer{max-width:1320px;margin:24px auto 0;padding:6px 16px;border-top:1px solid var(--line);display:flex;align-items:center;gap:8px}
 body[data-page=session] .session-footer .brand{font-size:15px;white-space:nowrap}
 body[data-page=session] .session-footer .brand-icon{font-size:24px}
 body[data-page=session] .session-footer-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-size:12px}
-@media(max-width:650px){body[data-page=session] .practice-layout{padding-top:8px;gap:8px}body[data-page=session] .session-title h1{font-size:25px;margin-bottom:8px}body[data-page=session] .question-card{padding:15px}body[data-page=session] .card-top{margin-bottom:8px}body[data-page=session] .listen-strip{margin-top:10px}body[data-page=session] .session-footer{margin:18px 22px 0;padding:14px 0;gap:12px}body[data-page=session] .session-footer-links{gap:12px;font-size:11px}}
+body[data-page=session]{min-height:100vh;display:flex;flex-direction:column}
+body[data-page=session] .practice-layout{flex:1 0 auto;margin-top:0;margin-bottom:0}
+body[data-page=session] .session-footer{margin-top:auto}
+@media(max-width:650px){body[data-page=session] .practice-layout{padding-top:8px;gap:8px}body[data-page=session] .session-title h1{font-size:25px;margin-bottom:8px}body[data-page=session] .question-card{padding:15px}body[data-page=session] .card-top{margin-bottom:8px}body[data-page=session] .listen-strip{margin-top:10px}body[data-page=session] .session-footer{margin:8px 22px 0;padding:6px 0;gap:6px}body[data-page=session] .session-footer-links{gap:8px;font-size:11px}}
 body[data-page=session] .status-pill[data-speech-detected=pending]{color:#a43b32;background:#fbe7e4}
 body[data-page=session] .status-pill[data-speech-detected=pending] i{background:#bb4036;box-shadow:0 0 0 3px #f4cfca}
+body[data-page=session] .speaker-settings{position:fixed;z-index:11;right:24px;bottom:72px;width:min(380px,calc(100vw - 32px));max-height:65vh;overflow-y:auto;margin:0;box-shadow:0 12px 40px #173b3230;animation:settings-rise .16s ease-out}
+body[data-page=session] .settings-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+body[data-page=session] .speaker-settings h2{margin-bottom:0}
+@keyframes settings-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){body[data-page=session] .speaker-settings{left:10px;right:10px;bottom:64px;width:auto;max-height:65vh;padding:16px}}

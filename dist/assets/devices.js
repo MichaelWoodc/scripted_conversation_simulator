@@ -7,13 +7,14 @@ export const MODES=['transcription','volume','manual'];
 
 export function sessionURL(set,settings,reason='selected'){
   const url=new URL(set.page,ROOT);
-  url.search=new URLSearchParams({mode:settings.mode,pause:String(settings.pause),volume:String(settings.volume),reason});
+  url.search=new URLSearchParams({mode:settings.mode,pause:String(settings.pause),volume:String(settings.volume),reason,deviceCheck:'1'});
   return url.href;
 }
 
 export async function savedModeCanSkip(settings){
   if(!settings||settings.skip===false)return false;
   if(settings.mode==='manual')return true;
+  if(exclusiveSpeechCapture())return false;
   const caps=deviceCapabilities();
   if(!caps.secure||!caps.microphone||!caps.volume)return false;
   if(settings.mode==='transcription'&&!caps.transcription)return false;
@@ -28,7 +29,8 @@ export class DeviceSetup {
   constructor(set){
     if(!set)throw new Error('Choose a conversation from the library first.');
     this.set=set;this.caps=deviceCapabilities();this.saved=readDeviceSettings();this.closed=false;
-    this.speechOK=!!this.saved?.speechOK;this.micOK=!!this.saved?.micOK;this.testWords=new Set();this.testMs=0;
+    const needsPhoneCheck=exclusiveSpeechCapture();
+    this.speechOK=!needsPhoneCheck&&!!this.saved?.speechOK;this.micOK=!needsPhoneCheck&&!!this.saved?.micOK;this.testWords=new Set();this.testMs=0;
     this.reasonCode=this.caps.transcription?'permission-needed':'unsupported';
     if(this.saved){this.speechReason=this.speechOK?'Previously verified. Tap Test to check again.':undefined;this.microphoneReason=this.micOK?'Previously verified microphone.':undefined;}
     $('setupSessionTitle').textContent=set.title;
@@ -55,6 +57,7 @@ export class DeviceSetup {
     window.addEventListener('pagehide',()=>{this.closed=true;this.probe?.stop();this.monitor.close();});
     if(this.saved){$('fallbackSilenceSetting').value=this.saved.pause;$('volumeSetting').value=this.saved.volume;$('transcriptionVolume').value=this.saved.volume;$('rememberDeviceSettings').checked=this.saved.skip;}
     this.showPause();this.updateOptions();
+    if(needsPhoneCheck)$('deviceStatus').textContent='Tap Check / test microphone to verify access. Allow microphone access if your browser prompts.';
     $('deviceSetup').dataset.ready='true';
     this.skipSaved();
   }

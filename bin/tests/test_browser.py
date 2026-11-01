@@ -158,8 +158,29 @@ class BrowserTests(unittest.TestCase):
         self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=window.innerWidth'))
         self.assertEqual(self.page.locator('body[data-page=session] > .site-header').count(),0)
         self.assertTrue(self.page.locator('.session-footer-links').is_visible())
+        self.page.set_viewport_size({'width':1365,'height':1600})
+        self.assertAlmostEqual(self.page.locator('.session-footer').evaluate('(element)=>element.getBoundingClientRect().bottom'),1600,delta=1)
+        self.page.set_viewport_size({'width':390,'height':550})
+        self.assertGreater(self.page.locator('.session-footer').evaluate('(element)=>element.getBoundingClientRect().bottom'),550)
         out=Path(__file__).resolve().parents[1]/'test-results';out.mkdir(exist_ok=True)
         self.page.screenshot(path=str(out/'mobile.png'),full_page=True)
+
+    def test_settings_panel_closes_when_continuing_conversation(self):
+        self.page.goto(self.url+'?mode=manual')
+        self.page.wait_for_function("document.getElementById('statusPill')?.dataset.state==='idle'")
+        if self.page.locator('#consentReject').is_visible():self.page.locator('#consentReject').click()
+        self.page.locator('#settingsToggle').click()
+        self.assertTrue(self.page.locator('#settingsPanel').is_visible())
+        self.assertEqual(self.page.locator('#settingsPanel').evaluate('(element)=>getComputedStyle(element).position'),'fixed')
+        self.assertEqual(self.page.locator('#settingsToggle').get_attribute('aria-expanded'),'true')
+        self.start();self.page.locator('#pauseButton').click()
+        self.page.locator('#settingsToggle').click()
+        self.assertTrue(self.page.locator('#settingsPanel').is_visible())
+        self.assertEqual(self.page.locator('#startButtonLabel').inner_text(),'Continue listening')
+        self.page.locator('#startButton').click()
+        self.page.wait_for_function("document.getElementById('statusPill')?.dataset.state==='listening'")
+        self.assertFalse(self.page.locator('#settingsPanel').is_visible())
+        self.assertEqual(self.page.locator('#settingsToggle').get_attribute('aria-expanded'),'false')
 
     def test_repeated_feedback_highlights_the_first_occurrence_first(self):
         self.fixture=deepcopy(self.fixture)
@@ -480,6 +501,14 @@ class BrowserTests(unittest.TestCase):
         self.assertNotEqual(self.page.locator('#statusPill').evaluate('(element)=>getComputedStyle(element).color'),'rgb(164, 59, 50)')
         self.page.evaluate('window.__testClock+=1000')
         self.page.wait_for_function('window.__played.length===2',timeout=4000)
+
+    def test_mobile_session_refresh_requires_a_fresh_microphone_check(self):
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});document.cookie='conversation_lab_device='+encodeURIComponent(JSON.stringify({mode:'transcription',pause:2500,volume:0.007,skip:true,micOK:true,speechOK:true}))+'; Path=/';")
+        self.page.goto(self.url+'?mode=transcription&pause=2500&volume=0.007&reason=working')
+        self.page.wait_for_function("document.body.dataset.page==='setup'&&document.getElementById('deviceSetup')?.dataset.ready==='true'")
+        self.assertIn('change=1',self.page.url)
+        self.assertTrue(self.page.locator('#transcriptionChoice').is_disabled())
+        self.assertIn('Tap Check / test microphone',self.page.locator('#deviceStatus').inner_text())
 
     def test_android_transcription_error_opens_timing_microphone_after_stopping_recognition(self):
         self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__rejectConcurrentCapture=true;")

@@ -22,6 +22,12 @@ async function boot() {initPrivacy();try {
         volume:(Number(params.get('volume'))>=0.004&&Number(params.get('volume'))<=0.04)?Number(params.get('volume')):0.007,reason:params.get('reason')||'selected'};
     }else if(await savedModeCanSkip(saved))settings={...saved,reason:'remembered'};
     if(!settings){location.replace(new URL(`setup.html?set=${encodeURIComponent(document.body.dataset.setId)}`,ROOT).href);return;}
+    if(exclusiveSpeechCapture()&&settings.mode!=='manual'){
+      if(params.get('deviceCheck')!=='1'){
+        location.replace(new URL(`setup.html?set=${encodeURIComponent(document.body.dataset.setId)}&change=1`,ROOT).href);return;
+      }
+      const cleanURL=new URL(location.href);cleanURL.searchParams.delete('deviceCheck');history.replaceState(null,'',cleanURL);
+    }
     new Practice(set,settings,catalog);
   }
 } catch(error) {
@@ -96,7 +102,11 @@ class Practice {
     window.addEventListener('pagehide',()=>this.close());
     document.addEventListener('visibilitychange',()=>{if(document.hidden){if(this.state==='listening')this.pause();if(this.state==='previewing')this.stopPreview();}});
     this.answerVariants=catalog.sets.filter(item=>item.edition===set.edition&&item.source===set.source&&item.version===set.version);
-    $('settingsToggle').addEventListener('click',()=>{const open=$('settingsPanel').hidden;hide('settingsPanel',!open);$('settingsToggle').setAttribute('aria-expanded',String(open));});
+    $('settingsToggle').addEventListener('click',()=>this.setSettingsOpen($('settingsPanel').hidden));
+    $('settingsClose').addEventListener('click',()=>{this.setSettingsOpen(false);$('settingsToggle').focus();});
+    document.addEventListener('keydown',event=>{
+      if(event.key==='Escape'&&!$('settingsPanel').hidden){this.setSettingsOpen(false);$('settingsToggle').focus();}
+    });
     $('answerVoiceSelect').addEventListener('change',()=>this.chooseAnswerVoice($('answerVoiceSelect').value));
     this.chooseAnswerVoice(preferenceStorage.getItem('conversation-lab:answerVoice')||'af_heart');
     this.renderQuestion();this.setState(this.progress.complete?'complete':'idle');
@@ -116,6 +126,10 @@ class Practice {
 
   log(message){this.logs.unshift(`${new Date().toLocaleTimeString()}  ${message}`);this.logs=this.logs.slice(0,16);$('eventLog').textContent=this.logs.join('\n');}
   error(message){$('errorMessage').textContent=message;hide('errorMessage',!message);}
+
+  setSettingsOpen(open){
+    hide('settingsPanel',!open);$('settingsToggle').setAttribute('aria-expanded',String(open));
+  }
 
   selectMode(mode,reason){
     this.mode=mode;this.reason=reason;
@@ -233,6 +247,7 @@ class Practice {
   }
 
   async start() {
+    this.setSettingsOpen(false);
     if(!['idle','paused'].includes(this.state)||!this.checked)return;
     const continuing=this.state==='paused';this.setState('preparing');$('startButton').disabled=true;this.error('');
     // Keep audio, microphone resume, and recognition within the user's tap.
