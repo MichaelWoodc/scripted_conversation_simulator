@@ -158,8 +158,28 @@
       <div class="progress-track"><div id="progressFill"></div></div>
       <article class="question-card">
         <div class="card-top">
-          <span class="eyebrow" id="cardLabel">READ ALOUD</span>
-          <span class="status-pill" id="statusPill"><i></i><span id="statusText">Ready</span></span>
+          <div class="read-aloud-controls">
+            <span class="eyebrow" id="cardLabel">READ ALOUD</span>
+            <button class="icon-button" id="hearQuestionButton" type="button" title="Hear this question" aria-label="Hear this question">⏯️</button>
+          </div>
+          <div class="status-controls">
+            <span class="status-pill" id="statusPill"><i></i><span id="statusText">Ready</span><span class="status-volume-track" id="levelMeter" aria-hidden="true"><span id="levelFill"></span></span></span>
+            <button class="text-button stop-listening" id="stopListeningButton" type="button" title="Stop listening" aria-label="Stop listening" hidden>🛑</button>
+            <button class="text-button start-listening" id="startButton" type="button" hidden>🎤 <span id="startButtonLabel">Start listening</span></button>
+          </div>
+        </div>
+        <div class="session-prompt-tools">
+          <div class="question-preview">
+            <span id="questionTiming"></span>
+          </div>
+          <section class="voice-progress" id="voiceProgress" hidden aria-label="Speaking progress">
+            <div class="voice-progress-heading"><strong>Speaking time</strong><span id="voiceProgressLabel">0%</span></div>
+            <div class="voice-progress-track" id="voiceProgressBar" role="progressbar" aria-label="Speaking time compared with question TTS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div id="voiceProgressFill"></div><span class="voice-target" aria-hidden="true"></span>
+            </div>
+            <p id="voiceProgressHint">Speak above the volume threshold to fill the bar. Reach 45%, then pause for 2.5 seconds.</p>
+          </section>
+          <p id="hint" class="listen-hint">Start when you're ready. Allow your microphone to begin.</p>
         </div>
         <div id="questionText">
 
@@ -250,123 +270,6 @@
           <div class="question-text" data-question-id="q-043" hidden><span data-word="0">Ok</span>, <span data-word="1">cool</span>. <span data-word="2">That</span>’<span data-word="3">s</span> <span data-word="4">it</span> <span data-word="5">for</span> <span data-word="6">that</span>, <span data-word="7">thank</span> <span data-word="8">you</span>.</div>
 
         </div>
-        <details id="contextDetails" hidden>
-          <summary>Optional context from the script</summary>
-          <div id="questionContext">
-
-            <div data-question-id="q-001" ></div>
-
-            <div data-question-id="q-002" hidden></div>
-
-            <div data-question-id="q-003" hidden></div>
-
-            <div data-question-id="q-004" hidden>The employee received step-by-step instructions on how to perform the task.</div>
-
-            <div data-question-id="q-005" hidden>The employee was shown how to perform the task</div>
-
-            <div data-question-id="q-006" hidden>The employee had opportunities to practice the task correctly during training.</div>
-
-            <div data-question-id="q-007" hidden></div>
-
-            <div data-question-id="q-008" hidden>The employee received feedback about performance during training.</div>
-
-            <div data-question-id="q-009" hidden></div>
-
-            <div data-question-id="q-010" hidden></div>
-
-            <div data-question-id="q-011" hidden></div>
-
-            <div data-question-id="q-012" hidden></div>
-
-            <div data-question-id="q-013" hidden></div>
-
-            <div data-question-id="q-014" hidden></div>
-
-            <div data-question-id="q-015" hidden>i.e., if you asked the employee to perform the task, can they do so quickly and finish it before a certain amount of time has elapsed? For example, if a therapist had five minutes to pick up all the toys on the floor before the start of the next session, could they do so within the allotted time?</div>
-
-            <div data-question-id="q-016" hidden></div>
-
-            <div data-question-id="q-017" hidden></div>
-
-            <div data-question-id="q-018" hidden>e.g., checklist, data sheet, step-by-step instructions, pictures, prompts
-
-if appropriate
-
-e.g., visibly posted, located with the instructional or data collection materials</div>
-
-            <div data-question-id="q-019" hidden>e.g., reminder emails, text messages, phone alerts, group messaging apps, calendar invites, verbal reminders/prompts</div>
-
-            <div data-question-id="q-020" hidden>i.e., has the employee told you that they cannot perform the task because there some aspect of the work environment prohibiting them from doing so. For example, if the task requires a quiet environment has the employee ever mentioned that there is too much noise, or if the task requires there to be a lot of physical space, has the employee ever stated that their work area is too crowded?</div>
-
-            <div data-question-id="q-021" hidden></div>
-
-            <div data-question-id="q-022" hidden>e.g., teaching stimuli, preferred items
-
-e.g., easy to find, nearby</div>
-
-            <div data-question-id="q-023" hidden></div>
-
-            <div data-question-id="q-024" hidden></div>
-
-            <div data-question-id="q-025" hidden></div>
-
-            <div data-question-id="q-026" hidden>i.e., has the employee ever told you that the materials provided to complete the task are not appropriate or useful? For example, employees may be using materials that are old and worn down and no longer suitable for efficient completion of the task, or the data sheet may be overly complicated and takes too long to complete</div>
-
-            <div data-question-id="q-027" hidden>i.e., has the employee ever told you that they cannot easily and readily find and/or locate the materials needed to complete the task, or that the materials needed to complete the task are not organized in a way that assist task completion?</div>
-
-            <div data-question-id="q-028" hidden>i.e., has the employee ever told you that they cannot complete this task because they have to first complete other tasks? For example, the employee cannot graph the data regarding client behavior prior to calculating the daily percentages</div>
-
-            <div data-question-id="q-029" hidden></div>
-
-            <div data-question-id="q-030" hidden>s
-
-i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing</div>
-
-            <div data-question-id="q-031" hidden>s
-
-i.e., the employee cannot complete this task without another employee completing a prior task. For example, the employee is unable to file paperwork on time because another employee has to complete proofreading and editing</div>
-
-            <div data-question-id="q-032" hidden></div>
-
-            <div data-question-id="q-033" hidden></div>
-
-            <div data-question-id="q-034" hidden></div>
-
-            <div data-question-id="q-035" hidden></div>
-
-            <div data-question-id="q-036" hidden></div>
-
-            <div data-question-id="q-037" hidden></div>
-
-            <div data-question-id="q-038" hidden></div>
-
-            <div data-question-id="q-039" hidden>i.e., once the employee has completed the task as required, do they see the final product or are they provided with any reports about the effects of their work (e.g., happier clients, increased skills, reduction of client problem behavior)</div>
-
-            <div data-question-id="q-040" hidden></div>
-
-            <div data-question-id="q-041" hidden>i.e., has the employee ever told you that they could not complete the task because completing another task was a higher priority for them, or does the employee tend to choose to complete certain tasks over others when given a choice?</div>
-
-            <div data-question-id="q-042" hidden></div>
-
-            <div data-question-id="q-043" hidden></div>
-
-          </div>
-        </details>
-        <div class="question-preview">
-          <button class="text-button" id="hearQuestionButton">Hear this question</button>
-          <span id="questionTiming"></span>
-        </div>
-        <section class="voice-progress" id="voiceProgress" hidden aria-label="Speaking progress">
-          <div class="voice-progress-heading"><strong>Speaking time</strong><span id="voiceProgressLabel">0%</span></div>
-          <div class="voice-progress-track" id="voiceProgressBar" role="progressbar" aria-label="Speaking time compared with question TTS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-            <div id="voiceProgressFill"></div><span class="voice-target" aria-hidden="true"></span>
-          </div>
-          <p id="voiceProgressHint">Speak above the volume threshold to fill the bar. Reach 45%, then pause for 2.5 seconds.</p>
-        </section>
-        <div class="listen-strip">
-          <div class="level-meter" id="levelMeter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <p id="hint">Start when you're ready. Allow your microphone to begin.</p>
-        </div>
         <div class="answer-playback" id="answerPlayback" hidden>
           <span class="speaker-symbol" aria-hidden="true">◖))</span>
           <div>
@@ -376,8 +279,6 @@ i.e., the employee cannot complete this task without another employee completing
           <span id="audioTime"></span>
         </div>
         <div class="main-actions">
-          <button class="primary-button" id="startButton" disabled><span id="startButtonLabel">Start conversation</span><span aria-hidden="true">→</span></button>
-          <button class="secondary-button" id="pauseButton" hidden>Pause</button>
           <button class="text-button" id="finishButton" hidden>I'm finished!</button>
           <button class="primary-button" id="resumeAudioButton" hidden>Play this answer</button>
         </div>

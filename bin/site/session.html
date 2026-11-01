@@ -52,18 +52,20 @@
       <div class="progress-track"><div id="progressFill"></div></div>
       <article class="question-card">
         <div class="card-top">
-          <span class="eyebrow" id="cardLabel">READ ALOUD</span>
-          <span class="status-pill" id="statusPill"><i></i><span id="statusText">Ready</span></span>
+          <div class="read-aloud-controls">
+            <span class="eyebrow" id="cardLabel">READ ALOUD</span>
+            <button class="icon-button" id="hearQuestionButton" type="button" title="Hear this question" aria-label="Hear this question">⏯️</button>
+          </div>
+          <div class="status-controls">
+            <span class="status-pill" id="statusPill"><i></i><span id="statusText">Ready</span><span class="status-volume-track" id="levelMeter" aria-hidden="true"><span id="levelFill"></span></span></span>
+            <button class="text-button stop-listening" id="stopListeningButton" type="button" title="Stop listening" aria-label="Stop listening" hidden>🛑</button>
+            <button class="text-button start-listening" id="startButton" type="button" hidden>🎤 <span id="startButtonLabel">Start listening</span></button>
+          </div>
         </div>
         <div class="session-prompt-tools">
           <div class="question-preview">
-            <button class="text-button" id="hearQuestionButton">Hear this question</button>
             <span id="questionTiming"></span>
           </div>
-          <button class="listening-button" id="startButton" disabled aria-pressed="false">
-            <span id="startButtonLabel">Start listening</span>
-            <span class="listening-track" id="levelMeter" aria-hidden="true"><span id="levelFill"></span></span>
-          </button>
           <section class="voice-progress" id="voiceProgress" hidden aria-label="Speaking progress">
             <div class="voice-progress-heading"><strong>Speaking time</strong><span id="voiceProgressLabel">0%</span></div>
             <div class="voice-progress-track" id="voiceProgressBar" role="progressbar" aria-label="Speaking time compared with question TTS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
@@ -78,14 +80,6 @@
           <div class="question-text" data-question-id="{{QUESTION_ID}}" {{QUESTION_HIDDEN}}>{{#WORDS}}{{BEFORE}}<span data-word="{{WORD_INDEX}}">{{WORD}}</span>{{AFTER}}{{/WORDS}}</div>
 {{/QUESTIONS}}
         </div>
-        <details id="contextDetails" {{CONTEXT_HIDDEN}}>
-          <summary>Optional context from the script</summary>
-          <div id="questionContext">
-{{#QUESTIONS}}
-            <div data-question-id="{{QUESTION_ID}}" {{QUESTION_HIDDEN}}>{{CONTEXT}}</div>
-{{/QUESTIONS}}
-          </div>
-        </details>
         <div class="answer-playback" id="answerPlayback" hidden>
           <span class="speaker-symbol" aria-hidden="true">◖))</span>
           <div>

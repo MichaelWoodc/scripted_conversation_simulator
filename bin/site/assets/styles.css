@@ -23,8 +23,8 @@ body[data-page=session] .session-mode{margin:0 0 4px}
 body[data-page=session] .question-card{padding:10px}
 body[data-page=session] .card-top{margin-bottom:4px}
 body[data-page=session] .listen-strip{margin-top:4px}
-body[data-page=session] #questionText{display:grid;align-content:center;min-width:0;width:100%;min-height:clamp(150px,22vh,210px);max-height:calc(100dvh - 340px);height:auto;overflow-y:auto;margin:0;padding:0}
-body[data-page=session] #questionText>.question-text{width:100%;max-width:100%;min-width:0;min-height:150px;margin:0;padding:0}
+body[data-page=session] #questionText{display:grid;align-content:center;min-width:0;width:100%;min-height:150px;height:auto;max-height:none;overflow:visible;margin:0;padding:0}
+body[data-page=session] #questionText>.question-text{width:100%;max-width:100%;min-width:0;min-height:150px;margin:0;padding:0;overflow:visible}
 body[data-page=session] #contextDetails{min-height:30px}
 body[data-page=session] #contextDetails[hidden]{display:block!important;visibility:hidden}
 body[data-page=session] .session-info{margin-top:16px;border-top:1px solid var(--line);padding-top:10px}
@@ -45,6 +45,32 @@ body[data-page=session] .status-pill[data-speech-detected=pending]{color:#a43b32
 body[data-page=session] .status-pill[data-speech-detected=pending] i{background:#bb4036;box-shadow:0 0 0 3px #f4cfca}
 .transcription-preview-label{display:block;font-size:10px;font-weight:600;margin:8px 0 4px;color:var(--ink)}
 #transcriptionPreview{display:block;width:100%;height:54px;min-height:54px;resize:none;overflow-y:auto;padding:6px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink);font:inherit;font-size:12px;line-height:1.5}
+body[data-page=session] .read-aloud-controls{display:flex;align-items:center;gap:6px}
+body[data-page=session] .read-aloud-controls .eyebrow{margin:0}
+body[data-page=session] .icon-button{display:grid;place-items:center;width:34px;height:30px;padding:0;border:0;background:transparent;color:var(--ink);font-size:20px;line-height:1}
+body[data-page=session] .status-controls{display:flex;align-items:center;gap:6px;min-width:0}
+body[data-page=session] .status-pill{width:148px;min-width:148px;justify-content:space-between}
+body[data-page=session] .status-volume-track{display:block;width:38px;height:5px;flex:0 0 38px;overflow:hidden;background:#f3e5e3;border-radius:1px}
+body[data-page=session] #levelFill{display:block;width:100%;height:100%;background:#c64236;transform:scaleX(0);transform-origin:left center;transition:transform .08s linear}
+body[data-page=session] .stop-listening{white-space:nowrap;padding:4px 5px;color:#a43b32;font-size:10px}
+body[data-page=session] .session-prompt-tools{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0 0 8px}
+body[data-page=session] .question-preview{display:flex;align-items:center;gap:10px;margin:0}
+body[data-page=session] .question-preview span{font-size:10px;color:var(--muted)}
+body[data-page=session] .listen-hint{margin:0;font-size:11px;line-height:1.4;color:var(--muted)}
+@media(max-width:650px){body[data-page=session] .card-top{flex-wrap:wrap}body[data-page=session] .status-controls{gap:4px}body[data-page=session] .status-pill{width:132px;min-width:132px}body[data-page=session] .status-volume-track{width:30px;flex-basis:30px}body[data-page=session] .stop-listening{font-size:9px;padding:4px}body[data-page=session] .session-prompt-tools{gap:4px}}
+body[data-page=session] .practice-layout{padding-top:0;gap:4px}
+body[data-page=session] .question-card{padding:8px}
+body[data-page=session] #questionText{min-height:150px;max-height:none;height:auto;overflow:visible}
+body[data-page=session] #questionText>.question-text{min-height:150px;overflow:visible}
+body[data-page=session] .session-prompt-tools{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0 0 8px}
+body[data-page=session] .question-preview{display:flex;align-items:center;gap:10px;margin:0}
+body[data-page=session] .status-controls{display:flex;align-items:center;gap:7px;min-width:0}
+body[data-page=session] .status-pill{width:148px;min-width:148px;justify-content:space-between}
+body[data-page=session] .status-volume-track{display:block;width:40px;height:5px;flex:0 0 40px;overflow:hidden;background:#f3e5e3;border-radius:1px}
+body[data-page=session] #levelFill{display:block;width:100%;height:100%;background:#c64236;transform:scaleX(0);transform-origin:left center;transition:transform .08s linear}
+body[data-page=session] .stop-listening{white-space:nowrap;padding:4px 6px;font-size:10px}
+body[data-page=session] .listen-hint{margin:0;font-size:11px;line-height:1.4;color:var(--muted)}
+@media(max-width:650px){body[data-page=session] .practice-layout{padding-top:0;gap:4px}body[data-page=session] .question-card{padding:4px}body[data-page=session] .session-prompt-tools{gap:4px}body[data-page=session] .status-controls{gap:4px}body[data-page=session] .status-pill{width:132px;min-width:132px}body[data-page=session] .status-volume-track{width:32px;flex-basis:32px}body[data-page=session] .stop-listening{font-size:9px;padding:4px}body[data-page=session] .card-top{flex-wrap:wrap}}
 .microphone-note{font-size:10px;line-height:1.5;color:var(--muted);margin:5px 0}
 @media(max-width:650px){body[data-page=setup] .setup-layout{margin-top:5px;margin-bottom:4px}body[data-page=setup] .setup-layout>p{margin:2px 0;line-height:1.2}.setup-layout .mode-options{margin:3px 0}.setup-layout .mode-option{padding:5px 8px;margin:3px 0}.setup-layout .mode-option p{line-height:1.2}.setup-layout .test-phrase{display:none}.setup-layout .transcription-preview-label{font-size:9px;margin:3px 0 1px}.setup-layout #transcriptionPreview{height:30px;min-height:30px;padding:3px}.setup-layout .microphone-note{display:none}.setup-layout #transcriptionOption .test-volume{display:none}}
 body[data-page=setup] .start-gate{position:fixed;inset:48px 0 0;z-index:8;display:grid;place-items:center;padding:24px;background:rgb(23 59 50 / 64%);backdrop-filter:blur(2px);color:#fff}
@@ -64,6 +90,7 @@ body[data-page=setup] #transcriptionPreview{height:40px;min-height:40px}
 @media(min-width:651px){body[data-page=setup] .setup-layout .mode-options{margin-top:2px;margin-bottom:2px}.setup-layout .mode-option{padding:6px 10px;margin:4px 0}.setup-layout .test-phrase{font-size:14px!important;padding:0}.setup-layout .setup-actions{margin:4px 0}.setup-layout .remember-device{margin:4px 0;line-height:1.3}}
 @media(max-width:650px){body[data-page=setup] #transcriptionPreview{height:30px;min-height:30px}.setup-layout .mode-option{padding-top:4px;padding-bottom:4px}}
 body[data-page=session] .speaker-settings{position:fixed;z-index:11;right:24px;bottom:72px;width:min(380px,calc(100vw - 32px));max-height:65vh;overflow-y:auto;margin:0;box-shadow:0 12px 40px #173b3230;animation:settings-rise .16s ease-out}
+body[data-page=session] .start-listening{white-space:nowrap;padding:4px 6px;font-size:10px}
 body[data-page=session] .settings-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
 body[data-page=session] .speaker-settings h2{margin-bottom:0}
 @keyframes settings-rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}

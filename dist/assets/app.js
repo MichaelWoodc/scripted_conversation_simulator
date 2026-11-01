@@ -74,7 +74,7 @@ class Practice {
     this.deviceNotes=[];this.questionAudio=$('questionAudio');
     this.speech=new BrowserSpeech({onText:r=>this.onText(r),onError:e=>this.onRecognitionError(e),
       onReady:()=>{this.log('Speech transcription started');},
-      onSpeech:active=>{if(this.state==='listening'&&!this.monitor.available){this.nativeSpeaking=active;if(active){this.lastVoiceTime=performance.now();this.speechHeard=true;this.updateSpeechIndicator();}}}});
+      onSpeech:active=>{if(this.state==='listening'&&!this.monitor.available){this.nativeSpeaking=active;this.showLevel(active?0.7:0);if(active){this.lastVoiceTime=performance.now();this.speechHeard=true;this.updateSpeechIndicator();}}}});
     this.monitor=new MicrophoneMonitor(level=>this.showLevel(level),(now,elapsed)=>{
       if(this.state==='listening'){this.lastVoiceTime=now;this.speechHeard=true;this.voicedMs+=elapsed;}
     },message=>{if(this.state==='listening'){this.pause();this.error(message);}});
@@ -88,7 +88,7 @@ class Practice {
       this.start();
     });
     $('hearQuestionButton').addEventListener('click',()=>this.previewQuestion());
-    $('pauseButton').addEventListener('click',()=>this.pause());
+    $('stopListeningButton').addEventListener('click',()=>this.pause());
     $('finishButton').addEventListener('click',()=>this.finish(true));
     $('resumeAudioButton').addEventListener('click',()=>this.playAnswer());
     $('debugToggle').addEventListener('click',()=>{
@@ -185,7 +185,12 @@ class Practice {
     if(this.state==='listening')this.pause();
     this.previewPrevious=this.state;this.speech.stop();this.setState('previewing');
     this.questionAudio.src=new URL(clip.url,ROOT).href;
-    this.questionAudio.onended=()=>this.stopPreview();
+    this.questionAudio.onended=()=>{
+      if(this.state!=='previewing')return;
+      this.stopPreview();
+      if(document.hidden||this.closed)return;
+      if(this.progress.markAsked()){this.setState('preparing');this.playAnswer();}
+    };
     this.questionAudio.onerror=()=>{this.stopPreview();this.error('The question recording could not be played.');};
     const playing=this.questionAudio.play();
     playing?.catch(error=>{this.stopPreview();this.error(`Question playback needs another tap: ${error.message}`);});
@@ -200,9 +205,11 @@ class Practice {
     $('statusText').textContent=names[state]||state;$('statusPill').dataset.state=state;$('levelMeter').dataset.active=String(state==='listening');this.updateSpeechIndicator();
     hide('startButton',state!=='paused');$('startButton').disabled=!this.checked;
     $('hearQuestionButton').disabled=!['idle','paused','listening','previewing'].includes(state);
-    $('hearQuestionButton').textContent=state==='previewing'?'Stop question preview':'Hear this question';
-    $('startButtonLabel').textContent=state==='paused'?'Continue listening':this.progress.index?'Continue conversation':'Start conversation';
-    hide('pauseButton',state!=='listening');hide('finishButton',state!=='listening');hide('resumeAudioButton',state!=='blocked');
+    $('hearQuestionButton').textContent=state==='previewing'?'⏸️':'⏯️';
+    $('hearQuestionButton').title=state==='previewing'?'Stop question preview':'Hear this question';
+    $('hearQuestionButton').setAttribute('aria-label',$('hearQuestionButton').title);
+    $('startButtonLabel').textContent='Start listening';$('stopListeningButton').hidden=state!=='listening';
+    hide('finishButton',state!=='listening');hide('resumeAudioButton',state!=='blocked');
     hide('answerPlayback',!['playing','blocked'].includes(state));
     if(state==='playing'){$('hint').textContent='Listen to the answer. The next question follows automatically.';$('cardLabel').textContent='LISTEN TO THE RESPONSE';}
     else if(state==='listening'){$('hint').textContent=this.mode==='volume'?`Read aloud until the bar reaches ${this.requiredPercent}%, then pause for ${this.fallbackPauseMs/1000} seconds.`:this.mode==='manual'?'Read the question, then tap “I’m finished”.':'Finish your question, then leave a short pause.';$('cardLabel').textContent='READ ALOUD';}
@@ -223,8 +230,6 @@ class Practice {
       question.hidden=question.dataset.questionId!==step.id;
       for(const word of question.querySelectorAll('[data-word]'))word.classList.remove('heard');
     }
-    for(const context of $('questionContext').children)context.hidden=context.dataset.questionId!==step.id;
-    hide('contextDetails',!step.context.length);$('contextDetails').open=false;
     $('transcript').textContent='No speech yet.';$('matchScore').textContent='0%';$('tailScore').textContent=':';
     const timing=step.questionAudio?.duration;
     $('questionTiming').textContent=timing?`TTS: ${timing.toFixed(1)}s · ${this.requiredPercent}% target: ${(timing*this.requiredPercent/100).toFixed(1)}s`:'TTS timing unavailable';
@@ -403,7 +408,7 @@ class Practice {
 
   pause(){if(this.state!=='listening')return;this.speech.stop();this.setState('paused');this.showLevel(0);}
 
-  showLevel(value){const count=['checking','idle','paused','listening'].includes(this.state)?Math.round(value*9):0;[...$('levelMeter').children].forEach((bar,i)=>bar.classList.toggle('active',i<count));}
+  showLevel(value){$('levelFill').style.transform=`scaleX(${Math.max(0,Math.min(1,value))})`;}
 
   showComplete(){
     hide('completion',false);document.querySelector('.question-card').hidden=true;

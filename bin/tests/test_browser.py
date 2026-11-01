@@ -156,6 +156,7 @@ class BrowserTests(unittest.TestCase):
         self.open_session();self.start();self.page.locator('#debugToggle').click()
         script_box=self.page.locator('#questionText')
         initial_size=script_box.evaluate('(element)=>({width:element.getBoundingClientRect().width,height:element.getBoundingClientRect().height})')
+        self.assertLessEqual(script_box.evaluate('(element)=>element.scrollHeight'),script_box.evaluate('(element)=>element.clientHeight'))
         initial_dimensions=self.page.evaluate("['.practice-layout','.practice-main','.question-card','#questionText'].map(selector=>{const box=document.querySelector(selector).getBoundingClientRect();return [selector,box.width,box.height]})")
         self.page.evaluate('window.__level=0.08')
         self.emit('Has the employee')
@@ -170,6 +171,7 @@ class BrowserTests(unittest.TestCase):
         final_size=script_box.evaluate('(element)=>({width:element.getBoundingClientRect().width,height:element.getBoundingClientRect().height})')
         dimensions=self.page.evaluate("['.practice-layout','.practice-main','.question-card','#questionText'].map(selector=>{const box=document.querySelector(selector).getBoundingClientRect();return [selector,box.width,box.height]})")
         self.assertEqual(final_size,initial_size,(initial_dimensions,dimensions))
+        self.assertLessEqual(script_box.evaluate('(element)=>element.scrollHeight'),script_box.evaluate('(element)=>element.clientHeight'))
         self.page.wait_for_function('window.__played.length===2',timeout=4000)
         self.page.evaluate("window.__oldRecognizer.onresult({results:[Object.assign([{transcript:'When did the employee receive the training?'}],{isFinal:true})]})")
         self.page.wait_for_timeout(1000)
@@ -197,12 +199,13 @@ class BrowserTests(unittest.TestCase):
         self.page.set_viewport_size({'width':390,'height':844})
         self.open_session()
         self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=window.innerWidth'))
+        self.assertLessEqual(self.page.locator('#questionText').evaluate('(element)=>element.scrollHeight'),self.page.locator('#questionText').evaluate('(element)=>element.clientHeight'))
         self.assertEqual(self.page.locator('body[data-page=session] > .site-header').count(),0)
         self.assertTrue(self.page.locator('.session-footer-links').is_visible())
         self.page.set_viewport_size({'width':1365,'height':1600})
         self.assertAlmostEqual(self.page.locator('.session-footer').evaluate('(element)=>element.getBoundingClientRect().bottom'),1600,delta=1)
         self.page.set_viewport_size({'width':390,'height':550})
-        self.assertGreater(self.page.locator('.session-footer').evaluate('(element)=>element.getBoundingClientRect().bottom'),550)
+        self.assertGreaterEqual(self.page.locator('.session-footer').evaluate('(element)=>element.getBoundingClientRect().bottom'),550)
         out=Path(__file__).resolve().parents[1]/'test-results';out.mkdir(exist_ok=True)
         self.page.screenshot(path=str(out/'mobile.png'),full_page=True)
 
@@ -214,12 +217,16 @@ class BrowserTests(unittest.TestCase):
         self.assertTrue(self.page.locator('#sessionStartGate').is_visible())
         self.assertFalse(self.page.locator('#startButton').is_visible())
         if self.page.locator('#consentReject').is_visible():self.page.locator('#consentReject').click()
-        self.start();self.page.locator('#pauseButton').click()
+        self.start()
+        self.assertTrue(self.page.locator('#stopListeningButton').is_visible())
+        self.assertTrue(self.page.evaluate("document.getElementById('startButton').parentElement === document.getElementById('stopListeningButton').parentElement"))
+        self.page.locator('#stopListeningButton').click()
+        self.assertFalse(self.page.locator('#stopListeningButton').is_visible())
         self.page.locator('#settingsToggle').click()
         self.assertTrue(self.page.locator('#settingsPanel').is_visible())
         self.assertEqual(self.page.locator('#settingsPanel').evaluate('(element)=>getComputedStyle(element).position'),'fixed')
         self.assertEqual(self.page.locator('#settingsToggle').get_attribute('aria-expanded'),'true')
-        self.assertEqual(self.page.locator('#startButtonLabel').inner_text(),'Continue listening')
+        self.assertEqual(self.page.locator('#startButton').inner_text(),'🎤 Start listening')
         self.page.locator('#startButton').click()
         self.page.wait_for_function("document.getElementById('statusPill')?.dataset.state==='listening'")
         self.assertFalse(self.page.locator('#settingsPanel').is_visible())
@@ -254,8 +261,7 @@ class BrowserTests(unittest.TestCase):
             for step in item['steps']:
                 question=page.locator(f'#questionText > [data-question-id="{step["id"]}"]')
                 self.assertEqual(question.text_content(),step['prompt'])
-                context_text=page.locator(f'#questionContext > [data-question-id="{step["id"]}"]')
-                self.assertEqual(context_text.text_content(),'\n\n'.join(step['context']))
+            self.assertEqual(page.locator('#contextDetails').count(),0)
 
     def test_library_edition_filter_and_progress_use_existing_cards(self):
         self.page.unroute('**/catalog.json')
@@ -343,6 +349,7 @@ class BrowserTests(unittest.TestCase):
         self.assertIn('Manual',self.page.locator('#modeStatus').inner_text())
         self.page.goto(self.base_url+'setup.html?set='+self.fixture['id'])
         self.page.wait_for_url('**/sets/*.html?mode=manual*')
+        self.start()
         self.page.locator('#changeDeviceLink').click()
         self.page.wait_for_function("document.getElementById('deviceSetup')?.dataset.ready==='true'")
         self.assertTrue(self.page.locator('#rememberDeviceSettings').is_checked())
@@ -354,12 +361,14 @@ class BrowserTests(unittest.TestCase):
         self.start();self.page.locator('#finishButton').click()
         self.page.wait_for_function('window.__played.length===2')
 
-    def test_question_preview_never_counts_as_speech_or_plays_an_answer(self):
+    def test_question_playback_plays_answers_and_resumes_listening(self):
         self.open_session()
+        self.start()
         self.page.locator('#hearQuestionButton').click()
         self.page.wait_for_function('window.__questionPlayed.length===1')
-        self.page.wait_for_function("document.getElementById('statusPill').dataset.state==='idle'")
-        self.assertEqual(self.page.evaluate('window.__played.length'),0)
+        self.page.wait_for_function('window.__played.length===2')
+        self.page.wait_for_function("document.getElementById('statusPill').dataset.state==='listening' && document.getElementById('stepLabel').textContent==='Question 2 of 2'")
+        self.assertEqual(len(set(self.page.evaluate('window.__played'))),2)
         self.assertEqual(self.page.locator('#voiceProgressBar').get_attribute('aria-valuenow'),'0')
 
     def test_storage_requires_consent_and_revocation_clears_saved_progress(self):
@@ -375,6 +384,7 @@ class BrowserTests(unittest.TestCase):
         self.page.locator('#consentAccept').click()
         self.assertGreater(self.page.evaluate('window.__storageWrites'),0)
         self.assertTrue(self.page.evaluate("Object.keys(localStorage).some(k=>k.startsWith('conversation-lab:'))"))
+        self.start()
         self.page.locator('#storageSettings').click();self.page.locator('#consentReject').click()
         self.assertEqual(self.page.evaluate("Object.keys(localStorage).filter(k=>k.startsWith('conversation-lab:')).length"),0)
         self.page.reload()
@@ -439,7 +449,7 @@ class BrowserTests(unittest.TestCase):
         self.page.set_viewport_size({'width':390,'height':844})
         self.page.screenshot(path=str(Path(__file__).resolve().parents[1]/'test-results'/'compact-setup.png'),full_page=True)
 
-    def test_answer_settings_switch_recordings_and_keep_heart_default(self):
+    def test_answer_settings_switch_recordings_and_keep_base_default(self):
         alternate=deepcopy(self.fixture);alternate['id']='bella-test';alternate['voice']='af_bella'
         for step in alternate['steps']:
             for clip in step['clips']:clip['url']+='&speaker=bella'
@@ -447,18 +457,21 @@ class BrowserTests(unittest.TestCase):
         self.page.route('**/sets/*.html*',lambda route:route.fulfill(content_type='text/html',body=render_session(self.fixture,[self.fixture,alternate])))
         self.page.goto(self.url+'?mode=manual')
         self.page.wait_for_function("document.getElementById('statusPill').dataset.state==='idle'")
-        self.assertEqual(self.page.locator('#answerVoiceSelect').input_value(),'af_heart')
+        self.assertEqual(self.page.locator('#answerVoiceSelect').input_value(),self.fixture['voice'])
         self.page.locator('#consentReject').click()
+        self.start()
         self.page.locator('#settingsToggle').click()
         self.page.select_option('#answerVoiceSelect','af_bella')
+        self.page.locator('.session-info').evaluate('(element)=>element.open=true')
         self.assertEqual(self.page.locator('#voiceLabel').inner_text(),'bella')
-        self.start();self.page.locator('#finishButton').click()
+        self.page.locator('#finishButton').click()
         self.page.wait_for_function('window.__played.length===2')
         self.assertTrue(all('speaker=bella' in url for url in self.page.evaluate('window.__played')))
 
     def test_speaking_time_controls_are_at_question_bottom_and_live(self):
         self.page.add_init_script('delete window.SpeechRecognition;delete window.webkitSpeechRecognition;')
         self.open_session()
+        self.start()
         self.assertTrue(self.page.locator('#speakingSettings').is_visible())
         self.assertFalse(self.page.locator('#speakingPercentSetting').is_visible())
         self.page.locator('#speakingSettings summary').click()
@@ -514,6 +527,9 @@ class BrowserTests(unittest.TestCase):
         self.start()
         self.assertEqual(self.page.evaluate('window.__captureCount'),0,'Practice transcription must not open a competing microphone stream')
         self.assertFalse(self.page.evaluate('window.__recognition.instances.at(-1).continuous'))
+        self.page.evaluate('window.__recognition.instances.at(-1).onspeechstart()')
+        self.assertNotEqual(self.page.locator('#levelFill').evaluate('(element)=>getComputedStyle(element).transform'),'matrix(0, 0, 0, 1, 0, 0)')
+        self.page.evaluate('window.__recognition.instances.at(-1).onspeechend()')
         self.emit('Has the employee received',True)
         self.page.evaluate('window.__oldPhoneRecognition=window.__recognition.instances.at(-1);window.__oldPhoneRecognition.onend()')
         self.page.wait_for_function('window.__recognition.instances.at(-1)!==window.__oldPhoneRecognition')
