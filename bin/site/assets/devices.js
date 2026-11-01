@@ -79,6 +79,7 @@ export class DeviceSetup {
       const probe=new BrowserSpeech({
         onText:result=>{
           const words=result.text.toLowerCase().replace(/\b123\b/g,'1 2 3').match(/[a-z]+|\d+/g)||[];
+          if(words.length){this.speechReason='Speech detected. Continue saying “Testing 1…2…3…” to verify transcription.';this.updateOptions();}
           const aliases={'1':'one','2':'two','3':'three',to:'two',too:'two'};
           for(const word of words)this.testWords.add(aliases[word]||word);
           for(const span of document.querySelectorAll('[data-test-word]'))span.classList.toggle('heard',this.testWords.has(span.dataset.testWord));
@@ -88,7 +89,10 @@ export class DeviceSetup {
             this.updateOptions();this.persist();resolve({ok:true});
           }
         },
-        onReady:()=>resolve({ok:false,code:'test-needed'}),
+        onReady:()=>{
+          this.speechReason='Transcription started. Say “Testing 1…2…3…” to verify it.';
+          this.updateOptions();resolve({ok:false,code:'test-needed'});
+        },
         onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);this.updateOptions();this.persist();resolve({ok:false,code});}
       });
       this.probe=probe;probe.start();

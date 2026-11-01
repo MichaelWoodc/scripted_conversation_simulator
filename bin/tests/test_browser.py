@@ -510,6 +510,16 @@ class BrowserTests(unittest.TestCase):
         self.assertTrue(self.page.locator('#transcriptionChoice').is_disabled())
         self.assertIn('Tap Check / test microphone',self.page.locator('#deviceStatus').inner_text())
 
+    def test_mobile_transcription_check_reports_when_service_is_listening(self):
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__noTestWords=true;")
+        self.page.goto(self.base_url+'setup.html?set='+self.fixture['id']+'&change=1')
+        self.page.wait_for_function("document.getElementById('deviceSetup').dataset.ready==='true'")
+        self.page.locator('#checkDeviceButton').click()
+        self.page.wait_for_function("!document.getElementById('continueToSession').disabled")
+        self.assertIn('Transcription started',self.page.locator('#transcriptionDetail').inner_text())
+        self.assertIn('Transcription test: Transcription started',self.page.locator('#deviceReport').inner_text())
+        self.assertNotIn('Transcription test: not checked',self.page.locator('#deviceReport').inner_text())
+
     def test_android_transcription_error_opens_timing_microphone_after_stopping_recognition(self):
         self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__rejectConcurrentCapture=true;")
         self.open_session();self.start()
