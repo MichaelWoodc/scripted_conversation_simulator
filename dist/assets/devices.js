@@ -30,7 +30,7 @@ export class DeviceSetup {
     if(!set)throw new Error('Choose a conversation from the library first.');
     this.set=set;this.caps=deviceCapabilities();this.saved=readDeviceSettings();this.closed=false;
     const needsPhoneCheck=exclusiveSpeechCapture();
-    this.speechOK=!needsPhoneCheck&&!!this.saved?.speechOK;this.micOK=!needsPhoneCheck&&!!this.saved?.micOK;this.testWords=new Set();this.testMs=0;
+    this.speechOK=!needsPhoneCheck&&!!this.saved?.speechOK;this.speechStarted=false;this.checkedOnce=false;this.micOK=!needsPhoneCheck&&!!this.saved?.micOK;this.testWords=new Set();this.testMs=0;
     this.reasonCode=this.caps.transcription?'permission-needed':'unsupported';
     if(this.saved){this.speechReason=this.speechOK?'Previously verified. Tap Test to check again.':undefined;this.microphoneReason=this.micOK?'Previously verified microphone.':undefined;}
     $('setupSessionTitle').textContent=set.title;
@@ -41,21 +41,22 @@ export class DeviceSetup {
       $('timingTestProgress').value=this.testMs;
       $('timingTestLabel').textContent=`${(this.testMs/1000).toFixed(1)} / 1 second${this.testMs>=1000?' — passed':''}`;
     },message=>{if(!this.closed)$('deviceStatus').textContent='Microphone paused. Tap Test to resume. Your previous test results are remembered.';});
+    $('beginSetupButton').addEventListener('click',()=>{$('startGate').hidden=true;this.check();});
     for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton'])$(id).addEventListener('click',()=>this.check(id==='retryTimingButton'));
     $('continueToSession').addEventListener('click',()=>this.continue());
     $('rememberDeviceSettings').addEventListener('change',()=>this.persist());
-    for(const id of ['transcriptionVolume','volumeSetting'])$(id).addEventListener('input',()=>{
-      const value=$(id).value;$('transcriptionVolume').value=value;$('volumeSetting').value=value;
-      this.monitor.minimum=Number(value);this.persist();
-    });
+    $('volumeSetting').addEventListener('input',()=>{this.monitor.minimum=Number($('volumeSetting').value);this.persist();});
     $('fallbackSilenceSetting').addEventListener('input',()=>{this.showPause();this.persist();});
     for(const mode of MODES)$(mode+'Choice').addEventListener('change',()=>this.persist());
     $('setupDebugToggle').addEventListener('click',()=>{
       const open=$('setupDebug').hidden;$('setupDebug').hidden=!open;$('setupDebugToggle').setAttribute('aria-expanded',String(open));
     });
-    window.addEventListener('storagechoice',()=>{if(!readDeviceSettings())$('rememberDeviceSettings').checked=false;});
+    window.addEventListener('storagechoice',()=>{
+      if(deviceStorageAllowed())this.persist();
+      else $('rememberDeviceSettings').checked=false;
+    });
     window.addEventListener('pagehide',()=>{this.closed=true;this.probe?.stop();this.monitor.close();});
-    if(this.saved){$('fallbackSilenceSetting').value=this.saved.pause;$('volumeSetting').value=this.saved.volume;$('transcriptionVolume').value=this.saved.volume;$('rememberDeviceSettings').checked=this.saved.skip;}
+    if(this.saved){$('fallbackSilenceSetting').value=this.saved.pause;$('volumeSetting').value=this.saved.volume;$('rememberDeviceSettings').checked=this.saved.skip;}
     this.showPause();this.updateOptions();
     if(needsPhoneCheck){$('deviceStatus').textContent='Tap Test microphone and transcription. Allow microphone access if your browser prompts.';$('retryTranscriptionButton').hidden=true;$('retryTimingButton').hidden=true;}
     $('deviceSetup').dataset.ready='true';
@@ -78,23 +79,28 @@ export class DeviceSetup {
     return new Promise(resolve=>{
       const probe=new BrowserSpeech({
         onText:result=>{
-          const words=result.text.toLowerCase().replace(/\b123\b/g,'1 2 3').match(/[a-z]+|\d+/g)||[];
-          const lastWords=(result.text.match(/[A-Za-z0-9']+/g)||[]).slice(-4).join(' ');
+          const words=(result.text.match(/[\p{L}\p{N}]+/gu)||[]).flatMap(word=>word==='123'?['1','2','3']:[word]);
+          const lastWords=(result.text.match(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu)||[]).slice(-20).join(' ');
           $('transcriptionPreview').value=lastWords;
+          $('transcriptionPreview').scrollTop=$('transcriptionPreview').scrollHeight;
           const aliases={'1':'one','2':'two','3':'three',to:'two',too:'two'};
-          for(const word of words)this.testWords.add(aliases[word]||word);
+          for(const word of words)this.testWords.add(aliases[word.toLowerCase()]||word.toLowerCase());
           for(const span of document.querySelectorAll('[data-test-word]'))span.classList.toggle('heard',this.testWords.has(span.dataset.testWord));
           if(words.length){
-            this.speechOK=true;this.reasonCode='working';this.speechReason=`Transcription verified. Heard: ${lastWords}`;
+            this.speechOK=true;this.speechStarted=true;this.micOK=true;this.reasonCode='working';this.speechReason=`Transcription verified. Heard: ${lastWords}`;
             $('deviceStatus').textContent=`Transcription passed. Heard: ${lastWords}`;
             this.updateOptions();this.persist();resolve({ok:true,text:lastWords});
           }
         },
         onReady:()=>{
-          this.speechReason='Transcription started. Say anything; the last four words will appear below.';
+          this.speechStarted=true;this.reasonCode='test-needed';
+          this.speechReason='Transcription started. Say anything to test it.';
           this.updateOptions();resolve({ok:false,code:'test-needed'});
         },
-        onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);$('deviceStatus').textContent=`Transcription unavailable: ${this.speechReason}`;this.updateOptions();this.persist();resolve({ok:false,code});}
+        onError:code=>{
+          if(!this.speechOK){this.speechStarted=false;this.reasonCode=code;this.speechReason=recognitionReason(code);$('deviceStatus').textContent=`Transcription unavailable: ${this.speechReason}`;this.updateOptions();this.persist();}
+          resolve({ok:false,code});
+        }
       });
       this.probe=probe;probe.start();
     });
@@ -112,18 +118,18 @@ export class DeviceSetup {
       return;
     }
     // Permission-sensitive APIs are all invoked by the visitor's tap.
-    this.monitor.minimum=Number($('volumeSetting').value);
+    this.monitor.minimum=timingOnly||!this.caps.transcription?Number($('volumeSetting').value):0.004;
     const microphone=this.monitor.start();
     const speech=this.caps.secure?this.probeTranscription():Promise.resolve({ok:false,code:'SecurityError'});
     const [micResult,speechResult]=await Promise.allSettled([microphone,speech]);
     if(this.closed)return;
     this.checking=false;
-    this.micOK=micResult.status==='fulfilled'&&this.monitor.available;
-    const detected=['testing','one','two','three'].every(word=>this.testWords.has(word));
-    this.speechOK=this.micOK&&(detected||this.speechOK)&&speechResult.status==='fulfilled';
+    this.micOK=this.speechOK||(micResult.status==='fulfilled'&&this.monitor.available);
+    this.speechOK=this.micOK&&this.speechOK&&speechResult.status==='fulfilled';
     this.reasonCode=this.speechOK?'working':speechResult.value?.code||'microphone-unavailable';
     this.microphoneReason=this.micOK?'Microphone connected.':micResult.reason?.message||'Microphone permission is needed.';
-    this.speechReason=this.speechOK?'Transcription verified.':this.micOK&&speechResult.value?.code==='test-needed'?'Transcription started. Say anything; the last four words will appear below.':this.micOK?recognitionReason(this.reasonCode):'Microphone access is unavailable or needs permission.';
+    this.speechReason=this.speechOK?'Transcription verified.':this.micOK&&speechResult.value?.code==='test-needed'?'Transcription started. Say anything to test it.':this.micOK?recognitionReason(this.reasonCode):'Microphone access is unavailable or needs permission.';
+    this.checkedOnce=true;
     $('deviceStatus').textContent=this.micOK?'Microphone level is live. '+this.speechReason:this.microphoneReason+' Retry or continue manually.';
     this.updateOptions();
     this.persist();
@@ -133,16 +139,17 @@ export class DeviceSetup {
   async checkMobile(timingOnly){
     try{
       if(!this.caps.secure){this.speechOK=false;throw new Error('Microphone access requires HTTPS. Open the published HTTPS site on your phone.');}
-      this.probe?.stop();this.monitor.minimum=Number($('volumeSetting').value);this.speechOK=false;
+      this.probe?.stop();this.monitor.minimum=timingOnly||!this.caps.transcription?Number($('volumeSetting').value):0.004;this.speechOK=false;
       const speech=this.caps.transcription&&!timingOnly?this.probeTranscription():Promise.resolve({ok:false,code:'unsupported'});
       const microphone=this.monitor.start();
       const [micResult,speechResult]=await Promise.allSettled([microphone,speech]);
-      this.micOK=micResult.status==='fulfilled'&&this.monitor.available;
+      this.micOK=this.speechOK||(micResult.status==='fulfilled'&&this.monitor.available);
       this.microphoneReason=this.micOK?'Microphone connected.':micResult.reason?.message||'Microphone permission is needed.';
       if(!this.caps.transcription||timingOnly){this.speechOK=false;this.speechReason=recognitionReason(this.caps.transcription?'permission-needed':'unsupported');}
       else if(speechResult.status==='fulfilled'&&speechResult.value?.code&&speechResult.value.code!=='test-needed'&&!this.speechOK){
         this.reasonCode=speechResult.value.code;this.speechReason=recognitionReason(this.reasonCode);
       }
+      this.checkedOnce=true;
       this.updateOptions();
       if(this.speechOK)$('deviceStatus').textContent=`Transcription passed. Heard: ${$('transcriptionPreview').value}`;
       else if(this.micOK)$('deviceStatus').textContent=this.caps.transcription&&!timingOnly
@@ -162,9 +169,12 @@ export class DeviceSetup {
   }
 
   updateOptions(){
-    const preferred=this.speechOK?'transcription':this.micOK?'volume':'manual';
+    const speechAvailable=this.caps.transcription&&this.micOK&&(this.speechOK||this.speechStarted);
+    const transcriptionCandidate=this.caps.transcription&&(!this.checkedOnce||speechAvailable||this.speechOK);
+    const timingCandidate=this.micOK||(!this.checkedOnce&&this.caps.microphone&&this.caps.volume);
+    const preferred=transcriptionCandidate?'transcription':timingCandidate?'volume':'manual';
     for(const mode of MODES){
-      const available=mode==='manual'||(mode==='transcription'?this.speechOK:this.micOK);
+      const available=mode==='manual'||(mode==='transcription'?transcriptionCandidate:timingCandidate);
       const row=$(mode+'Option');
       row.dataset.availability=mode===preferred?'recommended':available?'available':'unavailable';
       $(mode+'Choice').disabled=!available;
@@ -197,7 +207,7 @@ export class DeviceSetup {
   }
 
   persist(){
-    if(!deviceStorageAllowed()&&!$('rememberDeviceSettings').checked)return;
+    if(!deviceStorageAllowed())return;
     const mode=document.querySelector('input[name="practiceMode"]:checked')?.value||'manual';
     try{saveDeviceSettings({mode,pause:Number($('fallbackSilenceSetting').value),volume:Number($('volumeSetting').value),
       skip:$('rememberDeviceSettings').checked,micOK:this.micOK,speechOK:this.speechOK});}catch{}

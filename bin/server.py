@@ -17,7 +17,12 @@ class Handler(SimpleHTTPRequestHandler):
         super().__init__(*args,directory=str(DIST),**kwargs)
 
     def end_headers(self):
-        self.send_header('Cache-Control','no-cache')
+        request_path=urlsplit(self.path).path
+        if request_path.endswith('.html') or request_path in ('','/'):
+            self.send_header('Cache-Control','no-store, no-cache, must-revalidate')
+            self.send_header('Pragma','no-cache')
+            self.send_header('Expires','0')
+        else:self.send_header('Cache-Control','no-cache')
         self.send_header('X-Content-Type-Options','nosniff')
         super().end_headers()
 

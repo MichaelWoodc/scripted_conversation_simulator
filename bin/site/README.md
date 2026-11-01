@@ -9,8 +9,9 @@ session. The optional settings cookie remembers your mode, pause, and volume
 threshold so you skip setup next time. **Change mode** reopens setup, and a known
 missing microphone permission brings setup back automatically.
 
-The compact setup includes a spoken “Testing 1…2…3…” check: transcription
-highlights each detected word, while voice timing fills a one-second speech bar.
+The compact setup includes a microphone check: any recognized speech enables
+transcription and highlights detected words, while voice timing fills a
+one-second speech bar. The setup preview keeps the latest recognized words.
 Both cards have a volume-threshold slider and live input level. With storage
 consent (or the explicit remember checkbox), verified capability results survive
 reloads in the settings cookie. Temporary audio suspension does not erase a

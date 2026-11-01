@@ -21,7 +21,7 @@ export function saveDeviceSettings(settings){
   document.cookie=`${DEVICE_KEY}=${value}; Path=/; Max-Age=${settings?31536000:0}; SameSite=Lax${location.protocol==='https:'?'; Secure':''}`;
 }
 
-export function deviceStorageAllowed(){return choice==='remember'||!!readDeviceSettings();}
+export function deviceStorageAllowed(){return choice==='remember';}
 
 // Optional storage is never touched until the visitor explicitly accepts it.
 export const preferenceStorage={
@@ -35,13 +35,25 @@ export const preferenceStorage={
   }
 };
 
+export function clearAllStorage(){
+  const secure=location.protocol==='https:'?'; Secure':'';
+  for(const entry of document.cookie.split(';')){
+    const name=entry.split('=')[0].trim();
+    if(name)document.cookie=`${name}=; Path=/; Max-Age=0; SameSite=Lax${secure}`;
+  }
+  try{globalThis.localStorage.clear();}catch{}
+  try{globalThis.sessionStorage.clear();}catch{}
+  memory.clear();choice=null;
+  window.location.reload();
+}
+
 export function initPrivacy(){
   const banner=document.getElementById('consentBanner');
   if(!banner)return;
   const status=document.getElementById('consentStatus');
   function show(){
     banner.hidden=choice==='remember'||choice==='session';
-    status.textContent=choice==='remember'?'Progress is saved on this device.':'Progress lasts for this page visit only.';
+    status.textContent=choice==='remember'?'Progress is saved on this device.':choice==='session'?'Progress lasts for this page visit only.':'Choose how to store your data.';
   }
   function choose(value){
     choice=value;
@@ -58,5 +70,8 @@ export function initPrivacy(){
   document.getElementById('consentAccept').addEventListener('click',()=>choose('remember'));
   document.getElementById('consentReject').addEventListener('click',()=>choose('session'));
   document.getElementById('storageSettings').addEventListener('click',()=>{banner.hidden=false;banner.scrollIntoView({block:'nearest'});document.getElementById('consentReject').focus();});
+  document.getElementById('clearAllStorage').addEventListener('click',()=>{
+    if(confirm('Delete all cookies and browser storage for this site? The page will reload and ask for consent again.'))clearAllStorage();
+  });
   show();
 }

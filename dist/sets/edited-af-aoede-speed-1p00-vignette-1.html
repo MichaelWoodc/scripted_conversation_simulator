@@ -3,15 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Materials &amp; resources Conversation Lab</title>
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body data-page="session" data-set-id="edited-af-aoede-speed-1p00-vignette-1">
+  <section class="session-start-gate" id="sessionStartGate" aria-labelledby="sessionStartTitle">
+    <div class="start-gate-content">
+      <p class="eyebrow">MICROPHONE READY</p>
+      <h1 id="sessionStartTitle">Begin conversation</h1>
+      <p>Tap Start to activate your microphone and begin the conversation.</p>
+      <button class="primary-button start-gate-button" id="beginConversationButton" type="button">Start conversation</button>
+    </div>
+  </section>
   <main class="practice-layout">
     <section class="practice-main">
-      <div class="session-title">
-        <p class="eyebrow" id="sessionEyebrow">VIGNETTE 1 GUIDED CONVERSATION</p>
-        <h1 id="sessionTitle">Materials &amp; resources</h1>
+      <div class="session-toolbar" role="toolbar" aria-label="Conversation controls">
+        <button class="text-button" id="settingsToggle" aria-expanded="false" aria-controls="settingsPanel">Settings</button>
+        <button class="text-button" id="debugToggle" aria-expanded="false" aria-controls="debugPanel">Debug</button>
       </div>
       <section id="settingsPanel" class="speaker-settings" hidden>
         <div class="settings-heading"><h2>Answer speaker</h2><button class="text-button" id="settingsClose" type="button">Close</button></div>
@@ -130,6 +141,14 @@
         </select>
         <p id="answerVoiceStatus">Heart is the default. Other speakers become available as their recordings finish.</p>
         <p>Question previews use a separate voice.</p>
+        <details class="session-info">
+          <summary>This session</summary>
+          <dl>
+            <div><dt>Questions</dt><dd id="totalQuestions">37</dd></div>
+            <div><dt>Voice</dt><dd id="voiceLabel">af_aoede</dd></div>
+            <div><dt>Recordings</dt><dd id="editionLabel">Edited recordings</dd></div>
+          </dl>
+        </details>
       </section>
       <p class="session-mode" id="modeStatus" role="status"></p>
       <div class="progress-heading">
@@ -382,26 +401,14 @@ i.e., the employee cannot complete this task without another employee completing
         <pre id="eventLog" class="event-log"></pre>
       </section>
     </section>
-    <aside class="practice-sidebar">
-      <div class="side-card">
-        <p class="eyebrow">THIS SESSION</p>
-        <dl>
-          <div><dt>Questions</dt><dd id="totalQuestions">37</dd></div>
-          <div><dt>Voice</dt><dd id="voiceLabel">af_aoede</dd></div>
-          <div><dt>Recordings</dt><dd id="editionLabel">Edited recordings</dd></div>
-        </dl>
-      </div>
-    </aside>
   </main>
   <footer class="site-footer session-footer">
     <a class="brand" href="../index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a>
     <nav class="session-footer-links" aria-label="Conversation links">
       <a href="../index.html">All conversations</a>
       <a id="changeDeviceLink" href="../setup.html?set=edited-af-aoede-speed-1p00-vignette-1&amp;change=1">Change mode</a>
-      <button class="text-button" id="settingsToggle" aria-expanded="false" aria-controls="settingsPanel">Settings</button>
-      <button class="text-button" id="debugToggle" aria-expanded="false" aria-controls="debugPanel">Debug</button>
     </nav>
-    <button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><span id="consentStatus"></span>
+    <button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><button class="text-button" id="clearAllStorage">Delete cookies &amp; settings</button><span id="consentStatus"></span>
   </footer>
   <section class="consent-banner" id="consentBanner" aria-label="Cookie and storage preferences" hidden>
     <div><h2>Remember your practice?</h2><p>With your permission, we save progress and preferences on this device. Choose Session only to keep progress in memory for this page visit. One essential cookie remembers your choice. We use no analytics or advertising cookies.</p></div>

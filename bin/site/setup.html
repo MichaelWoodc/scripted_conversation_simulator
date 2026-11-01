@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Choose your practice mode · Conversation Lab</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -11,6 +14,14 @@
     <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true"></span> Conversation Lab</a>
     <a href="index.html" class="back-link">All conversations</a>
   </header>
+  <section class="start-gate" id="startGate" aria-labelledby="startGateTitle">
+    <div class="start-gate-content">
+      <p class="eyebrow">MICROPHONE CHECK</p>
+      <h1 id="startGateTitle">Ready to practice?</h1>
+      <p>Start the microphone and transcription check. Your browser may ask for microphone permission.</p>
+      <button class="primary-button start-gate-button" id="beginSetupButton" type="button">Start</button>
+    </div>
+  </section>
   <main class="setup-layout" id="deviceSetup">
     
     <h1>Choose your mode</h1>
@@ -19,14 +30,13 @@
     <button class="secondary-button" id="checkDeviceButton">Test microphone and transcription</button>
     <p id="deviceStatus" role="status">Check your microphone, or continue manually.</p>
     <fieldset class="mode-options">
-      <legend>Practice modes, in order of preference</legend>
+      <legend>Microphone-based</legend>
       <div class="mode-option" id="transcriptionOption" data-availability="unavailable">
         <div><label><input type="radio" name="practiceMode" id="transcriptionChoice" value="transcription" disabled> <strong>1. Transcription</strong></label><span class="mode-badge" id="transcriptionBadge">Unavailable</span>
           <p class="test-phrase" aria-label="Transcription test"><span data-test-word="testing">Testing</span> <span data-test-word="one">1</span>&hellip;<span data-test-word="two">2</span>&hellip;<span data-test-word="three">3</span>&hellip;</p>
-          <label class="test-volume">Volume threshold <input id="transcriptionVolume" type="range" min="0.004" max="0.04" step="0.001" value="0.007" aria-label="Transcription microphone volume threshold"></label>
           <meter id="transcriptionLevel" min="0" max="1" value="0" aria-label="Transcription microphone level"></meter>
-          <label class="transcription-preview-label" for="transcriptionPreview">Last four recognized words</label>
-          <textarea id="transcriptionPreview" rows="1" readonly placeholder="No words recognized yet." aria-live="polite"></textarea>
+          <label class="transcription-preview-label" for="transcriptionPreview">Detected speech</label>
+          <textarea id="transcriptionPreview" rows="2" readonly placeholder="No speech detected yet." aria-label="Detected speech" aria-live="polite"></textarea>
           <p class="microphone-note">Meter may pause while transcription listens.</p>
           <p id="transcriptionDetail">Microphone and transcription permission needed.</p></div>
         <button class="secondary-button retry-mode" id="retryTranscriptionButton">Test / retry</button>
@@ -39,6 +49,9 @@
           <meter id="timingLevel" min="0" max="1" value="0" aria-label="Timing microphone level"></meter><p id="volumeDetail">Microphone permission needed.</p></div>
         <button class="secondary-button retry-mode" id="retryTimingButton">Test / retry</button>
       </div>
+    </fieldset>
+    <fieldset class="mode-options manual-options">
+      <legend>Manual</legend>
       <div class="mode-option" id="manualOption" data-availability="recommended">
         <div><label><input type="radio" name="practiceMode" id="manualChoice" value="manual" checked> <strong>3. Manual</strong></label><span class="mode-badge" id="manualBadge">Recommended</span><p>Tap &ldquo;I'm finished&rdquo; after each question. No microphone.</p></div>
       </div>
@@ -46,13 +59,13 @@
     <details class="setup-settings"><summary>Timing settings</summary>
       <label>Pause before answer <output id="setupSilenceValue" for="fallbackSilenceSetting">2.5 seconds</output><input id="fallbackSilenceSetting" type="range" min="500" max="5000" step="100" value="2500"></label>
     </details>
-    <label class="remember-device"><input type="checkbox" id="rememberDeviceSettings"> Remember settings &amp; skip setup next time.</label>
+    <label class="remember-device"><input type="checkbox" id="rememberDeviceSettings" checked> Remember settings &amp; skip setup next time.</label>
     <p class="browser-note">Transcription may use your browser's online service. Timing stays on your device.</p>
     <div class="setup-actions"><button class="primary-button" id="continueToSession">Continue to session →</button><button class="text-button" id="setupDebugToggle" aria-controls="setupDebug" aria-expanded="false">Device details / Debug</button></div>
     <section class="debug-panel" id="setupDebug" hidden><h2>Device details</h2><pre id="deviceReport">Waiting for device check.</pre></section>
     <p class="error-note" id="errorMessage" role="alert" hidden></p>
   </main>
-  <footer class="site-footer"><button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><span id="consentStatus"></span></footer>
+  <footer class="site-footer"><button class="text-button" id="storageSettings">Cookie &amp; storage settings</button><button class="text-button" id="clearAllStorage">Delete cookies &amp; settings</button><span id="consentStatus"></span></footer>
   <section class="consent-banner" id="consentBanner" aria-label="Cookie and storage preferences" hidden>
     <div><h2>Remember your practice?</h2><p>With your permission, we save progress on this device. Choose Session only to keep progress in memory for this page visit. One essential cookie remembers your choice. The separate checkbox above can remember your device mode. We use no analytics or advertising cookies.</p></div>
     <div class="consent-actions"><button class="secondary-button" id="consentReject">Session only</button><button class="secondary-button" id="consentAccept">Remember my progress</button></div>
