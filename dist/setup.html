@@ -15,8 +15,8 @@
     
     <h1>Choose your mode</h1>
     <p id="setupSessionTitle">Preparing your conversation…</p>
-    <p class="setup-instructions">Tap Check, then say <strong>&ldquo;Testing 1&hellip;2&hellip;3&hellip;&rdquo;</strong>.</p>
-    <button class="secondary-button" id="checkDeviceButton">Check / test microphone</button>
+    <p class="setup-instructions">Tap Test and say anything. Timing is the fallback if transcription does not work.</p>
+    <button class="secondary-button" id="checkDeviceButton">Test microphone and transcription</button>
     <p id="deviceStatus" role="status">Check your microphone, or continue manually.</p>
     <fieldset class="mode-options">
       <legend>Practice modes, in order of preference</legend>
@@ -24,7 +24,11 @@
         <div><label><input type="radio" name="practiceMode" id="transcriptionChoice" value="transcription" disabled> <strong>1. Transcription</strong></label><span class="mode-badge" id="transcriptionBadge">Unavailable</span>
           <p class="test-phrase" aria-label="Transcription test"><span data-test-word="testing">Testing</span> <span data-test-word="one">1</span>&hellip;<span data-test-word="two">2</span>&hellip;<span data-test-word="three">3</span>&hellip;</p>
           <label class="test-volume">Volume threshold <input id="transcriptionVolume" type="range" min="0.004" max="0.04" step="0.001" value="0.007" aria-label="Transcription microphone volume threshold"></label>
-          <meter id="transcriptionLevel" min="0" max="1" value="0" aria-label="Transcription microphone level"></meter><p id="transcriptionDetail">Microphone and transcription permission needed.</p></div>
+          <meter id="transcriptionLevel" min="0" max="1" value="0" aria-label="Transcription microphone level"></meter>
+          <label class="transcription-preview-label" for="transcriptionPreview">Last four recognized words</label>
+          <textarea id="transcriptionPreview" rows="1" readonly placeholder="No words recognized yet." aria-live="polite"></textarea>
+          <p class="microphone-note">Meter may pause while transcription listens.</p>
+          <p id="transcriptionDetail">Microphone and transcription permission needed.</p></div>
         <button class="secondary-button retry-mode" id="retryTranscriptionButton">Test / retry</button>
       </div>
       <div class="mode-option" id="volumeOption" data-availability="unavailable">

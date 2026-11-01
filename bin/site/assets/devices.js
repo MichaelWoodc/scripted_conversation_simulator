@@ -57,7 +57,7 @@ export class DeviceSetup {
     window.addEventListener('pagehide',()=>{this.closed=true;this.probe?.stop();this.monitor.close();});
     if(this.saved){$('fallbackSilenceSetting').value=this.saved.pause;$('volumeSetting').value=this.saved.volume;$('transcriptionVolume').value=this.saved.volume;$('rememberDeviceSettings').checked=this.saved.skip;}
     this.showPause();this.updateOptions();
-    if(needsPhoneCheck)$('deviceStatus').textContent='Tap Check / test microphone to verify access. Allow microphone access if your browser prompts.';
+    if(needsPhoneCheck){$('deviceStatus').textContent='Tap Test microphone and transcription. Allow microphone access if your browser prompts.';$('retryTranscriptionButton').hidden=true;$('retryTimingButton').hidden=true;}
     $('deviceSetup').dataset.ready='true';
     this.skipSaved();
   }
@@ -79,21 +79,22 @@ export class DeviceSetup {
       const probe=new BrowserSpeech({
         onText:result=>{
           const words=result.text.toLowerCase().replace(/\b123\b/g,'1 2 3').match(/[a-z]+|\d+/g)||[];
-          if(words.length){this.speechReason='Speech detected. Continue saying “Testing 1…2…3…” to verify transcription.';this.updateOptions();}
+          const lastWords=(result.text.match(/[A-Za-z0-9']+/g)||[]).slice(-4).join(' ');
+          $('transcriptionPreview').value=lastWords;
           const aliases={'1':'one','2':'two','3':'three',to:'two',too:'two'};
           for(const word of words)this.testWords.add(aliases[word]||word);
           for(const span of document.querySelectorAll('[data-test-word]'))span.classList.toggle('heard',this.testWords.has(span.dataset.testWord));
-          if(['testing','one','two','three'].every(word=>this.testWords.has(word))){
-            probe.stop();
-            this.speechOK=true;this.micOK=true;this.reasonCode='working';this.speechReason='Testing 1…2…3 detected.';
-            this.updateOptions();this.persist();resolve({ok:true});
+          if(words.length){
+            this.speechOK=true;this.reasonCode='working';this.speechReason=`Transcription verified. Heard: ${lastWords}`;
+            $('deviceStatus').textContent=`Transcription passed. Heard: ${lastWords}`;
+            this.updateOptions();this.persist();resolve({ok:true,text:lastWords});
           }
         },
         onReady:()=>{
-          this.speechReason='Transcription started. Say “Testing 1…2…3…” to verify it.';
+          this.speechReason='Transcription started. Say anything; the last four words will appear below.';
           this.updateOptions();resolve({ok:false,code:'test-needed'});
         },
-        onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);this.updateOptions();this.persist();resolve({ok:false,code});}
+        onError:code=>{this.speechOK=false;this.reasonCode=code;this.speechReason=recognitionReason(code);$('deviceStatus').textContent=`Transcription unavailable: ${this.speechReason}`;this.updateOptions();this.persist();resolve({ok:false,code});}
       });
       this.probe=probe;probe.start();
     });
@@ -122,8 +123,8 @@ export class DeviceSetup {
     this.speechOK=this.micOK&&(detected||this.speechOK)&&speechResult.status==='fulfilled';
     this.reasonCode=this.speechOK?'working':speechResult.value?.code||'microphone-unavailable';
     this.microphoneReason=this.micOK?'Microphone connected.':micResult.reason?.message||'Microphone permission is needed.';
-    this.speechReason=this.speechOK?'Transcription verified.':this.micOK&&speechResult.value?.code==='test-needed'?'Say “Testing 1…2…3…” to verify transcription.':this.micOK?recognitionReason(this.reasonCode):'Microphone access is unavailable or needs permission.';
-    $('deviceStatus').textContent=this.micOK?'Say “Testing 1…2…3…” — watch the words and one-second bar.':this.microphoneReason+' Retry or continue manually.';
+    this.speechReason=this.speechOK?'Transcription verified.':this.micOK&&speechResult.value?.code==='test-needed'?'Transcription started. Say anything; the last four words will appear below.':this.micOK?recognitionReason(this.reasonCode):'Microphone access is unavailable or needs permission.';
+    $('deviceStatus').textContent=this.micOK?'Microphone level is live. '+this.speechReason:this.microphoneReason+' Retry or continue manually.';
     this.updateOptions();
     this.persist();
     for(const id of ['checkDeviceButton','retryTranscriptionButton','retryTimingButton','continueToSession'])$(id).disabled=false;
@@ -132,25 +133,23 @@ export class DeviceSetup {
   async checkMobile(timingOnly){
     try{
       if(!this.caps.secure){this.speechOK=false;throw new Error('Microphone access requires HTTPS. Open the published HTTPS site on your phone.');}
-      if(timingOnly||!this.caps.transcription){
-        this.probe?.stop();
-        this.monitor.minimum=Number($('volumeSetting').value);
-        await this.monitor.start();
-        this.micOK=this.monitor.available;
-        if(!this.caps.transcription){this.speechOK=false;this.speechReason=recognitionReason('unsupported');}
-        $('deviceStatus').textContent='Timing microphone ready. Say “Testing 1…2…3…” to fill the one-second bar.';
-      }else{
-        // Release the Web Audio stream before native Chrome/Safari transcription.
-        // stop() releases tracks synchronously; native start still runs on this tap.
-        this.monitor.close();
-        $('transcriptionLevel').hidden=true;
-        const result=await this.probeTranscription();
-        if(result.code&&result.code!=='test-needed'){
-          this.speechOK=false;this.reasonCode=result.code;this.speechReason=recognitionReason(result.code);
-          await this.monitor.start();this.micOK=this.monitor.available;
-          $('deviceStatus').textContent='Transcription failed. Timing mode is available; Debug shows the reason.';
-        }else $('deviceStatus').textContent='Say “Testing 1…2…3…”. Transcription uses the microphone exclusively; use the Timing test for volume.';
+      this.probe?.stop();this.monitor.minimum=Number($('volumeSetting').value);this.speechOK=false;
+      const speech=this.caps.transcription&&!timingOnly?this.probeTranscription():Promise.resolve({ok:false,code:'unsupported'});
+      const microphone=this.monitor.start();
+      const [micResult,speechResult]=await Promise.allSettled([microphone,speech]);
+      this.micOK=micResult.status==='fulfilled'&&this.monitor.available;
+      this.microphoneReason=this.micOK?'Microphone connected.':micResult.reason?.message||'Microphone permission is needed.';
+      if(!this.caps.transcription||timingOnly){this.speechOK=false;this.speechReason=recognitionReason(this.caps.transcription?'permission-needed':'unsupported');}
+      else if(speechResult.status==='fulfilled'&&speechResult.value?.code&&speechResult.value.code!=='test-needed'&&!this.speechOK){
+        this.reasonCode=speechResult.value.code;this.speechReason=recognitionReason(this.reasonCode);
       }
+      this.updateOptions();
+      if(this.speechOK)$('deviceStatus').textContent=`Transcription passed. Heard: ${$('transcriptionPreview').value}`;
+      else if(this.micOK)$('deviceStatus').textContent=this.caps.transcription&&!timingOnly
+        ?`Microphone level is live. ${this.speechReason||'Waiting for speech recognition.'}`
+        :'Microphone level is live. Timing mode is available.';
+      else $('deviceStatus').textContent=`${this.microphoneReason} ${this.speechReason||''}`.trim();
+      this.persist();
     }catch(error){
       this.microphoneReason=error.message;this.micOK=false;
       $('deviceStatus').textContent=error.message+' Retry or continue manually.';
@@ -172,10 +171,10 @@ export class DeviceSetup {
       $(mode+'Choice').checked=mode===preferred;
       $(mode+'Badge').textContent=mode===preferred?'Recommended':available?'Available':'Unavailable';
     }
-    $('transcriptionDetail').textContent=this.speechReason||(this.caps.transcription?'Grant microphone and transcription permission to check this mode.':recognitionReason('unsupported'));
+    $('transcriptionDetail').textContent=this.speechReason||(this.caps.transcription?'Test the microphone and say anything to verify transcription.':recognitionReason('unsupported'));
     $('volumeDetail').textContent=this.micOK?'Microphone verified. Fill the bar by speaking.':this.microphoneReason||'Microphone permission needed.';
-    $('retryTranscriptionButton').hidden=false;
-    $('retryTimingButton').hidden=false;
+    $('retryTranscriptionButton').hidden=exclusiveSpeechCapture();
+    $('retryTimingButton').hidden=exclusiveSpeechCapture();
     $('deviceReport').textContent=[
       `Secure connection: ${this.caps.secure?'yes':'no — open the HTTPS site on your phone'}`,
       `Microphone API: ${this.caps.microphone?'available':'unavailable'}`,

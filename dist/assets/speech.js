@@ -68,7 +68,7 @@ export function recognitionReason(code){
     'permission-needed':'Microphone permission has not been granted. You chose manual practice.',
     'microphone-unavailable':'The microphone is unavailable or permission was denied. Manual practice is available.',
     'not-allowed':'Speech transcription permission was denied by the browser or device settings.',
-    'service-not-allowed':'The browser cannot use a speech-recognition service. On GrapheneOS, verify that a compatible Android speech-recognition provider is installed and enabled; an available browser API alone does not provide the service.',
+    'service-not-allowed':'The browser disabled or cannot use a speech-recognition service. On GrapheneOS, verify that a compatible Android speech-recognition provider is installed and enabled; an available browser API alone does not provide the service.',
     network:'The speech transcription service could not connect to its server.',
     'audio-capture':'The transcription service could not capture microphone audio.',
     'language-not-supported':'The transcription service does not support English on this device.',

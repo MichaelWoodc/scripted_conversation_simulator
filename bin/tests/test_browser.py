@@ -108,6 +108,9 @@ class BrowserTests(unittest.TestCase):
         if self.page.locator('#consentAccept').is_visible():self.page.locator('#consentAccept').click()
         self.page.locator('#checkDeviceButton').click()
         self.page.wait_for_function("!document.getElementById('continueToSession').disabled")
+        if self.page.evaluate("navigator.userAgentData?.mobile"):
+            self.assertEqual(self.page.evaluate('window.__captureCount'),1)
+            self.assertTrue(self.page.evaluate('window.__captureActive'))
         self.page.locator('#continueToSession').click()
         self.page.wait_for_function("document.getElementById('statusPill')?.dataset.state==='idle'")
 
@@ -385,7 +388,8 @@ class BrowserTests(unittest.TestCase):
         for width,height in [(390,844),(360,740),(1365,768)]:
             self.page.set_viewport_size({'width':width,'height':height})
             self.assertTrue(self.page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
-            self.assertTrue(self.page.evaluate('document.documentElement.scrollHeight<=innerHeight'),f'{width}x{height} should fit one screen')
+            dimensions=self.page.evaluate('({scroll:document.documentElement.scrollHeight,viewport:innerHeight})')
+            self.assertTrue(dimensions['scroll']<=dimensions['viewport'],f'{width}x{height} should fit one screen: {dimensions}')
         self.page.set_viewport_size({'width':390,'height':844})
         self.page.screenshot(path=str(Path(__file__).resolve().parents[1]/'test-results'/'compact-setup.png'),full_page=True)
 
@@ -458,11 +462,11 @@ class BrowserTests(unittest.TestCase):
         page.wait_for_function("document.querySelectorAll('audio')[0].paused&&!document.querySelectorAll('audio')[1].paused")
 
     def test_android_transcription_uses_one_microphone_and_restarts_short_sessions(self):
-        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__rejectConcurrentCapture=true;")
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});")
         self.open_session()
         self.assertIn('Speech transcription',self.page.locator('#modeStatus').inner_text())
         self.start()
-        self.assertEqual(self.page.evaluate('window.__captureCount'),0,'Transcription must not open a competing getUserMedia stream')
+        self.assertEqual(self.page.evaluate('window.__captureCount'),0,'Practice transcription must not open a competing microphone stream')
         self.assertFalse(self.page.evaluate('window.__recognition.instances.at(-1).continuous'))
         self.emit('Has the employee received',True)
         self.page.evaluate('window.__oldPhoneRecognition=window.__recognition.instances.at(-1);window.__oldPhoneRecognition.onend()')
@@ -508,20 +512,48 @@ class BrowserTests(unittest.TestCase):
         self.page.wait_for_function("document.body.dataset.page==='setup'&&document.getElementById('deviceSetup')?.dataset.ready==='true'")
         self.assertIn('change=1',self.page.url)
         self.assertTrue(self.page.locator('#transcriptionChoice').is_disabled())
-        self.assertIn('Tap Check / test microphone',self.page.locator('#deviceStatus').inner_text())
+        self.assertIn('Test microphone and transcription',self.page.locator('#deviceStatus').inner_text())
 
     def test_mobile_transcription_check_reports_when_service_is_listening(self):
-        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__noTestWords=true;")
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__noTestWords=true;window.__level=0.08;")
         self.page.goto(self.base_url+'setup.html?set='+self.fixture['id']+'&change=1')
         self.page.wait_for_function("document.getElementById('deviceSetup').dataset.ready==='true'")
         self.page.locator('#checkDeviceButton').click()
         self.page.wait_for_function("!document.getElementById('continueToSession').disabled")
+        self.page.wait_for_function("Number(document.getElementById('transcriptionLevel').value)>0")
+        self.assertTrue(self.page.locator('#retryTranscriptionButton').is_hidden())
+        self.assertTrue(self.page.locator('#retryTimingButton').is_hidden())
         self.assertIn('Transcription started',self.page.locator('#transcriptionDetail').inner_text())
         self.assertIn('Transcription test: Transcription started',self.page.locator('#deviceReport').inner_text())
         self.assertNotIn('Transcription test: not checked',self.page.locator('#deviceReport').inner_text())
 
+    def test_mobile_without_transcription_recommends_timing_and_explains_why(self):
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});delete window.SpeechRecognition;delete window.webkitSpeechRecognition;")
+        self.page.goto(self.base_url+'setup.html?set='+self.fixture['id']+'&change=1')
+        self.page.wait_for_function("document.getElementById('deviceSetup').dataset.ready==='true'")
+        self.page.locator('#checkDeviceButton').click()
+        self.page.wait_for_function("!document.getElementById('continueToSession').disabled")
+        self.assertEqual(self.page.locator('#volumeOption').get_attribute('data-availability'),'recommended')
+        self.assertTrue(self.page.locator('#transcriptionChoice').is_disabled())
+        self.assertTrue(self.page.locator('#retryTranscriptionButton').is_hidden())
+        self.assertIn('does not provide speech transcription',self.page.locator('#transcriptionDetail').inner_text())
+        self.assertTrue(self.page.evaluate('window.__captureActive'))
+
+    def test_transcription_passes_on_any_word_and_keeps_last_four(self):
+        self.page.add_init_script('window.__noTestWords=true;window.__level=0.08;')
+        self.page.goto(self.base_url+'setup.html?set='+self.fixture['id']+'&change=1')
+        self.page.wait_for_function("document.getElementById('deviceSetup').dataset.ready==='true'")
+        self.page.locator('#checkDeviceButton').click()
+        self.page.wait_for_function("!document.getElementById('continueToSession').disabled")
+        self.emit('mango',True)
+        self.page.wait_for_function("document.getElementById('transcriptionOption').dataset.availability==='recommended'")
+        self.assertEqual(self.page.locator('#transcriptionPreview').input_value(),'mango')
+        self.emit('the quick brown fox jumps',True)
+        self.assertEqual(self.page.locator('#transcriptionPreview').input_value(),'quick brown fox jumps')
+        self.assertIn('Transcription passed',self.page.locator('#deviceStatus').inner_text())
+
     def test_android_transcription_error_opens_timing_microphone_after_stopping_recognition(self):
-        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});window.__rejectConcurrentCapture=true;")
+        self.page.add_init_script("Object.defineProperty(navigator,'userAgentData',{configurable:true,value:{mobile:true}});")
         self.open_session();self.start()
         self.page.evaluate("window.__recognition.instances.at(-1).onerror({error:'network'})")
         self.page.wait_for_function("document.getElementById('modeStatus').textContent.includes('Voice timing')")

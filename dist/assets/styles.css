@@ -25,6 +25,10 @@ body[data-page=session] .session-footer{margin-top:auto}
 @media(max-width:650px){body[data-page=session] .practice-layout{padding-top:8px;gap:8px}body[data-page=session] .session-title h1{font-size:25px;margin-bottom:8px}body[data-page=session] .question-card{padding:15px}body[data-page=session] .card-top{margin-bottom:8px}body[data-page=session] .listen-strip{margin-top:10px}body[data-page=session] .session-footer{margin:8px 22px 0;padding:6px 0;gap:6px}body[data-page=session] .session-footer-links{gap:8px;font-size:11px}}
 body[data-page=session] .status-pill[data-speech-detected=pending]{color:#a43b32;background:#fbe7e4}
 body[data-page=session] .status-pill[data-speech-detected=pending] i{background:#bb4036;box-shadow:0 0 0 3px #f4cfca}
+.transcription-preview-label{display:block;font-size:10px;font-weight:600;margin:8px 0 4px;color:var(--ink)}
+#transcriptionPreview{display:block;width:100%;resize:none;padding:8px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink);font:inherit;font-size:12px;line-height:1.5}
+.microphone-note{font-size:10px;line-height:1.5;color:var(--muted);margin:5px 0}
+@media(max-width:650px){body[data-page=setup] .setup-layout{margin-top:5px;margin-bottom:4px}body[data-page=setup] .setup-layout>p{margin:2px 0;line-height:1.2}.setup-layout .mode-options{margin:3px 0}.setup-layout .mode-option{padding:5px 8px;margin:3px 0}.setup-layout .mode-option p{line-height:1.2}.setup-layout .test-phrase{display:none}.setup-layout .transcription-preview-label{font-size:9px;margin:3px 0 1px}.setup-layout #transcriptionPreview{height:24px;min-height:24px;padding:3px}.setup-layout .microphone-note{font-size:8px;line-height:1.1;margin:2px 0}}
 body[data-page=session] .speaker-settings{position:fixed;z-index:11;right:24px;bottom:72px;width:min(380px,calc(100vw - 32px));max-height:65vh;overflow-y:auto;margin:0;box-shadow:0 12px 40px #173b3230;animation:settings-rise .16s ease-out}
 body[data-page=session] .settings-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
 body[data-page=session] .speaker-settings h2{margin-bottom:0}
